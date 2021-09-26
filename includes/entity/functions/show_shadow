@@ -1,0 +1,10 @@
+<h3 id='show_shadow'>: show_shadow()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="p">:</span><span class="n">show_shadow</span><span class="p">(</span> <span class="kc">true</span> <span class="p">)</span>
+</code></pre></div>
+<p>If <code>true</code>, causes the  to draw a shadow on the  underneath it.<br>
+Otherwise it does <em>not</em> draw a shadow underneath it.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:show_shadow( draw_shadow )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>boolean</code></strong> <code>draw_shadow</code><br>
+    &emsp;<em><code>true</code> if this  should have a shadow underneath it. Otherwise <code>false</code>.</em></p>

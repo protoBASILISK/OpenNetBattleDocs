@@ -1,0 +1,24 @@
+<h3 id='update_func'>. update_func</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="n">number_prints</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_update</span><span class="p">(</span> <span class="n">self</span><span class="p">,</span> <span class="n">time</span> <span class="p">)</span>
+  <span class="n">number_prints</span> <span class="o">=</span> <span class="n">number_prints</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="nb">print</span><span class="p">(</span> <span class="n">number_prints</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="p">.</span><span class="n">update_func</span> <span class="o">=</span> <span class="n">on_update</span>
+</code></pre></div>
+<p>Assigns a <strong><code>function</code></strong> that will be executed every frame that this  is alive for.</p>
+<h4 id='variable-type'>Variable Type</h4>
+<p><strong><code>function</code></strong></p>
+<h4 id='assignment'>Assignment</h4>
+<p><code>.update_func = on_update</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>function</code></strong> <code>on_update</code><br>
+    &emsp;<em>The <strong><code>function</code></strong> you want this  to execute every frame.</em><br></p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">update_func</span><span class="p">(</span> <span class="n">self</span><span class="p">,</span> <span class="n">elapsed_time</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>update_func</code> requires <b>one</b>  parameter, <b>one</b> <b><code>number</code></b> parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.<br>
+The <code>number</code> parameter is the <i>elapsed time</i> since the last time <code>update_func</code> was called for this .</aside>

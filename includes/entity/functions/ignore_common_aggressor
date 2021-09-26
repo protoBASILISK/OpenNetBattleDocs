@@ -1,0 +1,12 @@
+<h3 id='ignore_common_aggressor'>: ignore_common_aggressor()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="p">:</span><span class="n">ignore_common_aggressor</span><span class="p">(</span> <span class="kc">true</span> <span class="p">)</span>
+</code></pre></div>
+<p>TODO<br>
+If <code>true</code>, causes this  to ignore other attacks and effects that are spawned by the  that spawned <em>this</em> object.<br>
+Otherwise, it will be affected by other attacks and effects from its parent .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:get_hit_props( should_ignore )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>boolean</code></strong> <code>should_ignore</code><br>
+    &emsp;<em><code>true</code> if this should ignore other effects from the same source.</em><br>
+    &emsp;<em>Otherwise <code>false</code>.</em></p>

@@ -1,0 +1,19 @@
+<h3 id='battle_start_func'>. battle_start_func</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_battle_start</span><span class="p">()</span>
+<span class="n">start</span>
+
+<span class="p">.</span><span class="n">battle_start_func</span> <span class="o">=</span> <span class="n">on_battle_start</span>
+</code></pre></div>
+<p>Assigns a <strong><code>function</code></strong> that will be executed when the battle starts if this  is present on the battlefield.</p>
+<h4 id='variable-type'>Variable Type</h4>
+<p><strong><code>function</code></strong></p>
+<h4 id='assignment'>Assignment</h4>
+<p><code>.battle_start_func = on_battle_start</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>function</code></strong> <code>on_battle_start</code><br>
+    &emsp;<em>The <strong><code>function</code></strong> you want this  to execute when the battle starts.</em><br></p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">battle_start_func</span><span class="p">(</span> <span class="n">self</span> <span class="p">)</span>
+<span class="n">start</span>
+</code></pre></div>
+<aside class="notice"><code>battle_start_func</code> requires <b>one</b>  parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.</aside>

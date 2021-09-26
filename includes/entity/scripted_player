@@ -1,0 +1,535 @@
+<p><h3 id='scriptedplayer-get_id'>ScriptedPlayer : get_id()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_id</span> <span class="o">=</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_id</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <strong>unique ID</strong> for this <b><code>ScriptedPlayer</code></b>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_id()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>number</code></strong></p>
+
+<aside class="notice"><i>Nothing</i> will share an ID with another <b><code>Entity</code></b>, or any object derived from <b><code>Entity</code></b>.</aside>
+
+<aside class="warning">If you are storing any reference to an <b><code>Entity</code></b> for multiple frames, use this to store a reference to their ID instead.<br>
+Use <code>Field:get_entity()</code> to retrieve a <b><code>pointer</code></b> to the <b><code>Entity</code></b>, or <code>nil</code> if they were deleted.<br>
+Using a <b><code>pointer</code></b> to a deleted <b><code>Entity</code></b> <b>will</b> cause an error and crash the game.</aside>
+</p>
+
+<p><h3 id='scriptedplayer-get_tile'>ScriptedPlayer : get_tile()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">tile_in_front</span> <span class="o">=</span>   <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_tile</span><span class="p">(</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_facing</span><span class="p">(),</span> <span class="mi">1</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet returns a <strong>pointer</strong> to the <strong>Tile</strong> in front of the example <b><code>ScriptedPlayer</code></b>.</p>
+</blockquote>
+
+<p>Returns a <strong><code>pointer</code></strong> to a  offset in one direction from this <b><code>ScriptedPlayer</code></b>.</p>
+
+<p>If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid , it returns <code>nil</code> instead.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_tile( offset_direction, offset_distance )</code></p>
+<h4 id='return-value'>Return Value</h4><h4 id='parameters'>Parameters</h4>
+<p><code>offset_direction</code><br>
+    &emsp;<em>The direction you want to retrieve the  from.</em><br>
+<strong><code>distance</code></strong> <code>offset_distance</code><br>
+    &emsp;<em>The number of spaces <b>(min: 0)</b> in that direction you want to retrieve the  from.</em></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_current_tile'>ScriptedPlayer : get_current_tile()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_location</span> <span class="o">=</span>    <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_current_tile</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns a <strong><code>pointer</code></strong> to the  that an <b><code>ScriptedPlayer</code></b> is standing on.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_current_tile()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='scriptedplayer-get_field'>ScriptedPlayer : get_field()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- scripted_player entity</span>
+<span class="kd">local</span> <span class="n">field</span> <span class="o">=</span>   <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_field</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns a <strong><code>pointer</code></strong> to the  that this battle is taking place on.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_field()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='scriptedplayer-get_facing'>ScriptedPlayer : get_facing()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_facing</span> <span class="o">=</span>  <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_facing</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the  that this <b><code>ScriptedPlayer</code></b> is facing.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_facing()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='scriptedplayer-is_sliding'>ScriptedPlayer : is_sliding()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">is_scripted_player_sliding</span> <span class="o">=</span>  <span class="p">;</span><span class="n">scripted_player</span><span class="p">:</span><span class="n">is_sliding</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether or not this <b><code>ScriptedPlayer</code></b> is currently <em>sliding</em>.<br>
+Returns <code>true</code> if they are, otherwise <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:is_sliding()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_alpha'>ScriptedPlayer : get_alpha()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-sprite'>ScriptedPlayer : sprite()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-is_jumping'>ScriptedPlayer : is_jumping()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">is_scripted_player_jumping</span> <span class="o">=</span>  <span class="p">;</span><span class="n">scripted_player</span><span class="p">:</span><span class="n">is_jumping</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether or not this <b><code>ScriptedPlayer</code></b> is currently <em>jumping</em>.<br>
+Returns <code>true</code> if they are, otherwise <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>example:is_jumping()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-set_alpha'>ScriptedPlayer : set_alpha()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-is_teleporting'>ScriptedPlayer : is_teleporting()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">is_scripted_player_teleporting</span> <span class="o">=</span>  <span class="p">;</span><span class="n">scripted_player</span><span class="p">:</span><span class="n">is_teleporting</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether or not this <b><code>ScriptedPlayer</code></b> is currently <em>teleporting</em>.<br>
+Returns <code>true</code> if they are, otherwise <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:is_teleporting()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_color'>ScriptedPlayer : get_color()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-is_moving'>ScriptedPlayer : is_moving()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">is_scripted_player_moving</span> <span class="o">=</span>       <span class="n">scripted_player</span><span class="p">:</span><span class="n">is_moving</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether or not this <b><code>ScriptedPlayer</code></b> is currently <em>moving around in any way</em>.<br>
+Returns <code>true</code> if they are, otherwise <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:is_moving()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-set_color'>ScriptedPlayer : set_color()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-is_deleted'>ScriptedPlayer : is_deleted()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">will_remove</span> <span class="o">=</span>     <span class="p">;</span><span class="n">scripted_player</span><span class="p">:</span><span class="n">is_deleted</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether or not this <b><code>ScriptedPlayer</code></b> has been deleted this frame.<br>
+Returns <code>true</code> if they will be deleted, otherwise <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:is_deleted()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-slide'>ScriptedPlayer : slide()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code>
+<span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player </span>
+<span class="kd">local</span> <span class="n">dest_tile</span>     <span class="c1">-- tile they want to move to</span>
+<span class="kd">local</span> <span class="n">move_time</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
+<span class="kd">local</span> <span class="n">endlag_frames</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">20</span> <span class="p">)</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started sliding."</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">can_slide</span> <span class="o">=</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">slide</span><span class="p">(</span> <span class="n">dest_tile</span><span class="p">,</span> <span class="n">move_time</span><span class="p">,</span> <span class="n">endlag_frames</span><span class="p">,</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntary</span><span class="p">,</span> <span class="n">on_begin_func</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet will make the <b><code>ScriptedPlayer</code></b> spend 60 frames (1 second) sliding to the destination tile, and wait for 20 frames (1/3 second) before it can act again.</p>
+</blockquote>
+
+<p>This function causes the <b><code>ScriptedPlayer</code></b> to move to a target  by sliding along the ground to it.<br></p>
+
+<p>This function returns <code>true</code> if the movement was possible <em>at the time it was called</em>, otherwise it returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:slide( destination, time, endlag_frames, order, on_begin_func )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>destination</code><br>
+    &emsp;<em>A pointer to the  that you want the <b><code>ScriptedPlayer</code></b> to move to.</em><br>
+<strong><code>frame_time_t</code></strong> <code>time</code><br>
+    &emsp;<em>The <em>amount of time</em> you want the movement to take.</em><br>
+<strong><code>frame_time_t</code></strong> <code>endlag_frames</code><br>
+    &emsp;<em>The <em>amount of time</em> <strong>after</strong> the movement you want the <b><code>ScriptedPlayer</code></b> to stop acting for.</em><br>
+ <code>order</code><br>
+    &emsp;<em>??? idk actionorder lol TODO fix this</em><br>
+<strong><code>function</code></strong> <code>on_begin_func</code><br>
+    &emsp;<em><code>nil</code>, or a <strong><code>function</code></strong> that you want to execute <strong>when the movement starts</strong>.</em><br>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">frame_time</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
+</code></pre></div>
+<aside class="notice">Use the <code>frames()</code> function to create a <b><code>frame_time_t</code></b> object for measurements of time.<br>Passing in a regular <b><code>number</code></b> or <b><code>integer</code></b> will cause an error.</aside></p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started sliding."</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<aside class="notice"><code>on_begin_func</code> requires <b>no</b> parameters, and return <b>no value</b>.<br>
+See the code snippet for an example.</aside>
+</p>
+
+<p><h3 id='scriptedplayer-jump'>ScriptedPlayer : jump()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player </span>
+<span class="kd">local</span> <span class="n">dest_tile</span>     <span class="c1">-- tile they want to move to</span>
+<span class="kd">local</span> <span class="n">move_time</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
+<span class="kd">local</span> <span class="n">endlag_frames</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">20</span> <span class="p">)</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started jumping."</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">can_jump</span> <span class="o">=</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">jump</span><span class="p">(</span> <span class="n">dest_tile</span><span class="p">,</span> <span class="mi">2</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">move_time</span><span class="p">,</span> <span class="n">endlag_frames</span><span class="p">,</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntary</span><span class="p">,</span> <span class="n">on_begin_func</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet will make the <b><code>ScriptedPlayer</code></b> jump for 60 frames (1 second) towards the destination tile, and wait for 20 frames (1/3 second) before it can act again.</p>
+</blockquote>
+
+<p>This function causes the <b><code>ScriptedPlayer</code></b> to move to a target  by jumping to it.<br>
+TODO: Test to see if they jump over hitboxes, they probably do but need to check it out.</p>
+
+<p>This function returns <code>true</code> if the movement was possible <em>at the time it was called</em>, otherwise it returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:jump( destination, height, time, endlag_frames, order, on_begin_func )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>destination</code><br>
+    &emsp;<em>The  that you want the <b><code>ScriptedPlayer</code></b> to move to.</em><br>
+<strong><code>number</code></strong> <code>height</code><br>
+    &emsp;<em>The height <em>(TODO units?)</em> that you want them to reach at the apex of their jump.</em><br>
+<strong><code>frame_time_t</code></strong> <code>time</code><br>
+    &emsp;<em>The <em>amount of time</em> you want the movement to take.</em><br>
+<strong><code>frame_time_t</code></strong> <code>endlag_frames</code><br>
+    &emsp;<em>The <em>amount of time</em> <strong>after</strong> the movement you want the <b><code>ScriptedPlayer</code></b> to stop acting for.</em><br>
+ <code>order</code><br>
+    &emsp;<em>TODO figure out how ActionOrders work again</em><br>
+<strong><code>function</code></strong> <code>on_begin_func</code><br>
+    &emsp;<em><code>nil</code>, or a <strong><code>function</code></strong> that you want to execute <strong>when the movement starts</strong></em>.</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">frame_time</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
+</code></pre></div>
+
+<aside class="notice">Use the <code>frames()</code> function to create a <b><code>frame_time_t</code></b> object for measurements of time.<br>Passing in a regular <b><code>number</code></b> or <b><code>integer</code></b> will cause an error.</aside>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started sliding."</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<aside class="notice"><code>on_begin_func</code> requires <b>no</b> parameters, and return <b>no value</b>.<br>
+See the code snippet for an example.</aside>
+</p>
+
+<p><h3 id='scriptedplayer-teleport'>ScriptedPlayer : teleport()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player </span>
+<span class="kd">local</span> <span class="n">dest_tile</span>     <span class="c1">-- tile they want to move to</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started teleporting."</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">can_tp</span> <span class="o">=</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">teleport</span><span class="p">(</span> <span class="n">dest_tile</span><span class="p">,</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntary</span><span class="p">,</span> <span class="n">on_begin_func</span> <span class="p">)</span>
+</code></pre></div>
+<p>This function causes the <b><code>ScriptedPlayer</code></b> to move to a target  by teleporting to it.<br></p>
+
+<p>This function returns <code>true</code> if the movement was possible <em>at the time it was called</em>, otherwise it returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:teleport( destination, order, on_begin_func )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>destination</code><br>
+    &emsp;<em>The  that you want the <b><code>ScriptedPlayer</code></b> to move to.</em><br>
+ <code>order</code><br>
+    &emsp;<em>TODO figure out how ActionOrders work again</em><br>
+<strong><code>function</code></strong> <code>on_begin_func</code><br>
+    &emsp;<em><code>nil</code>, or a <strong><code>function</code></strong> that you want to execute <strong>when the movement starts</strong>.</em><br>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Started sliding.&quot;</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>on_begin_func</code> requires <b>no</b> parameters, and return <b>no value</b>.<br>
+See the code snippet for an example.</aside></p>
+</p>
+
+<p><h3 id='scriptedplayer-hide'>ScriptedPlayer : hide()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-reveal'>ScriptedPlayer : reveal()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-raw_move_event'>ScriptedPlayer : raw_move_event()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">destination</span>   <span class="c1">-- tile they want to move to</span>
+
+<span class="kd">local</span> <span class="n">move_event</span>    <span class="o">=</span> <span class="n">create_move_event</span><span class="p">()</span>   <span class="c1">-- use this to create a raw move event</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started jumping."</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">move_event</span><span class="p">.</span><span class="n">delay_frames</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">30</span> <span class="p">)</span>
+<span class="n">move_event</span><span class="p">.</span><span class="n">delta_frames</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
+<span class="n">move_event</span><span class="p">.</span><span class="n">endlag_frames_frames</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">20</span> <span class="p">)</span>
+<span class="n">move_event</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">move_event</span><span class="p">.</span><span class="n">dest_tile</span> <span class="o">=</span> <span class="n">destination</span>
+<span class="n">move_event</span><span class="p">.</span><span class="n">on_begin_func</span> <span class="o">=</span> <span class="n">on_begin_func</span>
+
+<span class="kd">local</span> <span class="n">can_move</span> <span class="o">=</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">raw_move_event</span><span class="p">(</span> <span class="n">move_event</span><span class="p">,</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntary</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet will make the <b><code>ScriptedPlayer</code></b> wait for 30 frames (1/2 second), spend 60 frames (1 second) sliding to the destination tile, and wait for 20 frames (1/3 second) before it can act again.</p>
+</blockquote>
+
+<p>This function causes the <b><code>ScriptedPlayer</code></b> to move to a target  in a programmable manner.<br></p>
+
+<p>This function returns <code>true</code> if the movement was possible <em>at the time it was called</em>, otherwise it returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:raw_move_event( move_event, order )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>move_event</code><br>
+    &emsp;<em>The  object defining how the <b><code>ScriptedPlayer</code></b> will move.</em><br>
+ <code>order</code><br>
+    &emsp;<em>TODO figure out how ActionOrders work again<br></em><br></p>
+<h4 id='moveevent-structure'>MoveEvent structure</h4>
+<p><strong><code>frame_time_t</code></strong> <code>delay_frames</code><br>
+    &emsp;<em>The amount of time you want the <b><code>ScriptedPlayer</code></b> to wait <strong>before</strong> starting the movement.</em><br>
+<strong><code>frame_time_t</code></strong> <code>delta_frames</code><br>
+    &emsp;<em>The <em>amount of time</em> you want the movement to take.</em><br>
+<strong><code>frame_time_t</code></strong> <code>endlag_frames_frames</code><br>
+    &emsp;<em>The <em>amount of time</em> <strong>after</strong> the movement you want the <b><code>ScriptedPlayer</code></b> to stop acting for.</em><br>
+<strong><code>number</code></strong> <code>height</code><br>
+    &emsp;<em>The height <em>(TODO units?)</em> that you want them to reach at the apex of their jump.</em><br>
+ <code>dest_tile</code><br>
+    &emsp;<em>The  that you want the <b><code>ScriptedPlayer</code></b> to move to.</em><br>
+<strong><code>function</code></strong> <code>on_begin_func</code><br>
+    &emsp;<em><code>nil</code>, or a <strong><code>function</code></strong> that you want to execute <strong>when the movement starts</strong>.</em><br>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">frame_time</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
+</code></pre></div>
+<aside class="notice">Use the <code>frames()</code> function to create a <b><code>frame_time_t</code></b> object for measurements of time.<br>Passing in a regular <b><code>number</code></b> or <b><code>integer</code></b> will cause an error.</aside></p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started sliding."</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<aside class="notice"><code>on_begin_func</code> requires <b>no</b> parameters, and return <b>no value</b>.<br>
+See the code snippet for an example.</aside>
+</p>
+
+<p><h3 id='scriptedplayer-will_remove_eof'>ScriptedPlayer : will_remove_eof()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">will_remove</span> <span class="o">=</span>     <span class="p">;</span><span class="n">scripted_player</span><span class="p">:</span><span class="n">will_remove_eof</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether or not this <b><code>ScriptedPlayer</code></b> will be removed at the end of the frame.<br>
+Returns <code>true</code> if they will be deleted, otherwise <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:will_remove_eof()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_team'>ScriptedPlayer : get_team()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_team</span> <span class="o">=</span>    <span class="p">;</span><span class="n">scripted_player</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the  that this <b><code>ScriptedPlayer</code></b> is a member of.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_team()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='scriptedplayer-get_texture'>ScriptedPlayer : get_texture()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-set_texture'>ScriptedPlayer : set_texture()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-set_height'>ScriptedPlayer : set_height()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-get_animation'>ScriptedPlayer : get_animation()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-get_element'>ScriptedPlayer : get_element()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_element</span> <span class="o">=</span>     <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_element</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the  that this <b><code>ScriptedPlayer</code></b> is aligned to. (Default: <code>Element.None</code>)</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_element()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='scriptedplayer-set_element'>ScriptedPlayer : set_element()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_element</span><span class="p">(</span> <span class="n">Element</span><span class="p">.</span><span class="n">None</span> <span class="p">)</span>
+</code></pre></div>
+<p>Changes the  that this <b><code>ScriptedPlayer</code></b> is aligned to.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_element( element )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>element</code><br>
+    &emsp;<em>The  you want to assign to this <b><code>ScriptedPlayer</code></b>.</em></p>
+</p>
+
+<p><h3 id='scriptedplayer-is_passthrough'>ScriptedPlayer : is_passthrough()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">is_scripted_player_passthrough</span> <span class="o">=</span> <span class="n">scripted_player</span><span class="p">:</span><span class="n">is_passthrough</span><span class="p">()</span>
+</code></pre></div>
+<p>TODO: Figure out what this does</p>
+</p>
+
+<p><h3 id='scriptedplayer-register_component'>ScriptedPlayer : register_component()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-remove'>ScriptedPlayer : remove()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">remove</span><span class="p">()</span>
+</code></pre></div>
+<p>Flags this <b><code>ScriptedPlayer</code></b> to be removed at the end of the frame.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:remove()</code></p>
+</p>
+
+<p><h3 id='scriptedplayer-delete'>ScriptedPlayer : delete()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">delete</span><span class="p">()</span>
+</code></pre></div>
+<p>Immediately marks this <b><code>ScriptedPlayer</code></b> as deleted, and calls its <code>delete_func</code> function (if any was defined).</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:delete()</code></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_name'>ScriptedPlayer : get_name()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_name</span> <span class="o">=</span>    <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_name</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the name of this <b><code>ScriptedPlayer</code></b>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_name()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>string</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_health'>ScriptedPlayer : get_health()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_health</span> <span class="o">=</span>  <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_health</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>current health</em> for this <b><code>ScriptedPlayer</code></b>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_health()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>integer</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-get_max_health'>ScriptedPlayer : get_max_health()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">scripted_player_max_health</span> <span class="o">=</span>  <span class="n">scripted_player</span><span class="p">:</span><span class="n">get_max_health</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>maximum health</em> for this <b><code>ScriptedPlayer</code></b>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:get_max_health()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>integer</code></strong></p>
+</p>
+
+<p><h3 id='scriptedplayer-set_name'>ScriptedPlayer : set_name()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_name</span><span class="p">(</span> <span class="s2">"Example&lt;b&gt;&lt;code&gt;ScriptedPlayer&lt;/code&gt;&lt;/b&gt;"</span> <span class="p">)</span>
+</code></pre></div>
+<p>Changes the name of this <b><code>ScriptedPlayer</code></b>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_name( name )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>string</code></strong> <code>name</code><br>
+    &emsp;<em>The <em>name</em> you want to assign to this <b><code>ScriptedPlayer</code></b>.</em></p>
+</p>
+
+<p><h3 id='scriptedplayer-update_func'>ScriptedPlayer . update_func</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="kd">local</span> <span class="n">number_prints</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_update</span><span class="p">(</span> <span class="n">self</span><span class="p">,</span> <span class="n">time</span> <span class="p">)</span>
+  <span class="n">number_prints</span> <span class="o">=</span> <span class="n">number_prints</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="nb">print</span><span class="p">(</span> <span class="n">number_prints</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">scripted_player</span><span class="p">.</span><span class="n">update_func</span> <span class="o">=</span> <span class="n">on_update</span>
+</code></pre></div>
+<p>Assigns a <strong><code>function</code></strong> that will be executed every frame that this <b><code>ScriptedPlayer</code></b> is alive for.</p>
+<h4 id='variable-type'>Variable Type</h4>
+<p><strong><code>function</code></strong></p>
+<h4 id='assignment'>Assignment</h4>
+<p><code>scripted_player.update_func = on_update</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>function</code></strong> <code>on_update</code><br>
+    &emsp;<em>The <strong><code>function</code></strong> you want this <b><code>ScriptedPlayer</code></b> to execute every frame.</em><br></p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">update_func</span><span class="p">(</span> <span class="n">self</span><span class="p">,</span> <span class="n">elapsed_time</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>update_func</code> requires <b>one</b> <b><code>ScriptedPlayer</code></b> parameter, <b>one</b> <b><code>number</code></b> parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.<br>
+The <code>number</code> parameter is the <i>elapsed time</i> since the last time <code>update_func</code> was called for this <b><code>ScriptedPlayer</code></b>.</aside>
+</p>
+
+<p><h3 id='scriptedplayer-set_health'>ScriptedPlayer : set_health()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_health</span><span class="p">(</span> <span class="mi">100</span> <span class="p">)</span>
+</code></pre></div>
+<p>Sets the <em>current health</em> for this <b><code>ScriptedPlayer</code></b> to a specific value.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_health( health )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer</code></strong> <code>health</code><br>
+    &emsp;<em>The <strong>new</strong> value you want to set this <b><code>ScriptedPlayer</code></b>&#39;s health to.</em></p>
+</p>
+
+<p><h3 id='scriptedplayer-set_animation'>ScriptedPlayer : set_animation()</h3>
+<p>TODO</p>
+</p>
+
+<p><h3 id='scriptedplayer-set_fully_charge_color'>ScriptedPlayer : set_fully_charge_color()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_fully_charge_color</span><span class="p">(</span> <span class="n">TODO</span> <span class="p">)</span>
+</code></pre></div><h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_fully_charge_color( color )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>color</code><br></p>
+</p>
+
+<p><h3 id='scriptedplayer-set_charge_position'>ScriptedPlayer : set_charge_position()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_charge_position</span><span class="p">(</span> <span class="n">TODO</span> <span class="p">)</span>
+</code></pre></div><h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_charge_position( )</code></p>
+<h4 id='parameters'>Parameters</h4></p>
+<p><h3 id='scriptedplayer-set_float_shoe'>ScriptedPlayer : set_float_shoe()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_float_shoe</span><span class="p">(</span> <span class="kc">true</span> <span class="p">)</span>
+</code></pre></div>
+<p>TODO
+Changes the way this <b><code>ScriptedPlayer</code></b> interacts with s when it moves.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_float_shoe( float_shoe )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>float_shoe</code><br>
+    &emsp;</p>
+</p>
+
+<p><h3 id='scriptedplayer-set_air_shoe'>ScriptedPlayer : set_air_shoe()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">set_air_shoe</span><span class="p">(</span> <span class="kc">true</span> <span class="p">)</span>
+</code></pre></div>
+<p>TODO
+Changes the way this <b><code>ScriptedPlayer</code></b> interacts with s when it moves.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:set_air_shoe( air_shoe )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>air_shoe</code><br>
+    &emsp;</p>
+</p>
+
+<p><h3 id='scriptedplayer-slide_when_moving'>ScriptedPlayer : slide_when_moving()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">scripted_player</span>   <span class="p">;</span><span class="c1">-- example scripted_player</span>
+<span class="n">scripted_player</span><span class="p">:</span><span class="n">slide_when_moving</span><span class="p">(</span> <span class="kc">true</span> <span class="p">)</span>
+</code></pre></div>
+<p>If <code>true</code>, this <b><code>ScriptedPlayer</code></b> will slide to another  when it moves, instead of teleporting.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>scripted_player:slide_when_moving( should_slide )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>should_slide</code><br>
+    &emsp;If <code>true</code>, this <b><code>ScriptedPlayer</code></b> will slide between s when moving. Otherwise, it teleports.</p>
+</p>

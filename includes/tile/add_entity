@@ -1,0 +1,10 @@
+<h3 id='tile-add_entity'>Tile : add_entity()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">entity</span>    <span class="c1">-- example entity</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">spawn</span><span class="p">(</span> <span class="n">entity</span> <span class="p">)</span>
+</code></pre></div>
+<p>Spawns an  on this .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:add_entity( entity )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>entity</code><br>
+    &emsp;<em>A pointer to the  you want to spawn.</em></p>

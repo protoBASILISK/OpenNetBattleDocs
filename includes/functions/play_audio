@@ -1,0 +1,16 @@
+<h3 id='play_audio'>play_audio()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">example_audio</span> <span class="c1">-- example audio, loaded earlier</span>
+
+<span class="n">play_audio</span><span class="p">(</span> <span class="n">example_audio</span><span class="p">,</span> <span class="n">AudioPriority</span><span class="p">.</span><span class="n">Low</span> <span class="p">)</span>
+<span class="n">play_audio</span><span class="p">(</span> <span class="n">AudioType</span><span class="p">.</span><span class="n">Cannon</span><span class="p">,</span> <span class="n">AudioPriority</span><span class="p">.</span><span class="n">Low</span> <span class="p">)</span>
+</code></pre></div>
+<p>Plays a sound file.<br>
+This function can either play built-in audio, or a custom audio file (that has been loaded beforehand).</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>reverse_dir( audio_file, audio_priority )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>audio_file</code><br>
+<strong><code>AudioFile</code></strong> <code>audio_file</code><br>
+&emsp;<em>The <strong>audio</strong> you want to play. (<strong>Either</strong>  or <strong><code>AudioFile</code></strong>.)</em></p>
+
+<p><code>audio_priority</code><br>
+&emsp;<em>The <strong>priority</strong> you want to give this audio clip.</em></p>

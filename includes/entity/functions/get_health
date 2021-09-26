@@ -1,0 +1,8 @@
+<h3 id='get_health'>: get_health()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="n">_health</span> <span class="o">=</span>     <span class="p">:</span><span class="n">get_health</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>current health</em> for this .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:get_health()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>integer</code></strong></p>

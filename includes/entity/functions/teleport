@@ -1,0 +1,29 @@
+<h3 id='teleport'>: teleport()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example  </span>
+<span class="kd">local</span> <span class="n">dest_tile</span>     <span class="c1">-- tile they want to move to</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Started teleporting."</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">can_tp</span> <span class="o">=</span> <span class="p">:</span><span class="n">teleport</span><span class="p">(</span> <span class="n">dest_tile</span><span class="p">,</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntary</span><span class="p">,</span> <span class="n">on_begin_func</span> <span class="p">)</span>
+</code></pre></div>
+<p>This function causes the  to move to a target  by teleporting to it.<br></p>
+
+<p>This function returns <code>true</code> if the movement was possible <em>at the time it was called</em>, otherwise it returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:teleport( destination, order, on_begin_func )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>destination</code><br>
+    &emsp;<em>The  that you want the  to move to.</em><br>
+ <code>order</code><br>
+    &emsp;<em>TODO figure out how ActionOrders work again</em><br>
+<strong><code>function</code></strong> <code>on_begin_func</code><br>
+    &emsp;<em><code>nil</code>, or a <strong><code>function</code></strong> that you want to execute <strong>when the movement starts</strong>.</em><br>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">on_begin_func</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Started sliding.&quot;</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>on_begin_func</code> requires <b>no</b> parameters, and return <b>no value</b>.<br>
+See the code snippet for an example.</aside></p>

@@ -1,0 +1,10 @@
+<h3 id='declare_package_id'>: declare_package_id()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">meta</span><span class="p">:</span><span class="n">declare_package_id</span><span class="p">(</span> <span class="s2">"com.example..test"</span> <span class="p">)</span>
+</code></pre></div>
+<p>This function assigns the <em>package name</em> for the .<br>
+<em>Package names</em> are used as <em>unique identifiers</em>, and should be named in a way that will minimize conflicts with other mods.<br>
+(<em>e.g. using a project name: <code>com.bn1_is_back_baby..example</code></em>)</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>meta:declare_package_id( package_name )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>string</code></strong> <code>package_name</code><br>
+&emsp;<em>A <strong>unique package name</strong> to identify this mod with.</em></p>

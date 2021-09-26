@@ -1,0 +1,10 @@
+<h3 id='share_tile'>: share_tile()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="p">:</span><span class="n">share_tile</span><span class="p">()</span>
+</code></pre></div>
+<p>Allows the  to share a  with other objects.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:share_tile( should_share )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>boolean</code></strong> <code>should_share</code><br>
+    &emsp;<em><code>true</code> if this  should be able to stand in a  with other  objects.</em><br>
+    &emsp;<em>Otherwise <code>false</code>.</em></p>

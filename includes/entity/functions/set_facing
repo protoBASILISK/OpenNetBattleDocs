@@ -1,0 +1,9 @@
+<h3 id='set_facing'>: set_facing()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="p">:</span><span class="n">set_facing</span><span class="p">(</span> <span class="n">Direction</span><span class="p">.</span><span class="n">Left</span> <span class="p">)</span>
+</code></pre></div>
+<p>Forces the  to face a specific .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:set_facing( direction )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>direction</code><br>
+    &emsp;<em>The <strong>new</strong>  you want this  to face towards.</em></p>

@@ -1,0 +1,11 @@
+<h3 id='tile-is_hidden'>Tile : is_hidden()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">is_tile_hidden</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">is_hidden</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether the <strong><code>Tile</code></strong>&#39;s current  is <code>Hidden</code> or not.<br>
+Returns <code>true</code> if it is currently <code>Hidden</code>, otherwise returns <code>false</code>.</p>
+
+<p>objects normally <strong>cannot</strong> interact with <code>Hidden</code> tiles.<br>
+They are effectively removed from the battle entirely.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:get_team()</code></p>
+<h4 id='return-value'>Return Value</h4>

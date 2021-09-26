@@ -1,0 +1,13 @@
+<h3 id='tile-reserve_entity_by_id'>Tile : reserve_entity_by_id()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">entity_id</span> <span class="c1">-- example Entity ID</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">reserve_entity_by_id</span><span class="p">(</span> <span class="n">entity_id</span> <span class="p">)</span>
+</code></pre></div>
+<p>Causes the  to become <em>reserved</em> by a  with a specific <strong>unique ID</strong>.</p>
+
+<p>An  reserving a  will stop it from being set to certain s.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:reserve_entity_by_id( entity_id )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer</code></strong> <code>entity_id</code><br>
+    &emsp;<em>The <strong>unique ID</strong> of the  that you want to mark as reserving this .</em></p>

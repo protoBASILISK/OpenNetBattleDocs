@@ -1,0 +1,8 @@
+<h3 id='set_attack'>: set_attack()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">meta</span><span class="p">:</span><span class="n">set_attack</span><span class="p">(</span> <span class="mi">5</span> <span class="p">)</span>
+</code></pre></div>
+<p>This function assigns the <em>lower bounds</em> of the number that will be shown for this &#39;s damage.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>meta:set_attack( damage )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer</code></strong> <code>damage</code><br>
+&emsp;<em>The <strong>lower value</strong> for the damage number. (<strong>Whole numbers</strong> only.)</em></p>

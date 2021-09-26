@@ -1,0 +1,10 @@
+<h3 id='register_status_callback'>: register_status_callback()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">callback</span><span class="p">()</span>
+<span class="k">end</span>
+
+</code></pre></div>
+<p>TODO figure this thing out</p>
+<h4 id='variable-type'>Variable Type</h4>
+<p><strong><code>function</code></strong></p>
+
+<aside class="notice">TODO: method signature</aside>

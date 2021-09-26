@@ -1,0 +1,8 @@
+<h3 id='tile-width'>Tile : width()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_width</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">width</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>width</em> of the <strong><code>Tile</code></strong> in <em>pixels</em>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:width()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>number</code></strong></p>

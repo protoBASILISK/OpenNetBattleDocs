@@ -1,0 +1,292 @@
+<h2 id='tile'>Tile</h2>
+<p><h3 id='tile-x'>Tile : x()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_x</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">x</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>column</em> the <strong><code>Tile</code></strong> is located in, on the battlefield grid.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:x()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>integer</code></strong></p>
+</p>
+
+<p><h3 id='tile-y'>Tile : y()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_y</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">y</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>row</em> the <strong><code>Tile</code></strong> is located in, on the battlefield grid.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:y()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>integer</code></strong></p>
+</p>
+
+<p><h3 id='tile-width'>Tile : width()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_width</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">width</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>width</em> of the <strong><code>Tile</code></strong> in <em>pixels</em>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:width()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>number</code></strong></p>
+</p>
+
+<p><h3 id='tile-height'>Tile : height()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_height</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">height</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <em>height</em> of the <strong><code>Tile</code></strong> in <em>pixels</em>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:height()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>number</code></strong></p>
+</p>
+
+<p><h3 id='tile-get_state'>Tile : get_state()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_state</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">get_state</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the current  of this <strong><code>Tile</code></strong>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:get_state()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='tile-set_state'>Tile : set_state()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="n">tile</span><span class="p">:</span><span class="n">set_state</span><span class="p">(</span> <span class="n">TileState</span><span class="p">.</span><span class="n">Broken</span> <span class="p">)</span>
+</code></pre></div>
+<p>Attempts to set this <strong><code>Tile</code></strong> to a specific .<br>
+If the <strong><code>Tile</code></strong> is <code>Hidden</code>, or one of the <em>invisible</em> edge tiles around the battlefield, this will fail.<br></p>
+
+<p>Attempting to set this <strong><code>Tile</code></strong> to <code>Broken</code> will fail if this <strong><code>Tile</code></strong> has a  present on it <em>or</em> reserving it.<br>
+Successfully setting this <strong><code>Tile</code></strong> to <code>Broken</code> will cause it to start its <em>regeneration timer</em>.</p>
+
+<p>Attempting to set this <strong><code>Tile</code></strong> to <code>Cracked</code> will fail if this <strong><code>Tile</code></strong> is currently <code>Broken</code> or <code>Empty</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:set_state( TileState.Normal )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>tile_state</code><br>
+&emsp;<em>The  you want to try to set this <strong><code>Tile</code></strong> to.</em></p>
+</p>
+
+<p><h3 id='tile-is_edge'>Tile : is_edge()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">is_edge</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">is_edge</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether this <strong><code>Tile</code></strong> is one of the <em>invisible</em> border tiles surrounding the battlefield.</p>
+
+<p>Returns <code>true</code> if the <strong><code>Tile</code></strong> is one of the invisible border tiles.<br>
+Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:is_walkable()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='tile-is_cracked'>Tile : is_cracked()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">is_tile_hidden</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">is_hidden</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether the <strong><code>Tile</code></strong>&#39;s current  is <code>Cracked</code> or not.<br>
+Returns <code>true</code> if it is currently <code>Cracked</code>, otherwise returns <code>false</code>.</p>
+
+<p>objects that move <strong>off of</strong> a <code>Cracked</code>  will cause it to become <code>Broken</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:is_cracked()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='tile-is_hole'>Tile : is_hole()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">is_hole</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">is_hole</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns <code>true</code> if the <strong><code>Tile</code></strong>&#39;s current  is <em>not</em> <code>Broken</code>, <code>Empty</code>, or <code>Hidden</code>.<br>
+Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:is_hole()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='tile-is_walkable'>Tile : is_walkable()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">is_walkable</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">is_walkable</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether this <strong><code>Tile</code></strong> is currently able to be walked on <em>without</em> any modifiers.<br>
+<em>This is functionally equivalent to <code>not tile:is_hole() and not tile:is_edge()</code>.</em></p>
+
+<p>Returns <code>true</code> if the <strong><code>Tile</code></strong>&#39;s current  is <em>not</em> <code>Broken</code>, <code>Empty</code>, or <code>Hidden</code>, <strong>and</strong> it is <em>not</em> one of the invisible edge tiles surrounding the battlefield.<br>
+Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:is_walkable()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='tile-is_hidden'>Tile : is_hidden()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">is_tile_hidden</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">is_hidden</span><span class="p">()</span>
+</code></pre></div>
+<p>Queries whether the <strong><code>Tile</code></strong>&#39;s current  is <code>Hidden</code> or not.<br>
+Returns <code>true</code> if it is currently <code>Hidden</code>, otherwise returns <code>false</code>.</p>
+
+<p>objects normally <strong>cannot</strong> interact with <code>Hidden</code> tiles.<br>
+They are effectively removed from the battle entirely.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:get_team()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='tile-is_reserved'>Tile : is_reserved()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">ignored_characters</span>    <span class="c1">-- list of Entity IDs to ignore</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">is_reserved</span><span class="p">(</span> <span class="n">ignored_characters</span> <span class="p">)</span>
+</code></pre></div>
+<p>Queries if the  is <em>reserved</em> by a .<br>
+If a list of <strong>unique IDs</strong> is provided, any  with a <strong>unique ID</strong> that matches one of those will <em>not</em> be included in the calculation.</p>
+
+<p>Returns <code>true</code> if the  is marked as <em>reserved</em> by any  not on the provided list.<br>
+Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:reserve_entity_by_id( entity_id )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer vector</code></strong> <code>entity_ids</code><br>
+    &emsp;<em>A list of <strong>unique IDs</strong> for  objects that you <strong>want to ignore</strong> when checking if they are reserving this .</em></p>
+</p>
+
+<p><h3 id='tile-get_team'>Tile : get_team()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">tile_team</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the  that currently owns this <strong><code>Tile</code></strong>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:get_team()</code></p>
+<h4 id='return-value'>Return Value</h4></p>
+<p><h3 id='tile-attack_entities'>Tile : attack_entities()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">spell</span> <span class="c1">-- example Spell</span>
+<span class="n">tile</span><span class="p">:</span><span class="n">attack_entities</span><span class="p">(</span> <span class="n">spell</span> <span class="p">)</span>
+</code></pre></div>
+<p>Queues up a  to affect any  present on this .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:attack_entities( spell )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>spell</code><br>
+    &emsp;<em>The  you want to try to affect any  on this  with.</em></p>
+</p>
+
+<p><h3 id='tile-get_distance_to_tile'>Tile : get_distance_to_tile()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>      <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">other_tile</span>    <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">get_distance_to_tile</span><span class="p">(</span> <span class="n">other_tile</span> <span class="p">)</span>
+</code></pre></div>
+<p>Returns the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">Manhattan distance</a> between this  and another.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:get_distance_to_tile( other )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>integer</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>other</code><br>
+    &emsp;<em>The  you want to measure the distance to.</em></p>
+</p>
+
+<p><h3 id='tile-find_characters'>Tile : find_characters()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">search_function</span><span class="p">(</span> <span class="n">character</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">character</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span> <span class="o">==</span> <span class="n">Team</span><span class="p">.</span><span class="n">Blue</span> <span class="ow">and</span> <span class="n">character</span><span class="p">:</span><span class="n">get_health</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">500</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">character_list</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">find_characters</span><span class="p">(</span> <span class="n">search_function</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet finds all the <strong>Characters</strong> on this <strong>Tile</strong> that are on the <strong>Blue Team</strong> with at least <strong>500</strong> health.</p>
+</blockquote>
+
+<p>This function iterates through all of the s on this , and returns a list of them that matches a specific criteria <em>(provided by a function)</em>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:find_tiles( search_function )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>vector</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>function</code></strong> <code>search_function</code><br>
+    &emsp;<em>A function that filters the list of s.</em><br></p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">search_function</span><span class="p">(</span> <span class="n">character</span> <span class="p">)</span>
+  <span class="k">return</span> <span class="n">character</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span> <span class="o">==</span> <span class="n">Team</span><span class="p">.</span><span class="n">Red</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>search_function</code> requires <b>one</b>  parameter and to return a <b><code>boolean</code></b>.<br>
+Any  that causes the function to return <code>true</code> will be added to the list.</aside>
+</p>
+
+<p><h3 id='tile-highlight'>Tile : highlight()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="n">tile</span><span class="p">:</span><span class="n">highlight</span><span class="p">(</span> <span class="n">Highlight</span><span class="p">.</span><span class="n">Solid</span> <span class="p">)</span>
+</code></pre></div>
+<p>Causes the  to be highlighted in a specific manner.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:highlight( highlight_mode )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>highlight_mode</code><br>
+    &emsp;<em>The  mode that describes how you want to highlight this .</em></p>
+</p>
+
+<p><h3 id='tile-get_tile'>Tile : get_tile()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile_to_left</span> <span class="o">=</span>    <span class="n">tile</span><span class="p">:</span><span class="n">get_tile</span><span class="p">(</span> <span class="n">Direction</span><span class="p">.</span><span class="n">Left</span><span class="p">,</span> <span class="mi">1</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet returns a <strong><code>pointer</code></strong> to the <strong>Tile</strong> to the left of this <strong>Tile</strong>.</p>
+</blockquote>
+
+<p>Returns a <strong><code>pointer</code></strong> to a  offset in one direction from this .</p>
+
+<p>If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid , it returns <code>nil</code> instead.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:get_tile( offset_direction, offset_distance )</code></p>
+<h4 id='return-value'>Return Value</h4><h4 id='parameters'>Parameters</h4>
+<p><code>offset_direction</code><br>
+    &emsp;<em>The direction you want to retrieve the  from.</em><br>
+<strong><code>distance</code></strong> <code>offset_distance</code><br>
+    &emsp;<em>The number of spaces <b>(min: 0)</b> in that direction you want to retrieve the  from.</em></p>
+</p>
+
+<p><h3 id='tile-contains_entity'>Tile : contains_entity()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">target</span>    <span class="c1">-- example Entity</span>
+<span class="k">return</span> <span class="n">tile</span><span class="p">:</span><span class="n">contains_entity</span><span class="p">(</span> <span class="n">target</span> <span class="p">)</span>
+</code></pre></div>
+<p>Queries whether or not this  has a specific  present on it.</p>
+
+<p>Returns <code>true</code> if the  is present. Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:contains_entity( entity )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>entity</code><br>
+    &emsp;<em>The  you want to check to see if it is present on this .</em></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='tile-remove_entity_by_id'>Tile : remove_entity_by_id()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">entity_id</span> <span class="c1">-- example Entity ID</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">remove_entity_by_id</span><span class="p">(</span> <span class="n">entity_id</span> <span class="p">)</span>
+</code></pre></div>
+<p>Causes the  to remove any  present on it with a specific <strong>unique ID</strong>.</p>
+
+<p>Returns <code>true</code> if an  was removed.<br>
+Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:remove_entity_by_id( entity_id )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer</code></strong> <code>entity_id</code><br>
+    &emsp;<em>The <strong>unique ID</strong> of the  that you want to remove from this .</em></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>boolean</code></strong></p>
+</p>
+
+<p><h3 id='tile-reserve_entity_by_id'>Tile : reserve_entity_by_id()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">entity_id</span> <span class="c1">-- example Entity ID</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">reserve_entity_by_id</span><span class="p">(</span> <span class="n">entity_id</span> <span class="p">)</span>
+</code></pre></div>
+<p>Causes the  to become <em>reserved</em> by a  with a specific <strong>unique ID</strong>.</p>
+
+<p>An  reserving a  will stop it from being set to certain s.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:reserve_entity_by_id( entity_id )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer</code></strong> <code>entity_id</code><br>
+    &emsp;<em>The <strong>unique ID</strong> of the  that you want to mark as reserving this .</em></p>
+</p>
+
+<p><h3 id='tile-add_entity'>Tile : add_entity()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">entity</span>    <span class="c1">-- example entity</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">spawn</span><span class="p">(</span> <span class="n">entity</span> <span class="p">)</span>
+</code></pre></div>
+<p>Spawns an  on this .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:add_entity( entity )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>entity</code><br>
+    &emsp;<em>A pointer to the  you want to spawn.</em></p>
+</p>

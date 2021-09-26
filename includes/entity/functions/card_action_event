@@ -1,0 +1,11 @@
+<h3 id='card_action_event'>: card_action_event()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="n">card_action</span>   <span class="p">;</span>   <span class="c1">-- example CardAction</span>
+<span class="p">:</span><span class="n">card_action_event</span><span class="p">(</span> <span class="n">card_action</span><span class="p">,</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntart</span> <span class="p">)</span>
+</code></pre></div>
+<p>TODO</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:card_action_event( card_action, action_order )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>card_action</code><br>
+    &emsp;<em>The  that you want this  to execute.</em><br>
+ <code>action_order</code><br></p>

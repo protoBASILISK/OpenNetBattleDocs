@@ -1,0 +1,8 @@
+<h3 id='requires_character'>requires_character()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">requires_character</span><span class="p">(</span> <span class="s2">"com.example.character.required"</span> <span class="p">)</span>
+</code></pre></div>
+<p>This <strong><code>function</code></strong> raises an error if no  exists with the provided <strong>package name</strong>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>reverse_dir( package_name )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>string</code></strong> <code>package_name</code><br>
+&emsp;<em>The <strong><code>package name</code></strong> of the required mod file.</em></p>

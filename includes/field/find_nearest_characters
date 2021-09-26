@@ -1,0 +1,29 @@
+<h3 id='field-find_nearest_characters'>Field : find_nearest_characters()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">target</span> <span class="c1">-- Example character</span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">search_function</span><span class="p">(</span> <span class="n">character</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">character</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span> <span class="o">==</span> <span class="n">Team</span><span class="p">.</span><span class="n">Blue</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="n">character_list</span> <span class="o">=</span> <span class="n">field</span><span class="p">:</span><span class="n">find_nearest_characters</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet finds all the <strong>Characters</strong> that are on the <strong>Blue Team</strong>, with at least <strong>500</strong> health, sorted by distance from <strong>&#39;target&#39;</strong>.</p>
+</blockquote>
+
+<p>This function iterates through all of the s on the battlefield, and returns a list of them that matches a specific criteria <em>(provided by a function)</em>.</p>
+
+<p>The list of characters will be sorted based on their distance from the provided .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>field:find_tiles( reference_character, search_function )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>vector</code></strong></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>pointer</code></strong> <code>reference_character</code><br>
+    &emsp;<em>The  to use as a reference point.</em><br>
+<strong><code>function</code></strong> <code>search_function</code><br>
+    &emsp;<em>A function that filters the list of s.</em></p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">search_function</span><span class="p">(</span> <span class="n">character</span> <span class="p">)</span>
+  <span class="k">return</span> <span class="n">character</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span> <span class="o">==</span> <span class="n">Team</span><span class="p">.</span><span class="n">Red</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>search_function</code> requires <b>one</b>  parameter and to return a <b><code>boolean</code></b>.<br>
+Any  that causes the function to return <code>true</code> will be added to the list.</aside>

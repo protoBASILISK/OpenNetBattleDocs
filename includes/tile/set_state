@@ -1,0 +1,15 @@
+<h3 id='tile-set_state'>Tile : set_state()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="n">tile</span><span class="p">:</span><span class="n">set_state</span><span class="p">(</span> <span class="n">TileState</span><span class="p">.</span><span class="n">Broken</span> <span class="p">)</span>
+</code></pre></div>
+<p>Attempts to set this <strong><code>Tile</code></strong> to a specific .<br>
+If the <strong><code>Tile</code></strong> is <code>Hidden</code>, or one of the <em>invisible</em> edge tiles around the battlefield, this will fail.<br></p>
+
+<p>Attempting to set this <strong><code>Tile</code></strong> to <code>Broken</code> will fail if this <strong><code>Tile</code></strong> has a  present on it <em>or</em> reserving it.<br>
+Successfully setting this <strong><code>Tile</code></strong> to <code>Broken</code> will cause it to start its <em>regeneration timer</em>.</p>
+
+<p>Attempting to set this <strong><code>Tile</code></strong> to <code>Cracked</code> will fail if this <strong><code>Tile</code></strong> is currently <code>Broken</code> or <code>Empty</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:set_state( TileState.Normal )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>tile_state</code><br>
+&emsp;<em>The  you want to try to set this <strong><code>Tile</code></strong> to.</em></p>

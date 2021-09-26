@@ -1,0 +1,15 @@
+<h3 id='tile-is_reserved'>Tile : is_reserved()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
+<span class="kd">local</span> <span class="n">ignored_characters</span>    <span class="c1">-- list of Entity IDs to ignore</span>
+
+<span class="n">tile</span><span class="p">:</span><span class="n">is_reserved</span><span class="p">(</span> <span class="n">ignored_characters</span> <span class="p">)</span>
+</code></pre></div>
+<p>Queries if the  is <em>reserved</em> by a .<br>
+If a list of <strong>unique IDs</strong> is provided, any  with a <strong>unique ID</strong> that matches one of those will <em>not</em> be included in the calculation.</p>
+
+<p>Returns <code>true</code> if the  is marked as <em>reserved</em> by any  not on the provided list.<br>
+Otherwise, returns <code>false</code>.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>tile:reserve_entity_by_id( entity_id )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer vector</code></strong> <code>entity_ids</code><br>
+    &emsp;<em>A list of <strong>unique IDs</strong> for  objects that you <strong>want to ignore</strong> when checking if they are reserving this .</em></p>

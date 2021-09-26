@@ -1,0 +1,14 @@
+<h3 id='get_id'>: get_id()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="n">_id</span> <span class="o">=</span> <span class="p">:</span><span class="n">get_id</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the <strong>unique ID</strong> for this .</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:get_id()</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>number</code></strong></p>
+
+<aside class="notice"><i>Nothing</i> will share an ID with another <b><code>Entity</code></b>, or any object derived from <b><code>Entity</code></b>.</aside>
+
+<aside class="warning">If you are storing any reference to an <b><code>Entity</code></b> for multiple frames, use this to store a reference to their ID instead.<br>
+Use <code>Field:get_entity()</code> to retrieve a <b><code>pointer</code></b> to the <b><code>Entity</code></b>, or <code>nil</code> if they were deleted.<br>
+Using a <b><code>pointer</code></b> to a deleted <b><code>Entity</code></b> <b>will</b> cause an error and crash the game.</aside>

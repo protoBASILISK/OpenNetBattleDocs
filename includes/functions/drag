@@ -1,0 +1,15 @@
+<h3 id='drag'>drag()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">drag_amount</span> <span class="o">=</span> <span class="n">drag</span><span class="p">(</span> <span class="n">Direction</span><span class="p">.</span><span class="n">Left</span><span class="p">,</span> <span class="mi">1</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet creates a <strong>Drag</strong> object that will cause an attack to move an <strong>Entity</strong> hit by one space to the left.</p>
+</blockquote>
+
+<p>Creates a  object, that when used, will cause an attack to move any  hit.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>drag( direction, distance )</code></p>
+<h4 id='return-value'>Return Value</h4><h4 id='parameters'>Parameters</h4>
+<p><code>direction</code><br>
+&emsp;<em>The  you want any  hit to be moved in.</em></p>
+
+<p><strong><code>integer</code></strong> <code>distance</code><br>
+&emsp;<em>The <strong>distance</strong> (in tiles) you want any  hit to be moved.</em></p>

@@ -1,0 +1,9 @@
+<h3 id='highlight_tile'>: highlight_tile()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="p">:</span><span class="n">highlight_tile</span><span class="p">(</span> <span class="n">Highlight</span><span class="p">.</span><span class="n">Flash</span> <span class="p">)</span>
+</code></pre></div>
+<p>TODO</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:highlight_tile( highlight_mode )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>highlight_mode</code><br>
+    &emsp;__</p>

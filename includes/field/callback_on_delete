@@ -1,0 +1,27 @@
+<h3 id='field-callback_on_delete'>Field : callback_on_delete()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">target</span>    <span class="c1">-- Example target entity</span>
+<span class="k">function</span> <span class="nf">onDelete</span><span class="p">(</span> <span class="n">tar</span> <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Target died."</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">field</span><span class="p">:</span><span class="n">callback_on_delete</span><span class="p">(</span> <span class="n">target</span><span class="p">,</span> <span class="n">observer</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span> <span class="n">t</span> <span class="p">)</span> <span class="nb">print</span><span class="p">(</span> <span class="s2">"Target died."</span> <span class="p">)</span> <span class="k">end</span> <span class="p">)</span>
+<span class="n">field</span><span class="p">:</span><span class="n">callback_on_delete</span><span class="p">(</span> <span class="n">target</span><span class="p">,</span> <span class="n">observer</span><span class="p">,</span> <span class="n">onDelete</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above snippet sets up a callback in two separate ways.<br>
+You can use it in either way with little differences, except when wanting to use more advanced techniques.</p>
+</blockquote>
+
+<p>This function sets up a <em>callback function</em> that will be executed when the <strong><code>target</code></strong>  is destroyed.<br></p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>field:notify_on_delete( targetID, callback_function )</code></p>
+<h4 id='return-value'>Return Value</h4>
+<p><strong><code>NotifyID_t</code></strong> - ???</p>
+<h4 id='parameters'>Parameters</h4>
+<p><strong><code>number</code></strong> <code>targetID</code> - The <em>unique ID</em> of the  you are watching.<br>
+<strong><code>function</code></strong> <code>callback_function</code> - This is the <strong><code>function</code></strong> that will be called when an  with the ID <code>targetID</code> is deleted.</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">callback_function</span><span class="p">(</span> <span class="n">target</span> <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">"Target died."</span> <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+<aside class="notice"><code>callback_function</code> requires <b>one</b>  parameter, and to return <b>no value</b>.<br>
+See the code snippet for an example.</aside>

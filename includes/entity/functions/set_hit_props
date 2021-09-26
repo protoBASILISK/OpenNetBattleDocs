@@ -1,0 +1,10 @@
+<h3 id='set_hit_props'>: set_hit_props()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="kd">local</span> <span class="n">hit_props</span> <span class="p">;</span><span class="c1">-- example HitProps</span>
+<span class="p">:</span><span class="n">set_hit_props</span><span class="p">(</span> <span class="n">hit_props</span> <span class="p">)</span>
+</code></pre></div>
+<p>TODO</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:set_hit_props( hit_props )</code></p>
+<h4 id='parameters'>Parameters</h4>
+<p><code>hit_props</code><br>
+    &emsp;__</p>

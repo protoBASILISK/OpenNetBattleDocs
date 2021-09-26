@@ -1,0 +1,6 @@
+<h3 id='remove'>: remove()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
+<span class="p">:</span><span class="n">remove</span><span class="p">()</span>
+</code></pre></div>
+<p>Flags this  to be removed at the end of the frame.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>:remove()</code></p>

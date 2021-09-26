@@ -1,0 +1,26 @@
+<h3 id='field-tile_at'>Field : tile_at()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">top_left</span> <span class="o">=</span> <span class="n">field</span><span class="p">:</span><span class="n">tile_at</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="p">)</span>
+<span class="kd">local</span> <span class="n">bottom_right</span> <span class="o">=</span> <span class="n">field</span><span class="p">:</span><span class="n">tile_at</span><span class="p">(</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above commands return a pointer to the <strong>top left&lt;</strong> and <strong>bottom right</strong> <i>visible</i> <strong>Tiles</strong>.</p>
+</blockquote>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span> <span class="o">=</span> <span class="n">field</span><span class="p">:</span><span class="n">tile_at</span><span class="p">(</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">)</span>
+<span class="kd">local</span> <span class="n">tile</span> <span class="o">=</span> <span class="n">field</span><span class="p">:</span><span class="n">tile_at</span><span class="p">(</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span> <span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>The above commands return <em>nil</em>, as they ask for <strong>Tiles</strong> outside of the battlefield&#39;s boundaries.</p>
+</blockquote>
+
+<p>This function retrieves a <code>pointer</code> to a  at a specific position in the grid.<br>
+If there is a  at the requested position, this function returns a <code>pointer</code> to it, otherwise <code>nil</code>.<br><br>
+<code>x</code> can (by default) be any number between (and including) <code>0</code> ~ <code>field:width() - 1</code> <em>(defaults to <code>7</code>)</em>.<br>
+<code>y</code> can (by default) be any number between (and including) <code>0</code> ~ <code>field:height() - 1</code> <em>(defaults to <code>4</code>)</em>.<br>
+Any number outside of those ranges will return <code>nil</code> instead.</p>
+<h4 id='function-call'>Function Call</h4>
+<p><code>field:tile_at( x, y )</code></p>
+<h4 id='return-value'>Return Value</h4><h4 id='parameters'>Parameters</h4>
+<p><strong><code>integer</code></strong> <code>x</code><br>
+    &emsp;<em>The <strong>column</strong> you want to retrieve the  from <strong>(from left to right)</strong>.</em><br>
+<strong><code>integer</code></strong> <code>y</code><br>
+    &emsp;<em>The <strong>row</strong> you want to retrieve the  from <strong>(from top to bottom)</strong>.</em><br>
+<aside class="notice">The <i>visible</i> game field starts at <code>[1,1]</code>, and ends at <code>[6,3]</code>. There are <i>invisible</i> s surrounding the game field, to allow some objects to move onto/off of the game field more naturally.</aside></p>
