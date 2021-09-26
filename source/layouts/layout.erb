@@ -91,15 +91,28 @@ under the License.
         <ul class="search-results"></ul>
       <% end %>
       <ul id="page-index" class="page-index">
+        <% if config[:is_build] -%>
         <li>
-          <a href="<% config[:path_prefix] %>" class="toc-h1 toc-link" >Main Docs</a>
+          <a href="/OpenNetBattle/" class="toc-h1 toc-link" >Main Docs</a>
         </li>
         <li>
-          <a href="<% config[:path_prefix] %>api/" class="toc-h1 toc-link" >Classes & Functions</a>
+          <a href="/OpenNetBattle/api/" class="toc-h1 toc-link" >Classes & Functions</a>
 	</li>
         <li>
-          <a href="<% config[:path_prefix] %>snippets/" class="toc-h1 toc-link" >Code Snippets</a>
+          <a href="/OpenNetBattle/snippets/" class="toc-h1 toc-link" >Code Snippets</a>
 	</li>
+        <% end -%>
+        <% if config[:is_development] -%>
+        <li>
+          <a href="/" class="toc-h1 toc-link" >Main Docs</a>
+        </li>
+        <li>
+          <a href="/api/" class="toc-h1 toc-link" >Classes & Functions</a>
+	</li>
+        <li>
+          <a href="/snippets/" class="toc-h1 toc-link" >Code Snippets</a>
+	</li>
+        <% end -%>
       </ul>
       <ul id="toc" class="toc-list-h1">
         <% toc_data(page_content).each do |h1| %>

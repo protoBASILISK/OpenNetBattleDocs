@@ -43,6 +43,8 @@ configure :development do
   set :path_prefix, '/'
   config[:path_prefix]
 
+  set :is_development, true
+  config[:is_development]
 end
 
 # Build Configuration
@@ -51,6 +53,9 @@ configure :build do
   # The paths between the development environment and build environment are way out of whack.
   set :path_prefix, '/OpenNetBattleDocs/'
   config[:path_prefix]
+
+  set :is_build, true
+  config[:is_development]
   
   # We do want to hash woff and woff2 as there's a bug where woff2 will use
   # woff asset hash which breaks things. Trying to use a combination of ignore and
