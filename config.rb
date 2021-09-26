@@ -39,8 +39,19 @@ end
 activate :relative_assets
 set :relative_links, true
 
+configure :development do
+  set :path_prefix, '/'
+  config[:path_prefix]
+
+end
+
 # Build Configuration
 configure :build do
+  # Make it so that it prefixes the built versions with the correct URL snippet.
+  # The paths between the development environment and build environment are way out of whack.
+  set :path_prefix, '/OpenNetBattleDocs/'
+  config[:path_prefix]
+  
   # We do want to hash woff and woff2 as there's a bug where woff2 will use
   # woff asset hash which breaks things. Trying to use a combination of ignore and
   # rewrite_ignore does not work as it conflicts weirdly with relative_assets. Disabling
