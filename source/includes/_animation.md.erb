@@ -1,0 +1,39 @@
+# Animation
+
+## Functions
+``` lua
+    "load", &Animation::Load,
+    "update", &Animation::Update,
+    "refresh", &Animation::Refresh,
+    "copy_from", &Animation::CopyFrom,
+    "set_state", &Animation::SetAnimation,
+    "get_state", &Animation::GetAnimationString,
+    "point", &Animation::GetPoint,
+    "set_playback", sol::resolve<Animation& (char)>(&Animation::operator<<),
+    "on_complete", sol::resolve<void(const FrameCallback&)>(&Animation::operator<<),
+    "on_frame", &Animation::AddCallback,
+    "on_interrupt", &Animation::SetInterruptCallback
+```
+
+
+### load()
+
+### update()
+
+### refresh()
+
+### copy_from()
+
+### set_state()
+
+### get_state()
+
+### point()
+
+### set_playback()
+
+### on_complete()
+
+### on_frame()
+
+### on_interrupt()

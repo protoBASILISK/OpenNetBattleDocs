@@ -1,0 +1,75 @@
+# User-Generated Content
+
+```
++ OpenNetBattle
+├─ ...
+└─ resources
+   ├─ encounters		- specific battles against ai-controlled opponents
+   │  └─ example_encounter
+   │     ├─ mob.lua			 - [mob.lua] defines an encounter
+   │     │  └─ characters		 - enemy data is located here
+   │     └─ ...
+   ├─ enemies			- ai-controlled opponents
+   │  └─ example_enemy
+   │     ├─ entry.lua			 - [entry.lua] defines a character
+   │     └─ ...				 - other files for the character
+   └─ players			- playable characters
+      └─ example_player
+         ├─ entry.lua		  - [entry.lua] defines a character
+         └─ ...				  - other files for the character
+```
+> An example of the file layout for user-generated content. It's recommended to follow a similar structure to this.
+
+*All* user-generated content is located in the `OpenNetBattle/resources/mods/` directory.
+
+The starting point of user-generated content (mods) are files called **`entry.lua`** (or **`mob.lua`** for encounters).<br>
+Each set of mods *needs* at least one of these in order to be properly loaded by the engine.
+
+## File Structure
+### For a Playable Character
+
+```
+example_player
+├─ entry.lua
+├─ battle.animation
+├─ battle.png
+├─ mug.animation
+├─ mug.png
+├─ overworld.animation
+├─ overworld.png
+├─ phone.png
+├─ preview.png
+└─ ...
+```
+> An example of the file layout for a player mod.
+
+#### entry.lua
+This is the **main** file for the player mod. This is where *all* of the code goes.
+
+#### .animation files
+These are the files that control how the player character is drawn.
+
+* `battle.animation` : How they're drawn *in battle*.
+* `mug.animation` : How their face is drawn *while they're talking*.
+* `overworld.animation` : How they're drawn *in the overworld*.
+
+#### .png files
+
+These are the files that contain the graphics for the player character.
+
+* `battle.png` : The graphics for when they're *in battle*.
+* `mug.animation` : The graphics for their face *while they're talking*.
+* `overworld.animation` : The graphics for when they're *in the overworld*.
+* `phone.png` : The graphics for the phone + icon in the top corner of the screen.
+* `preview.png` : The graphics for when the player is selecting their character.
+
+<aside class="notice">The above names are just <b>example</b> file names, for clarity.</aside>
+
+### For an Encounter
+
+```
+example_encounter
+├─ mob.lua
+└─ ...
+```
+> An example of the file layout for an enemy mod.

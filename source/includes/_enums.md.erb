@@ -1,0 +1,271 @@
+### ActionOrder
+
+```lua
+local immediateOrder = ActionOrder.Immediate
+local voluntaryOrder = ActionOrder.Voluntary
+local involuntaryOrder = ActionOrder.Involuntary
+```
+
+ActionOrder | Meaning
+----------- | -------
+`Immediate`   |
+`Voluntary`   |
+`Involuntary` | 
+
+
+
+### AudioPriority
+
+AudioPriority | Meaning
+------------- | -------
+`Lowest`  | 
+`Low`     |
+`High`    |
+`Highest` |
+
+
+
+### AudioType
+
+AudioType | Sound Effect
+--------- | ------------
+
+
+
+### CardClass
+CardClass |
+--------- |
+`Standard` |
+`Mega`     |
+`Giga`     |
+`Dark`     |
+
+
+
+### DefenseOrder
+DefenseOrder |
+------------ |
+`Always`        |
+`CollisionOnly` |
+
+
+
+### Direction
+
+Direction |
+--------- |
+`None`      | 
+`Up`        | 
+`Down`      | 
+`Left`      | 
+`Right`     | 
+`UpLeft`    | 
+`UpRight`   | 
+`DownLeft`  |
+`DownRight` | 
+
+
+
+### Element
+
+```lua
+local nullElement = Element.None
+local aquaElement = Element.Aqua
+local fireElement = Element.Fire
+local woodElement = Element.Wood
+local elecElement = Element.Elec
+local plusElement = Element.Plus
+local summonElement = Element.Summon
+local breakElement = Element.Break
+local swordElement = Element.Sword
+local windElement = Element.Wind
+local cursorElement = Element.Cursor
+local iceElement = Element.Ice
+```
+
+Element  | Strong vs | Weak vs  | Bonus (based on BN6)
+-------- | --------- | -------  | -------------------------
+`None`   | -         | -        | No bonus effect.
+`Aqua`   | `Fire`    | `Elec`   | <b>Navi</b>: Won't slide on <b>Ice Panels</b>.
+`Fire`   | `Wood`    | `Aqua`   | <b>Attack</b>: Doubles damage to targets on <b>Grass Panels</b>.
+`Wood`   | `Elec`    | `Fire`   | <b>Navi</b>: Regenerates health while on <b>Grass Panels</b>.
+`Elec`   | `Aqua`    | `Wood`   | <b>Attack</b>: Doubles damage to targets under <b>Bubble Status</b>.
+`Plus`   | -         | -        | No bonus effect.
+`Summon` | -         | -        | No bonus effect.
+`Break`  | `Sword`   | `Cursor` | <b>Attack</b>: Deals damage through guards.<br>Doubles damage to <b>Frozen</b> targets
+`Sword`  | `Wind`    | `Break`  | No bonus effect.
+`Wind`   | `Cursor`  | `Sword`  | <b>Attack</b>: Removes Barriers/Auras.
+`Cursor` | `Break`   | `Wind`   | <b>Attack</b>: Removes opponents' traps on use.
+`Ice`    | -         | -        | No bonus effect.
+
+
+
+### EntityStatus
+
+EntityStatus | Meaning
+------------ | -------
+`Added`  | Immediately added.
+`Queued` | Attempted to add, but was in the middle of an update loop.<br>Attemping again at the end of the update loop.
+`Failed` | Attempted to add, but in an invalid spot.<br>Did not add, deleted the Entity.
+
+
+
+### Input Events
+
+#### Pressed
+Input Event |
+----------- |
+`Pressed.Up`      |
+`Pressed.Left`    |
+`Pressed.Right`   |
+`Pressed.Down`    |
+`Pressed.Use`     |
+`Pressed.Special` |
+`Pressed.Shoot`   |
+
+#### Released
+
+Input Event |
+----------- |
+`Released.Up`      |
+`Released.Left`    |
+`Released.Right`   |
+`Released.Down`    |
+`Released.Use`     |
+`Released.Special` |
+`Released.Shoot`   |
+
+
+
+### Highlight
+
+Highlight | Behaviour
+--------- | ---------
+`Solid` | Tile remains solidly highlighted.
+`Flash` | Tile alternates between highlighted and not.
+`None`  | Tile does not get highlighted.
+
+
+
+### Hit
+
+```lua
+local defaultFlags = Hit.Flinch | Hit.Flash | Hit.Impact
+```
+> The above snippet creates a <b><code>Hit</code></b> variable with the <i>default</i> values for an attack.
+
+A **`Hit`** variable is made up by combining different behaviours (represented by the `enum` below), combined with a `logical 'or'` operator (`|`).
+
+Flag     | Behaviour
+-------- | ---------
+`None`       | -
+`Retangible` | Removes any <b>invincibility</b> from hit targets.
+`Freeze`     | N/A
+`Pierce`     | This attack will damage targets, even if they are affected by <b>invincibility</b>.
+`Flinch`     | Targets hit will become unactionable for a short time, playing their `PLAYER_HIT` animation.
+`Shake`      | Creates a <i>screen shake</i> effect when this hits a target.
+`Stun`       | Targets hit will become unactionable for a short time, playing their `PLAYER_HIT` animation.<br>This state is cancelled early by any hit that has <b>both</b> the `Flinch` and `Flash` flags.
+`Flash`      | Puts targets that are hit in an <b>invincible</b> state for 2 seconds.
+`Breaking`   | Does nothing <i>innately</i>, but is used to show that this attack is meant to break <i>breakable objects</i>.
+`Impact`     | Does nothing <i>innately</i>, but is used to show that this attack is meant to <i>make physical contact</i>.
+`Drag`       | Required for attacks that will force a target to be moved.<br>If this flag is <i>not</i> present, the attack <i>will not move</i> a target, even if it has a `Drag` component.
+`Bubble`     | Targets hit will become temporarily trapped in a <b>Bubble</b>, and put in an unactionable state.<br>This state is cancelled by <i>any</i> damage.
+
+
+
+### Lifetimes
+Lifetimes |
+--------- |
+`Local`      |
+`Battlestep` |
+`Scene`      |
+
+
+
+### Lockout
+Lockout | 
+------- |
+`Weapons`   |
+`Cards`     |
+`Abilities` |
+
+
+
+### LockType
+LockType | Behaviour
+-------- | ---------
+`Animation` | The user is prevented from using similar actions *until the animation is completed*. 
+`Async`     | The user is prevented from using similar actions *for a period of time **after** the animation is completed.*
+`Sequence`  | The user is prevented from using actions until the full sequence of events associated with this plays out.
+
+
+
+### ParticleType
+ParticleType |
+------------ | ---------
+`Blue`    | 
+`Fire`    | 
+`Green`   | 
+`Thin`    | 
+`Volcano` | 
+`Vulcan`  | 
+`Wind`    | 
+`Yellow`  | 
+
+
+
+### Playback
+Playback | Behaviour
+-------- | ---------
+`Once`    | Plays the animation fully, once, then stops.
+`Loop`    | Plays the animation fully, repeatedly.
+`Bounce`  | 
+`Reverse` | 
+
+
+
+### Rank
+
+Rank |
+---- |
+`V1`    |
+`V2`    |
+`V3`    |
+`SP`    |
+`EX`    |
+`Rare1` |
+`Rare2` |
+`NM`    |
+
+
+
+### Team
+Team |
+---- |
+`Red`   |
+`Blue`  |
+`Other` |
+
+<aside class="notice"><b><code>Characters</b></code> and <b><code>Players</b></code> assigned to a <b><code>Team</b></code> normally can't move onto tiles that are <b>not</b> owned by their <b><code>Team</b></code>.<br><i>For non-playable <b><code>Characters</b></code> you can override this.</i></aside>
+
+
+
+### TileState
+
+TileState | Behaviour
+--------- | ---------
+`Broken`         | Cannot be stood on normally. 
+`Cracked`        | Becomes `Broken` after being stepped on and moved off of.
+`DirectionDown`  | Conveyor Belt ⇩
+`DirectionLevel`<sup>[sic]</sup> | Conveyor Belt ⇦
+`DirectionRight` | Conveyor Belt ⇨
+`DirectionUp`    | Conveyor Belt ⇧
+`Empty`          | Tile has been removed, does not self-repair.
+`Grass`          | Heals <b>Wood</b>-`Element` `Character`s over time.
+`Hidden`         | Tile effectively does not exist.
+`Holy`           | `Character`s take half damage while standing on it.
+`Ice`            | Non-<b>Aqua</b>-`Element` `Character`s moving onto this Tile will attempt to move again in the same 
+`Lava`           | Damages `Character`s that move onto this, then turns the Tile to `Empty`.
+`Normal`         | No special effects.
+`Poison`         | Damages `Character`s standing on this Tile over time.
+`Volcano`        | Occasionally erupts, dealing damage to `Character`s standing on it.

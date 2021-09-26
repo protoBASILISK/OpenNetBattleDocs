@@ -1,0 +1,20 @@
+### Tile : is_reserved()
+``` lua
+local tile 	-- example Tile
+local ignored_characters	-- list of Entity IDs to ignore
+
+tile:is_reserved( ignored_characters )
+```
+
+Queries if the <%= @link_tile %> is _reserved_ by a <%= @link_entity %>.<br>
+If a list of **unique IDs** is provided, any <%= @link_entity %> with a **unique ID** that matches one of those will *not* be included in the calculation.
+
+Returns `true` if the <%= @link_tile %> is marked as _reserved_ by any <%= @link_entity %> not on the provided list.<br>
+Otherwise, returns `false`.
+
+#### Function Call
+`tile:reserve_entity_by_id( entity_id )`
+
+#### Parameters
+**`integer vector`** `entity_ids`<br>
+	&emsp;_A list of **unique IDs** for <%= @link_entity %> objects that you **want to ignore** when checking if they are reserving this <%= @link_tile %>._

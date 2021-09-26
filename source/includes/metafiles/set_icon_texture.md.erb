@@ -1,0 +1,17 @@
+### <%= @class_header %> : set_icon_texture()
+``` lua
+meta:set_icon_texture( _modpath.."icon.png" )
+```
+
+**For <%= @link_character %>, <%= @link_scripted_character %>, <%= @link_player %> and <%= @link_scripted_player %> objects:**<br>
+&emsp;This function assigns the *P.E.T. & face icon* that will be displayed in the upper corner of the screen while you are in the overworld.
+
+**For <%= @link_card_action %> objects:**<br>
+&emsp;This function assigns the *chip icon* that will be displayed when this action is available to choose?
+
+#### Function Call
+`meta:set_icon_texture( path )`
+
+#### Parameters
+**`string`** `path`<br>
+&emsp;_The **relative path** from the executable to the file._

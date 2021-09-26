@@ -1,0 +1,30 @@
+### <%= @class_header %> : teleport()
+```lua
+local <%= @variable_text %> 	;-- example <%= @variable_text %> 
+local dest_tile 	-- tile they want to move to
+
+local function on_begin_func()
+	print( "Started teleporting." )
+end
+
+local can_tp = <%= @variable_text %>:teleport( dest_tile, ActionOrder.Voluntary, on_begin_func )
+```
+
+This function causes the <%= @class_name %> to move to a target <%= @link_tile %> by teleporting to it.<br>
+
+This function returns `true` if the movement was possible *at the time it was called*, otherwise it returns `false`.
+
+#### Function Call
+`<%= @variable_text %>:teleport( destination, order, on_begin_func )`
+
+#### Return Value
+**`boolean`**
+
+#### Parameters
+<%= @link_tile %> `destination`<br>
+	&emsp;_The <%= @link_tile %> that you want the <%= @class_name %> to move to._<br>
+<%= @link_action_order %> `order`<br>
+	&emsp;_TODO figure out how ActionOrders work again_<br>
+**`function`** `on_begin_func`<br>
+	&emsp;_`nil`, or a **`function`** that you want to execute **when the movement starts**._<br>
+<%= partial "includes/entity/functions/partial/on_begin_use.md.erb" %>

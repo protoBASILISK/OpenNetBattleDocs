@@ -1,0 +1,19 @@
+### <%= @class_header %> : is_team()
+``` lua
+local <%= @variable_text %>	;-- example <%= @variable_text %>
+local is_red_team = 	;<%= @variable_text %>:is_team( Team.Red )
+```
+> The above snippet returns <code>true</code> if the <%= @class_name %> is a part of the <b>Red</b> team, otherwise <code>false</code>.
+
+Queries whether or not this <%= @class_name %> is a member of the provided <%= @link_team %>.<br>
+Returns `true` if they are a member of the provided <%= @link_team %>, otherwise `false`.
+
+#### Function Call
+`<%= @variable_text %>:is_team( team_to_check )`
+
+#### Return Value
+**`boolean`**
+
+#### Parameters
+<%= @link_team %> `team_to_check`<br>
+	&emsp;_The <%= @link_team %> you want to check this <%= @class_name %> against._

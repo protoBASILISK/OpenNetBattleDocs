@@ -1,0 +1,25 @@
+## Field
+
+The **`Field`** is a representation of the area that the current combat is taking place on.
+
+It is the object that *manages* all of the <%= @link_tile %> and <%= @link_entity %> objects from frame to frame.
+
+The **`Field`** is divided up into *eight* columns and *five* rows.<br>
+The *playable area* starts at `[1,1]`, and ends at `[6,3]`. Most of the action takes place in this area.
+
+The *leftmost/rightmost* columns (`x = 0` and `x = 7`), and the *top/bottom* rows (`y = 0` and `y = 4`) are *invisible tiles*.<br>
+An <%= @link_entity %> cannot stand on these under normal circumstances.
+
+<p><%= partial "includes/partial/field_diagram.md.erb" %></p>
+
+<p><%= partial "includes/field/get_width.md.erb" %></p>
+<p><%= partial "includes/field/get_height.md.erb" %></p>
+<p><%= partial "includes/field/get_character.md.erb" %></p>
+<p><%= partial "includes/field/get_entity.md.erb" %></p>
+<p><%= partial "includes/field/find_characters.md.erb" %></p>
+<p><%= partial "includes/field/find_nearest_characters.md.erb" %></p>
+<p><%= partial "includes/field/tile_at.md.erb" %></p>
+<p><%= partial "includes/field/find_tiles.md.erb" %></p>
+<p><%= partial "includes/field/spawn.md.erb" %></p>
+<p><%= partial "includes/field/notify_on_delete.md.erb" %></p>
+<p><%= partial "includes/field/callback_on_delete.md.erb" %></p>

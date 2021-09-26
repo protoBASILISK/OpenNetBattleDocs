@@ -1,0 +1,22 @@
+### <%= @class_header %> : get_tile()
+``` lua
+local <%= @variable_text %>	;-- example <%= @variable_text %>
+local tile_in_front = 	<%= @variable_text %>:get_tile( <%= @variable_text %>:get_facing(), 1 )
+```
+> The above snippet returns a **pointer** to the **Tile** in front of the example <%= @class_name %>.
+
+Returns a **`pointer`** to a <%= @link_tile %> offset in one direction from this <%= @class_name %>.
+
+If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid <%= @link_tile %>, it returns `nil` instead.
+
+#### Function Call
+`<%= @variable_text %>:get_tile( offset_direction, offset_distance )`
+
+#### Return Value
+<%= @link_tile %>
+
+#### Parameters
+<%= @link_direction %> `offset_direction`<br>
+	&emsp;_The direction you want to retrieve the <%= @link_tile %> from._<br>
+**`distance`** `offset_distance`<br>
+	&emsp;_The number of spaces <b>(min: 0)</b> in that direction you want to retrieve the <%= @link_tile %> from._

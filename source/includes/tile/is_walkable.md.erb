@@ -1,0 +1,17 @@
+### Tile : is_walkable()
+``` lua
+local tile 	-- example Tile
+local is_walkable = tile:is_walkable()
+```
+
+Queries whether this **`Tile`** is currently able to be walked on _without_ any modifiers.<br>
+_This is functionally equivalent to `not tile:is_hole() and not tile:is_edge()`._
+
+Returns `true` if the **`Tile`**'s current <%= @link_tile_state %> is *not* `Broken`, `Empty`, or `Hidden`, **and** it is *not* one of the invisible edge tiles surrounding the battlefield.<br>
+Otherwise, returns `false`.
+
+#### Function Call
+`tile:is_walkable()`
+
+#### Return Value
+**`boolean`**

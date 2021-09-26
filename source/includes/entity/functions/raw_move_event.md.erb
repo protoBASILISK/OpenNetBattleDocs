@@ -1,0 +1,52 @@
+### <%= @class_header %> : raw_move_event()
+```lua
+local <%= @variable_text %>	;-- example <%= @variable_text %>
+local destination	-- tile they want to move to
+
+local move_event	= create_move_event()	-- use this to create a raw move event
+
+local function on_begin_func()
+	print( "Started jumping." )
+end
+
+move_event.delay_frames = frames( 30 )
+move_event.delta_frames = frames( 60 )
+move_event.endlag_frames_frames = frames( 20 )
+move_event.height = 0.0
+move_event.dest_tile = destination
+move_event.on_begin_func = on_begin_func
+
+local can_move = <%= @variable_text %>:raw_move_event( move_event, ActionOrder.Voluntary )
+```
+> The above snippet will make the <%= @class_name %> wait for 30 frames (1/2 second), spend 60 frames (1 second) sliding to the destination tile, and wait for 20 frames (1/3 second) before it can act again.
+
+This function causes the <%= @class_name %> to move to a target <%= @link_tile %> in a programmable manner.<br>
+
+This function returns `true` if the movement was possible *at the time it was called*, otherwise it returns `false`.
+
+#### Function Call
+`<%= @variable_text %>:raw_move_event( move_event, order )`
+
+#### Return Value
+**`boolean`**
+
+#### Parameters
+<%= @link_move_event %> `move_event`<br>
+	&emsp;_The <%= @link_move_event %> object defining how the <%= @class_name %> will move._<br>
+<%= @link_action_order %> `order`<br>
+	&emsp;_TODO figure out how ActionOrders work again<br>_<br>
+#### MoveEvent structure
+**`frame_time_t`** `delay_frames`<br>
+	&emsp;_The amount of time you want the <%= @class_name %> to wait **before** starting the movement._<br>
+**`frame_time_t`** `delta_frames`<br>
+	&emsp;_The *amount of time* you want the movement to take._<br>
+**`frame_time_t`** `endlag_frames_frames`<br>
+	&emsp;_The *amount of time* **after** the movement you want the <%= @class_name %> to stop acting for._<br>
+**`number`** `height`<br>
+	&emsp;_The height *(TODO units?)* that you want them to reach at the apex of their jump._<br>
+<%= @link_tile %> `dest_tile`<br>
+	&emsp;_The <%= @link_tile %> that you want the <%= @class_name %> to move to._<br>
+**`function`** `on_begin_func`<br>
+	&emsp;_`nil`, or a **`function`** that you want to execute **when the movement starts**._<br>
+<%= partial "includes/partial/use_frames_function.md.erb" %>
+<%= partial "includes/entity/functions/partial/on_begin_use.md.erb" %>

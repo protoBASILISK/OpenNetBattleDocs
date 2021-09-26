@@ -1,0 +1,18 @@
+### Tile : reserve_entity_by_id()
+``` lua
+local tile 	-- example Tile
+local entity_id	-- example Entity ID
+
+tile:reserve_entity_by_id( entity_id )
+```
+
+Causes the <%= @link_tile %> to become _reserved_ by a <%= @link_entity %> with a specific **unique ID**.
+
+An <%= @link_entity %> reserving a <%= @link_tile %> will stop it from being set to certain <%= @link_tile_state %>s.
+
+#### Function Call
+`tile:reserve_entity_by_id( entity_id )`
+
+#### Parameters
+**`integer`** `entity_id`<br>
+	&emsp;_The **unique ID** of the <%= @link_entity %> that you want to mark as reserving this <%= @link_tile %>._

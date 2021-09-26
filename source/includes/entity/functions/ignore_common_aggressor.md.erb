@@ -1,0 +1,17 @@
+### <%= @class_header %> : ignore_common_aggressor()
+``` lua
+local <%= @variable_text %>	;-- example <%= @variable_text %>
+<%= @variable_text %>:ignore_common_aggressor( true )
+```
+
+TODO<br>
+If `true`, causes this <%= @class_name %> to ignore other attacks and effects that are spawned by the <%= @link_entity %> that spawned *this* object.<br>
+Otherwise, it will be affected by other attacks and effects from its parent <%= @link_entity %>.
+
+#### Function Call
+`<%= @variable_text %>:get_hit_props( should_ignore )`
+
+#### Parameters
+**`boolean`** `should_ignore`<br>
+	&emsp;_`true` if this should ignore other effects from the same source._<br>
+	&emsp;_Otherwise `false`._

@@ -1,0 +1,21 @@
+### play_audio()
+``` lua
+local example_audio	-- example audio, loaded earlier
+
+play_audio( example_audio, AudioPriority.Low )
+play_audio( AudioType.Cannon, AudioPriority.Low )
+```
+
+Plays a sound file.<br>
+This function can either play built-in audio, or a custom audio file (that has been loaded beforehand).
+
+#### Function Call
+`reverse_dir( audio_file, audio_priority )`
+
+#### Parameters
+<%= @link_audio_type %> `audio_file`<br>
+**`AudioFile`** `audio_file`<br>
+&emsp;_The **audio** you want to play. (**Either** <%= @link_audio_type %> or **`AudioFile`**.)_
+
+<%= @link_audio_priority %> `audio_priority`<br>
+&emsp;_The **priority** you want to give this audio clip._

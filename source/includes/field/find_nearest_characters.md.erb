@@ -1,0 +1,35 @@
+### Field : find_nearest_characters()
+``` lua
+local target -- Example character
+local function search_function( character )
+	return character:get_team() == Team.Blue
+end
+
+local character_list = field:find_nearest_characters()
+```
+> The above snippet finds all the **Characters** that are on the **Blue Team**, with at least **500** health, sorted by distance from **'target'**.
+
+This function iterates through all of the <%= @link_character %>s on the battlefield, and returns a list of them that matches a specific criteria *(provided by a function)*.
+
+The list of characters will be sorted based on their distance from the provided <%= @link_character %>.
+
+#### Function Call
+`field:find_tiles( reference_character, search_function )`
+
+#### Return Value
+<%= @link_character %> **`vector`**
+
+#### Parameters
+**`pointer`** `reference_character`<br>
+	&emsp;_The <%= @link_character %> to use as a reference point._<br>
+**`function`** `search_function`<br>
+	&emsp;_A function that filters the list of <%= @link_character %>s._
+
+``` lua
+local function search_function( character )
+  return character:get_team() == Team.Red
+end
+```
+
+<aside class="notice"><code>search_function</code> requires <b>one</b> <%= @link_character %> parameter and to return a <b><code>boolean</code></b>.<br>
+Any <%= @link_character %> that causes the function to return <code>true</code> will be added to the list.</aside>

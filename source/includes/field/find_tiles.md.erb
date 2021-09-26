@@ -1,0 +1,30 @@
+### Field : find_tiles()
+``` lua
+local function search_function( tile )
+	return tile:get_team() == Team.Blue
+end
+
+local tile_list = field:find_tiles( search_function )
+```
+> The above snippet finds all the **Tiles** that are currently owned by the **Blue Team**.
+
+This function iterates through all of the <%= @link_tile %>s on the battlefield, and returns a list of them that matches a specific criteria *(provided by a function)*.
+
+#### Function Call
+`field:find_tiles( search_function )`
+
+#### Return Value
+<%= @link_tile %> **`vector`**
+
+#### Parameters
+**`function`** `search_function`<br>
+	&emsp;_A function that filters the <%= @link_tile %>s you **want** to include._<br>
+	
+``` lua
+local function search_function( tile )
+  return tile:get_team() == Team.Red
+end
+```
+
+<aside class="notice"><code>search_function</code> requires <b>one</b> <%= @link_tile %> parameter and to return a <b><code>boolean</code></b>.<br>
+Any <%= @link_tile %> that causes the function to return <code>true</code> will be added to the list.</aside>

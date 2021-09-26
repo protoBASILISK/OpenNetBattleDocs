@@ -1,0 +1,31 @@
+### Field : tile_at()
+``` lua
+local top_left = field:tile_at( 1, 1 )
+local bottom_right = field:tile_at( 6, 3 )
+```
+> The above commands return a pointer to the **top left<** and **bottom right** <i>visible</i> **Tiles**.
+
+``` lua
+local tile = field:tile_at( -1, -1 )
+local tile = field:tile_at( 8, 5 )
+```
+> The above commands return *nil*, as they ask for **Tiles** outside of the battlefield's boundaries.
+
+This function retrieves a `pointer` to a <%= @link_tile %> at a specific position in the grid.<br>
+If there is a <%= @link_tile %> at the requested position, this function returns a `pointer` to it, otherwise `nil`.<br><br>
+`x` can (by default) be any number between (and including) `0` ~ `field:width() - 1` _(defaults to `7`)_.<br>
+`y` can (by default) be any number between (and including) `0` ~ `field:height() - 1` _(defaults to `4`)_.<br>
+Any number outside of those ranges will return `nil` instead.
+
+#### Function Call
+`field:tile_at( x, y )`
+
+#### Return Value
+<%= @link_tile %>
+
+#### Parameters
+**`integer`** `x`<br>
+	&emsp;_The **column** you want to retrieve the <%= @link_tile %> from **(from left to right)**._<br>
+**`integer`** `y`<br>
+	&emsp;_The **row** you want to retrieve the <%= @link_tile %> from **(from top to bottom)**._<br>
+<aside class="notice">The <i>visible</i> game field starts at <code>[1,1]</code>, and ends at <code>[6,3]</code>. There are <i>invisible</i> <%= @link_tile %>s surrounding the game field, to allow some objects to move onto/off of the game field more naturally.</aside>

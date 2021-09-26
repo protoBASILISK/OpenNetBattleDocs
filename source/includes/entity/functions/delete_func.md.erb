@@ -1,0 +1,28 @@
+### <%= @class_header %> . delete_func
+``` lua
+local <%= @variable_text %>	;-- example <%= @variable_text %>
+local function on_delete( self )
+  print( "I've been deleted!" )
+end
+
+<%= @variable_text %>.delete_func = on_delete
+```
+
+Assigns a **`function`** that will be executed when this <%= @class_name %> is deleted.
+
+#### Variable Type
+**`function`**
+
+#### Assignment
+`<%= @variable_text %>.delete_func = on_delete`
+
+#### Parameters
+**`function`** `on_delete`<br>
+	&emsp;_The **`function`** you want this <%= @class_name %> to execute when it is deleted._<br>
+	
+``` lua
+local function delete_func( self )
+end
+```
+<aside class="notice"><code>delete_func</code> requires <b>one</b> <%= @class_name %> parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.</aside>

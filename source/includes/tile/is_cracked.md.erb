@@ -1,0 +1,16 @@
+### Tile : is_cracked()
+``` lua
+local tile 	-- example Tile
+local is_tile_hidden = tile:is_hidden()
+```
+
+Queries whether the **`Tile`**'s current <%= @link_tile_state %> is `Cracked` or not.<br>
+Returns `true` if it is currently `Cracked`, otherwise returns `false`.
+
+<%= @link_entity %> objects that move **off of** a `Cracked` <%= @link_tile %> will cause it to become `Broken`.
+
+#### Function Call
+`tile:is_cracked()`
+
+#### Return Value
+**`boolean`**

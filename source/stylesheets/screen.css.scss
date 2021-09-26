@@ -133,6 +133,11 @@ html, body {
     }
   }
 
+  .page-index {
+    border-bottom: 1px dashed #666;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+  }
 
   // The Table of Contents is composed of multiple nested
   // unordered lists.  These styles remove the default
@@ -171,6 +176,25 @@ html, body {
 
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
+    font-size: 12px;
+  }
+  
+  .toc-list-h3 {
+    background-color: $nav-subitem-bg;
+  }
+
+  .toc-h3 {
+    padding-left: $nav-padding + $nav-padding + $nav-indent;
+    font-size: 12px;
+  }
+
+  .toc-list-h4 {
+    display: none;
+    background-color: $nav-subitem-bg;
+  }
+
+  .toc-h4 {
+    padding-left: $nav-padding + $nav-padding + $nav-padding + $nav-indent;
     font-size: 12px;
   }
 
@@ -341,7 +365,7 @@ html, body {
   }
 
   // the div is the tocify hidden div for placeholding stuff
-  &>h1, &>h2, &>div {
+  &>h1, &>h2, &>h3, &>h4, &>div {
     clear:both;
   }
 
@@ -367,7 +391,7 @@ html, body {
     font-size: 19px;
     margin-top: 4em;
     margin-bottom: 0;
-    border-top: 1px solid #ccc;
+    border-top: 3px dashed #888;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
@@ -380,11 +404,21 @@ html, body {
     border-top: none;
   }
 
-  h3, h4, h5, h6 {
+    h3 {
+    @extend %header-font;
+    border-top: 2px dashed #88888840;
+    font-size: 16px;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
+  }
+
+  h4, h5, h6 {
     @extend %header-font;
     font-size: 15px;
-    margin-top: 2.5em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.4em;
   }
 
   h4, h5, h6 {
@@ -401,8 +435,8 @@ html, body {
     margin-bottom: 1em;
     overflow: auto;
     th,td {
-      text-align: left;
-      vertical-align: top;
+      text-align: center;
+      vertical-align: middle;
       line-height: 1.6;
       code {
         white-space: nowrap;
@@ -627,7 +661,39 @@ html, body {
   height: 18px;
   width: 18px;
 }
-
 .copy-clipboard:hover {
   opacity: 0.8;
+}
+
+.tile {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 1em;
+}
+.tile.red {
+  background-color: #BB0000BB;
+  color: #fff;
+}
+.tile.blue {
+  background-color: #0000BBBB;
+  color: #fff;
+}
+.tile.hidden-red {
+  background: repeating-linear-gradient(
+    45deg,
+    #BB000022,
+    #BB000022 5px,
+    #FFFFFF22 5px,
+    #FFFFFF22 10px
+  );
+}
+.tile.hidden-blue {
+  background: repeating-linear-gradient(
+    45deg,
+    #0000BB22,
+    #0000BB22 5px,
+    #FFFFFF22 5px,
+    #FFFFFF22 10px
+  );
 }

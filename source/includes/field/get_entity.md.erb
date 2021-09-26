@@ -1,0 +1,19 @@
+### Field : get_entity()
+``` lua
+local example_id	-- The ID of an example entity
+local example_entity = field:get_entity( entity_id )
+```
+
+This function returns a **`pointer`** to a <%= @link_entity %> with a specific ID.
+
+If there is no <%= @link_entity %> with the provided ID, `nil` is returned instead.
+
+#### Function Call
+`field:get_entity( entity_id )`
+
+#### Return Value
+<%= @link_entity %>
+
+#### Parameters
+**`integer`** `entity_id`<br>
+	&emsp;_The ID of the <%= @link_entity %> you want to retrieve._

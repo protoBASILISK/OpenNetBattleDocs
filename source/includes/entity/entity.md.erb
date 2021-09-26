@@ -1,0 +1,14 @@
+**`Entities`** are objects that are *present* on the battlefield.<br>
+There are a number of different types, each intended for different usages.<br>
+
+There are also different types to enable *custom scripts* to have additional behaviour.<br>
+This additional behaviour is only available in their *source* scripts.<br>
+Outside of their *source* scripts, any **`Entity`** object should be treated as if it didn't have custom scripting.<br><br>
+
+Entity Type | Scripted Type | Intended Usage
+----------- | ------------- | --------------
+<%= @link_character %>   | <%= @link_scripted_character %> | **Entities** with *AI scripting*.
+`Player`      | `ScriptedPlayer`    | **Entities** *controllable* by a human player.
+`Artifact`    | `ScriptedArtifact`  | Purely visual effects.
+`Obstacle`    | `ScriptedObstacle`  | Mostly-static objects that can intercept attacks.
+`Spell`       | `ScriptedSpell`     | Attacks and other effects that can influence **Entities**.

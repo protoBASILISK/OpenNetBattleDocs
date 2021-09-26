@@ -1,0 +1,28 @@
+### <%= @class_header %> . collision_func
+``` lua
+local <%= @variable_text %>	;-- example <%= @variable_text %>
+local function on_collide( self, collided_with )
+end
+
+<%= @variable_text %>.collision_func = on_collide
+```
+
+Assigns a **`function`** that will be executed when this <%= @class_name %> **collides with** another <%= @link_entity %>.
+
+#### Variable Type
+**`function`**
+
+#### Assignment
+`<%= @variable_text %>.collision_func = on_collide`
+
+#### Parameters
+**`function`** `on_collide`<br>
+	&emsp;_The **`function`** you want this <%= @class_name %> to execute when it collides with a <%= @link_character %>._<br>
+	
+``` lua
+local function collision_func( self, collided_with )
+end
+```
+<aside class="notice"><code>collision_func</code> requires <b>one</b> <%= @class_name %> parameter, <b>one</b> <%= @link_character %> parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.<br>
+The <code>collided_with</code> parameter will be passed a reference to the <%= @link_character %> it collided with.</aside>

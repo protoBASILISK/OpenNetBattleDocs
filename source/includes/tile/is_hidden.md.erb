@@ -1,0 +1,17 @@
+### Tile : is_hidden()
+``` lua
+local tile 	-- example Tile
+local is_tile_hidden = tile:is_hidden()
+```
+
+Queries whether the **`Tile`**'s current <%= @link_tile_state %> is `Hidden` or not.<br>
+Returns `true` if it is currently `Hidden`, otherwise returns `false`.
+
+<%= @link_entity %> objects normally **cannot** interact with `Hidden` tiles.<br>
+They are effectively removed from the battle entirely.
+
+#### Function Call
+`tile:get_team()`
+
+#### Return Value
+<%= @link_team %>
