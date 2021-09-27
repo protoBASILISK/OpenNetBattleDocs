@@ -1,9 +1,0 @@
-<h3 id='set_speed'>: set_speed()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">meta</span><span class="p">:</span><span class="n">set_speed</span><span class="p">(</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span> <span class="p">)</span>
-</code></pre></div>
-<p>This function assigns the <em>relative speed</em> of the  compared to others.</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>meta:set_speed( speedMultiplier )</code></p>
-<h4 id='parameters'>Parameters</h4>
-<p><strong><code>number</code></strong> <code>speedMultiplier</code><br>
-&emsp;<em>The <strong>relative speed</strong> of the .</em>
-<aside class="notice">This number is purely cosmetic at the moment.</aside></p>

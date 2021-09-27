@@ -1,8 +1,0 @@
-<h3 id='set_mugshot_animation_path'>: set_mugshot_animation_path()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">meta</span><span class="p">:</span><span class="n">set_mugshot_animation_path</span><span class="p">(</span> <span class="n">_modpath</span><span class="o">..</span><span class="s2">"mugshot.animation"</span> <span class="p">)</span>
-</code></pre></div>
-<p>This function assigns the <em>animation data</em> that will be used for the &#39;s face while they are talking in a text box.</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>meta:set_mugshot_animation_path( path )</code></p>
-<h4 id='parameters'>Parameters</h4>
-<p><strong><code>string</code></strong> <code>path</code><br>
-&emsp;<em>The <strong>relative path</strong> from the executable to the file.</em></p>

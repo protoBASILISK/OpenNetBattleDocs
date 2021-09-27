@@ -1,8 +1,0 @@
-<h3 id='set_health'>: set_health()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">meta</span><span class="p">:</span><span class="n">set_health</span><span class="p">(</span> <span class="mi">500</span> <span class="p">)</span>
-</code></pre></div>
-<p>This function assigns the <em>maximum health</em> of this .</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>meta:set_health( maxHealth )</code></p>
-<h4 id='parameters'>Parameters</h4>
-<p><strong><code>integer</code></strong> <code>maxHealth</code><br>
-&emsp;<em>The <strong>maximum health</strong> for the .</em></p>

@@ -1,7 +1,0 @@
-<h3 id='tile-get_state'>Tile : get_state()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tile</span>  <span class="c1">-- example Tile</span>
-<span class="kd">local</span> <span class="n">tile_state</span> <span class="o">=</span> <span class="n">tile</span><span class="p">:</span><span class="n">get_state</span><span class="p">()</span>
-</code></pre></div>
-<p>Returns the current  of this <strong><code>Tile</code></strong>.</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>tile:get_state()</code></p>
-<h4 id='return-value'>Return Value</h4>

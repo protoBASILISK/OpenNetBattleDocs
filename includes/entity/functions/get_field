@@ -1,7 +1,0 @@
-<h3 id='get_field'>: get_field()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">--  entity</span>
-<span class="kd">local</span> <span class="n">field</span> <span class="o">=</span>   <span class="p">:</span><span class="n">get_field</span><span class="p">()</span>
-</code></pre></div>
-<p>Returns a <strong><code>pointer</code></strong> to the  that this battle is taking place on.</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>:get_field()</code></p>
-<h4 id='return-value'>Return Value</h4>

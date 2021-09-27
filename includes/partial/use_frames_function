@@ -1,3 +1,0 @@
-<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">frame_time</span> <span class="o">=</span> <span class="n">frames</span><span class="p">(</span> <span class="mi">60</span> <span class="p">)</span>
-</code></pre></div>
-<aside class="notice">Use the <code>frames()</code> function to create a <b><code>frame_time_t</code></b> object for measurements of time.<br>Passing in a regular <b><code>number</code></b> or <b><code>integer</code></b> will cause an error.</aside>

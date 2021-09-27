@@ -1,9 +1,0 @@
-<h3 id='will_remove_eof'>: will_remove_eof()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span>   <span class="p">;</span><span class="c1">-- example </span>
-<span class="kd">local</span> <span class="n">will_remove</span> <span class="o">=</span>     <span class="p">;:</span><span class="n">will_remove_eof</span><span class="p">()</span>
-</code></pre></div>
-<p>Queries whether or not this  will be removed at the end of the frame.<br>
-Returns <code>true</code> if they will be deleted, otherwise <code>false</code>.</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>:will_remove_eof()</code></p>
-<h4 id='return-value'>Return Value</h4>
-<p><strong><code>boolean</code></strong></p>

@@ -1,6 +1,0 @@
-<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">search_function</span><span class="p">(</span> <span class="n">character</span> <span class="p">)</span>
-  <span class="k">return</span> <span class="n">character</span><span class="p">:</span><span class="n">get_team</span><span class="p">()</span> <span class="o">==</span> <span class="n">Team</span><span class="p">.</span><span class="n">Red</span>
-<span class="k">end</span>
-</code></pre></div>
-<aside class="notice"><code>search_function</code> requires <b>one</b>  parameter and to return a <b><code>boolean</code></b>.<br>
-Any  that causes the function to return <code>true</code> will be added to the list.</aside>

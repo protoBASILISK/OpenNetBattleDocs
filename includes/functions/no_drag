@@ -1,9 +1,0 @@
-<h3 id='no_drag'>no_drag()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">drag_amount</span> <span class="o">=</span> <span class="n">no_drag</span><span class="p">()</span>
-</code></pre></div>
-<p><em>This function is intended as a helper function for <strong><code>set_hit_props()</code></strong>.</em><br>
-<em>It is functionally equivalent to <code>drag( Direction.None, 0 )</code>.</em></p>
-
-<p>Returns a  object with a pre-set value, that when used, will cause an attack to <strong>not</strong> move any  hit.</p>
-<h4 id='function-call'>Function Call</h4>
-<p><code>no_drag()</code></p>
-<h4 id='return-value'>Return Value</h4>
