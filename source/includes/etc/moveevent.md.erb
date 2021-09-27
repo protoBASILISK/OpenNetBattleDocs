@@ -1,0 +1,15 @@
+## MoveEvent
+
+#### Data Members
+**`frame_time_t`** `delay_frames`<br>
+	&emsp;_The amount of time you want the <%= @class_name %> to wait **before** starting the movement._<br>
+**`frame_time_t`** `delta_frames`<br>
+	&emsp;_The *amount of time* you want the movement to take._<br>
+**`frame_time_t`** `endlag_frames_frames`<br>
+	&emsp;_The *amount of time* **after** the movement you want the <%= @class_name %> to stop acting for._<br>
+**`number`** `height`<br>
+	&emsp;_The height *(TODO units?)* that you want them to reach at the apex of their jump._<br>
+<%= @link_tile %> `dest_tile`<br>
+	&emsp;_The <%= @link_tile %> that you want the <%= @class_name %> to move to._<br>
+**`function`** `on_begin_func`<br>
+	&emsp;_`nil`, or a **`function`** that you want to execute **when the movement starts**._<br>
