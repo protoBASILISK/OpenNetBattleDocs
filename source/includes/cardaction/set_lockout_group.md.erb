@@ -1,1 +1,17 @@
 ### CardAction : set_lockout_group()
+``` lua
+local card_action	-- example card_action
+
+card_action:set_lockout_group( Lockout.Weapons )
+```
+
+Assigns the <%= @link_lockout_group %> for this <%= @link_card_action %>.
+
+A <%= @link_card_action %> cannot be used if the <%= @link_character %> has recently executed another <%= @link_card_action %> with a *matching* <%= @link_lockout_group %>.
+
+#### Function Call
+`card_action:set_lockout_group( lockout )`
+
+#### Parameters
+<%= @link_lockout_group %> `lockout`<br>
+	&emsp;_The <%= @link_card_properties %> describing the type of action you want to become unavailable for a short time._

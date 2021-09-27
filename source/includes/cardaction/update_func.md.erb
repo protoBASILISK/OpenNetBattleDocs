@@ -1,1 +1,29 @@
-### CardAction : action_end_func
+### CardAction . update_func
+``` lua
+local card_action	-- example card_action
+local function on_update( self, time )
+  print( "CardAction updating." )
+end
+
+card_action.update_func = on_update
+```
+
+Assigns a **`function`** that will be executed every frame that this <%= @link_card_action %> **is active**.
+
+#### Variable Type
+**`function`**
+
+#### Assignment
+`<%= @variable_text %>.update_func = on_update`
+
+#### Parameters
+**`function`** `on_update`<br>
+	&emsp;_The **`function`** you want this to execute when the <%= @link_card_action %> completes._
+
+``` lua
+local function update_func( self, time )
+end
+```
+<aside class="notice"><code>attack_func</code> requires <b>one</b> <%= @link_card_action %> parameter, <b>one</b> **`number`** parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.<br>
+The <code>time</code> parameter will be passed the *elapsed time* since the last time it was executed.</aside>

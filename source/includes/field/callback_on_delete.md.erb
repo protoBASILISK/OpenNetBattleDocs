@@ -20,8 +20,10 @@ This function sets up a *callback function* that will be executed when the **`ta
 **`NotifyID_t`** - ???
 
 #### Parameters
-**`number`** `targetID` - The *unique ID* of the <%= @link_entity %> you are watching.<br>
-**`function`** `callback_function` - This is the **`function`** that will be called when an <%= @link_entity %> with the ID `targetID` is deleted.
+**`number`** `targetID`<br>
+	&emsp;_The **unique ID** of the <%= @link_entity %> you are watching._<br>
+**`function`** `callback_function`<br>
+	&emsp;_The **`function`** that will be called when an <%= @link_entity %> with the ID `targetID` is deleted._
 
 ```lua
 function callback_function( target )
@@ -29,4 +31,5 @@ function callback_function( target )
 end
 ```
 <aside class="notice"><code>callback_function</code> requires <b>one</b> <%= @link_entity %> parameter, and to return <b>no value</b>.<br>
+The <code>target</code> parameter is the <%= @link_entity %> that was deleted.<br>
 See the code snippet for an example.</aside>

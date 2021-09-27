@@ -1,2 +1,16 @@
 ### <%= @class_header %> : set_color()
-TODO
+``` lua
+local <%= @variable_text %>	-- example <%= @variable_text %>
+
+<%= @variable_text %>:set_color( Color.new( 255, 0, 0, 255 ) )
+```
+> The above example tints the <%= @class_name %> a pure red color.
+
+Tints the <%= @class_name %> with a provided color (via **multiplicative** blending).<br>
+To return it to normal, tint it a pure white color.
+
+#### Function Call
+`<%= @variable_text %>:get_color()`
+
+#### Return Value
+<%= @link_color %> `color`

@@ -1,1 +1,29 @@
-### CardAction : execute_func
+### CardAction . execute_func
+``` lua
+local card_action	-- example card_action
+local function on_execute( self, user )
+  print( "CardAction ended." )
+end
+
+card_action.execute_func = on_execute
+```
+
+Assigns a **`function`** that will be executed when this <%= @link_card_action %> **finishes**.
+
+#### Variable Type
+**`function`**
+
+#### Assignment
+`<%= @variable_text %>.execute_func = on_execute`
+
+#### Parameters
+**`function`** `on_execute`<br>
+	&emsp;_The **`function`** you want this to execute when the <%= @link_card_action %> completes._
+
+``` lua
+local function execute_func( self, user )
+end
+```
+<aside class="notice"><code>execute_func</code> requires <b>one</b> <%= @link_card_action %> parameter, one <%= @link_character %> parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.<br>
+The <code>user</code> parameter will be passed a reference to the <%= @link_character %> that is carrying out the action.</aside>

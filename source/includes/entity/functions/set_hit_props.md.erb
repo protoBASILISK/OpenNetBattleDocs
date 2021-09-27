@@ -1,16 +1,16 @@
 ### <%= @class_header %> : set_hit_props()
 ``` lua
-local <%= @variable_text %>	;-- example <%= @variable_text %>
-local hit_props	;-- example HitProps
+local <%= @variable_text %>	-- example <%= @variable_text %>
+local hit_props	-- example HitProps
 <%= @variable_text %>:set_hit_props( hit_props )
 ```
 
-TODO
-
+Sets the properties an attack has, for when it hits an <%= @link_entity %>.
+Use <%= @link_make_hit_props %> to create the <%= @link_hit_props %> object.
 
 #### Function Call
 `<%= @variable_text %>:set_hit_props( hit_props )`
 
 #### Parameters
 <%= @link_hit_props %> `hit_props`<br>
-	&emsp;__
+	&emsp;_The properties you want the attack to have._

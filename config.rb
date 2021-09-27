@@ -55,7 +55,7 @@ configure :build do
   config[:path_prefix]
 
   set :is_build, true
-  config[:is_development]
+  config[:is_build]
   
   # We do want to hash woff and woff2 as there's a bug where woff2 will use
   # woff asset hash which breaks things. Trying to use a combination of ignore and

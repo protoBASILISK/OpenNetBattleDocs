@@ -8,7 +8,7 @@ local character_list = field:find_characters( search_function )
 ```
 > The above snippet finds all the **Characters** that are on the **Blue Team** with at least **500** health.
 
-This function iterates through all of the <%= @link_character %>s on the battlefield, and returns a list of them that matches a specific criteria *(provided by a function)*.
+This function iterates through all of the <%= @link_character %> objects on the battlefield, and returns a list of them that matches a specific criteria *(provided by a function)*.
 
 #### Function Call
 `field:find_tiles( search_function )`
@@ -18,13 +18,6 @@ This function iterates through all of the <%= @link_character %>s on the battlef
 
 #### Parameters
 **`function`** `search_function`<br>
-	&emsp;_A function that filters the list of <%= @link_character %>s._<br>
+	&emsp;_A function that determines if the <%= @link_character %> gets added to the list._
 
-``` lua
-local function search_function( character )
-  return character:get_team() == Team.Red
-end
-```
-
-<aside class="notice"><code>search_function</code> requires <b>one</b> <%= @link_character %> parameter and to return a <b><code>boolean</code></b>.<br>
-Any <%= @link_character %> that causes the function to return <code>true</code> will be added to the list.</aside>
+<%= partial "includes/field/partial/search_function.md.erb", locals: { link: @link_character, variable: "character" } %>

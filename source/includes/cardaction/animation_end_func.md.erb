@@ -1,1 +1,28 @@
-### CardAction : action_end_func
+### CardAction . animation_end_func
+``` lua
+local card_action	-- example card_action
+local function on_anim_end( self )
+  print( "CardAction's animation ended." )
+end
+
+card_action.animation_end_func = on_anim_end
+```
+
+Assigns a **`function`** that will be executed when the animation for this <%= @link_card_action %> **finishes**.
+
+#### Variable Type
+**`function`**
+
+#### Assignment
+`<%= @variable_text %>.animation_end_func = on_anim_end`
+
+#### Parameters
+**`function`** `on_anim_end`<br>
+	&emsp;_The **`function`** you want this to execute when the animation for the <%= @link_card_action %> completes._
+
+``` lua
+local function animation_end_func( self )
+end
+```
+<aside class="notice"><code>attack_func</code> requires <b>one</b> <%= @link_card_action %> parameter, and to return <b>nothing</b>.<br>
+The <code>self</code> parameter will be passed a reference to itself.</aside>

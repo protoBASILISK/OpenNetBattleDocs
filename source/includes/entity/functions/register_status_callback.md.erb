@@ -1,14 +1,29 @@
 ### <%= @class_header %> : register_status_callback()
 ``` lua
-local <%= @variable_text %>	;-- example <%= @variable_text %>
+local <%= @variable_text %>	-- example <%= @variable_text %>
 local function callback()
+  print( "I got hit by a Breaking attack." )
 end
 
+<%= @variable_text %>:register_status_callback( Hit.Breaking, callback )
 ```
 
-TODO figure this thing out
+Registers a **`function`** that will be executed when the <%= @class_name %> is hit by an attack that has some specific <%= @link_hit %> flags.
 
-#### Variable Type
-**`function`**
+#### Function Call
+`<%= @variable_text %>:register_status_callback( hit_flags, callback )`
 
-<aside class="notice">TODO: method signature</aside>
+#### Parameters
+<%= @link_hit %> `hit_flags`<br>
+	&emsp;_A move with these <%= @link_hit %> flags will trigger the callback._<br>
+**`function`** `callback`<br>
+	&emsp;_This is the **`function`** that will be called when an <%= @link_entity %> is hit by an attack with one of those flags._<br>
+TODO check to see if it's "any" or "all"
+
+```lua
+function callback_function()
+	print( "Hello!" )
+end
+```
+<aside class="notice"><code>callback_function</code> requrires <b>no</b> parameters, and to <b>no value</b>.<br>
+See the code snippet for an example.</aside>

@@ -7,8 +7,18 @@ Outside of their *source* scripts, any **`Entity`** object should be treated as 
 
 Entity Type | Scripted Type | Intended Usage
 ----------- | ------------- | --------------
-<%= @link_character %>   | <%= @link_scripted_character %> | **Entities** with *AI scripting*.
-`Player`      | `ScriptedPlayer`    | **Entities** *controllable* by a human player.
-`Artifact`    | `ScriptedArtifact`  | Purely visual effects.
-`Obstacle`    | `ScriptedObstacle`  | Mostly-static objects that can intercept attacks.
-`Spell`       | `ScriptedSpell`     | Attacks and other effects that can influence **Entities**.
+<%= @link_character %> / <%= @link_scripted_character %><br>
+&emsp;<%= @link_character %> type objects are objects **with a health value**, some have *AI scripting*.
+
+<%= @link_player %> / <%= @link_scripted_player %><br>
+&emsp;<%= @link_player %> type objects are <%= @link_character %> type objects **controllable by a player**._
+
+<%= @link_obstacle %> / <%= @link_scripted_obstacle %><br>
+&emsp;<%= @link_obstacle %> type objects are <%= @link_character %> type objects that are **spawned** by another <%= @link_character %> type object.<br>
+&emsp;They are mostly static objects.
+
+<%= @link_artifact %> / <%= @link_scripted_artifact %><br>
+&emsp;<%= @link_artifact %> type objects are **purely visual** objects. They **do not** interact with other **`Entity`** objects.
+
+<%= @link_spell %>  / <%= @link_scripted_spell %><br>
+&emsp;<%= @link_spell %> type objects are **attacks and other effects** that can influence **Entity** objects.
