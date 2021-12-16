@@ -1,23 +1,67 @@
 ## Entity
-<p><%= partial "includes/entity/entity.md.erb" %></p>
+**`Entities`** are objects that are *present* on the battlefield.<br>
+There are a number of different types, each intended for different usages.<br>
+
+There are also different types to enable *custom scripts* to have additional behaviour.<br>
+This additional behaviour is only available in their *source* scripts.<br>
+Outside of their *source* scripts, any **`Entity`** object should be treated as if it didn't have custom scripting.<br><br>
+
+Entity Type | Scripted Type | Intended Usage
+----------- | ------------- | --------------
+<%= @link_character %> / <%= @link_scripted_character %><br>
+&emsp;<%= @link_character %> type objects are objects **with a health value**, some have *AI scripting*.
+
+<%= @link_player %> / <%= @link_scripted_player %><br>
+&emsp;<%= @link_player %> type objects are <%= @link_character %> type objects **controllable by a player**._
+
+<%= @link_obstacle %> / <%= @link_scripted_obstacle %><br>
+&emsp;<%= @link_obstacle %> type objects are <%= @link_character %> type objects that are **spawned** by another <%= @link_character %> type object.<br>
+&emsp;They are mostly static objects.
+
+<%= @link_artifact %> / <%= @link_scripted_artifact %><br>
+&emsp;<%= @link_artifact %> type objects are **purely visual** objects. They **do not** interact with other **`Entity`** objects.
+
+<%= @link_spell %>  / <%= @link_scripted_spell %><br>
+&emsp;<%= @link_spell %> type objects are **attacks and other effects** that can influence **Entity** objects.
 
 ## Character
-<p><%= partial "includes/entity/character.md.erb" %></p>
+<%= partial "includes/entity/character.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>
 
 ## ScriptedCharacter
-<p><%= partial "includes/entity/scripted_character.md.erb" %></p>
+<%= partial "includes/entity/scripted_character.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>
 
 ## Player
-<p><%= partial "includes/entity/player.md.erb" %></p>
+<%= partial "includes/entity/player.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>
 
 ## ScriptedPlayer
-<p><%= partial "includes/entity/scripted_player.md.erb" %></p>
+<%= partial "includes/entity/scripted_player.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>	
 
 ## ScriptedSpell
-<p><%= partial "includes/entity/scripted_spell.md.erb" %></p>
+<%= partial "includes/entity/scripted_spell.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>
 
 ## ScriptedObstacle
-<p><%= partial "includes/entity/scripted_obstacle.md.erb" %></p>
+<%= partial "includes/entity/scripted_obstacle.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>
 
 ## ScriptedArtifact
-<p><%= partial "includes/entity/scripted_artifact.md.erb" %></p>
+<%= partial "includes/entity/scripted_artifact.md.erb" %>
+<%= partial "includes/entity/entity_functions.md.erb",
+	locals: { extras: @extra_functions }
+%>
