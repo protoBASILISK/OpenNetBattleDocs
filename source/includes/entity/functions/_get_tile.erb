@@ -1,0 +1,27 @@
+<% @current_function =
+    {
+        function_name: "get_tile",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local facing_direction = " + @variable_text + ":get_facing()
+local tile_in_front = " + @variable_text + ":get_tile( facing_direction, 1 )",
+        lua_comment: "The above snippet returns a handle to the " + @link_tile + " directly in front of the " + @class_name + ".",
+        description: "Returns a handle to the " + @link_tile + " offset in one direction from this " + @class_name + ".<br>" +
+            "If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid " + @link_tile + ", it returns `nil` instead.",
+        return_value_type: @link_tile,
+        return_value_desc: "A handle to the " + @link_tile + ", or `nil`.",
+        parameters: [
+            {
+                name: "direction",
+                desc: "The " + @link_direction + " you want to get select from.",
+                type: @link_direction
+            },
+            {
+                name: "offset",
+                desc: "The number of spaces in that direction you want to select a " + @link_tile + " at.",
+                type: "number"
+            }
+        ]
+
+    }
+%>

@@ -1,0 +1,11 @@
+<% @current_function =
+    {
+        function_name: "get_name",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local " + @variable_text + "_name = " + @variable_text + ":get_name()",
+        description: "Returns the name of this " + @class_name + ".",
+        return_value_type: "string",
+        return_value_desc: "The name of this " + @class_name + "."
+    }
+%>

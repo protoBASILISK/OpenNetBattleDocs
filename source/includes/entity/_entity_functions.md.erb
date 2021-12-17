@@ -1,18 +1,48 @@
-<% layout = "./includes/function_layout.md.erb" %>
+<% _function_layout = "./includes/function_layout.md.erb" %>
 <% _p = "includes/entity/functions/" %>
 <% _s = ".erb" %>
 <% _s2 = ".md.erb" %>
 
+<%# The ones marked with "conditional" are ones that are only included by certain entity types. %>
+<% _functions = 
+    [
+        { name: "get_name" },
+        { name: "set_name", conditional: true },
+        { name: "get_rank", conditional: true },
+        { name: "set_rank", conditional: true },
+        { name: "get_element" },
+        { name: "set_element" },
+        { name: "get_attack_level", conditional: true },
+        { name: "set_attack_level", conditional: true },
+        { name: "get_charge_level", conditional: true },
+        { name: "set_charge_level", conditional: true },
+
+        { name: "get_id" },
+        { name: "get_health" },
+        { name: "get_max_health" },
+        { name: "mod_max_health", conditional: true },
+        { name: "get_max_health_mod", conditional: true },
+        { name: "get_facing" },
+        { name: "get_facing_away" },
+        { name: "set_facing" },
+        { name: "get_field" },
+        { name: "get_tile" },
+        { name: "get_current_tile" },
+        
+    ]
+%>
+
 <% partial "" + locals[:data] if locals[:data].present? %>
 
-<%# The lines with the 'if' statements are ones that are only included by certain entity types. %>
+<% _functions.each do |func| %>
+    <% if func[:conditional].nil? %>
+        <%= partial _function_layout, locals: { datafile: _p + func[:name] + _s } %>
+    <% elsif locals[:extras].include? func[:name] %>
+        <%= partial _function_layout, locals: { datafile: _p + func[:name] + _s } %>
+    <% end %>
+<% end %>
 
-<p><%= partial layout, locals: { datafile: _p + "get_id" + _s } %></p>
-<p><%# partial _p + "get_id" + _s2 %></p>
-<p><%= partial _p + "get_name" + _s2 %></p>
-<p><%= partial _p + "set_name" + _s2 if locals[:extras].include? "set_name" %></p>
-<p><%= partial _p + "get_rank" + _s2 if locals[:extras].include? "get_rank" %></p>
-<p><%= partial _p + "set_rank" + _s2 if locals[:extras].include? "set_rank" %></p>
+<%# The lines with the 'if' statements are ones that are only included by certain entity types. %>
 <p><%= partial _p + "get_attack_level" + _s2 if locals[:extras].include? "get_attack_level" %></p>
 <p><%= partial _p + "set_attack_level" + _s2 if locals[:extras].include? "set_attack_level" %></p>
 <p><%= partial _p + "get_charge_level" + _s2 if locals[:extras].include? "get_charge_level" %></p>
@@ -22,8 +52,6 @@
 <p><%= partial _p + "set_float_shoe" + _s2 if locals[:extras].include? "set_float_shoe" %></p>
 <p><%= partial _p + "set_air_shoe" + _s2 if locals[:extras].include? "set_air_shoe" %></p>
 <p><%= partial _p + "slide_when_moving" + _s2 if locals[:extras].include? "slide_when_moving" %></p>
-<p><%= partial _p + "get_element" + _s2 %></p>
-<p><%= partial _p + "set_element" + _s2 %></p>
 <p><%= partial _p + "get_team" + _s2 %></p>
 <p><%= partial _p + "is_team" + _s2 %></p>
 

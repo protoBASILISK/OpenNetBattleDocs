@@ -1,0 +1,16 @@
+<% @current_function =
+    {
+        function_name: "set_rank",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":set_name( Rank.V1 ) ",
+        description: "Changes the rank of this " + @class_name + ".",
+        parameters: [
+            {
+                name: "rank",
+                desc: "The " + @link_rank + " you want to assign to this " + @class_name + ".",
+                type: @link_rank
+            }
+        ]
+    }
+%>

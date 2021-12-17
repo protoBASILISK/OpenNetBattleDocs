@@ -1,0 +1,16 @@
+<% @current_function =
+    {
+        function_name: "set_facing",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local " + @variable_text + ":set_facing( Direction.Up )",
+        description: "Returns the " + @link_direction + " this " + @class_name + " is facing towards.",
+        parameters: [
+            {
+                name: "facing",
+                desc: "The " + @link_direction + " you want this " + @class_name + " to face towards.",
+                type: @link_direction
+            }
+        ]        
+    }
+%>

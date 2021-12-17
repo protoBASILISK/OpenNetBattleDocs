@@ -1,0 +1,16 @@
+<% @current_function =
+    {
+        function_name: "set_name",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":set_name( 'Example' ) ",
+        description: "Changes the name of this " + @class_name + ".",
+        parameters: [
+            {
+                name: "name",
+                desc: "The **name** you want to assign to this " + @class_name + ".",
+                type: "string"
+            }
+        ]
+    }
+%>

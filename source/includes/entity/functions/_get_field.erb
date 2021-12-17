@@ -1,0 +1,11 @@
+<% @current_function =
+    {
+        function_name: "get_field",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local current_field = " + @variable_text + ":get_field()",
+        description: "Returns a handle to the " + @link_field + " the battle is taking place on.",
+        return_value_type: @link_field,
+        return_value_desc: "The handle to the " + @link_field + " the battle is taking place on."
+    }
+%>

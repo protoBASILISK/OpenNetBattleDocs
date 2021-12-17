@@ -1,0 +1,18 @@
+<% @current_function =
+    {
+        function_name: "set_charge_level",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":set_charge_level( 5 )",
+        lua_desc: "The above snippet sets the " + @class_name + "'s charge level to maximum.",
+        description:
+            "Returns the *charge level* of this " + @class_name + ".<br>" +
+            "&emsp;Valid values are any value between 1 and 5 (inclusive).<br>" +
+            "&emsp;A higher charge level also allows you to use your charge shot faster.",
+        return_value_type: "number",
+        return_value_desc: "The **charge level** of this " + @class_name + ".",
+        footnotes:
+            '<aside class="notice">Minimum charge time at level 1 is 100 frames, reduced by 10 frames for every level above 1.<br></aside>'
+    
+    }
+%>
