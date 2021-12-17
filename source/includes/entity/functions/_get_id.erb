@@ -1,0 +1,13 @@
+<% @current_function =
+    {
+        function_name: "get_id",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local " + @variable_text + "_id = " + @variable_text + ":get_id()",
+        description: "Returns the **unique ID** assigned to this " + @class_name + ".",
+        return_value_type: "number",
+        return_value_desc: "The **unique ID** assigned to this " + @class_name + ".",
+        footnotes:
+            '<aside class="notice"><i>Nothing</i> will share an ID with another <b><code>Entity</code></b>, or any object derived from <b><code>Entity</code></b>.</aside>'
+    }
+%>

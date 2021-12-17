@@ -1,0 +1,63 @@
+# Command Line Arguments
+
+## -b / -battleonly
+Boots up the game, and immediately enters into the battle screen.<br>
+The game closes down after the battle concludes.
+
+### --mob
+Used with the **`-b`** / **`-battleonly`** argument.<br>
+Uses a <%= @link_mob %> encounter loaded from the local disk.
+
+#### Type
+`string` - *The package name for the encounter to be used for the battle.*
+
+### --moburl
+Used with the **`-b`** / **`-battleonly`** argument.<br>
+Downloads a <%= @link_mob %> encounter from the specified web address to be used for the fight.
+
+#### Type
+`string`
+
+### --player
+Used with the **`-b`** / **`-battleonly`** argument.<br>
+Sets the player's character to be  a <%= @link_player %> loaded from the local disk.
+
+#### Type
+`string` - *The package name for the player character to be used for the battle.*
+
+## -e / -errorLevel
+
+
+## -d / -debug
+Enables debugging.
+
+## -s / -singlethreaded
+Runs both the logic and graphic threads in a single thread.
+
+## -l / -locale
+#### Type
+`string` (default `en`)
+
+## -p / -port
+Sets the port to be used for PvP.
+
+#### Type
+`int`
+
+## -r / -remotePort
+Sets the port to be used for the main hub for this game.
+
+#### Type
+`int` (default `8765`)
+
+## -w / -cyberworld
+Sets the IP address for the main hub to be loaded for this game.
+
+#### Type
+`string` (default `127.0.0.1`) - **IPv4 address**
+
+## -m / -mtu
+Sets the MTU, the maximum size for a packet. *Only adjust this if you know what you're doing.*
+
+#### Type
+`int` (default `1300`)

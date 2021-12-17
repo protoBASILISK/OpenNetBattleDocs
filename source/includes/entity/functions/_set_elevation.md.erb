@@ -1,2 +1,16 @@
 ### <%= @class_header %> : set_elevation()
-TODO
+``` lua
+local <%= @variable_text %>	-- example <%= @variable_text %>
+<%= @variable_text %>:set_elevation( 100 )
+```
+> Changes the **elevation** of this <%= @class_name %> to be **`100`** pixels.
+
+The **elevation** of a <%= @class_name %> determines how far above the grid it will be drawn.<br>
+    &emsp;**Positive** values move it *upwards*, negative values move it *downwards*.
+
+#### Function Call
+`<%= @variable_text %>:set_elevation( elevation )`
+
+#### Parameters
+**`integer`** `elevation`<br>
+	&emsp;_The *elevation* you want this <%= @class_name %> to be at (in pixels)._

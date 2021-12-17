@@ -10,7 +10,8 @@ toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - filestructure.md
+  - filestructure.md.erb
+  - command_line.md.erb
 
 search: true
 
@@ -20,6 +21,8 @@ meta:
   - name: OpenNetBattle
     content: Documentation for the OpenNetBattle Engine
 ---
+
+<% partial "./includes/link_list.erb", locals:{ path: "./includes/"} %>
 
 # Introduction
 

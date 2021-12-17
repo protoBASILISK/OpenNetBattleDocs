@@ -1,2 +1,16 @@
 ### <%= @class_header %> : get_offset()
-TODO
+``` lua
+local offset    = <%= @variable_text %>:get_offset()
+```
+
+The **offset** of a <%= @class_name %> determines where on the grid it will be drawn.<br>
+    &emsp;**Positive** X values move it to the *right*, negative X values move it to the *left*.<br>
+    &emsp;**Positive** Y values move it *downwards*, negative Y values move it *upwards*.
+
+#### Function Call
+`<%= @variable_text %>:get_elevation()`
+
+#### Return Value
+**`Vector2`** `offset`<br>
+    &emsp;**`offset.x`** :_The *horizontal offset* of this <%= @class_name %>._<br>
+    &emsp;**`offset.y`** :_The *vertical offset* of this <%= @class_name %>._

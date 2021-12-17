@@ -1,2 +1,14 @@
 ### <%= @class_header %> : get_elevation()
-TODO
+``` lua
+local elevation =   <%= @variable_text %>:set_elevation( 100 )
+```
+
+The **elevation** of a <%= @class_name %> determines how far above the grid it will be drawn.<br>
+    &emsp;**Positive** values move it *upwards*, negative values move it *downwards*.
+
+#### Function Call
+`<%= @variable_text %>:get_elevation()`
+
+#### Return Value
+**`integer`** `elevation`<br>
+	&emsp;_The *elevation* this <%= @class_name %> is at (in pixels)._
