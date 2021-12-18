@@ -1,0 +1,20 @@
+<% @current_function =
+    {
+        function_name: "toggle_hitbox",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":toggle_hitbox( true ) ",
+        description: "If `true`, allows this " + @link_tile + " to be hit by " + @link_spell + "s.<br>" +
+                        "&emsp;Otherwise, it cannot be affected by any " + @link_spell + "s.<br>" +
+                        "&emsp;(default : `true`)",
+        parameters: [
+            {
+                name: "enabled",
+                desc: "`true`, if this " + @class_name + " should be able to be affected by " + @link_spell "s.",
+                type: "boolean"
+            }
+        ],
+        footnotes:
+            '<aside class="notice">Toggling the hitbox **off** (`false`), also stops them from being includued by functions like `Field:find_nearest_characters()`.</aside>'
+    }
+%>

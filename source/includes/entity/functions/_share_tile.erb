@@ -1,0 +1,17 @@
+<% @current_function =
+    {
+        function_name: "share_tile",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":share_tile( true ) ",
+        description: "If `true`, allows other objects to inhabit the same " + @link_tile + " as this " + @class_name + ".<br>" +
+                        "&emsp;(default : `false`)",
+        parameters: [
+            {
+                name: "share",
+                desc: "`true`, if other objects should be allowed to inhabit the same tile as this " + @class_name + ".",
+                type: "boolean"
+            }
+        ]
+    }
+%>

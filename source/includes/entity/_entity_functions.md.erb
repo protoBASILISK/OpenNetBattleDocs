@@ -16,6 +16,8 @@
         { name: "set_attack_level", conditional: true },
         { name: "get_charge_level", conditional: true },
         { name: "set_charge_level", conditional: true },
+        { name: "set_fully_charged_color", conditional: true },
+        { name: "set_charge_position", conditional: true },
 
         { name: "get_id" },
         { name: "get_health" },
@@ -25,10 +27,33 @@
         { name: "get_facing" },
         { name: "get_facing_away" },
         { name: "set_facing" },
+        { name: "get_team" },
+        { name: "is_team" },
+        { name: "set_float_shoe", conditional: true },
+        { name: "set_air_shoe", conditional: true },
+        { name: "slide_when_moving", conditional: true },
+        { name: "set_height" },
+        { name: "get_height" },
+        { name: "get_elevation" },
+        { name: "set_elevation" },
+        { name: "get_offset" },
+        { name: "set_offset" },
+        { name: "get_tile_offset" },
         { name: "get_field" },
         { name: "get_tile" },
         { name: "get_current_tile" },
-        
+        { name: "share_tile", conditional: true },
+
+        { name: "toggle_hitbox", conditional: true },
+        { name: "toggle_counter", conditional: true },
+        { name: "add_defense_rule", conditional: true },
+        { name: "remove_defense_rule", conditional: true },
+
+        { name: "never_flip" },
+        { name: "highlight_tile" },
+        { name: "register_component" },
+        { name: "shake_camera", conditional: true },
+        { name: "set_explosion_behavior", cond: true },
     ]
 %>
 
@@ -43,50 +68,6 @@
 <% end %>
 
 <%# The lines with the 'if' statements are ones that are only included by certain entity types. %>
-<p><%= partial _p + "get_attack_level" + _s2 if locals[:extras].include? "get_attack_level" %></p>
-<p><%= partial _p + "set_attack_level" + _s2 if locals[:extras].include? "set_attack_level" %></p>
-<p><%= partial _p + "get_charge_level" + _s2 if locals[:extras].include? "get_charge_level" %></p>
-<p><%= partial _p + "set_charge_level" + _s2 if locals[:extras].include? "set_charge_level" %></p>
-<p><%= partial _p + "set_fully_charged_color" + _s2 if locals[:extras].include? "set_fully_charged_color" %></p>
-<p><%= partial _p + "set_charge_position" + _s2 if locals[:extras].include? "set_charge_position" %></p>
-<p><%= partial _p + "set_float_shoe" + _s2 if locals[:extras].include? "set_float_shoe" %></p>
-<p><%= partial _p + "set_air_shoe" + _s2 if locals[:extras].include? "set_air_shoe" %></p>
-<p><%= partial _p + "slide_when_moving" + _s2 if locals[:extras].include? "slide_when_moving" %></p>
-<p><%= partial _p + "get_team" + _s2 %></p>
-<p><%= partial _p + "is_team" + _s2 %></p>
-
-<p><%= partial _p + "get_health" + _s2 %></p>
-<p><%= partial _p + "get_max_health" + _s2 %></p>
-<p><%= partial _p + "set_health" + _s2 %></p>
-<p><%= partial _p + "mod_max_health" + _s2 if locals[:extras].include? "mod_max_health" %></p>
-<p><%= partial _p + "get_max_health_mod" + _s2 if locals[:extras].include? "get_max_health_mod" %></p>
-<p><%= partial _p + "get_tile" + _s2 %></p>
-<p><%= partial _p + "get_current_tile" + _s2 %></p>
-<p><%= partial _p + "get_field" + _s2 %></p>
-<p><%= partial _p + "get_facing" + _s2 %></p>
-<p><%= partial _p + "get_facing_away" + _s2 %></p>
-<p><%= partial _p + "set_facing" + _s2 %></p>
-
-<p><%= partial _p + "set_height" + _s2 %></p>
-<p><%= partial _p + "get_height" + _s2 %></p>
-<p><%= partial _p + "get_elevation" + _s2 %></p>
-<p><%= partial _p + "set_elevation" + _s2 %></p>
-<p><%= partial _p + "get_offset" + _s2 %></p>
-<p><%= partial _p + "set_offset" + _s2 %></p>
-<p><%= partial _p + "get_tile_offset" + _s2 %></p>
-
-<p><%= partial _p + "never_flip" + _s2 %></p>
-<p><%= partial _p + "highlight_tile" + _s2 %></p>
-<p><%= partial _p + "register_component" + _s2 %></p>
-<p><%= partial _p + "share_tile" + _s2 if locals[:extras].include? "share_tile" %></p>
-<p><%= partial _p + "toggle_hitbox" + _s2 if locals[:extras].include? "toggle_hitbox" %></p>
-<p><%= partial _p + "add_defense_rule" + _s2 if locals[:extras].include? "add_defense_rule" %></p>
-<p><%= partial _p + "remove_defense_rule" + _s2 if locals[:extras].include? "remove_defense_rule" %></p>
-<p><%= partial _p + "toggle_counter" + _s2 if locals[:extras].include? "toggle_counter" %></p>
-<p><%= partial _p + "on_countered" + _s2 if locals[:extras].include? "on_countered" %></p>
-<p><%= partial _p + "shake_camera" + _s2 if locals[:extras].include? "shake_camera" %></p>
-<p><%= partial _p + "set_explosion_behavior" + _s2 if locals[:extras].include? "set_explosion_behavior" %></p>
-
 <p><%= partial _p + "hide" + _s2 %></p>
 <p><%= partial _p + "reveal" + _s2 %></p>
 <p><%= partial _p + "show_shadow" + _s2 %></p>

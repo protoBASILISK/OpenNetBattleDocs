@@ -1,0 +1,17 @@
+<% @current_function =
+    {
+        function_name: "register_component",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local example_component -- example ScriptedComponent 
+" + @variable_text + ":register_component( example_component ) ",
+        description: "Registers a " + @link_component + " to this " + @class_name + ".",
+        parameters: [
+            {
+                name: "component",
+                desc: "The " + @link_component + " you want to register to this " + @class_name + ".",
+                type: @link_component
+            }
+        ]
+    }
+%>

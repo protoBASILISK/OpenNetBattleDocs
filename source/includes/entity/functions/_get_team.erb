@@ -1,0 +1,11 @@
+<% @current_function =
+    {
+        function_name: "get_team",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local " + @variable_text + "_team = " + @variable_text + ":get_team()",
+        description: "Returns the " + @link_team + " this " + @class_name + " is a member of.",
+        return_value_type: @link_team,
+        return_value_desc: "The " + @link_team + " of this " + @class_name + "."
+    }
+%>

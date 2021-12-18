@@ -1,0 +1,19 @@
+<% @current_function =
+    {
+        function_name: "set_float_shoe",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":set_float_shoe( true ) ",
+        description: "If true, puts whether this " + @class_name + " has the effects of `FloatShoe`.<br>" +
+                        "Otherwise, removes the effect of `FloatShoe` if the " + @class_name + " has it.<br><br>" +
+                        "While under the effects of `FloatShoe`, the " + @class_name + " does **not** get affected by negative " + @link_tile + " affects.<br>" +
+                        "They also do not break `Cracked` " + @link_tile + "s.",
+        parameters: [
+            {
+                name: "has_effect",
+                desc: "`true` if you want this " + @class_name + " to have the `FloatShoe` effect. Otherwise `false`.",
+                type: "boolean"
+            }
+        ]
+    }
+%>

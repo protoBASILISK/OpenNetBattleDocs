@@ -1,0 +1,16 @@
+<% @current_function =
+    {
+        function_name: "highlight_tile",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":highlight_tile( Highlight.Flash ) ",
+        description: "Causes this " + @class_name + " to highlight the " + @link_tile + " it is currently on.",
+        parameters: [
+            {
+                name: "highlight_type",
+                desc: "The " + @link_highlight + " describing how you want the " + @link_tile + " to be highlighted.",
+                type: @link_highlight
+            }
+        ]
+    }
+%>

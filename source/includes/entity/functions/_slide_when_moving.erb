@@ -1,0 +1,17 @@
+<% @current_function =
+    {
+        function_name: "slide_when_moving",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":slide_when_moving( true ) ",
+        description: "If true, makes this " + @class_name + " slide along the ground when moving between " + @link_tile + "s.<br>" +
+                        "Otherwise, they will warp to the " + @link_tile + ".",
+        parameters: [
+            {
+                name: "has_effect",
+                desc: "`true` if you want this " + @class_name + " to have the `FloatShoe` effect. Otherwise `false`.",
+                type: "boolean"
+            }
+        ]
+    }
+%>

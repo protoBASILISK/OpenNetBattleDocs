@@ -1,0 +1,16 @@
+<% @current_function =
+    {
+        function_name: "get_tile_offset",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local " + @variable_text + "_tile_offset = " + @variable_text + ":get_tile_offset()",
+        description: "Returns the physical offset of this " + @class_name + " from the center of the " + @link_tile + " they\'re standing on.<br>" +
+                        "&emsp;**Positive** X values mean it has been moved to the *right*, **negative** X values mean it has been moved to the *left*.<br>" +
+                        "&emsp;**Positive** Y values mean it has been moved *downwards*, **negative** Y values mean it has been moved *upwards*.",
+        return_value_type: "Vector2",
+        return_value_desc: "The offset of this " + @class_name + ". `X` : horizontal offset, `Y` : vertical offset.",
+        footnotes:
+            '<aside class="notice">This value is altered by movement, representing their physical position between ' + @link_tile + 's.<br>
+            &emsp;e.g. While the ' + @class_name + ' is sliding, etc.</aside>'
+    }
+%>

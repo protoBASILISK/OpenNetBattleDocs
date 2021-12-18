@@ -1,0 +1,13 @@
+<% @current_function =
+    {
+        function_name: "get_offset",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local " + @variable_text + "_offset = " + @variable_text + ":get_offset()",
+        description: "Returns the offset of this " + @class_name + " from the center of the " + @link_tile + " they\'re standing on.<br>" +
+                        "&emsp;**Positive** X values move it to the *right*, **negative** X values move it to the *left*.<br>" +
+                        "&emsp;**Positive** Y values move it *downwards*, **negative** Y values move it *upwards*.",
+        return_value_type: "Vector2",
+        return_value_desc: "The offset of this " + @class_name + ". `X` : horizontal offset, `Y` : vertical offset."
+    }
+%>

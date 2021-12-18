@@ -1,0 +1,19 @@
+<% @current_function =
+    {
+        function_name: "set_elevation",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":set_elevation( 100 ) ",
+        description: "Changes how high above the battlefield this " + @class_name + " will be drawn.<br>" +
+                        "**Positive** values move it *upwards*, **negative** values move it *downwards*",
+        parameters: [
+            {
+                name: "height",
+                desc: "The height of this " + @class_name + ".",
+                type: "number"
+            }
+        ],
+        footnotes:
+            '<aside class="notice">Changing the elevation of a @class_name does not affect the location of any graphics associated with it.</aside>'
+    }
+%>

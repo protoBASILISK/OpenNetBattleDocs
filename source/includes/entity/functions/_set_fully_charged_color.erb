@@ -1,0 +1,18 @@
+<% @current_function =
+    {
+        function_name: "set_fully_charged_color",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local example_color = Color.new( 255, 0, 0, 255 )
+" + @variable_text + ":set_fully_charged_color( example_color ) ",
+        lua_comment: "The above snippet makes the " + @class_name + "\'s particles glow **red** when fully charged.",
+        description: "Changes the color of the particle effect when the " + @class_name + " has a charge attack ready.",
+        parameters: [
+            {
+                name: "color",
+                desc: "The " + @link_color + " you want this " + @class_name + " to glow using.",
+                type: @link_color
+            }
+        ]
+    }
+%>
