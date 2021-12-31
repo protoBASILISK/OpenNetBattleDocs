@@ -1,0 +1,24 @@
+<% @current_callback =
+    {
+        callback_name: "attack_func",
+        lua_code:
+"local " + @variable_text + " -- example " + @variable_text + "
+
+" + @variable_text + ".attack_func = function( actor, other )
+    print( \"successful hit on another actor \" )
+end",
+        description: "The function that will be called when the " + @class_name + " interacts with another " + @link_entity + " and registers a successful hit.",
+        parameters: [
+            {
+                name: "actor",
+                desc: "The " + @class_name + " that will be executing the " + @link_card_action + ".",
+                type: @class_name
+            },
+            {
+                name: "other",
+                desc: "The " + @link_entity + " that was hit by this " + @class_name + ".",
+                type: @link_entity
+            }
+        ]
+    }
+%>

@@ -1,0 +1,12 @@
+<% @current_function =
+    {
+        function_name: "is_jumping",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local is_jumping = " + @variable_text + ":is_jumping()",
+        description: "Returns `true` if this " + @class_name + " is currently jumping.<br>" +
+                        "&emsp;Otherwise, returns `false`.",
+        return_value_type: "boolean",
+        return_value_desc: "Whether this " + @class_name + " is jumping or not."
+    }
+%>

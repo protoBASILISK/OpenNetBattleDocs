@@ -1,0 +1,61 @@
+<% partial locals[:datafile] %>
+
+### <%= @class_header %> . <%= @current_callback[:callback_name] %>
+<p style= "background:#2F4F4F; color: white; padding-top: 5px; padding-bottom: 5px;" > UP TO DATE </p>
+
+<%# LUA CODE %>
+<%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
+<% if not @current_callback[:lua_code].nil? %>
+``` lua
+<%= @current_callback[:lua_code] %>
+```
+<%= "> " + @current_callback[:lua_comment] if not @current_callback[:lua_comment].nil? %>
+<% end %>
+
+<%# DESCRIPTION %>
+<%= @current_callback[:description] if not @current_callback[:description].nil? %>
+
+<%# FUNCTION CALL %>
+#### Callback Signature
+<code>function(
+    <%- if not @current_callback[:parameters].nil? %>
+        <%# For all but the last in the parameter list, write the name + a comma after. %>
+        <% @current_callback[:parameters].take( @current_callback[:parameters].size - 1 ).each do |param| %>
+            <%= param[:name] %>,
+        <% end %>
+        <%# For the last in the parameter list, just write the name, no comma. %>
+        <%= @current_callback[:parameters].last[:name] %>
+    <% end -%>
+)</code>
+
+<%# RETURN VALUE %>
+<% if not @current_callback[:return_value_type].nil? %>
+
+    <%# Header has to be at the start of the line, unfortunately. %>
+#### Return Value
+    <b><code><%= @current_callback[:return_value_type] %></code></b>
+    <% if not @current_callback[:return_value_desc].nil? %>
+        <br>&emsp;<i><%= @current_callback[:return_value_desc] %></i>
+    <% end %>
+<% end %>
+
+<%# PARAMETERS %>
+<% if not @current_callback[:parameters].nil? %>
+    <%# Header has to be at the start of the line, unfortunately. %>
+#### Parameters
+
+    <%# Print out the information on each of the parameters: Type, name, then description. %>
+    <% @current_callback[:parameters].take( @current_callback[:parameters].size - 1 ).each do |param| %>
+        <%# For all but the last one, add in a line break afterwards. %>
+        <b><code><%= param[:type] %></code></b>  <code><%= param[:name] %></code><br>
+        &emsp;<i><%= param[:desc] %></i><br>
+        <% end %>
+        <%# For the last in the parameter list, just write the name, no line break. %>
+        <b><code><%= @current_callback[:parameters].last[:type] %></code></b> <code><%= @current_callback[:parameters].last[:name] %></code><br>
+        &emsp;<i><%= @current_callback[:parameters].last[:desc] %></i>
+<% end %>
+
+<%# FOOT NOTES %>
+<% if not @current_callback[:footnotes].nil? %>
+    <%= @current_callback[:footnotes] %>
+<% end %>

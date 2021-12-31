@@ -1,0 +1,21 @@
+<% @current_callback =
+    {
+        callback_name: "normal_attack_func",
+        lua_code:
+"local " + @variable_text + " -- example " + @variable_text + "
+
+" + @variable_text + ".normal_attack_func = function( actor )
+    return Battle.Buster.new( actor, false, 1 )
+end",
+        description: "The function that will be called when the " + @class_name + " uses an **uncharged** normal attack.",
+        parameters: [
+            {
+                name: "actor",
+                desc: "The " + @class_name + " that will be executing the " + @link_card_action + ".",
+                type: @class_name
+            },
+        ],
+        return_value_type: @link_card_action,
+        return_value_desc: "The " + @link_card_action + " that will be executed for the **uncharged** normal attack.",
+    }
+%>

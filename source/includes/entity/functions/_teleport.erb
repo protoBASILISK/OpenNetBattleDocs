@@ -1,0 +1,29 @@
+<% @current_function =
+    {
+        function_name: "teleport",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local target_tile   -- The tile you want to move to
+" + @variable_text + ":tile( target_tile, ActionOrder.Voluntary, nil ) ",
+        lua_comment: "The above snippet causes the " + @class_name + " to teleport to.",
+        description: "Attempts to queue up a movement comand for the " + @class_name + " to teleport to a specified tile.<br>" +
+                        "&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`.",
+        parameters: [
+            {
+                name: "target_tile",
+                desc: "The " + @link_tile + " the " + @class_name + " will be trying to move towards.",
+                type: @link_tile
+            },
+            {
+                name: "action_order",
+                desc: "The priority this action will have vs other movement actions.",
+                type: @link_action_order
+            },
+            {
+                name: "on_begin",
+                desc: "A function to trigger if/when the movement action starts.",
+                type: "function"
+            }
+        ]
+    }
+%>

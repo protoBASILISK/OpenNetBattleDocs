@@ -1,0 +1,17 @@
+<% @current_function =
+    {
+        function_name: "remove_defense_rule",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local example_rule  -- example DefenseRule
+" + @variable_text + ":remove_defense_rule( example_rule ) ",
+        description: "Removes a " + @link_defense_rule + " from a(n) " + @class_name + ".<br>",
+        parameters: [
+            {
+                name: "defense_rule",
+                desc: "**TODO**",
+                type: @link_defense_rule
+            }
+        ]
+    }
+%>

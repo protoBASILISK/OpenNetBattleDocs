@@ -1,0 +1,17 @@
+<% @current_function =
+    {
+        function_name: "set_hit_props",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+local hit_props -- example HitProps
+" + @variable_text + ":set_hit_props( hit_props ) ",
+        description: "Defines the basic properties used for when this " + @class_name + " attacks other `Entity` objects.",
+        parameters: [
+            {
+                name: "hit_props",
+                desc: "The basic properties used for this " + @class_name + "'s attacks.",
+                type: @hit_props
+            }
+        ]
+    }
+%>

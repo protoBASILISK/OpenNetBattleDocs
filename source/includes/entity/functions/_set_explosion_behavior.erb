@@ -1,0 +1,26 @@
+<% @current_function =
+    {
+        function_name: "set_explosion_behavior",
+        lua_code:
+"local " + @variable_text	+ " -- example " + @variable_text + "
+" + @variable_text + ":set_explosion_behavior( number, speed, is_boss ) ",
+        description: "Defines the behavior of the explosions that happen when this " + @class_name +  " is destroyed.",
+        parameters: [
+            {
+                name: "number",
+                desc: "The number of explosions that happen on deletion.",
+                type: "number"
+            },
+            {
+                name: "speed",
+                desc: "The rate at which the explosions happen.",
+                type: "number"
+            },
+            {
+                name: "is_boss",
+                desc: "Whether this is considered a \"boss-type\" " + @class_name + ".",
+                type: "boolean"
+            }
+        ]
+    }
+%>

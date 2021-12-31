@@ -1,7 +1,10 @@
+<% _callback_layout = "./includes/callback_layout.md.erb" %>
 <% _function_layout = "./includes/function_layout.md.erb" %>
-<% _p = "includes/entity/functions/" %>
-<% _s = ".erb" %>
-<% _s2 = ".md.erb" %>
+<% _pre_callback = "includes/entity/callbacks/" %>
+<% _pre_func = "includes/entity/functions/" %>
+<% _pre = "includes/entity/functions/" %>
+<% _suf = ".erb" %>
+<% _suf2 = ".md.erb" %>
 
 <%# The ones marked with "conditional" are ones that are only included by certain entity types. %>
 <% _functions = 
@@ -44,6 +47,24 @@
         { name: "get_current_tile" },
         { name: "share_tile", conditional: true },
 
+        { name: "slide" },
+        { name: "jump" },
+        { name: "teleport" },
+        { name: "raw_move_action" },
+
+        { name: "is_sliding" },
+        { name: "is_jumping" },
+        { name: "is_teleporting" },
+        { name: "is_moving" },
+
+        { name: "hide" },
+        { name: "reveal" },
+        { name: "show_shadow" },
+        { name: "set_shadow", conditional: true },
+        
+        { name: "copy_hit_props" },
+        { name: "set_hit_props" },
+
         { name: "toggle_hitbox", conditional: true },
         { name: "toggle_counter", conditional: true },
         { name: "add_defense_rule", conditional: true },
@@ -53,7 +74,25 @@
         { name: "highlight_tile" },
         { name: "register_component" },
         { name: "shake_camera", conditional: true },
-        { name: "set_explosion_behavior", cond: true },
+        { name: "set_explosion_behavior", conditional: true },
+
+        { name: "register_status_callback", conditional: true }
+    ]
+%>
+
+<% _callbacks =
+    [
+        { name: "battle_start_func", conditional: true },
+        { name: "on_spawn_func", conditional: true },
+        { name: "battle_end_func", conditional: true },
+        { name: "can_move_to_func", conditional: true },
+        { name: "attack_func", conditional: true },
+        { name: "collision_func", conditional: true },
+        { name: "update_func", conditional: true },
+        { name: "delete_func", conditional: true },
+        { name: "normal_attack_func", conditional: true },
+        { name: "charged_attack_func", conditional: true },
+        { name: "special_attack_func", conditional: true },
     ]
 %>
 
@@ -61,59 +100,18 @@
 
 <% _functions.each do |func| %>
     <% if func[:conditional].nil? %>
-        <%= partial _function_layout, locals: { datafile: _p + func[:name] + _s } %>
+        <%= partial _function_layout, locals: { datafile: _pre_func + func[:name] + _suf } %>
     <% elsif locals[:extras].include? func[:name] %>
-        <%= partial _function_layout, locals: { datafile: _p + func[:name] + _s } %>
+        <%= partial _function_layout, locals: { datafile: _pre_func + func[:name] + _suf } %>
+    <% end %>
+<% end %>
+
+<% _callbacks.each do |callback| %>
+    <% if callback[:conditional].nil? %>
+        <%= partial _callback_layout, locals: { datafile: _pre_callback + callback[:name] + _suf } %>
+    <% elsif locals[:extras].include? callback[:name] %>
+        <%= partial _callback_layout, locals: { datafile: _pre_callback + callback[:name] + _suf } %>
     <% end %>
 <% end %>
 
 <%# The lines with the 'if' statements are ones that are only included by certain entity types. %>
-<p><%= partial _p + "hide" + _s2 %></p>
-<p><%= partial _p + "reveal" + _s2 %></p>
-<p><%= partial _p + "show_shadow" + _s2 %></p>
-<p><%= partial _p + "set_shadow" + _s2 if locals[:extras].include? "set_shadow" %></p>
-<p><%= partial _p + "copy_hit_props" + _s2 %></p>
-<p><%= partial _p + "set_hit_props" + _s2 %></p>
-
-<p><%= partial _p + "slide" + _s2 %></p>
-<p><%= partial _p + "jump" + _s2 %></p>
-<p><%= partial _p + "teleport" + _s2 %></p>
-<p><%= partial _p + "raw_move_event" + _s2 %></p>
-
-<p><%= partial _p + "is_sliding" + _s2 %></p>
-<p><%= partial _p + "is_jumping" + _s2 %></p>
-<p><%= partial _p + "is_teleporting" + _s2 %></p>
-<p><%= partial _p + "is_moving" + _s2 %></p>
-
-<p><%= partial _p + "get_texture" + _s2 %></p>
-<p><%= partial _p + "set_texture" + _s2 %></p>
-<p><%= partial _p + "get_color" + _s2 %></p>
-<p><%= partial _p + "set_color" + _s2 %></p>
-<p><%= partial _p + "get_base_palette" + _s2 %></p>
-<p><%= partial _p + "get_current_palette" + _s2 %></p>
-<p><%= partial _p + "set_palette" + _s2 %></p>
-<p><%= partial _p + "store_base_palette" + _s2 %></p>
-<p><%= partial _p + "sprite" + _s2 %></p>
-<p><%= partial _p + "get_animation" + _s2 %></p>
-<p><%= partial _p + "set_animation" + _s2 %></p>
-<p><%= partial _p + "create_node" + _s2 %></p>
-<p><%= partial _p + "create_sync_node" + _s2 if locals[:extras].include? "create_sync_node" %></p>
-<p><%= partial _p + "remove_sync_node" + _s2 if locals[:extras].include? "remove_sync_node" %></p>
-
-<p><%= partial _p + "erase" + _s2 %></p>
-<p><%= partial _p + "delete" + _s2 %></p>
-<p><%= partial _p + "is_deleted" + _s2 %></p>
-<p><%= partial _p + "will_erase_eof" + _s2 %></p>
-
-<p><%= partial _p + "register_status_callback" + _s2 if locals[:extras].include? "register_status_callback" %></p>
-<p><%= partial _p + "normal_attack_func" + _s2 if locals[:extras].include? "normal_attack_func" %></p>
-<p><%= partial _p + "charged_attack_func" + _s2 if locals[:extras].include? "charged_attack_func" %></p>
-<p><%= partial _p + "special_attack_func" + _s2 if locals[:extras].include? "special_attack_func" %></p>
-<p><%= partial _p + "attack_func" + _s2 if locals[:extras].include? "attack_func" %></p>
-<p><%= partial _p + "collision_func" + _s2 if locals[:extras].include? "collision_func" %></p>
-<p><%= partial _p + "update_func" + _s2 if locals[:extras].include? "update_func" %></p>
-<p><%= partial _p + "delete_func" + _s2 if locals[:extras].include? "delete_func" %></p>
-<p><%= partial _p + "on_spawn_func" + _s2 if locals[:extras].include? "on_spawn_func" %></p>
-<p><%= partial _p + "battle_start_func" + _s2 if locals[:extras].include? "battle_start_func" %></p>
-<p><%= partial _p + "battle_end_func" + _s2 if locals[:extras].include? "battle_end_func" %></p>
-<p><%= partial _p + "can_move_to_func" + _s2 if locals[:extras].include? "can_move_to_func" %></p>
