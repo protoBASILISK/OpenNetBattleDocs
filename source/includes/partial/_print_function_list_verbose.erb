@@ -1,0 +1,14 @@
+<% _pre = "includes/" + @current_class[:subdirectory] + "/functions/" %>
+
+<% @class_header    = @current_class[:class_header] %>
+<% @class_name      = @current_class[:class_name] %>
+<% @variable_text   = @current_class[:variable_text] %>
+
+<% @current_class[:functions].each do |func| %>
+    <% if not @current_class[:functions].nil? or
+        (not @current_class[:conditionals].empty? and 
+            @current_class[:conditionals].include? func[:name]) %>
+        <% partial _pre + func[:name] + ".erb" %>
+        <%= partial "includes/partial/function_layout_verbose.md.erb" %>
+    <% end %>
+<% end %>

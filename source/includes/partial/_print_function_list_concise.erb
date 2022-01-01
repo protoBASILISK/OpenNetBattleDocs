@@ -1,0 +1,10 @@
+<% _pre = "includes/" + @current_class[:subdirectory] + "/functions/" %>
+
+<% @class_header = @current_class[:class_header] %>
+<% @class_name = @current_class[:class_name] %>
+<% @variable_text = @current_class[:variable_text] %>
+
+<% @current_class[:functions].each do |func| %>
+    <% partial _pre + func[:name] + ".erb" %>
+    <%= partial "includes/partial/function_layout_concise.md.erb" %>
+<% end %>

@@ -1,0 +1,27 @@
+<% @current_function =
+    {
+    	version: "2.0",
+        function_name: "tile_at",
+        lua_code:
+"",
+        lua_comment: "",
+        description: "Returns the " + @link_tile + " at a specified position in the grid.<br>" +
+                        "&emsp;*Returns `nil` if the position is out of bounds.*",
+        parameters: [
+            {
+                name: "x",
+                desc: "",
+                type: "number"
+            },
+            {
+                name: "y",
+                desc: "",
+                type: "number"
+            }
+        ],
+        return_value_type: @link_tile,
+        return_value_desc: "The " + @link_tile + " at the specified position, or `nil`.",
+        footnotes: "",
+        footnote_code: "",
+    }
+%>

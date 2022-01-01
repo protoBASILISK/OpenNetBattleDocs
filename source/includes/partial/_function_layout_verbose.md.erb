@@ -1,9 +1,9 @@
-<% partial locals[:datafile] %>
-
 ###<%= @class_header %> : <%= @current_function[:function_name] %>()
-<h4 style="margin-top: 0px; margin-left: 20px;">• Version <%= @current_function[:version] %></h4>
+<h4 style="margin-top: 0px; margin-left: 20px;">• v<%= @current_function[:version] %></h4>
 
-<% if not locals[:incomplete].nil? %>
+<% if not locals[:incomplete].nil? or
+    @current_function[:description].empty? or
+    @current_function[:lua_code].empty? %>
     <p style= "background:#C4726C; color: white; padding-top: 5px; padding-bottom: 5px;" > The data for this function is not fully filled out yet. </p>
 <% else %>
     <p style= "background:#2F4F4F; color: white; padding-top: 5px; padding-bottom: 5px;" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>

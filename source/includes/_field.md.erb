@@ -12,14 +12,8 @@ An <%= @link_entity %> cannot stand on these under normal circumstances.
 
 <p><%= partial "includes/partial/field_diagram.md.erb" %></p>
 
-<p><%= partial "includes/field/get_width.md.erb" %></p>
-<p><%= partial "includes/field/get_height.md.erb" %></p>
-<p><%= partial "includes/field/get_character.md.erb" %></p>
-<p><%= partial "includes/field/get_entity.md.erb" %></p>
-<p><%= partial "includes/field/find_characters.md.erb" %></p>
-<p><%= partial "includes/field/find_nearest_characters.md.erb" %></p>
-<p><%= partial "includes/field/tile_at.md.erb" %></p>
-<p><%= partial "includes/field/find_tiles.md.erb" %></p>
-<p><%= partial "includes/field/spawn.md.erb" %></p>
-<p><%= partial "includes/field/notify_on_delete.md.erb" %></p>
-<p><%= partial "includes/field/callback_on_delete.md.erb" %></p>
+<%# "Load in" the data. %>
+<% partial "includes/class_data/field_data.erb" %>
+
+<%# Render out the data using the verbose layout (for now). %>
+<%= partial "includes/partial/print_function_list_verbose.erb" %>

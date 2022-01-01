@@ -45,31 +45,31 @@
         { name: "set_offset" },
         { name: "get_tile_offset" },
 
-        { name: "get_color", incomplete: true },
-        { name: "set_color", incomplete: true },
-        { name: "sprite", incomplete: true },
-        { name: "is_passthrough", incomplete: true },
-        { name: "is_deleted", incomplete: true },
-        { name: "erase", incomplete: true },
-        { name: "will_erase_eof", incomplete: true },
-        { name: "get_texture", incomplete: true },
-        { name: "set_texture", incomplete: true },
-        { name: "set_animation", incomplete: true },
-        { name: "get_animation", incomplete: true },
-        { name: "create_node", incomplete: true },
-        { name: "get_context", incomplete: true },
-        { name: "get_current_palette", conditional: true, incomplete: true },
-        { name: "set_palette", conditional: true, incomplete: true },
-        { name: "get_base_palette", conditional: true, incomplete: true },
-        { name: "store_base_palette", conditional: true, incomplete: true },
-        { name: "input_has", conditional: true, incomplete: true },
-        { name: "get_target", conditional: true, incomplete: true },
-        { name: "card_action_event", conditional: true, incomplete: true },
+        { name: "get_color" },
+        { name: "set_color" },
+        { name: "sprite" },
+        { name: "is_passthrough" },
+        { name: "is_deleted" },
+        { name: "erase" },
+        { name: "will_erase_eof" },
+        { name: "get_texture" },
+        { name: "set_texture" },
+        { name: "set_animation" },
+        { name: "get_animation" },
+        { name: "create_node" },
+        { name: "get_context" },
+        { name: "get_current_palette", conditional: true },
+        { name: "set_palette", conditional: true },
+        { name: "get_base_palette", conditional: true },
+        { name: "store_base_palette", conditional: true },
+        { name: "input_has", conditional: true },
+        { name: "get_target", conditional: true },
+        { name: "card_action_event", conditional: true },
 
-        { name: "create_form", conditional: true, incomplete: true },
-        { name: "create_sync_node", conditional: true, incomplete: true },
-        { name: "remove_sync_node", conditional: true, incomplete: true },
-        { name: "ignore_common_aggressor", conditional: true, incomplete: true },
+        { name: "create_form", conditional: true },
+        { name: "create_sync_node", conditional: true },
+        { name: "remove_sync_node", conditional: true },
+        { name: "ignore_common_aggressor", conditional: true },
 
         { name: "get_field" },
         { name: "get_tile" },
@@ -117,7 +117,7 @@
         { name: "can_move_to_func", conditional: true },
         { name: "attack_func", conditional: true },
         { name: "collision_func", conditional: true },
-        { name: "on_countered", conditional: true, incomplete: true },
+        { name: "on_countered", conditional: true },
         { name: "update_func", conditional: true },
         { name: "delete_func", conditional: true },
         { name: "normal_attack_func", conditional: true },
@@ -129,17 +129,21 @@
 <% partial "" + locals[:data] if locals[:data].present? %>
 
 <% _functions.each do |func| %>
-    <% if func[:conditional].nil? %>
-        <%= partial _function_layout, locals: { datafile: _pre_func + func[:name] + _suf, incomplete: func[:incomplete] } %>
-    <% elsif locals[:extras].include? func[:name] %>
-        <%= partial _function_layout, locals: { datafile: _pre_func + func[:name] + _suf, incomplete: func[:incomplete]  } %>
+    <%  
+        if func[:conditional].nil? or
+            not func[:conditional] or
+                locals[:extras].include? func[:name]
+    %>
+        <%= partial _function_layout, locals: { datafile: _pre_func + func[:name] + _suf } %>
     <% end %>
 <% end %>
 
 <% _callbacks.each do |callback| %>
-    <% if callback[:conditional].nil? %>
-        <%= partial _callback_layout, locals: { datafile: _pre_callback + callback[:name] + _suf, incomplete: callback[:incomplete]  } %>
-    <% elsif locals[:extras].include? callback[:name] %>
-        <%= partial _callback_layout, locals: { datafile: _pre_callback + callback[:name] + _suf, incomplete: callback[:incomplete]  } %>
+    <% 
+        if callback[:conditional].nil? or
+            not callback[:conditional] or
+                locals[:extras].include? callback[:name]
+    %>
+        <%= partial _callback_layout, locals: { datafile: _pre_callback + callback[:name] + _suf } %>
     <% end %>
 <% end %>

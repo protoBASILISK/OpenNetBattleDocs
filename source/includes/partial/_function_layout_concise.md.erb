@@ -1,0 +1,10 @@
+<code><%= @variable_text %>:<%= @current_function[:function_name] %>(
+    <%- if not @current_function[:parameters].nil? %>
+        <%# For all but the last in the parameter list, write the name + a comma after. %>
+        <% @current_function[:parameters].take( @current_function[:parameters].size - 1 ).each do |param| %>
+            <%= param[:name] %>,
+        <% end %>
+        <%# For the last in the parameter list, just write the name, no comma. %>
+        <%= @current_function[:parameters].last[:name] %>
+    <% end -%>
+)</code>
