@@ -1,0 +1,12 @@
+<% @current_function =
+    {
+    	version: "2.0",
+        function_name: "width",
+        lua_code:
+"local tile     -- example Tile
+local width = tile:width()",
+        description: "Returns the <b>width</b> of the " + @link_tile + " (in pixels).",
+        return_value_type: "number",
+        return_value_desc: "The <b>width</b> of the " + @link_tile + ", in pixels."
+    }
+%>

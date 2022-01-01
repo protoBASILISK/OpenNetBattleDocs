@@ -1,0 +1,14 @@
+<% @current_function =
+    {
+    	version: "2.0",
+        function_name: "get_animation",
+        lua_code:
+"",
+        lua_comment: "",
+        description: "Returns the " + @link_animation + " component in charge of the " + @class_name + "'s animations.<br>" +
+                        "&emsp;<i>This does <b>not</b> return the animation the " + @class_name + " currently is playing.</i>",
+        return_value_type: @link_animation,
+        return_value_desc: "The " + @link_animation + " component for the " + @class_name + ".",
+        footnotes: "",
+    }
+%>

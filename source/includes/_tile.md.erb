@@ -1,24 +1,41 @@
 ## Tile
 
-<p><%= partial "includes/tile/get_x.md.erb" %></p>
-<p><%= partial "includes/tile/get_y.md.erb" %></p>
-<p><%= partial "includes/tile/get_width.md.erb" %></p>
-<p><%= partial "includes/tile/get_height.md.erb" %></p>
-<p><%= partial "includes/tile/get_state.md.erb" %></p>
-<p><%= partial "includes/tile/set_state.md.erb" %></p>
-<p><%= partial "includes/tile/is_edge.md.erb" %></p>
-<p><%= partial "includes/tile/is_cracked.md.erb" %></p>
-<p><%= partial "includes/tile/is_hole.md.erb" %></p>
-<p><%= partial "includes/tile/is_walkable.md.erb" %></p>
-<p><%= partial "includes/tile/is_hidden.md.erb" %></p>
-<p><%= partial "includes/tile/is_reserved.md.erb" %></p>
-<p><%= partial "includes/tile/get_team.md.erb" %></p>
-<p><%= partial "includes/tile/attack_entities.md.erb" %></p>
-<p><%= partial "includes/tile/get_distance_to_tile.md.erb" %></p>
-<p><%= partial "includes/tile/find_characters.md.erb" %></p>
-<p><%= partial "includes/tile/highlight.md.erb" %></p>
-<p><%= partial "includes/tile/get_tile.md.erb" %></p>
-<p><%= partial "includes/tile/contains_entity.md.erb" %></p>
-<p><%= partial "includes/tile/remove_entity_by_id.md.erb" %></p>
-<p><%= partial "includes/tile/reserve_entity_by_id.md.erb" %></p>
-<p><%= partial "includes/tile/add_entity.md.erb" %></p>
+<% @class_header="Tile" %>
+<% @class_name="<b><code>Tile</code></b>" %>
+<% @variable_text="tile" %>
+
+<% _pre = "includes/tile/functions/" %>
+<% _function_layout = "includes/function_layout.md.erb" %>
+<% _suf = ".erb" %>
+
+<% _functions = 
+    [
+        { name: "x" },
+        { name: "y" },
+        { name: "width" },
+        { name: "height" },
+        { name: "get_state" },
+        { name: "set_state" },
+        { name: "is_edge" },
+        { name: "is_cracked" },
+        { name: "is_hole" },
+        { name: "is_walkable" },
+        { name: "is_hidden" },
+        { name: "is_reserved" },
+        { name: "get_team" },
+        { name: "set_team" },
+        { name: "attack_entities" },
+        { name: "get_distance_to_tile" },
+        { name: "find_characters" },
+        { name: "highlight" },
+        { name: "get_tile" },
+        { name: "contains_entity" },
+        { name: "remove_entity_by_id" },
+        { name: "reserve_entity_by_id" },
+        { name: "add_entity" }
+    ]
+%>
+
+<% _functions.each do |func| %>
+    <%= partial _function_layout, locals: { datafile: _pre + func[:name] + _suf, incomplete: func[:incomplete] } %>
+<% end %>

@@ -1,0 +1,18 @@
+<% @current_function =
+    {
+    	version: "2.0",
+        function_name: "set_health",
+        lua_code:
+"local " + @variable_text + "   -- example " + @variable_text + "
+" + @variable_text + ":set_health( 1 )",
+        description: "Sets the health of the " + @class_name + " to a specified value.<br>" +
+                        "&nbsp;<i>This cannot exceed the " + @class_name + "'s maximum health.</i>",
+        parameters: [
+            {
+                name: "health",
+                desc: "The (integer) value to set the " + @class_name + "'s health value to.",
+                type: "number"
+            }
+        ]
+    }
+%>
