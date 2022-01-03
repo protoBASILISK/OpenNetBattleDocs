@@ -5,11 +5,12 @@
         lua_code:
 "",
         lua_comment: "",
-        description: "",
+        description: "This function returns an " + @link_entity + " with a specific ID.<br>" +
+                        "If there is no " + @link_entity + " with the provided ID, `nil` is returned instead.",
         parameters: [
             {
                 name: "unique_id",
-                desc: "",
+                desc: "The ID of the " + @link_entity + " you want to retrieve.",
                 type: "number"
             }
         ],
