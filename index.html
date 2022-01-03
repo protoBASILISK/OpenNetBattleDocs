@@ -286,7 +286,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-93f1ed86.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-86478d8e.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-e9a3856f.js"></script>
 
@@ -342,6 +342,74 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#command-line-arguments" class="toc-h1 toc-link" data-title="Command Line Arguments">Command Line Arguments</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#b-battleonly" class="toc-h2 toc-link" data-title="-b / -battleonly">-b / -battleonly</a>
+		      <ul class="toc-list-h3">
+		          <li>
+		            <a href="#mob" class="toc-h3 toc-link" data-title="--mob">--mob</a>
+		          </li>
+		          <li>
+		            <a href="#moburl" class="toc-h3 toc-link" data-title="--moburl">--moburl</a>
+		          </li>
+		          <li>
+		            <a href="#player" class="toc-h3 toc-link" data-title="--player">--player</a>
+		          </li>
+		      </ul>
+                  </li>
+                  <li>
+                    <a href="#e-errorlevel" class="toc-h2 toc-link" data-title="-e / -errorLevel">-e / -errorLevel</a>
+                  </li>
+                  <li>
+                    <a href="#d-debug" class="toc-h2 toc-link" data-title="-d / -debug">-d / -debug</a>
+                  </li>
+                  <li>
+                    <a href="#s-singlethreaded" class="toc-h2 toc-link" data-title="-s / -singlethreaded">-s / -singlethreaded</a>
+                  </li>
+                  <li>
+                    <a href="#l-locale" class="toc-h2 toc-link" data-title="-l / -locale">-l / -locale</a>
+		      <ul class="toc-list-h3">
+		          <li>
+		            <a href="#type-4" class="toc-h3 toc-link" data-title="Type">Type</a>
+		          </li>
+		      </ul>
+                  </li>
+                  <li>
+                    <a href="#p-port" class="toc-h2 toc-link" data-title="-p / -port">-p / -port</a>
+		      <ul class="toc-list-h3">
+		          <li>
+		            <a href="#type-5" class="toc-h3 toc-link" data-title="Type">Type</a>
+		          </li>
+		      </ul>
+                  </li>
+                  <li>
+                    <a href="#r-remoteport" class="toc-h2 toc-link" data-title="-r / -remotePort">-r / -remotePort</a>
+		      <ul class="toc-list-h3">
+		          <li>
+		            <a href="#type-6" class="toc-h3 toc-link" data-title="Type">Type</a>
+		          </li>
+		      </ul>
+                  </li>
+                  <li>
+                    <a href="#w-cyberworld" class="toc-h2 toc-link" data-title="-w / -cyberworld">-w / -cyberworld</a>
+		      <ul class="toc-list-h3">
+		          <li>
+		            <a href="#type-7" class="toc-h3 toc-link" data-title="Type">Type</a>
+		          </li>
+		      </ul>
+                  </li>
+                  <li>
+                    <a href="#m-mtu" class="toc-h2 toc-link" data-title="-m / -mtu">-m / -mtu</a>
+		      <ul class="toc-list-h3">
+		          <li>
+		            <a href="#type-8" class="toc-h3 toc-link" data-title="Type">Type</a>
+		          </li>
+		      </ul>
+                  </li>
+              </ul>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://github.com/TheMaverickProgrammer/OpenNetBattle'>OpenNetBattle @ GitHub</a></li>
@@ -355,7 +423,7 @@
         <h1 id='introduction'>Introduction</h1>
 <p>Welcome to the <strong>OpenNetBattle</strong> engine!</p>
 
-<p>Documentation for this engine is a heavy work-in-progress, as there are new things rapidly being added to it!<br>
+<p>Documentation for this engine is a heavy work-in-progress!<br>
 The engine supports custom user content through <strong>Lua</strong>, this is what the documentation covers.</p>
 
 <p>You can check out any developments <a href='https://github.com/TheMaverickProgrammer/OpenNetBattle'>on the GitHub page</a>!</p>
@@ -428,6 +496,47 @@ Each set of mods <em>needs</em> at least one of these in order to be properly lo
 <blockquote>
 <p>An example of the file layout for an enemy mod.</p>
 </blockquote>
+<h1 id='command-line-arguments'>Command Line Arguments</h1><h2 id='b-battleonly'>-b / -battleonly</h2>
+<p>Boots up the game, and immediately enters into the battle screen.<br>
+The game closes down after the battle concludes.</p>
+<h3 id='mob'>--mob</h3>
+<p>Used with the <strong><code>-b</code></strong> / <strong><code>-battleonly</code></strong> argument.<br>
+Uses a  encounter loaded from the local disk.</p>
+<h4 id='type'>Type</h4>
+<p><code>string</code> - <em>The package name for the encounter to be used for the battle.</em></p>
+<h3 id='moburl'>--moburl</h3>
+<p>Used with the <strong><code>-b</code></strong> / <strong><code>-battleonly</code></strong> argument.<br>
+Downloads a  encounter from the specified web address to be used for the fight.</p>
+<h4 id='type-2'>Type</h4>
+<p><code>string</code></p>
+<h3 id='player'>--player</h3>
+<p>Used with the <strong><code>-b</code></strong> / <strong><code>-battleonly</code></strong> argument.<br>
+Sets the player&#39;s character to be  a <a href="/OpenNetBattleDocs/api/#player"><b><code>Player</code></b></a>
+ loaded from the local disk.</p>
+<h4 id='type-3'>Type</h4>
+<p><code>string</code> - <em>The package name for the player character to be used for the battle.</em></p>
+<h2 id='e-errorlevel'>-e / -errorLevel</h2><h2 id='d-debug'>-d / -debug</h2>
+<p>Enables debugging.</p>
+<h2 id='s-singlethreaded'>-s / -singlethreaded</h2>
+<p>Runs both the logic and graphic threads in a single thread.</p>
+<h2 id='l-locale'>-l / -locale</h2><h4 id='type-4'>Type</h4>
+<p><code>string</code> (default <code>en</code>)</p>
+<h2 id='p-port'>-p / -port</h2>
+<p>Sets the port to be used for PvP.</p>
+<h4 id='type-5'>Type</h4>
+<p><code>int</code></p>
+<h2 id='r-remoteport'>-r / -remotePort</h2>
+<p>Sets the port to be used for the main hub for this game.</p>
+<h4 id='type-6'>Type</h4>
+<p><code>int</code> (default <code>8765</code>)</p>
+<h2 id='w-cyberworld'>-w / -cyberworld</h2>
+<p>Sets the IP address for the main hub to be loaded for this game.</p>
+<h4 id='type-7'>Type</h4>
+<p><code>string</code> (default <code>127.0.0.1</code>) - <strong>IPv4 address</strong></p>
+<h2 id='m-mtu'>-m / -mtu</h2>
+<p>Sets the MTU, the maximum size for a packet. <em>Only adjust this if you know what you&#39;re doing.</em></p>
+<h4 id='type-8'>Type</h4>
+<p><code>int</code> (default <code>1300</code>)</p>
 
       </div>
       <div class="dark-box">
