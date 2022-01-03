@@ -5,22 +5,31 @@
         lua_code:
 "",
         lua_comment: "",
-        description: "",
+        description: "This sets up a `callback function` that will be executed when the **`target`** is deleted/destroyed.",
         parameters: [
             {
                 name: "target_id",
-                desc: "",
+                desc: "The <b>unique ID</b> of the " + @link_entity + " that will will trigger the callback on deletion.",
                 type: "number"
             },
             {
                 name: "callback_function",
-                desc: "",
+                desc: "The <b>`function`</b> that will be called when the " + @link_entity + " with the ID `targetID` is deleted.",
                 type: "function"
             }
         ],
         return_value_type: "number",
         return_value_desc: "",
-        footnotes: "",
-        footnote_code: "",
+        footnotes:
+        [
+            {
+                type: "notice",
+                text: "`callback_function` requires **one** " + @link_entity + " parameter, and to return **no value**.",
+                code:
+"function callback_function( target )
+	print( \"Target died.\" )
+end"
+            }
+        ]
     }
 %>

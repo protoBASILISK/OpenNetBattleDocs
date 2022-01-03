@@ -11,7 +11,12 @@ local " + @variable_text + "_tile_offset = " + @variable_text + ":get_tile_offse
         return_value_type: "Vector2",
         return_value_desc: "The offset of this " + @class_name + ". `X` : horizontal offset, `Y` : vertical offset.",
         footnotes:
-            '<aside class="notice">This value is altered by movement, representing their physical position between ' + @link_tile + 's.<br>
-            &emsp;e.g. While the ' + @class_name + ' is sliding, etc.</aside>'
+        [
+            {
+                type: "notice",
+                text: "This value is altered by movement, representing their physical position between " + @link_tile + "s.<br>
+                        &emsp;e.g. While the " + @class_name + " is sliding, etc."
+            }
+        ]
     }
 %>

@@ -9,6 +9,11 @@ local " + @variable_text + "_id = " + @variable_text + ":get_id()",
         return_value_type: "number",
         return_value_desc: "The **unique ID** assigned to this " + @class_name + ".",
         footnotes:
-            '<aside class="notice"><i>Nothing</i> will share an ID with another <b><code>Entity</code></b>, or any object derived from <b><code>Entity</code></b>.</aside>'
+        [
+            {
+                type: "notice",
+                text: "<i>Nothing</i> will share an ID with another " + @link_entity + ", or any object derived from " + @link_entity + "."
+            }
+        ]
     }
 %>

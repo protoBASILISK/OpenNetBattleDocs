@@ -61,10 +61,14 @@
         &emsp;<i><%= @current_function[:parameters].last[:desc] %></i>
 <% end %>
 
+
 <%# FOOT NOTES %>
-<% if not @current_function[:footnotes].nil? %>
-    <%= @current_function[:footnotes] %>
+<% if not @current_function[:footnote_code].empty? %>
+``` lua
+<%= @current_function[:footnote_code] %>
+```
 <% end %>
-<% if not @current_function[:footnote_code].nil? %>
-> <%= @current_function[:footnote_code] %>
+
+<% if not @current_function[:footnotes].empty? %>
+    <%= @current_function[:footnotes] %>
 <% end %>

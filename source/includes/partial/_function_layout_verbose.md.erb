@@ -62,9 +62,15 @@
 <% end %>
 
 <%# FOOT NOTES %>
-<% if not @current_function[:footnotes].nil? %>
-    <%= @current_function[:footnotes] %>
-<% end %>
-<% if not @current_function[:footnote_code].nil? %>
-> <%= @current_function[:footnote_code] %>
+
+
+<% if not @current_function[:footnotes].nil? and not @current_function[:footnotes].empty? %>
+    <% @current_function[:footnotes].each do |note| %>
+        <% if not note[:code].nil? and not note[:code].empty? %>
+``` lua
+<%= note[:code] %>
+```
+        <% end %>
+        <aside class= <%= note[:type] %> > <%= note[:text] %> </aside>
+    <% end %>
 <% end %>
