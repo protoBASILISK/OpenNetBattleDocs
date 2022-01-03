@@ -3,19 +3,23 @@
     	version: "2.0",
         function_name: "tile_at",
         lua_code:
-"",
-        lua_comment: "",
-        description: "Returns the " + @link_tile + " at a specified position in the grid.<br>" +
-                        "&emsp;*Returns `nil` if the position is out of bounds.*",
+"local top_left = field:tile_at( 1, 1 )
+local bottom_right = field:tile_at( 6, 3 )",
+        lua_comment: "The above commands return a pointer to the **top left** and **bottom right** <i>visible</i> " + @link_tile + "s.",
+        description: "This function retrieves a `pointer` to a " + @link_tile + " at a specific position in the grid.<br>
+If there is a " + @link_tile + " at the requested position, this function returns that " + @link_tile + ", otherwise `nil`.<br><br>
+`x` can (by default) be any number between (and including) `0` ~ `field:width() - 1` _(defaults to `7`)_.<br>
+`y` can (by default) be any number between (and including) `0` ~ `field:height() - 1` _(defaults to `4`)_.<br>
+Any values outside of those ranges will return `nil` instead.",
         parameters: [
             {
                 name: "x",
-                desc: "",
+                desc: "The **column** you want to retrieve the " +  @link_tile + " from **(from left to right)**.",
                 type: "number"
             },
             {
                 name: "y",
-                desc: "",
+                desc: "The **row** you want to retrieve the " + @link_tile + " from **(from top to bottom)**.",
                 type: "number"
             }
         ],

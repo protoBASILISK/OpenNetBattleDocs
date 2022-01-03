@@ -62,8 +62,6 @@
 <% end %>
 
 <%# FOOT NOTES %>
-
-
 <% if not @current_function[:footnotes].nil? and not @current_function[:footnotes].empty? %>
     <% @current_function[:footnotes].each do |note| %>
         <% if not note[:code].nil? and not note[:code].empty? %>

@@ -3,13 +3,19 @@
     	version: "2.0",
         function_name: "callback_on_delete",
         lua_code:
-"",
+"local target 	-- Example target entity
+function onDelete( tar )
+	print( \"Target died.\" )
+end
+
+field:callback_on_delete( target, function( t ) print( \"Target died.\" ) end )
+field:callback_on_delete( target, onDelete )",
         lua_comment: "",
         description: "This sets up a `callback function` that will be executed when the **`target`** is deleted/destroyed.",
         parameters: [
             {
                 name: "target_id",
-                desc: "The <b>unique ID</b> of the " + @link_entity + " that will will trigger the callback on deletion.",
+                desc: "The <b>unique ID</b> of the " + @link_entity + " that will trigger the callback on deletion.",
                 type: "number"
             },
             {
@@ -24,9 +30,11 @@
         [
             {
                 type: "notice",
-                text: "`callback_function` requires **one** " + @link_entity + " parameter, and to return **no value**.",
+                text: "`callback_function` requires **two** " + @link_entity + " parameters, and to return **no value**.<br>" +
+                        "The `target` parameter is the " + @link_entity + " that was deleted.<br>" +
+                        "The `observer` parameter is the " + @link_entity + " that will be notified the other was deleted.",
                 code:
-"function callback_function( target )
+"function callback_function( target, observer )
 	print( \"Target died.\" )
 end"
             }
