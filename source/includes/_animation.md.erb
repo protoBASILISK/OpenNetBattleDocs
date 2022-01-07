@@ -1,39 +1,9 @@
-# Animation
+## Animation
 
-## Functions
-``` lua
-    "load", &Animation::Load,
-    "update", &Animation::Update,
-    "refresh", &Animation::Refresh,
-    "copy_from", &Animation::CopyFrom,
-    "set_state", &Animation::SetAnimation,
-    "get_state", &Animation::GetAnimationString,
-    "point", &Animation::GetPoint,
-    "set_playback", sol::resolve<Animation& (char)>(&Animation::operator<<),
-    "on_complete", sol::resolve<void(const FrameCallback&)>(&Animation::operator<<),
-    "on_frame", &Animation::AddCallback,
-    "on_interrupt", &Animation::SetInterruptCallback
-```
+**`Animation`** objects are in charge of animating sprites, separated from the sprite objects themselves.<br>
+They are in charge of defining animation states, as well as any logic that gets triggered during animations.
 
-
-### load()
-
-### update()
-
-### refresh()
-
-### copy_from()
-
-### set_state()
-
-### get_state()
-
-### point()
-
-### set_playback()
-
-### on_complete()
-
-### on_frame()
-
-### on_interrupt()
+<%# "Load in" the data. %>
+<% partial "includes/class_data/animation_data.erb" %>
+<%# Render out the data using the verbose layout (for now). %>
+<%= partial "includes/partial/print_function_list_verbose.erb" %>

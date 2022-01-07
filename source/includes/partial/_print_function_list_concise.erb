@@ -4,7 +4,8 @@
 <% @class_name = @current_class[:class_name] %>
 <% @variable_text = @current_class[:variable_text] %>
 
-<% @current_class[:functions].each do |func| %>
-    <% partial _pre + func[:name] + ".erb" %>
+<% @current_class[:functions].each do |func_name| %>
+    <%# _pre + func[:name] + ".erb" if func[:name].present? %>
+    <% partial _pre + func + ".erb" %>
     <%= partial "includes/partial/function_layout_concise.md.erb" %>
 <% end %>

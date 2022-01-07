@@ -1,0 +1,34 @@
+
+{
+	"version": "2.0",
+	"function_name": "tile_at",
+	"lua_code": 
+	[
+		"local top_left = field:tile_at( 1, 1 )",
+		"local bottom_right = field:tile_at( 6, 3 )"
+	],
+	"lua_comment": "The above commands return a pointer to the **top left** and **bottom right** _visible_ <%= tile %>.",
+	"description": 
+	[
+		"This function retrieves a `pointer` to a <%= tile %> at a specific position in the grid.",
+		"&emsp;If there is a <%= tile %> at the requested position, this function returns that <%= tile %> otherwise `nil`",
+		"",
+		"`x` can (by default) be any number between (and including) `0` ~ `field:width() - 1` (_defaults to `7`_).",
+		"`y` can (by default) be any number between (and including) `0` ~ `field:height() - 1` (_defaults to `4`).",
+		"&emsp;Any values outside of those ranges will return `nil` instead."
+	],
+	"parameters": [
+		{
+			"name": "x",
+			"desc": "The **column** you want to retrieve the <%= tile %> from **(from left to right)**.",
+			"type": "number"
+		},
+		{
+			"name": "y",
+			"desc": "The **row** you want to retrieve the <%= tile %> from **(from top to bottom)**.",
+			"type": "number"
+		}
+	],
+	"return_value_type": "<%= tile %>",
+	"return_value_desc": "The <%= tile %> at the specified position, or `nil`."
+}

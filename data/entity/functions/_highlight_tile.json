@@ -1,0 +1,21 @@
+
+{
+	"version": "2.0",
+	"function_name": "highlight_tile",
+	"lua_code":
+	[
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:highlight_tile( Highlight.Flash ) "
+	],
+	"description": 
+	[
+		"Causes this <%=class_name%> to highlight the <%=tile%> it is currently on."
+	],
+	"parameters": [
+		{
+			"name": "highlight_type",
+			"desc": "The <%=highlight%> describing how you want the <%=tile%> to be highlighted.",
+			"type": "<%=highlight%>"
+		}
+	]
+}

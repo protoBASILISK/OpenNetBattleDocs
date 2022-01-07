@@ -1,0 +1,22 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"function_name": "set_palette",
+	"lua_code":
+	[
+		""
+	],
+	"lua_comment": "",
+	"description": 
+	[
+		""
+	],
+	"parameters": [
+		{
+			"name": "palette  ",
+			"desc": "",
+			"type": "<%=texture%>"
+		}
+	]
+}

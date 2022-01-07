@@ -1,0 +1,23 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"function_name": "remove_defense_rule",
+	"lua_code":
+	[
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local example_rule\t-- example DefenseRule,",
+		"<%=variable_text%>:remove_defense_rule( example_rule ) "
+	],
+	"description":
+	[
+		"Removes a <%=defense_rule%> from a(n) <%=class_name%>."
+	],
+	"parameters": [
+		{
+			"name": "defense_rule",
+			"desc": "**TODO**",
+			"type": "<%=defense_rule%>"
+		}
+	]
+}

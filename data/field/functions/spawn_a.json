@@ -1,0 +1,29 @@
+
+{
+	"version": "2.0",
+	"function_name": "spawn",
+	"lua_code": 
+"",
+	"lua_comment": "",
+	"description": "",
+	"parameters": [
+		{
+			"name": "entity",
+			"desc": "",
+			"type": "<%=entity%>"
+		},
+		{
+			"name": "spawn_x",
+			"desc": "",
+			"type": "number"
+		},
+		{
+			"name": "spawn_y",
+			"desc": "",
+			"type": "number"
+		}
+	],
+	"return_value_type": "<%=add_entity_status%>",
+	"return_value_desc": ""
+}
+

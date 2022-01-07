@@ -1,0 +1,22 @@
+{
+	"version": "2.0",
+	"function_name": "set_height",
+	"lua_code":
+	[
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:set_height( 100 )"
+	],
+	"description": 
+	[
+		"Changes the height of this <%=class_name%>.",
+		"The height of a <%=class_name%> determines where various objects will show up.",
+		"&emsp;*e.g. Impact graphical effects, any Cards held in hand, etc.*"
+	],
+	"parameters": [
+		{
+			"name": "height",
+			"desc": "The height of this <%=class_name%>.",
+			"type": "number"
+		}
+	]
+}

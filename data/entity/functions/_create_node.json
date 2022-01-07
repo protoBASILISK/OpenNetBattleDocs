@@ -1,0 +1,17 @@
+
+{
+	"version": "2.0",
+	"function_name": "create_node",
+	"lua_code":
+	[
+		""
+	],
+	"lua_comment": "",
+	"description": 
+	[
+		"Creates a new <%=sprite_node%>, with this <%=class_name%> as a parent."
+	],
+	"return_value_type": "<%=sprite_node%>",
+	"return_value_desc": "The newly-created <%=sprite_node%>.",
+	"footnotes": ""
+}

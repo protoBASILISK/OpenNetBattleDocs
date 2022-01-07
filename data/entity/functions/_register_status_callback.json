@@ -1,0 +1,36 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"function_name": "register_status_callback",
+	"lua_code":
+	[
+		"local <%=variable_text%>\t -- example <%=variable_text%>",
+		"local example_callback = function() print( \"status triggered\" ) end  -- example callback function",
+		"<%=variable_text%>:register_status_callback( Hit.Stun, example_callback )"
+	],
+	"lua_comment": "The above snippet registers a callback to be called when the <%=class_name%> is hit by an attack with the `Stun` flag.",
+	"description": 
+	[
+		"Registers a function to the <%=class_name%> that will be called when it is hit by any attack that has a matching property."
+	],
+	"parameters": [
+		{
+			"name": "status_flag",
+			"desc": "The <%=hit_props%> you want to trigger the function on.",
+			"type": "<%=hit_props%>"
+		},
+		{
+			"name": "callback_function",
+			"desc": "The function you want to trigger.",
+			"type": "function"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text": "`callback_function` has to take **no** arguments and return **no** value."
+		}
+	]
+}

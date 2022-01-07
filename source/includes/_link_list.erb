@@ -1,6 +1,15 @@
 <% @path= locals[:path] + "link.erb" %>
+<% _path2= locals[:path] + "partial/link.erb" %>
+
+<% $link_list = 
+    {
+        :tile =>               (partial _path2, locals: { target: "api/#tile", 	text: "Tile" })
+    }
+%>
 
 <% @example=			partial @path, locals: {target: "", 	text: ""} %>
+
+<% $link_tile = partial @path, locals: {target: "api/#tile", 	text: "Tile"} %>
 
 <%# Entities + Derived Classes%>
 <% @link_entity= 		partial @path, locals: {target: "api/#entity", 		text: "Entity"} %>

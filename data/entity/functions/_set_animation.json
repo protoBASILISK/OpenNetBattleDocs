@@ -1,0 +1,21 @@
+{
+	"version": "2.0",
+	"function_name": "set_animation",
+	"lua_code":
+	[
+		""
+	],
+	"lua_comment": "",
+	"description": 
+	[
+		"Makes the <%=class_name%> play an animation from its associated animation file.",
+		"&emsp;If there is no animation in the file with an <b>exactly-matching name</b> exists, the <%=class_name%> will be stuck in an undefined state until it is forced into another state from an external source (e.g. getting hit)."
+	],
+	"parameters": [
+		{
+			"name": "animation_name",
+			"desc": "The <b>name</b> of the animation you want the <%=class_name%> to play.",
+			"type": "string"
+		}
+	]
+}

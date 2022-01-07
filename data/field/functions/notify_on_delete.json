@@ -1,0 +1,56 @@
+{
+	"version": "2.0",
+	"function_name": "notify_on_delete",
+	"lua_code": 
+	[
+		"local target\t-- Example target entity",
+		"local observer\t-- Example observing entity",
+		"function onDelete( tar, obs )",
+		"\tprint( \"Observer saw Target die.\" )",
+		"end",
+		"",
+		"field:notify_on_delete( target, observer, function( t, e ) print( \"Observer saw Target die.\" ) end )",
+		"field:notify_on_delete( target, observer, onDelete )"
+	],
+	"lua_comment": "",
+	"description": 
+	[
+		"This sets up a `callback function` that will be executed when the **`target`** is deleted/destroyed.",
+		"If the **`observer`** is deleted, the `callback` will **not** be executed."
+	],
+	"parameters": [
+		{
+			"name": "target_id",
+			"desc": "The **unique ID** of the <%=entity%> that will trigger the callback on deletion.",
+			"type": "number"
+		},
+		{
+			"name": "observer_id",
+			"desc": "The **unique ID** of the <%=entity%> that will be passed to the `callback function`.",
+			"type": "number"
+		},
+		{
+			"name": "callback_function",
+			"desc": "The **`function`** that will be called when the <%=entity%> with the ID `targetID` is deleted.",
+			"type": "function"
+		}
+	],
+	"return_value_type": "number",
+	"return_value_desc": "",
+	"footnotes": 
+	[
+		{
+			"type": "notice",
+			"text": 
+			[
+				"`callback_function` requires **one** <%=entity%> parameter, and to return **no value**."
+			],
+			"code":
+			[
+				"function callback_function( target )",
+				"\tprint( \"Target died.\" )",
+				"end"
+			] 
+		}
+	]
+}

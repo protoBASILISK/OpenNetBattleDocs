@@ -1,0 +1,22 @@
+{
+    "class_name": "Field",
+    "variable_text": "field",
+    "subdirectory": "field",
+    "functions":
+    [
+        "tile_at",
+        "width",
+        "height",
+        "spawn_a",
+        "spawn_b",
+        "get_character",
+        "get_entity",
+        "find_characters",
+        "find_nearest_characters",
+        "find_tiles",
+        "notify_on_delete",
+        "callback_on_delete"
+    ],
+    "callbacks": [],
+    "members": []
+}

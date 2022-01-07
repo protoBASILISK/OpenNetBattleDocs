@@ -1,0 +1,20 @@
+
+{
+	"version": "2.0",
+	"function_name": "show_shadow",
+	"lua_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:show_shadow( true ) "
+	],
+	"description": [
+		"If `true`, causes the shadow for this <%=class_name%> to be drawn.",
+		"&nbsp;Otherwise, causes the shadow to **not** be drawn."
+	],
+	"parameters": [
+		{
+			"name": "should_show",
+			"desc": "Whether or not this <%=class_name%>'s shadow should be drawn or not.",
+			"type": "boolean"
+		}
+	]
+}

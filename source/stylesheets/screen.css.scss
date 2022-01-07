@@ -697,3 +697,18 @@ html, body {
     #FFFFFF22 10px
   );
 }
+
+.version {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.data {
+  background:#2F4F4F;
+  color: white;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.data.incomplete {
+  background:#C4726C;
+}
