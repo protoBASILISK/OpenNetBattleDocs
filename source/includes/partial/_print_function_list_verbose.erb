@@ -11,9 +11,11 @@
             <% _func_data = load_json_data( Dir.pwd + "" + _pre + func + ".json" ) %>
             <% _func_data = preprocess_json_data( _func_data, $link_list ) %>
 
-            <%= _func_data %>
+            <% if not validate_json( "function", _func_data ) %>
+                <p style="background-color:#800">JSON data doesn't match schema.</p>
+            <% end %>
 
-            <% partial "includes/partial/function_layout_verbose_json.md.erb",
+            <%= partial "includes/partial/function_layout_verbose_json.md.erb",
                 locals: { f: _func_data, c: _current_class } %>
         <% end %>
     <% end %>

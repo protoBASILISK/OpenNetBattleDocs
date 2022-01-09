@@ -1,0 +1,13 @@
+
+{
+	"version": "2.0",
+	"function_name": "x",
+	"lua_code":
+	[
+		"local tile\t-- example Tile",
+		"local tile_x = tile:x()"
+	],
+	"description": "Returns the *column* the <%=tile%> is located in, on the battlefield grid.",
+	"return_value_type": "number",
+	"return_value_desc": ""
+}

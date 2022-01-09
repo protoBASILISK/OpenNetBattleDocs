@@ -5,10 +5,10 @@
 <h4 style="version">• v<%= _func["version"] %></h4>
 
     <%# VERSION INFORMATION %>
-<% if _func["incomplete"].blank? or _func["description"].present? or _func["lua_code"].present? %>
-    <p class= "data" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>
-<% else %>
+<% if _func["incomplete"].present? or is_empty( _func["description"] ) or is_empty( _func["lua_code"] ) %>
     <p class= "data incomplete" > The data for this function is not fully filled out yet. </p>
+<% else %>
+    <p class= "data" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>
 <% end %>
 
     <%# LUA CODE %>

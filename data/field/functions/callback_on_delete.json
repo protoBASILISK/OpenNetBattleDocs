@@ -4,7 +4,7 @@
 	"function_name": "callback_on_delete",
 	"lua_code":
 	[
-		"local target\t- Example target",
+		"local target\t-- Example target",
 		"function onDelete( tar )",
 		"\tprint( \"Target died.\" )",
 		"end",

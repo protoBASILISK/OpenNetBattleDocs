@@ -1,0 +1,29 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"callback_name": "attack_func",
+	"lua_code":
+	[
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"\t<%=variable_text%>.attack_func = function( actor, other )",
+		"\tprint( \"successful hit on another actor \" )",
+		"end"
+	],
+	"description":
+	[ 
+		"The function that will be called when the <%=class_name%> interacts with another <%=entity%> and registers a successful hit."
+	],
+	"parameters": [
+		{
+			"name": "actor",
+			"desc": "The <%=class_name%> that will be executing the <%=card_action%>.",
+			"type": "<%=class_name%>"
+		},
+		{
+			"name": "other",
+			"desc": "The <%=entity%> that was hit by this <%=class_name%>.",
+			"type": "<%=entity%>"
+		}
+	]
+}

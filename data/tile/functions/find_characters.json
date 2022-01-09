@@ -1,15 +1,10 @@
+
 {
 	"version": "2.0",
 	"function_name": "find_characters",
-	"lua_code": 
-	[
-
-	],
+	"lua_code": [ "" ],
 	"lua_comment": "",
-	"description":
-	[
-
-	],
+	"description": [ "" ],
 	"parameters": [
 		{
 			"name": "search_function",

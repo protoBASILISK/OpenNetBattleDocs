@@ -1,0 +1,21 @@
+
+{
+	"version": "2.0",
+	"function_name": "attack_entities",
+	"lua_code":
+	[
+
+	],
+	"lua_comment": "",
+	"description":
+	[
+
+	],
+	"parameters": [
+		{
+			"name": "aggressor",
+			"desc": "",
+			"type": "<%=entity%>"
+		}
+	]
+}

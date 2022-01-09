@@ -2,9 +2,13 @@
 {
 	"version": "2.0",
 	"function_name": "spawn",
-	"lua_code": "",
+	"lua_code": [
+		
+	],
 	"lua_comment": "",
-	"description": "",
+	"description": [
+
+	],
 	"parameters": [
 		{
 			"name": "entity",
@@ -17,6 +21,6 @@
 			"type": "<%=tile%>"
 		}
 	],
-	"return_value_type": "<%=add%>_entity_status",
+	"return_value_type": "<%=add_entity_status%>",
 	"return_value_desc": ""
 }

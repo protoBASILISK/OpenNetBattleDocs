@@ -1,0 +1,15 @@
+
+{
+	"version": "2.0",
+	"function_name": "highlight",
+	"lua_code": [ "" ],
+	"lua_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "highlight_mode",
+			"desc": "",
+			"type": "<%=highlight%>"
+		}
+	]
+}

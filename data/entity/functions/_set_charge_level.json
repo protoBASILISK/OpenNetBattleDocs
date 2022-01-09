@@ -21,7 +21,7 @@
 	[
 		{
 			"type": "notice",
-			"text": "Minimum charge time at level 1 is 100 frames, reduced by 10 frames for every level above 1.",
+			"text": "Minimum charge time at level 1 is 100 frames, reduced by 10 frames for every level above 1."
 		}
 	]
 }

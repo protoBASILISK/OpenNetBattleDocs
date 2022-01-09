@@ -1,0 +1,15 @@
+
+{
+	"version": "2.0",
+	"function_name": "set_state",
+	"lua_code": [ "" ],
+	"lua_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "state",
+			"desc": "",
+			"type": "<%=tile_state%>"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+
+{
+	"version": "2.0",
+	"function_name": "is_reserved",
+	"lua_code": [ "" ],
+	"lua_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "excluded_characters",
+			"desc": "A list of <%=character%> objects to ignore.",
+			"type": "list <Character>"
+		}
+	],
+	"return_value_type": "boolean",
+	"return_value_desc": ""
+}

@@ -1,0 +1,10 @@
+
+{
+	"version": "2.0",
+	"function_name": "get_state",
+	"lua_code": [ "" ],
+	"lua_comment": "",
+	"description": [ "" ],
+	"return_value_type": "<%=tile_state%>",
+	"return_value_desc": ""
+}

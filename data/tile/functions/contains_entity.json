@@ -1,0 +1,17 @@
+
+{
+	"version": "2.0",
+	"function_name": "contains_entity",
+	"lua_code": [ "" ],
+	"lua_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "entity",
+			"desc": "",
+			"type": "<%=entity%>"
+		}
+	],
+	"return_value_type": "boolean",
+	"return_value_desc": ""
+}

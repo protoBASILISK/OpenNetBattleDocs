@@ -1,0 +1,26 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"callback_name": "battle_end_func",
+	"lua_code":
+	[
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"\t<%=variable_text%>.battle_end_func = function( actor )",
+		"\tprint( \"I LIVED!\" )",
+		"end"
+	],
+	"description":
+	[ 
+		"The function that will be called if the <%=class_name%> is alive when the battle ends."
+	],
+	"parameters": 
+	[
+		{
+			"name": "actor",
+			"desc": "The <%=class_name%>.",
+			"type": "<%=class_name%>"
+		}
+	],
+	"return_value_type": "nil"
+}

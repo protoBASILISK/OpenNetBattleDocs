@@ -1,0 +1,22 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"callback_name": "on_countered",
+	"lua_code":
+	[ 
+		""
+	],
+	"description":
+	[ 
+		""
+	],
+	"parameters": [
+		{
+			"name": "",
+			"desc": "",
+			"type": ""
+		}
+	],
+	"return_value_type": ""
+}

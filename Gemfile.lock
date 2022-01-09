@@ -32,6 +32,9 @@ GEM
     hashie (3.6.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
+    json (2.6.1)
+    json-schema (2.8.1)
+      addressable (>= 2.4)
     kramdown (2.3.1)
       rexml
     listen (3.0.8)
@@ -128,6 +131,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json (~> 2.6)
+  json-schema (~> 2.8)
   middleman (~> 4.4)
   middleman-autoprefixer (~> 3.0)
   middleman-sprockets (~> 4.1)
@@ -142,4 +147,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.20
+   2.2.27

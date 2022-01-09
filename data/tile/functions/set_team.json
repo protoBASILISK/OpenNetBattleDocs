@@ -1,0 +1,15 @@
+
+{
+	"version": "2.0",
+	"function_name": "set_team",
+	"lua_code": [ "" ],
+	"lua_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "team",
+			"desc": "",
+			"type": "<%=team%>"
+		}
+	]
+}
