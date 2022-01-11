@@ -5,16 +5,31 @@
     "items":
     [
         {
-            "name":     "Always",
-            "meaning":  [
-                ""
-            ]
+            "name": "None"
         },
         {
-            "name":     "CollisionOnly",
-            "meaning":  [
-                ""
-            ]
+            "name": "Up"
+        },
+        {
+            "name": "Down"
+        },
+        {
+            "name": "Left"
+        },
+        {
+            "name": "Right"
+        },
+        {
+            "name": "UpLeft"
+        },
+        {
+            "name": "UpRight"
+        },
+        {
+            "name": "DownLeft"
+        },
+        {
+            "name": "DownRight"
         }
     ],
     "functions":
