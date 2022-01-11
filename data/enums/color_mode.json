@@ -1,0 +1,19 @@
+{
+    "version": "2.0",
+    "class_name": "ColorMode",
+    "items":
+    [
+        {
+            "name":     "Multiply",
+            "meaning":  [ 
+                "Any tint applied to this <%=sprite_node%> will **darken** it."
+            ]
+        },
+        {
+            "name":     "Additive",
+            "meaning":  [ 
+                "Any tint applied to this <%=sprite_node%> will **brighten** it."
+            ]
+        }
+    ] 
+}

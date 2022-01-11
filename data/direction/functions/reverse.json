@@ -1,0 +1,26 @@
+
+{
+	"version": "2.0",
+	"name": "reverse",
+	"example_code":
+	[
+		"local facing = Direction.UpLeft",
+		"",
+        "local flipped = Direction.reverse( facing )",
+        "local also_flipped = facing.reverse()"
+	],
+	"example_comment": "The above snippet will return `Direction.DownRight`.",
+	"description": 
+	[
+		"This returns a <%=direction%> with the opposite _vertical_ and _horizontal components_ of the input <%=direction%>."
+	],
+	"parameters": [
+		{
+			"name": "input_direction",
+			"desc": "The <%=direction%> you want to flip.",
+			"type": "<%=direction%>"
+		}
+	],
+	"return_value_type": "<%=direction%>",
+	"return_value_desc": ""
+}

@@ -14,7 +14,7 @@
 		"&emsp;If there is a <%= tile %> at the requested position, this function returns that <%= tile %> otherwise `nil`",
 		"",
 		"`x` can (by default) be any number between (and including) `0` ~ `field:width() - 1` (_defaults to `7`_).",
-		"`y` can (by default) be any number between (and including) `0` ~ `field:height() - 1` (_defaults to `4`).",
+		"`y` can (by default) be any number between (and including) `0` ~ `field:height() - 1` (_defaults to `4`_).",
 		"&emsp;Any values outside of those ranges will return `nil` instead."
 	],
 	"parameters": [

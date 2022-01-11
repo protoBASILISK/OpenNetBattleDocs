@@ -1,0 +1,32 @@
+{
+    "version": "2.0",
+    "class_name": "CardClass",
+    "items":
+    [
+        {
+            "name":     "Standard",
+            "meaning":  [
+                "Most common type, able to use many copies in a folder."
+            ]
+        },
+        {
+            "name":     "Mega",
+            "meaning":  [
+                "Uncommon, stronger chips that have an additional limitation:",
+                "&emsp;Only **five** Mega Chips total are allowed in a folder."
+            ]
+        },
+        {
+            "name":     "Giga",
+            "meaning":  [
+                "Strongest class of chip. Only **one** Giga Chip is allowed in a folder."
+            ]
+        },
+        {
+            "name":     "Dark",
+            "meaning":  [
+                "These are the \"fun\" ones. Your friends will love them."
+            ]
+        }
+    ] 
+}

@@ -1,0 +1,26 @@
+
+{
+	"version": "2.0",
+	"name": "flip_y",
+	"example_code":
+	[
+		"local facing = Direction.UpLeft",
+		"",
+        "local flipped = Direction.flip_y( facing )",
+		"local also_flipped = facing.flip_y()"
+	],
+	"example_comment": "The above snippet will return `Direction.DownLeft`.",
+	"description": 
+	[
+		"This returns a <%=direction%> with the same _horizontal component_, but opposite _vertical component_ of the input <%=direction%>."
+	],
+	"parameters": [
+		{
+			"name": "input_direction",
+			"desc": "The <%=direction%> you want to flip the vertical component of.",
+			"type": "<%=direction%>"
+		}
+	],
+	"return_value_type": "<%=direction%>",
+	"return_value_desc": ""
+}

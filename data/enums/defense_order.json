@@ -1,0 +1,19 @@
+{
+    "version": "2.0",
+    "class_name": "DefenseOrder",
+    "items":
+    [
+        {
+            "name":     "Always",
+            "meaning":  [
+                ""
+            ]
+        },
+        {
+            "name":     "CollisionOnly",
+            "meaning":  [
+                ""
+            ]
+        }
+    ] 
+}

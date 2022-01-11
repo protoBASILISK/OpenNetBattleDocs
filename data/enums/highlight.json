@@ -1,0 +1,25 @@
+{
+    "version": "2.0",
+    "class_name": "Highlight",
+    "items":
+    [
+        {
+            "name":     "Solid",
+            "meaning":  [ 
+                "The top of this <%=tile%> will have a yellow overlay."
+            ]
+        },
+        {
+            "name":     "Flash",
+            "meaning":  [ 
+                "The top of this <%=tile%> will alternate between having a yellow overlay, and having none."
+            ]
+        },
+        {
+            "name":     "None",
+            "meaning":  [ 
+                "The top of this <%=tile%> will not change."
+            ]
+        }
+    ] 
+}

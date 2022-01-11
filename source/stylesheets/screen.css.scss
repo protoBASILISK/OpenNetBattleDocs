@@ -453,16 +453,27 @@ html, body {
       padding: 10px;
     }
 
+    td.p {
+      margin: 0px auto; 
+    }
+
+    tr {
+      border-top: 1px dotted #8888;
+    }
+    tr:nth-child(1) {
+      border-top: 0px;
+    }
+
     tr:last-child {
       border-bottom: 1px solid #ccc;
     }
 
     tr:nth-child(odd)>td {
-      background-color: lighten($main-bg,4.2%);
+      background-color: lighten($main-bg,12%);
     }
 
     tr:nth-child(even)>td {
-      background-color: lighten($main-bg,2.4%);
+      background-color: lighten($main-bg,2%);
     }
   }
 

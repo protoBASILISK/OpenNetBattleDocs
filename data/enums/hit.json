@@ -1,0 +1,89 @@
+{
+    "version": "2.0",
+    "class_name": "Hit",
+    "items":
+    [
+        {
+            "name":     "None",
+            "meaning":  [ 
+                "No special properties." 
+            ]
+        },
+        {
+            "name":     "Flinch",
+            "meaning":  [ 
+                "Forces any <%=entity%> hit to play a \"hurt\" animation TODO find which one"
+            ]
+        },
+        {
+            "name":     "Flash",
+            "meaning":  [
+                "Any hit <%=entity%> will temporarily be unable to be hit by attacks that need to make physical contact.",
+                "&emsp;(i.e. the attack has `Hit.Impact`)"
+            ]
+        },
+        {
+            "name":     "Stun",
+            "meaning":  [
+                "Any hit <%=entity%> will turn yellow and become unable to move for a period of time.",
+                "(Default duration is **180 frames**/**3 seconds**)"
+            ]
+        },
+        {
+            "name":     "Root",
+            "meaning":  [
+                "Any hit <%=entity%> will be temporarily rooted in place and unable to move."
+            ]
+        },
+        {
+            "name":     "Impact",
+            "meaning":  [
+                "This attack requires physical contact to be able to hit an <%=entity%>.",
+                "_&emsp;There may be some unintentional behaviour if you accidentally don't include this flag._"
+            ]
+        },
+        {
+            "name":     "Shake",
+            "meaning":  [
+                "Any hit <%=entity%> will temporarily shake."
+            ]
+        },
+        {
+            "name":     "Pierce",
+            "meaning":  [
+                "This attack ignores any 'invisibilty'/'invulnerability' effects on targets."
+            ]
+        },
+        {
+            "name":     "Retangible",
+            "meaning":  [
+                "This attack *removes* any 'invisibilty'/'invulnerability' effects on targets."
+            ]
+        },
+        {
+            "name":     "Breaking",
+            "meaning":  [
+                "This attack ignores any 'blocking' effects an on targets. (e.g. `Guard` chips)"
+            ]
+        },
+        {
+            "name":     "Bubble",
+            "meaning":  [
+                "This attack traps any hit <%=entity%> in a bubble trap."
+            ]
+        },
+        {
+            "name":     "Freeze",
+            "meaning":  [
+                "This attack traps any hit <%=entity%> in an ice trap."
+            ]
+        },
+        {
+            "name":     "Drag",
+            "meaning":  [
+                "This attack will attempt to force any hit <%=entity%> to move.",
+                "&emsp;_If this flag is not included, the <%=entity%> will **not** be moved by this attack._"
+            ]
+        }
+    ] 
+}

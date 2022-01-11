@@ -1,0 +1,25 @@
+{
+    "version": "2.0",
+    "class_name": "Lifetimes",
+    "items":
+    [
+        {
+            "name":     "Local",
+            "meaning":  [ 
+                "This <%=component%>'s `update()` loop happens immediately after the associated <%=entity%>'s `update()`." 
+            ]
+        },
+        {
+            "name":     "Battlestep",
+            "meaning":  [ 
+                "This <%=component%>'s `update()` loop happens every **battle scene** `update()`."
+            ]
+        },
+        {
+            "name":     "Scene",
+            "meaning":  [
+                "This <%=component%>'s `update()` loop happens every **application** `update()`."
+            ]
+        }
+    ] 
+}

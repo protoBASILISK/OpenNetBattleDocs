@@ -1,0 +1,25 @@
+{
+    "version": "2.0",
+    "class_name": "Lockout",
+    "items":
+    [
+        {
+            "name":     "Weapons",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Cards",
+            "meaning":  [ 
+                ""
+            ]
+        },
+        {
+            "name":     "Abilities",
+            "meaning":  [ 
+                ""
+            ]
+        }
+    ] 
+}

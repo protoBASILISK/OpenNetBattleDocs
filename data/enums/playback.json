@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "class_name": "Playback",
+    "items":
+    [
+        {
+            "name":     "Once",
+            "meaning":  [ 
+                "Plays the animation fully, stopping after it completes." 
+            ]
+        },
+        {
+            "name":     "Loop",
+            "meaning":  [ 
+                "Plays the animation fully, repeating from the start when it completes."
+            ]
+        },
+        {
+            "name":     "Bounce",
+            "meaning":  [ 
+                "Plays the animation fully, then plays it again in reverse when it finishes. Repeats from the start." 
+            ]
+        },
+        {
+            "name":     "Reverse",
+            "meaning":  [ 
+                "Plays the animation in reverse, stopping after it completes." 
+            ]
+        }
+    ] 
+}

@@ -1,0 +1,40 @@
+{
+    "version": "2.0",
+    "class_name": "Element",
+    "items":
+    [
+        {
+            "name":     "Fire"
+        },
+        {
+            "name":     "Aqua"
+        },
+        {
+            "name":     "Elec"
+        },
+        {
+            "name":     "Wood"
+        },
+        {
+            "name":     "Sword"
+        },
+        {
+            "name":     "Wind"
+        },
+        {
+            "name":     "Cursor"
+        },
+        {
+            "name":     "Summon"
+        },
+        {
+            "name":     "Plus"
+        },
+        {
+            "name":     "Break"
+        },
+        {
+            "name":     "None"
+        }
+    ] 
+}

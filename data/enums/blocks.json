@@ -1,0 +1,25 @@
+{
+    "version": "2.0",
+    "class_name": "Blocks",
+    "items":
+    [
+        {
+            "name": "White"
+        },
+        {
+            "name": "Red"
+        },
+        {
+            "name": "Green"
+        },
+        {
+            "name": "Blue"
+        },
+        {
+            "name": "Pink"
+        },
+        {
+            "name": "Yellow"
+        }
+    ] 
+}

@@ -1,0 +1,27 @@
+{
+    "version": "2.0",
+    "class_name": "Direction",
+    "subdirectory": "direction",
+    "items":
+    [
+        {
+            "name":     "Always",
+            "meaning":  [
+                ""
+            ]
+        },
+        {
+            "name":     "CollisionOnly",
+            "meaning":  [
+                ""
+            ]
+        }
+    ],
+    "functions":
+    [
+        "flip_x",
+        "flip_y",
+        "reverse",
+        "join"
+    ]
+}

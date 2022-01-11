@@ -1,0 +1,25 @@
+{
+    "version": "2.0",
+    "class_name": "ActionOrder",
+    "items":
+    [
+        {
+            "name":     "Immediate",
+            "meaning":  [ 
+                "Highest priority, immediately move the affected <%=entity%>." 
+            ]
+        },
+        {
+            "name":     "Involuntary",
+            "meaning":  [ 
+                "Medium priority." 
+            ]
+        },
+        {
+            "name":     "Voluntary",
+            "meaning":  [
+                "Lowest priority. Move only when the <%=entity%> is able to move by itself."
+            ]
+        }
+    ] 
+}
