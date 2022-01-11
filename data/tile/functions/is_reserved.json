@@ -1,15 +1,26 @@
 
 {
 	"version": "2.0",
-	"function_name": "is_reserved",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "is_reserved",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local ignored_characters\t-- list of Entity IDs to ignore",
+		"",
+		"local reserving_this_tile = tile:is_reserved( ignored_characters )"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Queries if the <%=tile%> is _reserved_ by a <%=entity%>.",
+		"&emsp;If a list of **unique IDs** is provided, any <%=entity%> with a **unique ID** contained in the list will *not* be included in the calculation.",
+		"",
+		"Returns `true` if the <%=tile%> is marked as _reserved_ by any <%=entity%> not on the provided list.",
+		"&emsp;Otherwise, returns `false`."
+	 ],
 	"parameters": [
 		{
 			"name": "excluded_characters",
 			"desc": "A list of <%=character%> objects to ignore.",
-			"type": "list <Character>"
+			"type": "list&lt;Character&gt;"
 		}
 	],
 	"return_value_type": "boolean",

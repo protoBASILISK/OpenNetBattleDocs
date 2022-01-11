@@ -1,28 +1,28 @@
 
 {
 	"version": "2.0",
-	"function_name": "spawn",
-	"lua_code": 
+	"name": "spawn",
+	"example_code": 
 	[
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description": 
 	[
 	],
 	"parameters": [
 		{
 			"name": "entity",
-			"desc": "",
+			"desc": "The <%=entity%> to spawn.",
 			"type": "<%=entity%>"
 		},
 		{
 			"name": "spawn_x",
-			"desc": "",
+			"desc": "The **column** to spawn the <%=entity%> in.",
 			"type": "number"
 		},
 		{
 			"name": "spawn_y",
-			"desc": "",
+			"desc": "The **row** to spawn the <%=entity%> in.",
 			"type": "number"
 		}
 	],

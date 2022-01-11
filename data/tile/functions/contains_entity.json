@@ -1,10 +1,18 @@
 
 {
 	"version": "2.0",
-	"function_name": "contains_entity",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "contains_entity",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local target\t-- example Entity",
+		"",
+		"return tile:contains_entity( target )"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Queries whether or not this <%=tile%> has a specific <%=entity%> present on it.",
+		"&emsp;Returns `true` if the <%=entity%> is present. Otherwise, returns `false`."
+	 ],
 	"parameters": [
 		{
 			"name": "entity",

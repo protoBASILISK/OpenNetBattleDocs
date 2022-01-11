@@ -1,0 +1,36 @@
+{
+	"class_name": "ScriptedPlayer",
+	"variable_text": "scripted_player",
+	"subdirectory": "entity",
+	"superclass": "Entity",
+	"conditionals":
+	[
+		"from",
+		"input_has",
+		"set_shadow",
+		"card_action_event",
+		"set_name",
+		"get_attack_level",
+		"set_attack_level",
+		"get_charge_level",
+		"set_charge_level",
+		"mod_max_health",
+		"get_max_health_mod",
+		"set_fully_charged_color",
+		"set_charge_position",
+		"set_float_shoe",
+		"set_air_shoe",
+		"slide_when_moving",
+		"add_defense_rule",
+		"remove_defense_rule",
+		"create_form",
+		"create_sync_node",
+		"remove_sync_node",
+		"update_func",
+		"battle_start_func",
+		"battle_end_func",		
+		"normal_attack_func",
+		"charged_attack_func",
+		"special_attack_func"
+	]
+}

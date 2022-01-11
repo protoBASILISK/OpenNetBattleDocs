@@ -1,10 +1,15 @@
 
 {
 	"version": "2.0",
-	"function_name": "get_team",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "get_team",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local tile_team\t= tile:get_team()"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Returns the <%=team%> that currently owns this <%=tile%>"
+	 ],
 	"return_value_type": "<%=team%>",
 	"return_value_desc": ""
 }

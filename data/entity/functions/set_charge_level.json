@@ -1,0 +1,29 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "set_charge_level",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:set_charge_level( 5 )"
+	],
+	"example_comment": "The above snippet sets the <%=class_name%>'s charge level to maximum.",
+	"description":
+	[
+		"Returns the *charge level* of this <%=class_name%>.",
+		"&emsp;Valid values are any value between 1 and 5 (inclusive).",
+		"&emsp;A higher charge level also allows you to use your charge shot faster."
+	],
+	"return_value_type": "number",
+	"return_value_desc": "The **charge level** of this <%=class_name%>.",
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text": 
+			[
+				"Minimum charge time at level 1 is 100 frames, reduced by 10 frames for every level above 1."
+			]
+		}
+	]
+}

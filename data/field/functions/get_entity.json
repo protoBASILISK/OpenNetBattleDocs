@@ -1,11 +1,11 @@
 {
 	"version": "2.0",
-	"function_name": "get_entity",
-	"lua_code": 
+	"name": "get_entity",
+	"example_code": 
 	[
 		""
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description": 
 	[
 		"This function returns an <%=entity%> with a specific ID.",

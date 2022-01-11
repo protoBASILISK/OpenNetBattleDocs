@@ -1,8 +1,8 @@
 
 {
 	"version": "2.0",
-	"function_name": "callback_on_delete",
-	"lua_code":
+	"name": "callback_on_delete",
+	"example_code":
 	[
 		"local target\t-- Example target",
 		"function onDelete( tar )",
@@ -12,7 +12,7 @@
 		"field:callback_on_delete( target, function( t ) print( \"Target died.\" ) end )",
 		"field:callback_on_delete( target, onDelete )"
 	],
-	"lua_comment": "The above snippet shows two different ways to go about setting up a callback function.",
+	"example_comment": "The above snippet shows two different ways to go about setting up a callback function.",
 	"description": "This sets up a `callback` that will be executed when an <%=entity%> with a specific **unique ID** is deleted/destroyed.",
 	"parameters": [
 		{
@@ -34,7 +34,7 @@
 			"type": "notice",
 			"text": 
 			[
-				"`callback_function` requires **two** <%=entity%> parameters, and to return **no value**.",
+				"`callback_function` requires **two** <%=entity%> parameters, and to return **nothing**.",
 				"The `target` parameter is the <%=entity%> that was deleted.",
 				"The `observer` parameter is the <%=entity%> that will be notified the other was deleted."
 			],

@@ -3,7 +3,7 @@
 	"version": "2.0",
 	"conditional": true,
 	"callback_name": "update_func",
-	"lua_code":
+	"example_code":
 	[
 		"local <%=variable_text%> -- example <%=variable_text%>",
 		"\t<%=variable_text%>.update_func = function( actor, elapsed )",

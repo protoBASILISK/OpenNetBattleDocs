@@ -1,14 +1,22 @@
 
 {
 	"version": "2.0",
-	"function_name": "reserve_entity_by_id",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "reserve_entity_by_id",
+	"example_code": [
+		"local tile\t\t-- example Tile",
+		"local entity_id\t-- example Entity ID",
+		"",		
+		"tile:reserve_entity_by_id( entity_id )"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Causes the <%=tile%> to become _reserved_ by a <%=entity%> with a specific **unique ID**.",
+		"An <%=entity%> reserving a <%=tile%> will stop it from being set to certain <%=tile_state%>s."
+	],
 	"parameters": [
 		{
 			"name": "entity_id",
-			"desc": "",
+			"desc": "The **unique ID** of the <%=entity%> that you want to mark as reserving this <%=tile%>.",
 			"type": "number"
 		}
 	]

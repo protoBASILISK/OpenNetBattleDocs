@@ -1,0 +1,16 @@
+
+{
+	"version": "2.0",
+	"name": "set_texture",
+	"example_code": [ "" ],
+
+	"example_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "texture",
+			"desc": "The texture you want to assign to the <%=class_name%>.",
+			"type": "<%=texture%>"
+		}
+	]
+}

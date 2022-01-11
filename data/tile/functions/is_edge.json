@@ -1,10 +1,15 @@
 
 {
 	"version": "2.0",
-	"function_name": "is_edge",
-	"lua_code":[ "" ],
-	"description": [ "" ],
+	"name": "is_edge",
+	"example_code":[ 
+		"local tile\t\t-- example Tile",
+		"local is_edge_tile = tile:is_edge()"
+	],
+	"description": [ 
+		"Returns `true` if this <%=tile%> is one of the invisible <%=tile%>s surrounding the main battlefield.",
+		"&emsp;Otherwise, returns `false`."
+	 ],
 	"return_value_type": "boolean",
-	"return_value_desc": "",
-	"footnotes": ""
+	"return_value_desc": ""
 }

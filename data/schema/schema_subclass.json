@@ -1,0 +1,18 @@
+{
+	"type": "object",
+	"properties": 
+	{
+		"class_name" :	  { "type": "string" },
+		"variable_text" :   { "type": "string" },
+		"subdirectory" :	{ "type": "string" },
+		"superclass" :	  { "type": "string" },
+		"conditionals":	 { "type": "array", "items": { "type": "string" } },
+		"required":
+		[
+			"class_name",
+			"variable_text",
+			"subdirectory",
+			"superclass"
+		]
+	}
+}

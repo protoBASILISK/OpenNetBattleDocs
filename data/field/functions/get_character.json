@@ -1,18 +1,19 @@
 
 {
 	"version": "2.0",
-	"function_name": "get_character",
-	"lua_code": [
+	"name": "get_character",
+	"example_code": [
 		""
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description": [
-		""
+		"Returns a <%=character%> that has the ID `unique_id`.",
+		"If there are *no* <%=character%>s with that ID, or the <%=entity%> with that `unique_id` is *not* a <%=character%>, `nil` is returned instead."
 	],
 	"parameters": [
 		{
 			"name": "unique_id",
-			"desc": "",
+			"desc": "The ID of the <%=character%> you want to retrieve.",
 			"type": "number"
 		}
 	],

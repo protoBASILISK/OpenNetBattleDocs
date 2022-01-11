@@ -1,0 +1,55 @@
+<% _type = "verbose" %>
+<% _type = locals[:type] unless locals[:type] == nil %>
+
+<% _current_class = load_json_data( Dir.pwd + locals[:class_file] ) %>
+<% _subclass = nil %>
+
+<% if locals[:subclass].present? %>
+    <% _subclass = load_json_data( Dir.pwd + locals[:subclass] ) %>
+    
+    <% if _subclass["superclass"].eql? _current_class["class_name"] %>
+        <% _current_class["class_name"] = _subclass["class_name"] %>
+        <% _current_class["variable_text"] = _subclass["variable_text"] %>
+        <% _current_class["subdirectory"] = _subclass["subdirectory"] %>
+        <% _current_class["conditionals"] = _subclass["conditionals"] %>
+    <% else %>
+        <% puts "ERROR: superclass member does not match name of base class." %>
+    <% end %>
+    
+<% end %>
+
+<% $link_list[:class_name] = _current_class["class_name"] %>
+<% $link_list[:variable_text] = _current_class["variable_text"] %>
+
+<% _layout_root = "includes/layout/" + _type + "/" %>
+
+<% if not is_empty( _current_class["functions"] ) %>
+    <% _func_root = "/data/" + _current_class["subdirectory"] + "/functions/" %>
+
+    <% _current_class["functions"].each do |func| %>
+        <% _func_data = load_json_data( Dir.pwd + "" + _func_root + func + ".json" ) %>
+        <% _func_data = preprocess_json_data( _func_data, $link_list ) %>
+
+        <% if _func_data["conditional"].nil? or
+            (_current_class["conditionals"] || [ "" ]).include? _func_data["name"] %>
+
+            <%= partial _layout_root + "function_layout.md.erb",
+                locals: { f: _func_data, c: _current_class } %>
+        <% end%>
+    <% end %>
+<% end %>
+
+<% if not is_empty( _current_class["callbacks"] ) %>
+    <% _callback_root = "/data/" + _current_class["subdirectory"] + "/callbacks/" %>
+
+    <% _current_class["callbacks"].each do |callback| %>
+        <% _callback_data = load_json_data( Dir.pwd + "" + _callback_root + callback + ".json" ) %>
+        <% _callback_data = preprocess_json_data( _callback_data, $link_list ) %>
+
+        <% if _callback_data["conditional"].nil? or
+            _current_class["conditionals"].present? and _current_class["conditionals"].include? _callback_data["name"] %>
+            <%= partial _layout_root + "callback_layout.md.erb",
+                locals: { f: _callback_data, c: _current_class } %>
+        <% end%>
+    <% end %>
+<% end %>

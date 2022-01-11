@@ -1,22 +1,51 @@
 
 {
 	"version": "2.0",
-	"function_name": "find_tiles",
-	"lua_code": 
+	"name": "find_tiles",
+	"example_code": 
 	[
-		""
+		"local field\t-- example field",
+		"",
+		"local blue_filter = function( tile )",
+		"\treturn tile:get_team() == Team.Blue",
+		"end",
+		"",
+		"local all_blue_tiles = field:find_tiles( blue_filter )",
+		"local all_red_tiles = field:find_tiles( function( tile ) return tile:get_team() == Team.Red end )"
 	],
-	"lua_comment": "",
+	"example_comment": "The above snippet shows two ways of passing a function to `find_tiles()`.",
 	"description": [
-		""
+		"Iterates through all of the <%=tile%>s on the battlefield, and returns a list of <%=tile%>s that match a filter `function`.",
+		"&emsp;To *include* a <%=tile%> in the final list, the filter `function` has to return `true`.",
+		"&emsp;If it returns `false` for a <%=tile%>, it will *not* be included."
 	],
 	"parameters": [
 		{
 			"name": "search_function",
-			"desc": "",
+			"desc": "A filter function that determines if the <%=tile%> gets added to the list.",
 			"type": "function"
 		}
 	],
-	"return_value_type": "",
-	"return_value_desc": ""
+	"return_value_type": "list&lt;<%=tile%>&gt;",
+	"return_value_desc": "",
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text":
+			[
+				"`search_function` requires **one** <%=tile%> parameter, and to return a `boolean`.",
+				"Return `true` for any <%=tile%> that you *do* want to include.",
+				"Return `false` for any <%=tile%> that you *do not* want to include.",
+				"_The function does **not** have to be named `search_function`, it is just for illustrative purposes._"
+			],
+			"code": 
+			[
+				"function search_function( tile )",
+				"\treturn tile:get_team() == Team.Red",
+				"end"
+			],
+			"comment": "When used with the above snippet, `find_tiles()` returns all <%=tile%>s that are currently owned by the Red team."
+		}
+	]
 }

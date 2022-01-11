@@ -1,0 +1,37 @@
+<% if locals[:class_file].present? %>
+    <% _current_class = load_json_data( Dir.pwd + locals[:class_file] ) %>
+
+    <% if _current_class["subdirectory"].nil? %>
+        NIL <%= _current_class.class %>???<br> 
+        <%= _current_class %>
+    <% else %>
+        <% _pre = "/data/" + _current_class["subdirectory"] + "/callbacks/" %>
+
+        <% _current_class["callbacks"].each do |func| %>
+            <% _func_data = load_json_data( Dir.pwd + "" + _pre + func + ".json" ) %>
+            <% _func_data = preprocess_json_data( _func_data, $link_list ) %>
+
+            <% if not validate_json( "callback", _func_data ) %>
+                <p style="background-color:#800">JSON data doesn't match schema.</p>
+            <% end %>
+
+            <%= partial "includes/partial/callback_layout_verbose_json.md.erb",
+                locals: { f: _func_data, c: _current_class } %>
+        <% end %>
+    <% end %>
+
+<% else %>
+    <% _pre = "includes/" + @current_class[:subdirectory] + "/functions/" %>
+
+    <% @class_header    = @current_class[:class_header] %>
+    <% @class_name      = @current_class[:class_name] %>
+    <% @variable_text   = @current_class[:variable_text] %>
+
+    <% @current_class[:functions].each do |func| %>
+        <% if not @current_class[:functions].nil? or
+            (not @current_class[:conditionals].empty? ) %>
+            <% partial _pre + func + ".erb" %>
+            <%= partial "includes/partial/function_layout_verbose.md.erb", locals: { f: func } %>
+        <% end %>
+    <% end %>
+<% end %>

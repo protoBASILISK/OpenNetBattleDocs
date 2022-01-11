@@ -1,0 +1,17 @@
+
+{
+	"version": "2.0",
+	"name": "get_offset",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%=variable_text%>_offset = <%=variable_text%>:get_offset()"
+	],
+	"description": 
+	[
+		"Returns the offset of this <%=class_name%> from the center of the <%=tile%> they're standing on.",
+		"&emsp;**Positive** X values move it to the *right*, **negative** X values move it to the *left*.",
+		"&emsp;**Positive** Y values move it *downwards*, **negative** Y values move it *upwards*."
+	],
+	"return_value_type": "Vector2",
+	"return_value_desc": "The offset of this <%=class_name%>. `X` : horizontal offset, `Y` : vertical offset."
+}

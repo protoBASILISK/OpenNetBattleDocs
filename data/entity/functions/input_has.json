@@ -1,0 +1,18 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "input_has",
+	"example_code": [ "" ],
+	"example_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "key_code",
+			"desc": "",
+			"type": "<%=input_event%>"
+		}
+	],
+	"return_value_type": "boolean",
+	"return_value_desc": ""
+}

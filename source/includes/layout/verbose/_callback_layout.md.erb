@@ -1,0 +1,99 @@
+<% _call = locals[:f] %>
+<% _class = locals[:c] %>
+
+### <%= _class["class_name"] %> : <%= _call["name"] %>()
+<h4 style="version">• v<%= _call["version"] %></h4>
+
+    <%# VERSION INFORMATION %>
+<% if _call["incomplete"].present? or is_empty( _call["description"] ) or is_empty( _call["example_code"] ) %>
+    <p class= "data incomplete" > The data for this function is not fully filled out yet. </p>
+<% else %>
+    <p class= "data" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>
+<% end %>
+
+    <%# LUA CODE %>
+    <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
+<% if not is_empty( _call["example_code"] ) %>
+``` lua
+<% _call["example_code"].each do |line| %>
+<%= line %>
+<% end %>
+```
+<%= "> " + _call["example_comment"] if _call["example_comment"].present? %>
+<% end %>
+
+    <%# DESCRIPTION %>
+<% if not is_empty( _call["description"] ) %>
+    <% if _call["description"].respond_to? :each %>
+
+        <% _call["description"].each do |line| %>
+            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
+        <% end %>
+    <% elsif _call["description"].is_a? String %>
+        <%= _call["description"] %>
+    <% end %>
+<% end %>
+
+    <%# FUNCTION CALL %>
+#### Callback Signature
+<code>function(
+    <%- if not is_empty( _call["parameters"] ) %>
+        <%# For all but the last in the parameter list, write the name + a comma after. %>
+        <% _call["parameters"][0...-1].each do |param| %>
+            <%= param["name"] %>,
+        <% end %>
+        <%# For the last in the parameter list, just write the name, no comma. %>
+        <%= _call["parameters"].last["name"] %>
+    <% end -%>
+)</code>
+
+    <%# RETURN VALUE %>
+<% if not is_empty( _call["return_value_type"] ) %>
+    <%# Header has to be at the start of the line, unfortunately. %>
+#### Return Value
+    <b><code><%= _call["return_value_type"] %></code></b>
+    <% if _call["return_value_desc"].present? %>
+        <br>&emsp;<i><%= _call["return_value_desc"] %></i>
+    <% end %>
+<% end %>
+
+    <%# PARAMETERS %>
+<% if not is_empty( _call["parameters"] ) %>
+    <%# Header has to be at the start of the line, unfortunately. %>
+#### Parameters  
+    <%# Print out the information on each of the parameters: Type, name, then description. %>
+    <% _call["parameters"][0...-1].each do |param| %>
+        <%# For all but the last one, add in a line break afterwards. %>
+        <b><code><%= param["type"] %></code></b>  <code><%= param["name"] %></code><br>
+        &emsp;<i><%= param["desc"] %></i><br>
+    <% end %>
+
+    <% _last = _call["parameters"].last %> 
+
+    <%# For the last in the parameter list, just write the name, no line break. %>
+    <b><code><%= _last["type"] %></code></b> <code><%= _last["name"] %></code><br>
+    &emsp;<i><%= _last["desc"] %></i>
+<% end %>
+
+    <%# FOOT NOTES %>
+<% if not is_empty( _call["footnotes"] ) %>
+    <% _call["footnotes"].each do |note| %>
+        <% if note["code"].present? %>
+``` lua
+            <% note["code"].each do |line| %>
+<%= line %>
+            <% end %>
+```
+        <% end %>
+        <% if note["comment"].present? %>
+> <%= note["comment"] %>
+        <% end %>
+        
+        <aside class= <%= note["type"] %> >
+            <% note["text"].each do |line| %>
+                <%= line %><br>
+            <% end %>
+        </aside>
+        
+    <% end %>
+<% end %>

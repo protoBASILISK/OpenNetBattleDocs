@@ -3,7 +3,7 @@
 	"version": "2.0",
 	"conditional": true,
 	"callback_name": "on_countered",
-	"lua_code":
+	"example_code":
 	[ 
 		""
 	],

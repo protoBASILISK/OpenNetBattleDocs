@@ -1,0 +1,28 @@
+{
+	"class_name": "Player",
+	"variable_text": "player",
+	"subdirectory": "entity",
+	"superclass": "Entity",
+	"conditionals":
+	[
+		"input_has",
+		"set_shadow",
+		"card_action_event",
+		"set_name",
+		"get_attack_level",
+		"set_attack_level",
+		"get_charge_level",
+		"set_charge_level",
+		"mod_max_health",
+		"get_max_health_mod",
+		"set_fully_charged_color",
+		"set_charge_position",
+		"set_float_shoe",
+		"set_air_shoe",
+		"slide_when_moving",
+		"add_defense_rule",
+		"remove_defense_rule",
+		"create_sync_node",
+		"remove_sync_node"
+	]
+}

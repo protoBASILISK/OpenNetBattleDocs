@@ -1,0 +1,22 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "slide_when_moving",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:slide_when_moving( true )"
+	],
+	"description": 
+	[
+		"If true, makes this <%=class_name%> slide along the ground when moving between <%=tile%>s.",
+		"Otherwise, they will warp to the <%=tile%>."
+	],
+	"parameters": [
+		{
+			"name": "has_effect",
+			"desc": "`true` if you want this <%=class_name%> to have the `FloatShoe` effect. Otherwise `false`.",
+			"type": "boolean"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "set_name",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:set_name( 'Example' )"
+	],
+	"description": [
+		"Changes the name of this <%=class_name%>."
+	],
+	"parameters": [
+		{
+			"name": "name",
+			"desc": "The **name** you want to assign to this <%=class_name%>.",
+			"type": "string"
+		}
+	]
+}

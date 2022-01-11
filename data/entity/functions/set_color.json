@@ -1,0 +1,15 @@
+
+{
+	"version": "2.0",
+	"name": "set_color",
+	"example_code": [ "" ],
+	"example_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "color",
+			"desc": "The color to tint the <%=class_name%> with.",
+			"type": "<%=color%>"
+		}
+	]
+}

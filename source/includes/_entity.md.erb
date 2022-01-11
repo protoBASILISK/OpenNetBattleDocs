@@ -25,43 +25,50 @@ Entity Type | Scripted Type | Intended Usage
 &emsp;<%= @link_spell %> type objects are **attacks and other effects** that can influence **Entity** objects.
 
 ## Character
-<%# "Load in" the data. %>
-<% partial "includes/class_data/character_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/character.json"
+    } %>
 
 ## ScriptedCharacter
-<%# "Load in" the data. %>
-<% partial "includes/class_data/scripted_character_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/scripted_character.json"
+    } %>
 
 ## Player
-<%# "Load in" the data. %>
-<% partial "includes/class_data/player_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/player.json"
+    } %>
 
 ## ScriptedPlayer
-<%# "Load in" the data. %>
-<% partial "includes/class_data/scripted_player_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/scripted_player.json"
+    } %>
 
 ## ScriptedSpell
-<%# "Load in" the data. %>
-<% partial "includes/class_data/scripted_spell_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/scripted_spell.json"
+    } %>
 
 ## ScriptedObstacle
-<%# "Load in" the data. %>
-<% partial "includes/class_data/scripted_obstacle_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/scripted_obstacle.json"
+    } %>
 
 ## ScriptedArtifact
-<%# "Load in" the data. %>
-<% partial "includes/class_data/scripted_artifact_data.erb" %>
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb" %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: {
+        class_file: "/data/classes/entity.json",
+        subclass: "/data/classes/entity/scripted_artifact.json"
+    } %>

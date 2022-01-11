@@ -1,23 +1,23 @@
 
 {
 	"version": "2.0",
-	"function_name": "spawn",
-	"lua_code": [
+	"name": "spawn",
+	"example_code": [
 		
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description": [
 
 	],
 	"parameters": [
 		{
 			"name": "entity",
-			"desc": "",
+			"desc": "The <%=entity%> to spawn.",
 			"type": "<%=entity%>"
 		},
 		{
 			"name": "spawn_tile",
-			"desc": "",
+			"desc": "The <%=tile%> to spawn the <%=entity%> on.",
 			"type": "<%=tile%>"
 		}
 	],

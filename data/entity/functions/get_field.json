@@ -1,0 +1,15 @@
+
+{
+	"version": "2.0",
+	"name": "get_field",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local current_field = <%=variable_text%>:get_field()"
+	],
+	"description": 
+	[
+		"Returns a handle to the <%=field%> the battle is taking place on."
+	],
+	"return_value_type": "<%=field%>",
+	"return_value_desc": "The handle to the <%=field%> the battle is taking place on."
+}

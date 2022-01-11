@@ -1,0 +1,18 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "create_sync_node",
+	"example_code": [ "" ],
+	"example_comment": "",
+	"description": [ "" ],
+	"parameters": [
+		{
+			"name": "attachment_point",
+			"desc": "",
+			"type": "string"
+		}
+	],
+	"return_value_type": "<%=sync_node%>",
+	"return_value_desc": ""
+}

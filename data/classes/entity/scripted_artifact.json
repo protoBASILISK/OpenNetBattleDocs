@@ -1,0 +1,15 @@
+{
+	"class_name": "ScriptedArtifact",
+	"variable_text": "scripted_artifact",
+	"subdirectory": "entity",
+	"superclass": "Entity",
+	"conditionals":
+	[
+		"update_func",
+		"on_spawn_func",
+		"delete_func",
+		"can_move_to_func",
+		"battle_start_func",
+		"battle_end_func"
+	]
+}

@@ -1,8 +1,8 @@
 
 {
 	"version": "2.0",
-	"function_name": "x",
-	"lua_code":
+	"name": "x",
+	"example_code":
 	[
 		"local tile\t-- example Tile",
 		"local tile_x = tile:x()"

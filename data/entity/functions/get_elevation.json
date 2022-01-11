@@ -1,0 +1,24 @@
+
+{
+	"version": "2.0",
+	"name": "get_elevation",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%=variable_text%>_elevation = <%=variable_text%>:get_elevation()"
+	],
+	"description": [
+		"Returns the elevation of this <%=class_name%>."
+	],
+	"return_value_type": "number",
+	"return_value_desc": "The elevation of this <%=class_name%>.",
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text": 
+			[
+				"Changing the elevation of a <%=class_name%> does not affect the location of any graphics associated with it."
+			]
+		}
+	]
+}

@@ -1,10 +1,15 @@
 
 {
 	"version": "2.0",
-	"function_name": "get_state",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "get_state",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local tile_state = tile:get_state()"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Returns the current <%=tile_state%> of this <%=tile%>."
+	],
 	"return_value_type": "<%=tile_state%>",
 	"return_value_desc": ""
 }

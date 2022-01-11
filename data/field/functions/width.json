@@ -1,12 +1,12 @@
 
 {
 	"version": "2.0",
-	"function_name": "width",
-	"lua_code": 
+	"name": "width",
+	"example_code": 
 	[
 		"local field_width = field:width()"
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description": [
 		"This returns the **width** of the current battlefield in <%=tile%> (including *hidden* tiles)."
 	],

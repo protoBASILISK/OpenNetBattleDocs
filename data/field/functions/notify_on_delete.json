@@ -1,7 +1,7 @@
 {
 	"version": "2.0",
-	"function_name": "notify_on_delete",
-	"lua_code": 
+	"name": "notify_on_delete",
+	"example_code": 
 	[
 		"local target\t-- Example target entity",
 		"local observer\t-- Example observing entity",
@@ -12,7 +12,7 @@
 		"field:notify_on_delete( target, observer, function( t, e ) print( \"Observer saw Target die.\" ) end )",
 		"field:notify_on_delete( target, observer, onDelete )"
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description": 
 	[
 		"This sets up a `callback function` that will be executed when the **`target`** is deleted/destroyed.",

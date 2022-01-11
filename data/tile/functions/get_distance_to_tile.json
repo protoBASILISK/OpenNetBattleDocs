@@ -1,10 +1,17 @@
 
 {
 	"version": "2.0",
-	"function_name": "get_distance_to_tile",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "get_distance_to_tile",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local other_tile\t-- example Tile",
+		"",
+		"local distance = tile:get_distance_to_tile( other_tile )"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Returns the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) between this <%=tile%> and another."
+	 ],
 	"parameters": [
 		{
 			"name": "other_tile",
@@ -13,5 +20,5 @@
 		}
 	],
 	"return_value_type": "number",
-	"return_value_desc": ""
+	"return_value_desc": "The <%=tile%> you want to measure the distance to."
 }

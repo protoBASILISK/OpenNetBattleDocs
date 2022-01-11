@@ -1,7 +1,3 @@
 ## Tile
 
-<%# "Load in" the data. %>
-<% partial "includes/class_data/tile_data.erb" %>
-
-<%# Render out the data using the verbose layout (for now). %>
-<%= partial "includes/partial/print_function_list_verbose.erb", locals: { class_file: "/data/classes/tile.json" } %>
+<%= partial "includes/layout/print_class_info.md.erb", locals: { class_file: "/data/classes/tile.json" } %>

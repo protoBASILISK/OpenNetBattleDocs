@@ -1,15 +1,18 @@
 
 {
 	"version": "2.0",
-	"function_name": "attack_entities",
-	"lua_code":
+	"name": "attack_entities",
+	"example_code":
 	[
-
+		"local tile\t\t-- example Tile",
+		"local spell\t-- example Spell",
+		"",
+		"tile:attack_entities( spell )"
 	],
-	"lua_comment": "",
+	"example_comment": "",
 	"description":
 	[
-
+		"Queues up a <%=spell%> to affect any <%=entity%> present on this <%=tile%>."
 	],
 	"parameters": [
 		{

@@ -1,19 +1,25 @@
 
 {
 	"version": "2.0",
-	"function_name": "get_tile",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "get_tile",
+	"example_code": [ 
+		"local tile\t-- example Tile",
+		"local tile_to_left = tile:get_tile( Direction.Left, 1 )"
+	 ],
+	"example_comment": "The above snippet returns a the <%=tile%> to the left of this one.",
+	"description": [ 
+		"Returns a <%=tile%> offset in one direction from this <%=tile%>.",
+		"&emsp;If this offset goes out of bounds, or is to an otherwise invalid <%=tile%>, it returns `nil` instead."
+	 ],
 	"parameters": [
 		{
 			"name": "direction",
-			"desc": "",
+			"desc": "The direction you want to retrieve the <%=tile%> from.",
 			"type": "<%=direction%>"
 		},
 		{
 			"name": "distance",
-			"desc": "",
+			"desc": "The number of spaces <b>(min: 0)</b> in that direction you want to retrieve the <%=tile%> from.",
 			"type": "number"
 		}
 	],

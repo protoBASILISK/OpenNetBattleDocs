@@ -1,0 +1,33 @@
+
+{
+	"version": "2.0",
+	"name": "teleport",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local target_tile\t-- The tile you want to move to",
+		"<%=variable_text%>:tile( target_tile, ActionOrder.Voluntary, nil )"
+	],
+	"example_comment": "The above snippet causes the <%=class_name%> to teleport to.",
+	"description": 
+	[
+		"Attempts to queue up a movement comand for the <%=class_name%> to teleport to a specified tile.",
+		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."
+	],
+	"parameters": [
+		{
+			"name": "target_tile",
+			"desc": "The <%=tile%> the <%=class_name%> will be trying to move towards.",
+			"type": "<%=tile%>"
+		},
+		{
+			"name": "action_order",
+			"desc": "The priority this action will have vs other movement actions.",
+			"type": "<%=action_order%>"
+		},
+		{
+			"name": "on_begin",
+			"desc": "A function to trigger if/when the movement action starts.",
+			"type": "function"
+		}
+	]
+}

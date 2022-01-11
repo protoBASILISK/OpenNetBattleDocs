@@ -1,22 +1,52 @@
+
 {
 	"version": "2.0",
-	"function_name": "find_characters",
-	"lua_code": 
+	"name": "find_characters",
+	"example_code": 
 	[
-
+		"local field\t-- example field",
+		"",
+		"local blue_team_filter = function( character )",
+		"\treturn character:get_team() == Team.Blue",
+		"end",
+		"",
+		"local all_blue_characters = field:find_characters( blue_team_filter )",
+		"local all_red_characters",
+		"\t\t= field:find_characters( function( character ) return character:get_team() == Team.Red end )"
 	],
-	"lua_comment": "",
-	"description":
-	[
-
+	"example_comment": "The above snippet shows two ways of passing a function to `find_characters()`.",
+	"description": [
+		"Iterates through all of the <%=character%>s on the battlefield, and returns a list of <%=character%>s that match a filter `function`.",
+		"&emsp;To *include* a <%=character%> in the final list, the filter `function` has to return `true`.",
+		"&emsp;If it returns `false` for a <%=character%>, it will *not* be included."
 	],
 	"parameters": [
 		{
 			"name": "search_function",
-			"desc": "",
+			"desc": "A filter function that determines if the <%=character%> gets added to the list.",
 			"type": "function"
 		}
 	],
-	"return_value_type": "list&lt;Character&gt;",
-	"return_value_desc": ""
+	"return_value_type": "list&lt;<%=character%>&gt;",
+	"return_value_desc": "",
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text":
+			[
+				"`search_function` requires **one** <%=character%> parameter, and to return a `boolean`.",
+				"Return `true` for any <%=character%> that you *do* want to include.",
+				"Return `false` for any <%=character%> that you *do not* want to include.",
+				"_The function does **not** have to be named `search_function`, it is just for illustrative purposes._"
+			],
+			"code": 
+			[
+				"function search_function( character )",
+				"\treturn character:get_team() == Team.Red",
+				"end"
+			],
+			"comment": "When used with the above snippet, `find_characters()` returns all <%=character%>s that are currently on the Red team."
+		}
+	]
 }

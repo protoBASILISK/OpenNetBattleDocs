@@ -1,10 +1,18 @@
 
 {
 	"version": "2.0",
-	"function_name": "is_walkable",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "is_walkable",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local is_walkable_tile = tile:is_walkable()"
+	],
+	"example_comment": "",
+	"description": [
+		"Causes the <%=tile%> to remove any <%=entity%> present on it with a specific **unique ID**.",
+		"",
+		"Returns `true` if an <%=entity%> was removed.",
+		"Otherwise, returns `false`."
+	 ],
 	"return_value_type": "boolean",
 	"return_value_desc": ""
 }

@@ -1,0 +1,20 @@
+
+{
+	"version": "2.0",
+	"name": "never_flip",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"<%=variable_text%>:never_flip( true ) "
+	],
+	"description": 
+	[
+		"If `true`, stops this <%=class_name%> from flipping direction (graphically) based on its <%=team%>."
+	],
+	"parameters": [
+		{
+			"name": "disable_flip",
+			"desc": "`true`, if this <%=class_name%> should not flip direction (graphically).",
+			"type": "boolean"
+		}
+	]
+}

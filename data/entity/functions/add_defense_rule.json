@@ -1,0 +1,23 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "add_defense_rule",
+	"example_code": [ 
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local example_rule  -- example DefenseRule",
+		"<%=variable_text%>:add_defense_rule( example_rule )"
+	],
+	"description": [
+		"Adds a <%=defense_rule%> to a(n) <%=class_name%>.",
+		"<%=defense_rule%>s allow the <%=class_name%> to change/ignore certain properties of attacks that affect them.",
+		"**TODO** : Get an actually good explanation of what they do."
+	],
+	"parameters": [
+		{
+			"name": "defense_rule",
+			"desc": "**TODO**",
+			"type": "<%=defense_rule%>"
+		}
+	]
+}

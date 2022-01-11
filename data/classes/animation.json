@@ -1,0 +1,21 @@
+{
+	"class_name": "Animation",
+	"variable_text": "animation",
+	"subdirectory": "etc/animation",
+	"functions":
+	[
+		"load",
+		"update",
+		"set_playback_speed",
+		"get_playback_speed",
+		"refresh",
+		"copy_from",
+		"set_state",
+		"get_state",
+		"has_state",
+		"point",
+		"set_playback",
+		"on_frame",
+		"on_interrupt"
+	]
+}

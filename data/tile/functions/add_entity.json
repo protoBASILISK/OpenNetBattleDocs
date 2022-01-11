@@ -1,10 +1,17 @@
 
 {
 	"version": "2.0",
-	"function_name": "add_entity",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "add_entity",
+	"example_code": [		
+		"local tile\t\t-- example Tile",
+		"local entity\t-- example Entity",
+		"",
+		"tile:spawn( entity )"
+	 ],
+	"example_comment": "",
+	"description": [ 
+		"Spawns an <%=entity%> on this <%=tile%>."
+	],
 	"parameters": [
 		{
 			"name": "entity_to_add",

@@ -1,11 +1,16 @@
 
 {
 	"version": "2.0",
-	"function_name": "is_cracked",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "is_cracked",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local is_cracked_tile = tile:is_cracked()"
+	],
+	"example_comment": "",
+	"description": [ 
+		"Returns `true` if this <%=tile%>'s state is currently `Cracked`.",
+		"&emsp;Otherwise, returns `false`."
+	 ],
 	"return_value_type": "boolean",
-	"return_value_desc": "",
-	"footnotes": ""
+	"return_value_desc": ""
 }

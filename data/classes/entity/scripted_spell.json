@@ -1,0 +1,19 @@
+{
+	"class_name": "ScriptedObstacle",
+	"variable_text": "scripted_obstacle",
+	"subdirectory": "entity",
+	"superclass": "Entity",
+	"conditionals":
+	[
+		"shake_camera",
+		"set_shadow",
+		"can_move_to_func",
+		"update_func",
+		"delete_func",
+		"attack_func",
+		"collision_func",
+		"on_spawn_func",
+		"battle_start_func",
+		"battle_end_func"
+	]
+}

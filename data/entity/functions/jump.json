@@ -1,0 +1,50 @@
+
+{
+	"version": "2.0",
+	"name": "jump",
+	"example_code": [
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local target_tile\t-- The tile you want to move to",
+		"<%=variable_text%>:jump( target_tile, 50, frames(60), frames(20), ActionOrder.Voluntary, nil )"
+	],
+	"example_comment": "The above snippet causes the <%=class_name%> to jump to a tile over 60 frames, and wait for 20 frames before being able to act again. They will reach a height of 50px at the apex of their jump.",
+	"description": 
+	[
+		"Attempts to queue up a movement comand for the <%=class_name%> to slide to a specified tile.",
+		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."
+	],
+	"return_value_type": "boolean",
+	"return_value_desc": "`true` if the movement was possible when the function was called, otherwise `false`.",
+	"parameters": [
+		{
+			"name": "target_tile",
+			"desc": "The <%=tile%> the <%=class_name%> will be trying to move towards.",
+			"type": "<%=tile%>"
+		},
+		{
+			"name": "height",
+			"desc": "The height (in pixels) above the field the <%=class_name%> will reach at the apex of their jump.",
+			"type": "number"
+		},
+		{
+			"name": "movement_time",
+			"desc": "How long (in frames) the movement action will take.",
+			"type": "frame_time"
+		},
+		{
+			"name": "end_lag",
+			"desc": "How long (in frames) the recovery period after the movement will last.",
+			"type": "frame_time"
+		},
+		{
+			"name": "action_order",
+			"desc": "The priority this action will have vs other movement actions.",
+			"type": "<%=action_order%>"
+		},
+		{
+			"name": "on_begin",
+			"desc": "A function to trigger if/when the movement action starts.",
+			"type": "function"
+		}
+	]
+}

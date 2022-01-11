@@ -1,0 +1,14 @@
+
+{
+	"version": "2.0",
+	"name": "get_animation",
+	"example_code": [ "" ],
+	"example_comment": "",
+	"description": 
+	[
+		"Returns the <%=animation%> component in charge of the <%=class_name%>'s animations.",
+		"&emsp;<i>This does <b>not</b> return the animation the <%=class_name%> currently is playing.</i>"
+	],
+	"return_value_type": "<%=animation%>",
+	"return_value_desc": "The <%=animation%> component for the <%=class_name%>."
+}

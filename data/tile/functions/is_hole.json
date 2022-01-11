@@ -1,10 +1,16 @@
 
 {
 	"version": "2.0",
-	"function_name": "is_hole",
-	"lua_code": [ "" ],
-	"lua_comment": "",
-	"description": [ "" ],
+	"name": "is_hole",
+	"example_code": [ 
+		"local tile\t\t-- example Tile",
+		"local is_hole_in_ground = tile:is_hole()"
+	 ],
+	"example_comment": "",
+	"description": [
+		"Returns `true` if this <%=tile%> is a \"hole\" in some way: i.e. `Broken`, `Hidden`, or `Empty`.",
+		"&emsp;Otherwise, returns `false`."
+	 ],
 	"return_value_type": "boolean",
 	"return_value_desc": ""
 }
