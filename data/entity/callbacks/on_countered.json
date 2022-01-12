@@ -1,11 +1,15 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
+	
 	"callback_name": "on_countered",
 	"example_code":
 	[ 
-		""
+		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"",
+		"<%=variable_text%>.on_countered = function( actor )",
+		"\tprint( \"That wasn't the best time to use that.\" )",
+		"end"
 	],
 	"description":
 	[ 
@@ -13,9 +17,9 @@
 	],
 	"parameters": [
 		{
-			"name": "",
-			"desc": "",
-			"type": ""
+			"name": "actor",
+			"desc": "The <%=doc_class_name%> being counter-hit.",
+			"type": "<%=doc_class_name%>"
 		}
 	],
 	"return_value_type": ""

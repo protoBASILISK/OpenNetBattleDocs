@@ -8,12 +8,12 @@
 	],
 	"description": 
 	[
-		"Returns the <%=direction%> this <%=class_name%> is facing towards."
+		"Returns the <%=direction%> this <%=doc_class_name%> is facing towards."
 	],
 	"parameters": [
 		{
 			"name": "facing",
-			"desc": "The <%=direction%> you want this <%=class_name%> to face towards.",
+			"desc": "The <%=direction%> you want this <%=doc_class_name%> to face towards.",
 			"type": "<%=direction%>"
 		}
 	]

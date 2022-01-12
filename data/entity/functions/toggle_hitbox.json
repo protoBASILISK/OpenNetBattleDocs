@@ -15,7 +15,7 @@
 	"parameters": [
 		{
 			"name": "enabled",
-			"desc": "`true`, if this <%=class_name%> should be able to be affected by <%=spell%>s.",
+			"desc": "`true`, if this <%=doc_class_name%> should be able to be affected by <%=spell%>s.",
 			"type": "boolean"
 		}
 	],

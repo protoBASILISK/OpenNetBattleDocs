@@ -1,28 +1,29 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
+	
 	"callback_name": "collision_func",
 	"example_code":
 	[
 		"local <%=variable_text%> -- example <%=variable_text%>",
-		"\t<%=variable_text%>.collision_func = function( actor, other )",
+		"",
+		"<%=variable_text%>.collision_func = function( actor, other )",
 		"\tprint( \"collided with another actor\" )",
 		"end"
 	],
 	"description":
 	[ 
-		"The function that will be called when the <%=class_name%> collides with another <%=entity%>."
+		"The function that will be called when the <%=doc_class_name%> collides with another <%=entity%>."
 	],
 	"parameters": [
 		{
 			"name": "actor",
-			"desc": "The <%=class_name%> that will be executing the <%=card_action%>.",
-			"type": "<%=class_name%>"
+			"desc": "The <%=doc_class_name%> that will be executing the <%=card_action%>.",
+			"type": "<%=doc_class_name%>"
 		},
 		{
 			"name": "other",
-			"desc": "The <%=entity%> that collided with this <%=class_name%>.",
+			"desc": "The <%=entity%> that collided with this <%=doc_class_name%>.",
 			"type": "<%=entity%>"
 		}
 	],

@@ -8,13 +8,13 @@
 	],
 	"description": 
 	[
-		"If `true`, causes the shadow for this <%=class_name%> to be drawn.",
+		"If `true`, causes the shadow for this <%=doc_class_name%> to be drawn.",
 		"&nbsp;Otherwise, causes the shadow to **not** be drawn."
 	],
 	"parameters": [
 		{
 			"name": "should_show",
-			"desc": "Whether or not this <%=class_name%>'s shadow should be drawn or not.",
+			"desc": "Whether or not this <%=doc_class_name%>'s shadow should be drawn or not.",
 			"type": "boolean"
 		}
 	]

@@ -8,12 +8,12 @@
 		"<%=variable_text%>:set_name( 'Example' )"
 	],
 	"description": [
-		"Changes the name of this <%=class_name%>."
+		"Changes the name of this <%=doc_class_name%>."
 	],
 	"parameters": [
 		{
 			"name": "name",
-			"desc": "The **name** you want to assign to this <%=class_name%>.",
+			"desc": "The **name** you want to assign to this <%=doc_class_name%>.",
 			"type": "string"
 		}
 	]

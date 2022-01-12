@@ -3,7 +3,6 @@
 	"properties":
 	{
 		"version":			  { "type": "string" },
-		"conditional":		  { "type": "boolean" },
 		"name":				 { "type": "string" },
 		"example_code":		 { "type": "array", "items": { "type": "string" } },
 		"example_comment":	  { "type": "string" },

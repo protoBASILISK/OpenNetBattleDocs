@@ -8,14 +8,14 @@
 	],
 	"description": 
 	[
-		"Defines the shadow that will be drawn for this <%=class_name%>.",
+		"Defines the shadow that will be drawn for this <%=doc_class_name%>.",
 		"This function can take **either** an enum <%=shadow_type%> value for pre-defined shadows,",
 		"&nbsp;or it can take a previously-loaded <%=texture%> for a custom shadow."
 	],
 	"parameters": [
 		{
 			"name": "shadow",
-			"desc": "The shadow you want to be drawn under this <%=class_name%>.",
+			"desc": "The shadow you want to be drawn under this <%=doc_class_name%>.",
 			"type": "<%=shadow_type%> **or** <%=texture%>"
 		}
 	]

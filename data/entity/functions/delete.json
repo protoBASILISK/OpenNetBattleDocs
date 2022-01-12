@@ -1,0 +1,11 @@
+
+{
+	"version": "2.0",
+	"name": "erase",
+	"example_code": [ "" ],
+	"example_comment": "",
+	"description": [ 
+		"Destroys the target <%=doc_class_name%>, making it explode, and removes it from the battlefield afterwards.",
+		"&emsp;This _does_ cause the <%=doc_class_name%> to call its `delete_func()`."
+	]
+}

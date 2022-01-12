@@ -9,13 +9,13 @@
 	],
 	"description": 
 	[
-		"If `true`, allows other objects to inhabit the same <%=tile%> as this <%=class_name%>.",
+		"If `true`, allows other objects to inhabit the same <%=tile%> as this <%=doc_class_name%>.",
 		"&emsp;(default : `false`)"
 	],
 	"parameters": [
 		{
 			"name": "share",
-			"desc": "`true`, if other objects should be allowed to inhabit the same tile as this <%=class_name%>.",
+			"desc": "`true`, if other objects should be allowed to inhabit the same tile as this <%=doc_class_name%>.",
 			"type": "boolean"
 		}
 	]

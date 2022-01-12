@@ -7,8 +7,8 @@
 		"local <%=variable_text%>_element = <%=variable_text%>:get_element()"
 	],
 	"description": [
-		"Returns the <%=element%> of this <%=class_name%>."
+		"Returns the <%=element%> of this <%=doc_class_name%>."
 	],
 	"return_value_type": "<%=element%>",
-	"return_value_desc": "The <%=element%> of this <%=class_name%>."
+	"return_value_desc": "The <%=element%> of this <%=doc_class_name%>."
 }

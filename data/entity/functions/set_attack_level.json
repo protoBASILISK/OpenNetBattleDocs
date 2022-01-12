@@ -9,13 +9,13 @@
 	],
 	"description": 
 	[
-		"Sets the *attack level* of this <%=class_name%>.",
+		"Sets the *attack level* of this <%=doc_class_name%>.",
 		"&emsp;Valid values are any value between 1 and 5 (inclusive)."
 	],
 	"parameters": [
 		{
 			"name": "attack",
-			"desc": "The **attack value** you want this <%=class_name%> to have.",
+			"desc": "The **attack value** you want this <%=doc_class_name%> to have.",
 			"type": "number"
 		}
 	],

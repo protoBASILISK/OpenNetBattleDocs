@@ -9,13 +9,13 @@
 	],
 	"description": 
 	[
-		"If true, makes this <%=class_name%> slide along the ground when moving between <%=tile%>s.",
+		"If true, makes this <%=doc_class_name%> slide along the ground when moving between <%=tile%>s.",
 		"Otherwise, they will warp to the <%=tile%>."
 	],
 	"parameters": [
 		{
 			"name": "has_effect",
-			"desc": "`true` if you want this <%=class_name%> to have the `FloatShoe` effect. Otherwise `false`.",
+			"desc": "`true` if you want this <%=doc_class_name%> to have the `FloatShoe` effect. Otherwise `false`.",
 			"type": "boolean"
 		}
 	]

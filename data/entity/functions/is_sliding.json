@@ -8,9 +8,9 @@
 	],
 	"description": 
 	[
-		"Returns `true` if this <%=class_name%> is currently sliding.",
+		"Returns `true` if this <%=doc_class_name%> is currently sliding.",
 		"&emsp;Otherwise, returns `false`."
 	],
 	"return_value_type": "boolean",
-	"return_value_desc": "Whether this <%=class_name%> is sliding or not."
+	"return_value_desc": "Whether this <%=doc_class_name%> is sliding or not."
 }

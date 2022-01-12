@@ -1,10 +1,12 @@
 {
-	"class_name": "ScriptedObstacle",
-	"variable_text": "scripted_obstacle",
+	"class_name": "ScriptedSpell",
+	"lua_class_name": "Spell",
+	"variable_text": "scripted_spell",
 	"subdirectory": "entity",
 	"superclass": "Entity",
 	"conditionals":
 	[
+		"constructor_team",
 		"shake_camera",
 		"set_shadow",
 		"can_move_to_func",

@@ -8,7 +8,7 @@
 	],
 	"description": 
 	[
-		"Returns a handle to the <%=tile%> this <%=class_name%> is currently standing on.",
+		"Returns a handle to the <%=tile%> this <%=doc_class_name%> is currently standing on.",
 		"If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid <%=tile%>, it returns `nil` instead."
 	],
 	"return_value_type": "<%=tile%>",

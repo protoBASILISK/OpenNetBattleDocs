@@ -8,14 +8,14 @@
 	],
 	"description": 
 	[
-		"Changes the height of this <%=class_name%>.",
-		"The height of a <%=class_name%> determines where various objects will show up.",
+		"Changes the height of this <%=doc_class_name%>.",
+		"The height of a <%=doc_class_name%> determines where various objects will show up.",
 		"&emsp;*e.g. Impact graphical effects, any Cards held in hand, etc.*"
 	],
 	"parameters": [
 		{
 			"name": "height",
-			"desc": "The height of this <%=class_name%>.",
+			"desc": "The height of this <%=doc_class_name%>.",
 			"type": "number"
 		}
 	]

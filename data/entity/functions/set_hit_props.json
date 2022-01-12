@@ -9,12 +9,12 @@
 	],
 	"description": 
 	[
-		"Defines the basic properties used for when this <%=class_name%> attacks other <%=entity%> objects."
+		"Defines the basic properties used for when this <%=doc_class_name%> attacks other <%=entity%> objects."
 	],
 	"parameters": [
 		{
 			"name": "hit_props",
-			"desc": "The basic properties used for this <%=class_name%>'s attacks.",
+			"desc": "The basic properties used for this <%=doc_class_name%>'s attacks.",
 			"type": "<%=hit_props%>"
 		}
 	]

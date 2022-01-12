@@ -9,14 +9,14 @@
 	],
 	"description": 
 	[
-		"If `true`, forces this <%=class_name%> to **enter** a \"counter-able\" state.",
+		"If `true`, forces this <%=doc_class_name%> to **enter** a \"counter-able\" state.",
 		"&emsp;Otherwise, forces it to **leave** the \"counter-able\" state.",
 		"**TODO** : Nail down exactly what happens when hit by counters."
 	],
 	"parameters": [
 		{
 			"name": "counterable",
-			"desc": "`true`, if this <%=class_name%> should be able to be counter-hit. Otherwise `false`.",
+			"desc": "`true`, if this <%=doc_class_name%> should be able to be counter-hit. Otherwise `false`.",
 			"type": "boolean"
 		}
 	]

@@ -8,8 +8,8 @@
 	],
 	"description": 
 	[
-		"Returns the current HP of this <%=class_name%>."
+		"Returns the current HP of this <%=doc_class_name%>."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The current HP of this <%=class_name%>."
+	"return_value_desc": "The current HP of this <%=doc_class_name%>."
 }

@@ -8,7 +8,7 @@
 	"parameters": [
 		{
 			"name": "color",
-			"desc": "The color to tint the <%=class_name%> with.",
+			"desc": "The color to tint the <%=doc_class_name%> with.",
 			"type": "<%=color%>"
 		}
 	]

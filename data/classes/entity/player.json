@@ -1,5 +1,6 @@
 {
 	"class_name": "Player",
+	"lua_class_name": "Player",
 	"variable_text": "player",
 	"subdirectory": "entity",
 	"superclass": "Entity",

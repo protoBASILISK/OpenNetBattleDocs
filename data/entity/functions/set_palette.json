@@ -8,7 +8,7 @@
 	"description": [ "" ],
 	"parameters": [
 		{
-			"name": "palette  ",
+			"name": "palette",
 			"desc": "",
 			"type": "<%=texture%>"
 		}

@@ -8,10 +8,10 @@
 	],
 	"description": 
 	[
-		"Returns the **unique ID** assigned to this <%=class_name%>."
+		"Returns the **unique ID** assigned to this <%=doc_class_name%>."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The **unique ID** assigned to this <%=class_name%>.",
+	"return_value_desc": "The **unique ID** assigned to this <%=doc_class_name%>.",
 	"footnotes":
 	[
 		{

@@ -1,10 +1,12 @@
 {
 	"class_name": "ScriptedCharacter",
+	"lua_class_name": "Character",
 	"variable_text": "scripted_character",
 	"subdirectory": "entity",
 	"superclass": "Entity",
 	"conditionals":
 	[
+		"constructor_team_rank",
 		"from",
 		"from_package",
 		"input_has",

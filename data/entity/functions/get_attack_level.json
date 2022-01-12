@@ -7,8 +7,8 @@
 		"local <%=variable_text%>_attack = <%=variable_text%>:get_attack_level()"
 	],
 	"description": [
-		"Returns the *attack level* of this <%=class_name%>."
+		"Returns the *attack level* of this <%=doc_class_name%>."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The **attack level** of this <%=class_name%>."
+	"return_value_desc": "The **attack level** of this <%=doc_class_name%>."
 }

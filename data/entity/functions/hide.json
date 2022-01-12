@@ -8,6 +8,6 @@
 	],
 	"description":
 	[
-		"Hides the graphics for this <%=class_name%> and all of its child objects."
+		"Hides the graphics for this <%=doc_class_name%> and all of its child objects."
 	]
 }

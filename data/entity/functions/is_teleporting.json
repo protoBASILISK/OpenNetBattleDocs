@@ -8,9 +8,9 @@
 	],
 	"description": 
 	[
-		"Returns `true` if this <%=class_name%> is currently teleporting.",
+		"Returns `true` if this <%=doc_class_name%> is currently teleporting.",
 		"&emsp;Otherwise, returns `false`."
 	],
 	"return_value_type": "boolean",
-	"return_value_desc": "Whether this <%=class_name%> is teleporting or not."
+	"return_value_desc": "Whether this <%=doc_class_name%> is teleporting or not."
 }

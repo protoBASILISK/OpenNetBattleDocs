@@ -9,13 +9,13 @@
 	],
 	"description": 
 	[
-		"Changes the modifier that affects the maximum health of this <%=class_name%>.",
-		"This is intended to be used by external systems affecting the <%=class_name%>, not the <%=class_name%> itself."
+		"Changes the modifier that affects the maximum health of this <%=doc_class_name%>.",
+		"This is intended to be used by external systems affecting the <%=doc_class_name%>, not the <%=doc_class_name%> itself."
 	],
 	"parameters": [
 		{
 			"name": "mod_hp",
-			"desc": "The amount you want to affect the <%=class_name%>'s maximum HP by.",
+			"desc": "The amount you want to affect the <%=doc_class_name%>'s maximum HP by.",
 			"type": "number"
 		}
 	]

@@ -9,8 +9,8 @@
 		"<%=variable_text%>:add_defense_rule( example_rule )"
 	],
 	"description": [
-		"Adds a <%=defense_rule%> to a(n) <%=class_name%>.",
-		"<%=defense_rule%>s allow the <%=class_name%> to change/ignore certain properties of attacks that affect them.",
+		"Adds a <%=defense_rule%> to a(n) <%=doc_class_name%>.",
+		"<%=defense_rule%>s allow the <%=doc_class_name%> to change/ignore certain properties of attacks that affect them.",
 		"**TODO** : Get an actually good explanation of what they do."
 	],
 	"parameters": [

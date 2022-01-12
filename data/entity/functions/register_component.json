@@ -8,12 +8,12 @@
 		"<%=variable_text%>:register_component( example_component ) "
 	],
 	"description": [
-		"Registers a <%=component%> to this <%=class_name%>."
+		"Registers a <%=component%> to this <%=doc_class_name%>."
 	],
 	"parameters": [
 		{
 			"name": "component",
-			"desc": "The <%=component%> you want to register to this <%=class_name%>.",
+			"desc": "The <%=component%> you want to register to this <%=doc_class_name%>.",
 			"type": "<%=component%>"
 		}
 	]

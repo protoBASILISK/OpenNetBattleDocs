@@ -9,7 +9,7 @@
 	],
 	"description": 
 	[
-		"Defines the behavior of the explosions that happen when this <%=class_name%> is destroyed."
+		"Defines the behavior of the explosions that happen when this <%=doc_class_name%> is destroyed."
 	],
 	"parameters": [
 		{
@@ -24,7 +24,7 @@
 		},
 		{
 			"name": "is_boss",
-			"desc": "Whether this is considered a \"boss-type\" <%=class_name%>.",
+			"desc": "Whether this is considered a \"boss-type\" <%=doc_class_name%>.",
 			"type": "boolean"
 		}
 	]

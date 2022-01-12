@@ -1,10 +1,12 @@
 {
 	"class_name": "ScriptedObstacle",
+	"lua_class_name": "Obstacle",
 	"variable_text": "scripted_obstacle",
 	"subdirectory": "entity",
 	"superclass": "Entity",
 	"conditionals":
 	[
+		"constructor_team",
 		"from",
 		"set_name",
 		"share_tile",

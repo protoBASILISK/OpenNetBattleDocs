@@ -1,5 +1,6 @@
 {
 	"class_name": "Character",
+	"lua_class_name": "Character",
 	"variable_text": "character",
 	"subdirectory": "entity",
 	"superclass": "Entity",

@@ -8,8 +8,8 @@
 	],
 	"description":
 	[
-		"Returns the height of this <%=class_name%>."
+		"Returns the height of this <%=doc_class_name%>."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The height of this <%=class_name%>."
+	"return_value_desc": "The height of this <%=doc_class_name%>."
 }

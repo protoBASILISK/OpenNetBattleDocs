@@ -10,7 +10,7 @@
 	],
 	"description": 
 	[
-		"Removes a <%=defense_rule%> from a(n) <%=class_name%>."
+		"Removes a <%=defense_rule%> from a(n) <%=doc_class_name%>."
 	],
 	"parameters": [
 		{

@@ -1,10 +1,12 @@
 {
 	"class_name": "ScriptedArtifact",
+	"lua_class_name": "Artifact",
 	"variable_text": "scripted_artifact",
 	"subdirectory": "entity",
 	"superclass": "Entity",
 	"conditionals":
 	[
+		"constructor",
 		"update_func",
 		"on_spawn_func",
 		"delete_func",

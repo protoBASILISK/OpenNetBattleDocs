@@ -5,7 +5,19 @@
 		"class_name" :	  { "type": "string" },
 		"variable_text" :   { "type": "string" },
 		"subdirectory" :	{ "type": "string" },
-		"functions":		{ "type": "array", "items": { "type": "string" } },
+		"functions":		
+		{ 
+			"type": "array", 
+			"items": 
+			{ 
+				"type": "object",
+				"properties":
+				{
+					"conditional":	{ "type": "boolean" },
+					"name":			{ "type": "string" }
+				} 
+			} 
+		},
 		"callbacks":		{ "type": "array", "items": { "type": "string" } },
 		"variables":		{ "type": "array", "items": { "type": "string" } },
 		"required":

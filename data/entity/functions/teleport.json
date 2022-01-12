@@ -7,16 +7,16 @@
 		"local target_tile\t-- The tile you want to move to",
 		"<%=variable_text%>:tile( target_tile, ActionOrder.Voluntary, nil )"
 	],
-	"example_comment": "The above snippet causes the <%=class_name%> to teleport to.",
+	"example_comment": "The above snippet causes the <%=doc_class_name%> to teleport to.",
 	"description": 
 	[
-		"Attempts to queue up a movement comand for the <%=class_name%> to teleport to a specified tile.",
+		"Attempts to queue up a movement comand for the <%=doc_class_name%> to teleport to a specified tile.",
 		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."
 	],
 	"parameters": [
 		{
 			"name": "target_tile",
-			"desc": "The <%=tile%> the <%=class_name%> will be trying to move towards.",
+			"desc": "The <%=tile%> the <%=doc_class_name%> will be trying to move towards.",
 			"type": "<%=tile%>"
 		},
 		{

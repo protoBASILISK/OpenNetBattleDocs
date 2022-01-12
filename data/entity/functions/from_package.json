@@ -1,0 +1,28 @@
+
+{
+	"version": "2.0",
+	"name": "from_package",
+	"example_code": [ "" ],
+	"example_comment": "",
+	"description": [ 
+		"Creates a <%=doc_class_name%> using data from a package."
+	],
+	"parameters":
+	[
+		{
+			"name": "package_name",
+			"desc": "The **package name** of the <%=doc_class_name%> you want to load.",
+			"type": "string"
+		},
+		{
+			"name": "team",
+			"desc": "The <%=team%> you want this <%=doc_class_name%> to belong to.",
+			"type": "<%=team%>"
+		},
+		{
+			"name": "rank",
+			"desc": "The <%=rank%> you want this <%=doc_class_name%>.",
+			"type": "<%=rank%>"
+		}
+	]
+}

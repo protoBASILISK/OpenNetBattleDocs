@@ -8,13 +8,13 @@
 	],
 	"description": 
 	[
-		"Changes how high above the battlefield this <%=class_name%> will be drawn.",
+		"Changes how high above the battlefield this <%=doc_class_name%> will be drawn.",
 		"**Positive** values move it *upwards*, **negative** values move it *downasidewards*"
 	],
 	"parameters": [
 		{
 			"name": "height",
-			"desc": "The height of this <%=class_name%>.",
+			"desc": "The height of this <%=doc_class_name%>.",
 			"type": "number"
 		}
 	],
@@ -24,7 +24,7 @@
 			"type": "notice",
 			"text": 
 			[
-				"Changing the elevation of a <%=class_name%> does not affect the location of any graphics associated with it."
+				"Changing the elevation of a <%=doc_class_name%> does not affect the location of any graphics associated with it."
 			]
 		}
 	]

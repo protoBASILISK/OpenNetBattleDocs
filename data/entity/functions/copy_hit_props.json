@@ -8,8 +8,8 @@
 	],
 	"description": 
 	[
-		"Returns the <%=hit_props%> associated with this <%=class_name%>."
+		"Returns the <%=hit_props%> associated with this <%=doc_class_name%>."
 	],
 	"return_value_type": "<%=hit_props%>",
-	"return_value_desc": "The <%=hit_props%> of this <%=class_name%>."
+	"return_value_desc": "The <%=hit_props%> of this <%=doc_class_name%>."
 }

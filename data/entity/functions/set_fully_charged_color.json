@@ -8,15 +8,15 @@
 		"local example_color = Color.new( 255, 0, 0, 255 )",
 		"<%=variable_text%>:set_fully_charged_color( example_color )"
 	],
-	"example_comment": "The above snippet makes the <%=class_name%>'s particles glow **red** when fully charged.",
+	"example_comment": "The above snippet makes the <%=doc_class_name%>'s particles glow **red** when fully charged.",
 	"description": 
 	[
-		"Changes the color of the particle effect when the <%=class_name%> has a charge attack ready."
+		"Changes the color of the particle effect when the <%=doc_class_name%> has a charge attack ready."
 	],
 	"parameters": [
 		{
 			"name": "color",
-			"desc": "The <%=color%> you want this <%=class_name%> to glow using.",
+			"desc": "The <%=color%> you want this <%=doc_class_name%> to glow using.",
 			"type": "<%=color%>"
 		}
 	]

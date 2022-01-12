@@ -1,24 +1,25 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
+	
 	"callback_name": "charged_attack_func",
 	"example_code":
 	[
 		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"\t<%=variable_text%>.charged_attack_func = function( actor )",
+		"",
+		"<%=variable_text%>.charged_attack_func = function( actor )",
 		"\treturn Battle.Buster.new( actor, true, 10 )",
 		"end"
 	],
 	"description":
 	[ 
-		"The function that will be called when the <%=class_name%> uses a **charged** normal attack."
+		"The function that will be called when the <%=doc_class_name%> uses a **charged** normal attack."
 	],
 	"parameters": [
 		{
 			"name": "actor",
-			"desc": "The <%=class_name%> that will be executing the <%=card_action%>.",
-			"type": "<%=class_name%>"
+			"desc": "The <%=doc_class_name%> that will be executing the <%=card_action%>.",
+			"type": "<%=doc_class_name%>"
 		}
 	],
 	"return_value_type": "<%=card_action%>",

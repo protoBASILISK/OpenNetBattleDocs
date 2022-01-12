@@ -4,19 +4,19 @@
 	"subdirectory": "field",
 	"functions":
 	[
-		"tile_at",
-		"width",
-		"height",
-		"spawn_a",
-		"spawn_b",
-		"get_character",
-		"get_entity",
-		"find_characters",
-		"find_nearest_characters",
-		"find_obstacles",
-		"find_entities",
-		"find_tiles",
-		"notify_on_delete",
-		"callback_on_delete"
+		{ "name": "tile_at" },
+		{ "name": "width" },
+		{ "name": "height" },
+		{ "name": "spawn_a" },
+		{ "name": "spawn_b" },
+		{ "name": "get_character" },
+		{ "name": "get_entity" },
+		{ "name": "find_characters" },
+		{ "name": "find_nearest_characters" },
+		{ "name": "find_obstacles" },
+		{ "name": "find_entities" },
+		{ "name": "find_tiles" },
+		{ "name": "notify_on_delete" },
+		{ "name": "callback_on_delete" }
 	]
 }

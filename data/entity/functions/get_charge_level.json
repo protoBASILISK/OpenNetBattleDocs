@@ -8,12 +8,12 @@
 		"local <%=variable_text%>_charge = <%=variable_text%>:get_charge_level()"
 	],
 	"description": [
-		"Returns the *charge level* of this <%=class_name%>.",
+		"Returns the *charge level* of this <%=doc_class_name%>.",
 		"&emsp;Valid values are any value between 1 and 5 (inclusive).",
 		"&emsp;A higher charge level also allows you to use your charge shot faster."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The **charge level** of this <%=class_name%>.",
+	"return_value_desc": "The **charge level** of this <%=doc_class_name%>.",
 	"footnotes":
 	[
 		{

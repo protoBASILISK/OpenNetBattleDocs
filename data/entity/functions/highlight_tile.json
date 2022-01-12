@@ -8,7 +8,7 @@
 	],
 	"description": 
 	[
-		"Causes this <%=class_name%> to highlight the <%=tile%> it is currently on."
+		"Causes this <%=doc_class_name%> to highlight the <%=tile%> it is currently on."
 	],
 	"parameters": [
 		{

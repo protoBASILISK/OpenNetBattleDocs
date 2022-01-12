@@ -8,15 +8,15 @@
 		"<%=variable_text%>:set_float_shoe( true ) "
 	],
 	"description": [
-		"If true, puts whether this <%=class_name%> has the effects of `FloatShoe`.",
-		"Otherwise, removes the effect of `FloatShoe` if the <%=class_name%> has it.",
-		"While under the effects of `FloatShoe`, the <%=class_name%> does **not** get affected by negative <%=tile%> affects.",
+		"If true, puts whether this <%=doc_class_name%> has the effects of `FloatShoe`.",
+		"Otherwise, removes the effect of `FloatShoe` if the <%=doc_class_name%> has it.",
+		"While under the effects of `FloatShoe`, the <%=doc_class_name%> does **not** get affected by negative <%=tile%> affects.",
 		"They also do not break `Cracked` <%=tile%>s."
 	],
 	"parameters": [
 		{
 			"name": "has_effect",
-			"desc": "`true` if you want this <%=class_name%> to have the `FloatShoe` effect. Otherwise `false`.",
+			"desc": "`true` if you want this <%=doc_class_name%> to have the `FloatShoe` effect. Otherwise `false`.",
 			"type": "boolean"
 		}
 	]

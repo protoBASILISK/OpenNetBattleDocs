@@ -6,21 +6,21 @@
 		"local <%=variable_text%>\t-- example <%=variable_text%>",
 		"<%=variable_text%>:set_offset( 100, 50 )"
 	],
-	"example_comment": "The above snippet moves the <%=class_name%>100 pixels to the right, and 50 pixels down, from the center of the <%=tile%>.",
+	"example_comment": "The above snippet moves the <%=doc_class_name%>100 pixels to the right, and 50 pixels down, from the center of the <%=tile%>.",
 	"description": [
-		"Changes the offset of this <%=class_name%> from the center of the <%=tile%> they're standing on.",
+		"Changes the offset of this <%=doc_class_name%> from the center of the <%=tile%> they're standing on.",
 		"&emsp;**Positive** X values move it to the *right*, **negative** X values move it to the *left*.",
 		"&emsp;**Positive** Y values move it *downwards*, **negative** Y values move it *upwards*."
 	],
 	"parameters": [
 		{
 			"name": "X",
-			"desc": "The horizontal offset of this <%=class_name%>.",
+			"desc": "The horizontal offset of this <%=doc_class_name%>.",
 			"type": "number"
 		},
 		{
 			"name": "Y",
-			"desc": "The vertical offset of this <%=class_name%>.",
+			"desc": "The vertical offset of this <%=doc_class_name%>.",
 			"type": "number"
 		}
 	]

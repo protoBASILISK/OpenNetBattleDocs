@@ -8,8 +8,8 @@
 	],
 	"description": 
 	[
-		"Returns the <%=direction%> this <%=class_name%> is facing away from."
+		"Returns the <%=direction%> this <%=doc_class_name%> is facing away from."
 	],
 	"return_value_type": "<%=direction%>",
-	"return_value_desc": "The <%=direction%> of this <%=class_name%> is facing away from."
+	"return_value_desc": "The <%=direction%> of this <%=doc_class_name%> is facing away from."
 }

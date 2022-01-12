@@ -9,19 +9,19 @@
 	],
 	"description":
 	[
-		"Changes the position of this <%=class_name%>'s charge particles.",
+		"Changes the position of this <%=doc_class_name%>'s charge particles.",
 		"&emsp;**Positive** X values move it to the *right*, negative X values move it to the *left*.",
 		"&emsp;**Positive** Y values move it *downwards*, negative Y values move it *upwards*."
 	],
 	"parameters": [
 		{
 			"name": "X",
-			"desc": "The **horizontal offset** you want to give this <%=class_name%>'s charge particles.",
+			"desc": "The **horizontal offset** you want to give this <%=doc_class_name%>'s charge particles.",
 			"type": "number"
 		},
 		{
 			"name": "X",
-			"desc": "The **horizontal offset** you want to give this <%=class_name%>'s charge particles.",
+			"desc": "The **horizontal offset** you want to give this <%=doc_class_name%>'s charge particles.",
 			"type": "number"
 		}
 	]

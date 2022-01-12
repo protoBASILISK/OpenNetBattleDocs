@@ -4,18 +4,18 @@
 	"subdirectory": "etc/animation",
 	"functions":
 	[
-		"load",
-		"update",
-		"set_playback_speed",
-		"get_playback_speed",
-		"refresh",
-		"copy_from",
-		"set_state",
-		"get_state",
-		"has_state",
-		"point",
-		"set_playback",
-		"on_frame",
-		"on_interrupt"
+		{ "name": "load" },
+		{ "name": "update" },
+		{ "name": "set_playback_speed" },
+		{ "name": "get_playback_speed" },
+		{ "name": "refresh" },
+		{ "name": "copy_from" },
+		{ "name": "set_state" },
+		{ "name": "get_state" },
+		{ "name": "has_state" },
+		{ "name": "point" },
+		{ "name": "set_playback" },
+		{ "name": "on_frame" },
+		{ "name": "on_interrupt" }
 	]
 }

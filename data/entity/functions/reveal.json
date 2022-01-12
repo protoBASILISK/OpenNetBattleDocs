@@ -8,6 +8,6 @@
 	],
 	"description": 
 	[
-		"Forces the graphics for this <%=class_name%> and all of its child objects to be drawn again."
+		"Forces the graphics for this <%=doc_class_name%> and all of its child objects to be drawn again."
 	]
 }

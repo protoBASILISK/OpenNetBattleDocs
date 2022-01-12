@@ -7,10 +7,10 @@
 		"local target_tile\t-- The tile you want to move to",
 		"<%=variable_text%>:slide( target_tile, frames(60), frames(20), ActionOrder.Voluntary, nil ) "
 	],
-	"example_comment": "The above snippet causes the <%=class_name%> to slide to a tile over 60 frames, and wait for 20 frames before being able to act again.",
+	"example_comment": "The above snippet causes the <%=doc_class_name%> to slide to a tile over 60 frames, and wait for 20 frames before being able to act again.",
 	"description": 
 	[
-		"Attempts to queue up a movement comand for the <%=class_name%> to slide to a specified tile.",
+		"Attempts to queue up a movement comand for the <%=doc_class_name%> to slide to a specified tile.",
 		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."
 	],
 	"return_value_type": "boolean",
@@ -18,7 +18,7 @@
 	"parameters": [
 		{
 			"name": "target_tile",
-			"desc": "The <%=tile%> the <%=class_name%> will be trying to move towards.",
+			"desc": "The <%=tile%> the <%=doc_class_name%> will be trying to move towards.",
 			"type": "<%=tile%>"
 		},
 		{

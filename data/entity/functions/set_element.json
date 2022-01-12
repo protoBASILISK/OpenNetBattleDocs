@@ -6,11 +6,11 @@
 		"local <%=variable_text%>\t-- example <%=variable_text%>",
 		"<%=variable_text%>:set_element( Element.None )"
 	],
-	"description": "Changes the <%=element%> of this <%=class_name%>.",
+	"description": "Changes the <%=element%> of this <%=doc_class_name%>.",
 	"parameters": [
 		{
 			"name": "element",
-			"desc": "The <%=element%> you want to assign to this <%=class_name%>.",
+			"desc": "The <%=element%> you want to assign to this <%=doc_class_name%>.",
 			"type": "<%=element%>"
 		}
 	]
