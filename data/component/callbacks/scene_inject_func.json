@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "callback_name": "scene_inject_func",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "component",
+            "desc": "",
+            "type": "<%=component%>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

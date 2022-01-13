@@ -4,21 +4,19 @@
 # Checks nested arrays/hashes to see if there's any in there.
 def is_empty( data_to_test )
   return true if data_to_test.nil?
+  return false if data_to_test.instance_of? TrueClass
+  return true if data_to_test.instance_of? FalseClass
   return true if data_to_test.empty?
 
   if data_to_test.is_a? Array
     
-    data_to_test.each do |inner_val|
-      return false if not is_empty( inner_val )
-    end
-    return true
+    _values = data_to_test.select { |v| not is_empty( v ) }
+    return _values.empty?
 
   elsif data_to_test.is_a? Hash
 
-    data_to_test.each do |val|
-        _values = val.select { |k,v| v.present? }
-        return false if _values.any?
-    end
+    _values = data_to_test.select { |k,v| not is_empty( v ) }
+    return _values.empty?
 
   end
 

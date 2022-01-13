@@ -1,0 +1,29 @@
+{
+    "version": "2.0",
+    "name": "dest_tile",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "The <%=tile%> the <%=entity%> is attempting to move to."
+    ],
+    "object_type": "<%=tile%>",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

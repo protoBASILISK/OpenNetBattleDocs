@@ -14,8 +14,7 @@
         { "name": "end_action" },
         { "name": "get_actor" },
         { "name": "set_metadata" },
-        { "name": "copy_metadata" },
-        { "name": "set_offset" }
+        { "name": "copy_metadata" }
     ],
     "callbacks":
     [

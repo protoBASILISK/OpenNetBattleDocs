@@ -1,0 +1,13 @@
+{
+	"class_name": "DefenseFrameStateJudge",
+	"variable_text": "defense_frame_state_judge",
+	"subdirectory": "etc/defense_frame_state_judge",
+	"functions":
+	[
+		{ "name": "block_damage" },
+		{ "name": "block_impact" },
+		{ "name": "is_damage_blocked" },
+		{ "name": "is_impact_blocked" },
+		{ "name": "signal_defense_was_pierced" }
+	]
+}

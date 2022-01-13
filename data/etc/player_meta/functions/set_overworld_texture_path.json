@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "name": "set_overworld_texture_path",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "file_path",
+            "desc": "",
+            "type": "string",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+	"class_name": "DefenseRule",
+	"variable_text": "defense_rule",
+	"subdirectory": "etc/defense_rule",
+	"functions":
+	[
+		{ "name": "is_replaced" }
+	],
+	"callbacks":
+	[
+		{ "name": "filter_statuses_func" },
+		{ "name": "can_block_func" }
+	]
+}

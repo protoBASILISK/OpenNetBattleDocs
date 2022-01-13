@@ -2,36 +2,13 @@
 <% _class = locals[:c] %>
 
 ### <%= _class["class_name"] %> . <%= _call["callback_name"] %>
-<h4 style="version">• v<%= _call["version"] %></h4>
+<h4 class="version">`callback` • `v<%= _call["version"] %>`</h4>
 
     <%# VERSION INFORMATION %>
 <% if _call["incomplete"].present? or is_empty( _call["description"] ) or is_empty( _call["example_code"] ) %>
-    <p class= "data incomplete" > The data for this function is not fully filled out yet. </p>
+    <%# <p class= "data incomplete" > The data for this function is not fully filled out yet. </p> %>
 <% else %>
     <p class= "data" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>
-<% end %>
-
-    <%# LUA CODE %>
-    <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
-<% if not is_empty( _call["example_code"] ) %>
-``` lua
-<% _call["example_code"].each do |line| %>
-<%= line %>
-<% end %>
-```
-<%= "> " + _call["example_comment"] if _call["example_comment"].present? %>
-<% end %>
-
-    <%# DESCRIPTION %>
-<% if not is_empty( _call["description"] ) %>
-    <% if _call["description"].respond_to? :each %>
-
-        <% _call["description"].each do |line| %>
-            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
-        <% end %>
-    <% elsif _call["description"].is_a? String %>
-        <%= _call["description"] %>
-    <% end %>
 <% end %>
 
     <%# FUNCTION CALL %>
@@ -75,8 +52,32 @@
     &emsp;<i><%= _last["desc"] %></i>
 <% end %>
 
+#### Description
+    <%# LUA CODE %>
+    <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
+<% if not is_empty( _call["example_code"] ) %>
+``` lua
+<% _call["example_code"].each do |line| %>
+<%= line %>
+<% end %>
+```
+<%= "> " + _call["example_comment"] if _call["example_comment"].present? %>
+<% end %>
+
+    <%# DESCRIPTION %>
+<% if not is_empty( _call["description"] ) %>
+    <% if _call["description"].respond_to? :each %>
+
+        <% _call["description"].each do |line| %>
+            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
+        <% end %>
+    <% elsif _call["description"].is_a? String %>
+        <%= _call["description"] %>
+    <% end %>
+<% end %>
+
     <%# FOOT NOTES %>
-<% if not is_empty( _call["footnotes"] ) %>
+<% if not is_empty( _call["footnotes"], true ) %>
     <% _call["footnotes"].each do |note| %>
         <% if note["code"].present? %>
 ``` lua

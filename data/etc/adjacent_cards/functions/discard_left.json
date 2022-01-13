@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "discard_left",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters": [],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

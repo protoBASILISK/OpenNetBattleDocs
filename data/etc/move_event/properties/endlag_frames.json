@@ -1,0 +1,29 @@
+{
+    "version": "2.0",
+    "name": "endlag_frames",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "The number of frames the <%=entity%> has to wait after the movement completes."
+    ],
+    "object_type": "number",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

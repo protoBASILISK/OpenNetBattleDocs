@@ -1,0 +1,16 @@
+{
+	"class_name": "Color",
+	"variable_text": "color",
+	"subdirectory": "etc/color",
+	"functions":
+	[
+		{ "name": "constructor" }
+	],
+	"properties":
+	[
+		{ "name": "r" },
+		{ "name": "g" },
+		{ "name": "b" },
+		{ "name": "a" }
+	]
+}

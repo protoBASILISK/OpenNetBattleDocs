@@ -1,5 +1,5 @@
 {
-	"class_name": "Component",
+	"class_name": "ScriptedComponent",
 	"variable_text": "component",
 	"subdirectory": "component",
     "functions":

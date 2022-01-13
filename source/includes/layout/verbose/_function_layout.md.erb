@@ -2,36 +2,13 @@
 <% _class = locals[:c] %>
 
 ### <%= _class["class_name"] %> : <%= _func["name"] %>()
-<h4 style="version">• v<%= _func["version"] %></h4>
+<h4 class="version">`function` • `v<%= _func["version"] %>`</h4>
 
     <%# VERSION INFORMATION %>
 <% if _func["incomplete"].present? or is_empty( _func["description"] ) or is_empty( _func["example_code"] ) %>
-    <p class= "data incomplete" > The data for this function is not fully filled out yet. </p>
+    <%# <p class= "data incomplete" > The data for this function is not fully filled out yet. </p> %>
 <% else %>
     <p class= "data" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>
-<% end %>
-
-    <%# LUA CODE %>
-    <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
-<% if not is_empty( _func["example_code"] ) %>
-``` lua
-<% _func["example_code"].each do |line| %>
-<%= line %>
-<% end %>
-```
-<%= "> " + _func["example_comment"] if _func["example_comment"].present? %>
-<% end %>
-
-    <%# DESCRIPTION %>
-<% if not is_empty( _func["description"] ) %>
-    <% if _func["description"].respond_to? :each %>
-
-        <% _func["description"].each do |line| %>
-            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
-        <% end %>
-    <% elsif _func["description"].is_a? String %>
-        <%= _func["description"] %>
-    <% end %>
 <% end %>
 
     <%# FUNCTION CALL %>
@@ -67,12 +44,34 @@
         <b><code><%= param["type"] %></code></b>  <code><%= param["name"] %></code><br>
         &emsp;<i><%= param["desc"] %></i><br>
     <% end %>
-
     <% _last = _func["parameters"].last %> 
-
     <%# For the last in the parameter list, just write the name, no line break. %>
     <b><code><%= _last["type"] %></code></b> <code><%= _last["name"] %></code><br>
     &emsp;<i><%= _last["desc"] %></i>
+<% end %>
+
+#### Description
+    <%# LUA CODE %>
+    <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
+<% if not is_empty( _func["example_code"] ) %>
+``` lua
+<% _func["example_code"].each do |line| %>
+<%= line %>
+<% end %>
+```
+<%= "> " + _func["example_comment"] if _func["example_comment"].present? %>
+<% end %>
+
+    <%# DESCRIPTION %>
+<% if not is_empty( _func["description"] ) %>
+    <% if _func["description"].respond_to? :each %>
+
+        <% _func["description"].each do |line| %>
+            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
+        <% end %>
+    <% elsif _func["description"].is_a? String %>
+        <%= _func["description"] %>
+    <% end %>
 <% end %>
 
     <%# FOOT NOTES %>

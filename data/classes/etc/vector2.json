@@ -1,7 +1,7 @@
 {
 	"class_name": "Vector2",
 	"variable_text": "vector2",
-	"subdirectory": "v",
+	"subdirectory": "etc/vector2",
 	"properties":
 	[
 		{ "name": "x" },

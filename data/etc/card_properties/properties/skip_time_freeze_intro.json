@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "skip_time_freeze_intro",
+    "static": false,
+    "can_read": true,
+    "can_write": true,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "object_type": "boolean",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

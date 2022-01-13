@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "complete_step",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "Ends the execution of this <%=card_action_step%> and moves onto the next (if any)."
+    ],
+    "parameters": [],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

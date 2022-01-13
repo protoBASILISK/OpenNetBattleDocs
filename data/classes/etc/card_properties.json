@@ -1,6 +1,6 @@
 {
-	"class_name": "AdjacentCards",
-	"variable_text": "adjacent_cards",
+	"class_name": "CardProperties",
+	"variable_text": "card_props",
 	"subdirectory": "etc/card_properties",
     "functions":
     [

@@ -1,0 +1,25 @@
+{
+    "version": "2.0",
+    "class_name": "InputState",
+    "items":
+    [
+        {
+            "name":     "Pressed",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Held",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Released",
+            "meaning":  [ 
+                "" 
+            ]
+        }
+    ] 
+}

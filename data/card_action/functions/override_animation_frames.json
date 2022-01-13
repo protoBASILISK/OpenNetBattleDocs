@@ -1,0 +1,43 @@
+{
+    "version": "2.0",
+    "name": "override_animation_frames",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "framedata",
+            "desc": "",
+            "type": "list",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "notice",
+            "text": [
+                "Each entry in the `framedata` list has to be formatted in a specific manner:",
+                "{",
+                "&emsp;`number` `original_animation_index`,",
+                "&emsp;`number` `duration`",
+                "}"
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

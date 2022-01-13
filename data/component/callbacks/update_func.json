@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "callback_name": "update_func",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "component",
+            "desc": "",
+            "type": "<%=component%>",
+            "optional": false
+        },
+        {
+            "name": "elapsed_time",
+            "desc": "The amount of time (in seconds) elapsed since the last `update()`.",
+            "type": "number",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

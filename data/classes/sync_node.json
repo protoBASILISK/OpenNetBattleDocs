@@ -1,7 +1,7 @@
 {
-	"class_name": "SpriteNode",
-	"variable_text": "sprite_node",
-	"subdirectory": "sprite_node",
+	"class_name": "SyncNode",
+	"variable_text": "sync_node",
+	"subdirectory": "sync_node",
     "functions":
     [
         { "name": "sprite" },

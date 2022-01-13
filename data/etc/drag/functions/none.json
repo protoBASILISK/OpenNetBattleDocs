@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "None",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "Returns a pre-built <%=direction%>, with `Direction.None` and `0`."
+    ],
+    "parameters": [],
+    "return_value_type": "<%=direction%>",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

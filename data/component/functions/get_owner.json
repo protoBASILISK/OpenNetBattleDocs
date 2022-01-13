@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "get_owner",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters": [],
+    "return_value_type": "<%=entity%>",
+    "return_value_desc": "The <%=entity%> this <%=component%> is attached to (if any).",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

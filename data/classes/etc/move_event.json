@@ -1,7 +1,7 @@
 {
 	"class_name": "MoveEvent",
 	"variable_text": "move_event",
-	"subdirectory": "move_event",
+	"subdirectory": "etc/move_event",
 	"properties":
 	[
 		{ "name": "delta_frames" },
@@ -12,6 +12,6 @@
 	],
 	"callbacks":
 	[
-		{ "name": "load" }
+		{ "name": "on_begin_func" }
 	]
 }

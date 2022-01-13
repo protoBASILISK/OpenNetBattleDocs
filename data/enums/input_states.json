@@ -1,0 +1,49 @@
+{
+    "version": "2.0",
+    "class_name": "InputKey",
+    "items":
+    [
+        {
+            "name":     "Up",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Left",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Right",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Down",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Use",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Special",
+            "meaning":  [ 
+                "" 
+            ]
+        },
+        {
+            "name":     "Shoot",
+            "meaning":  [ 
+                "" 
+            ]
+        }
+    ] 
+}

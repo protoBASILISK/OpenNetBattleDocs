@@ -19,6 +19,8 @@ meta:
 ---
 
 <% partial "./includes/link_list.erb", locals:{ path: "./includes/"} %>
+<% _class_layout = "includes/layout/print_class_info.md.erb" %>
+<% _enum_layout = "includes/layout/print_enum_info.md.erb" %>
 
 # Overview
 
@@ -31,13 +33,70 @@ meta:
 # Entity Objects
 <p><%= partial "includes/entity.md.erb" %></p>
 
+## Component
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/component.json" } %></p>
+
+## Lifetimes
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/lifetimes.json" } %>
+
 # CardAction Objects
 <p><%= partial "includes/cardaction.md.erb" %></p>
 
 # Utility Objects
-<%= partial "includes/animation.md.erb" %>
-<p><%= partial "includes/etc/color.md.erb" %></p>
-<p><%= partial "includes/etc/moveevent.md.erb" %></p>
+
+## Animation
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/animation.json" } %></p>
+
+## Color
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/color.json" } %></p>
+
+## DefenseRule
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/defense_rule.json" } %></p>
+
+## DefenseOrder
+<p><%= partial _class_layout, locals:
+  { file: "/data/enums/defense_order.json" } %></p>
+
+## DefenseFrameStateJudge
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/defense_frame_state_judge.json" } %></p>
+
+## MoveEvent
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/move_event.json" } %></p>
+
+## HitProps
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/hit_props.json" } %></p>
+
+## Drag
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/drag.json" } %></p>
+
+## Mob
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/mob.json" } %></p>
+
+## Spawner
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/spawner.json" } %></p>
+
+## SpawnMutator
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/spawn_mutator.json" } %></p>
+
+## MoveEvent
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/move_event.json" } %></p>
+
+## Vector2
+<p><%= partial _class_layout, locals:
+  { file: "/data/classes/etc/vector2.json" } %></p>
 
 # Metadata Files
 <p><%= partial "includes/metafiles.md.erb" %></p>

@@ -1,0 +1,51 @@
+{
+    "version": "2.0",
+    "callback_name": "can_block_func",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "defense_judge",
+            "desc": "",
+            "type": "<%=defense_frame_state_judge%>",
+            "optional": false
+        },
+        {
+            "name": "attacker",
+            "desc": "",
+            "type": "<%=entity%>",
+            "optional": false
+        },
+        {
+            "name": "owner",
+            "desc": "",
+            "type": "<%=entity%>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

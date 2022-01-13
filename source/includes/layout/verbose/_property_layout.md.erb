@@ -1,0 +1,63 @@
+<% _prop = locals[:f] %>
+<% _class = locals[:c] %>
+
+### <%= _class["class_name"] %> . <%= _prop["name"] %>
+<h4 class="version">`property` • `v<%= _prop["version"] %>`</h4>
+
+    <%# VERSION INFORMATION %>
+<% if _prop["incomplete"].present? or is_empty( _prop["description"] ) or is_empty( _prop["example_code"] ) %>
+    <%# <p class= "data incomplete" > The data for this function is not fully filled out yet. </p> %>
+<% else %>
+    <p class= "data" > This data for this function is up-to-date, but may be missing some information on uses/restrictions. </p>
+<% end %>
+
+    <%# PROPERTY %>
+#### Property Type
+<code><%= _prop["object_type"]%></code>
+
+    <%# DESCRIPTION %>
+<% if not is_empty( _prop["description"] ) %>
+    <% if _prop["description"].respond_to? :each %>
+
+        <% _prop["description"].each do |line| %>
+            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
+        <% end %>
+    <% elsif _prop["description"].is_a? String %>
+        <%= _prop["description"] %>
+    <% end %>
+<% end %>
+
+    <%# LUA CODE %>
+    <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
+<% if not is_empty( _prop["example_code"] ) %>
+``` lua
+<% _prop["example_code"].each do |line| %>
+<%= line %>
+<% end %>
+```
+<%= "> " + _prop["example_comment"] if _prop["example_comment"].present? %>
+<% end %>
+
+
+    <%# FOOT NOTES %>
+<% if not is_empty( _prop["footnotes"] ) %>
+    <% _prop["footnotes"].each do |note| %>
+        <% if note["code"].present? %>
+``` lua
+            <% note["code"].each do |line| %>
+<%= line %>
+            <% end %>
+```
+        <% end %>
+        <% if note["comment"].present? %>
+> <%= note["comment"] %>
+        <% end %>
+        
+        <aside class= <%= note["type"] %> >
+            <% note["text"].each do |line| %>
+                <%= line %><br>
+            <% end %>
+        </aside>
+        
+    <% end %>
+<% end %>

@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "is_injected",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters": [],
+    "return_value_type": "boolean",
+    "return_value_desc": "Whether or not this <%=component%> is attached to something.",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

@@ -1,14 +1,66 @@
-## Direction
-<%= partial "includes/layout/print_enum_info.md.erb", locals: { enum_file: "/data/enums/direction.json" } %>
+<% _enum_layout = "includes/layout/print_enum_info.md.erb" %>
 
-## Elements
-<%= partial "includes/layout/print_enum_info.md.erb", locals: { enum_file: "/data/enums/element.json" } %>
+## ActionOrder
 
-## Rank
-<%= partial "includes/layout/print_enum_info.md.erb", locals: { enum_file: "/data/enums/rank.json" } %>
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/action_order.json" } %>
 
 ## AudioPriority
-<%= partial "includes/layout/print_enum_info.md.erb", locals: { enum_file: "/data/enums/audio_priority.json" } %>
 
-## Blocks
-<%= partial "includes/layout/print_enum_info.md.erb", locals: { enum_file: "/data/enums/blocks.json" } %>
+<%= partial _enum_layout, locals:
+    { file: "/data/enums/audio_priority.json" } %>
+
+## ColorMode
+
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/color_mode.json" } %>
+
+## Direction
+
+<p><%= partial _enum_layout, locals: 
+    { file: "/data/enums/direction.json" } %></p>
+
+
+## Elements
+
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/element.json" } %>
+
+## EntityStatus
+
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/entity_status.json" } %>
+
+## Highlight
+
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/highlight.json" } %>
+
+## Hit
+
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/hit.json" } %>
+
+## Input
+
+The `Input` table is divided up into two portions:<br>
+&emsp;The *first* entry is the *state* for a key.<br>
+&emsp;The *second* entry is *the key being pressed*.
+
+i.e. `Input.Pressed.Up` checks for if the `Up` key is `Pressed`.
+
+<p><%= partial _enum_layout, locals:
+    { file: "/data/enums/input_keys.json" } %></p>
+
+<p><%= partial _enum_layout, locals:
+    { file: "/data/enums/input_states.json" } %></p>
+
+## Rank
+
+<%= partial _enum_layout, locals: 
+    { file: "/data/enums/rank.json" } %>
+
+## Team
+
+<%= partial _enum_layout, locals:
+    { file: "/data/enums/team.json" } %>

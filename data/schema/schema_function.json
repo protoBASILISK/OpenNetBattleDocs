@@ -2,11 +2,13 @@
 	"type": "object",
 	"properties":
 	{
-		"version":			  { "type": "string" },
-		"name":				 { "type": "string" },
-		"example_code":		 { "type": "array", "items": { "type": "string" } },
-		"example_comment":	  { "type": "string" },
-		"description":		  { "type": "array", "items": { "type": "string" } },
+		"version":			{ "type": "string" },
+		"name":				{ "type": "string" },
+		"static":			{ "type": "boolean" },
+		"conditional":		{ "type": "boolean" },
+		"example_code":		{ "type": "array", "items": { "type": "string" } },
+		"example_comment":	{ "type": "string" },
+		"description":		{ "type": "array", "items": { "type": "string" } },
 		"parameters":
 		{
 			"type": "array",
@@ -15,9 +17,10 @@
 				"type": "object",
 				"properties":
 				{
-					"name":	 { "type": "string" },
-					"type":	 { "type": "string" },
-					"desc":	 { "type": "string" }
+					"name":		{ "type": "string" },
+					"type":		{ "type": "string" },
+					"desc":		{ "type": "string" },
+					"optional":	{ "type": "boolean" }
 				},
 				"required":
 				[
@@ -37,10 +40,10 @@
 				"type": "object",
 				"properties":
 				{
-					"type":	 { "type": "string" },
-					"text":	 { "type": "string" },
-					"code":	 { "type": "array", "items": { "type": "string" } },
-					"comment":  { "type": "string" }
+					"type":		{ "type": "string" },
+					"text":		{ "type": "string" },
+					"code":		{ "type": "array", "items": { "type": "string" } },
+					"comment":	{ "type": "string" }
 				},
 				"required":
 				[

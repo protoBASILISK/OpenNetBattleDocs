@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "name": "enable_freedom_mission",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "turn_count",
+            "desc": "",
+            "type": "number",
+            "optional": false
+        },
+        {
+            "name": "can_player_flip",
+            "desc": "",
+            "type": "boolean",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

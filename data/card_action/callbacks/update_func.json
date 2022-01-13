@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "callback_name": "update_func",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "This function is executed every frame the <%=card_action%> is active."
+    ],
+    "parameters":
+    [
+        {
+            "name": "action",
+            "desc": "",
+            "type": "<%=card_action%>",
+            "optional": false
+        },
+        {
+            "name": "elapsed_time",
+            "desc": "The amount of time (in seconds) elapsed since the last `update()` was run.",
+            "type": "number",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

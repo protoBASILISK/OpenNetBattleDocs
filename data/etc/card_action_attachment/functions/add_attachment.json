@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "name": "add_attachment",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "Creates another <%=card_action_attachment%> and adds it to this as a child node."
+    ],
+    "parameters":
+    [
+        {
+            "name": "attachment_point",
+            "desc": "",
+            "type": "string",
+            "optional": false
+        }
+    ],
+    "return_value_type": "<%=card_action_attachment%>",
+    "return_value_desc": "The newly-created <%=card_action_attachment%>.",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

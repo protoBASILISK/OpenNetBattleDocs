@@ -1,0 +1,47 @@
+{
+    "version": "2.0",
+    "name": "add_anim_action",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "frame_index",
+            "desc": "The index in the animation data to trigger `action_func` on.",
+            "type": "number",
+            "optional": false
+        },
+        {
+            "name": "action_func",
+            "desc": "The function to execute when you reach the specified index in the animation.",
+            "type": "function",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "notice",
+            "text": [
+                "`execute_func` requires **zero** parameters and to return **no** value."
+            ],
+            "code": [
+                "function()",
+                "\t\t-- code goes here",
+                "end"
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

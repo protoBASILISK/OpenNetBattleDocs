@@ -1,7 +1,7 @@
 <% _type = "verbose" %>
 <% _type = locals[:type] unless locals[:type] == nil %>
 
-<% _current_enum = load_json_data( Dir.pwd + locals[:enum_file] ) %>
+<% _current_enum = load_json_data( Dir.pwd + locals[:file] ) %>
 <% _current_enum = preprocess_json_data( _current_enum, $link_list ) %>
 
 NAME | MEANING 

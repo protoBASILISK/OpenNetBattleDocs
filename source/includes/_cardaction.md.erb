@@ -1,16 +1,14 @@
 ## CardAction
+<%= partial "includes/layout/print_class_info.md.erb", locals: { file: "/data/classes/card_action.json" } %>
 
-<%= partial "includes/cardaction/set_lockout.md.erb" %>
-<%= partial "includes/cardaction/set_lockout_group.md.erb" %>
-<%= partial "includes/cardaction/override_animation_frames.md.erb" %>
-<%= partial "includes/cardaction/add_attachment.md.erb" %>
-<%= partial "includes/cardaction/add_anim_action.md.erb" %>
-<%= partial "includes/cardaction/add_step.md.erb" %>
-<%= partial "includes/cardaction/end_action.md.erb" %>
-<%= partial "includes/cardaction/get_actor.md.erb" %>
-<%= partial "includes/cardaction/set_metadata.md.erb" %>
-<%= partial "includes/cardaction/copy_metadata.md.erb" %>
-<%= partial "includes/cardaction/action_end_func.md.erb" %>
-<%= partial "includes/cardaction/animation_end_func.md.erb" %>
-<%= partial "includes/cardaction/execute_func.md.erb" %>
-<%= partial "includes/cardaction/update_func.md.erb" %>
+## CardActionAttachment
+<%= partial "includes/layout/print_class_info.md.erb", locals: { file: "/data/classes/etc/card_action_attachment.json" } %>
+
+## CardActionStep
+<%= partial "includes/layout/print_class_info.md.erb", locals: { file: "/data/classes/etc/card_action_step.json" } %>
+
+## Lockout
+<%= partial "includes/layout/print_enum_info.md.erb", locals: { file: "/data/enums/lockout.json" } %>
+
+## Locktype
+<%= partial "includes/layout/print_enum_info.md.erb", locals: { file: "/data/enums/lock_type.json" } %>

@@ -1,0 +1,41 @@
+{
+    "version": "2.0",
+    "name": "",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        "Describes the shape for the customizer part.",
+        "&emsp;The provided array has to be a 5x5 array.",
+        "&emsp;Use `0` for empty space, `1` for it to be filled in."
+    ],
+    "parameters":
+    [
+        {
+            "name": "shape_array",
+            "desc": "An array describing the shape.",
+            "type": "list<number>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

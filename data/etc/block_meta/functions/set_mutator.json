@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "name": "set_mutator",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "mutator_function",
+            "desc": "",
+            "type": "function",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "notice",
+            "text": [
+                "`mutator_function` has to take **one** <%=player%> parameter, and return **no** value."
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

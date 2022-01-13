@@ -27,48 +27,51 @@ Entity Type | Scripted Type | Intended Usage
 ## Character
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/character.json"
     } %>
 
 ## ScriptedCharacter
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/scripted_character.json"
     } %>
 
 ## Player
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/player.json"
     } %>
 
 ## ScriptedPlayer
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/scripted_player.json"
     } %>
 
 ## ScriptedSpell
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/scripted_spell.json"
     } %>
 
 ## ScriptedObstacle
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/scripted_obstacle.json"
     } %>
 
 ## ScriptedArtifact
 <%= partial "includes/layout/print_class_info.md.erb",
     locals: {
-        class_file: "/data/classes/entity.json",
+        file: "/data/classes/entity.json",
         subclass: "/data/classes/entity/scripted_artifact.json"
     } %>
+
+## ScriptedComponent
+<%= partial "includes/layout/print_class_info.md.erb", locals: { file: "/data/classes/component.json" } %>

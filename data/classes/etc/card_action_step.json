@@ -1,0 +1,15 @@
+{
+	"class_name": "CardActionStep",
+    "lua_class_name": "Step",
+	"variable_text": "step",
+	"subdirectory": "etc/card_action_step",
+	"functions":
+	[
+		{ "name": "complete_step" }
+	],
+    "callbacks":
+    [
+        { "name": "update_func" },
+        { "name": "draw_func" }
+    ]
+}

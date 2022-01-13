@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "callback_name": "new",
+    "static": true,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "priority",
+            "desc": "",
+            "type": "number",
+            "optional": false
+        },
+        {
+            "name": "use_on",
+            "desc": "",
+            "type": "<%=defense_order%>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "<%=defense_rule%>",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

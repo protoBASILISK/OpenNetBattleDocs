@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "name": "create_spawner",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "enemy_package_id",
+            "desc": "",
+            "type": "string",
+            "optional": false
+        },
+        {
+            "name": "enemy_rank",
+            "desc": "",
+            "type": "<%=rank%>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "<%=scripted_spawner%>",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

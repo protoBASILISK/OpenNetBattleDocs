@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "damage",
+    "static": false,
+    "can_read": true,
+    "can_write": true,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "object_type": "number",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

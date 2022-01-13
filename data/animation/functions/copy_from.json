@@ -1,7 +1,6 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
 	"name": "copy_from",
 	"example_code": [ 
         "local empty_animator\t\t\t-- Example Animation Handler",

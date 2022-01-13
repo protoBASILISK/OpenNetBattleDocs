@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "long_description",
+    "static": false,
+    "can_read": true,
+    "can_write": true,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "object_type": "string",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

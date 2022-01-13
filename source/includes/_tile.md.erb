@@ -1,3 +1,9 @@
 ## Tile
 
-<%= partial "includes/layout/print_class_info.md.erb", locals: { class_file: "/data/classes/tile.json" } %>
+<%= partial "includes/layout/print_class_info.md.erb",
+    locals: { file: "/data/classes/tile.json" } %>
+
+## TileState
+
+<%= partial "includes/layout/print_enum_info.md.erb",
+    locals: { file: "/data/enums/tile_state.json" } %>

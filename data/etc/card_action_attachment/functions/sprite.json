@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "sprite",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters": [ ],
+    "return_value_type": "<%=sprite_node%>",
+    "return_value_desc": "The <%=sprite_node%> associated with this <%=card_action_attachment%>.",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

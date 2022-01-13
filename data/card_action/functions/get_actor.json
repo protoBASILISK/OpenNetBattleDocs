@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "get_actor",
+    "static": false,
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "description":
+    [
+        ""
+    ],
+    "parameters": [],
+    "return_value_type": "<%=character%>",
+    "return_value_desc": "The <%=character%> (or 'stunt double') that's executing the current <%=card_action%>.",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}
