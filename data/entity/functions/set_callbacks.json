@@ -1,0 +1,45 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "set_callbacks",
+	"example_code": [ 
+		""
+	],
+	"description": [
+		""
+	],
+	"parameters": [
+		{
+			"name": "attack_callback",
+			"desc": "",
+			"type": "function"
+		},
+		{
+			"name": "collision_callback",
+			"desc": "",
+			"type": "function"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text": [
+				"`attack_callback` has to take _one_ <%=entity%> argument, and to return _no_ value."
+			],
+			"code": [
+				"attack_callback = function( other ) end"
+			]
+		},
+		{
+			"type": "notice",
+			"text": [
+				"`collision_callback` has to take _one_ <%=entity%> argument, and to return _no_ value."
+			],
+			"code": [
+				"collision_callback = function( other ) end"
+			]
+		}
+	]
+}

@@ -107,7 +107,7 @@
 		{ "name": "set_explosion_behavior", "conditional": true },
 
 		{ "name": "register_status_callback" },
-		{ "name": "set_callbacks" }
+		{ "name": "set_callbacks", "conditional": true }
 	],
 	"callbacks":
 	[
