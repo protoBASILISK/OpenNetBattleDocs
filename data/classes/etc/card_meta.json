@@ -1,0 +1,14 @@
+{
+	"class_name": "CardMeta",
+	"variable_text": "card_meta",
+	"subdirectory": "etc/card_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" },
+		{ "name": "filter_hand_step" },
+		{ "name": "get_card_props" },
+		{ "name": "set_preview_texture" },
+		{ "name": "set_icon_texture" },
+		{ "name": "set_codes" }
+	]
+}

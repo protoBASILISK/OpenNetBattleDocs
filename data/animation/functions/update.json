@@ -1,0 +1,25 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "update",
+	"example_code": [ 
+        "" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "" 
+    ],
+	"parameters": [
+		{
+			"name": "elapsed_time",
+			"desc": "The amount of time (in seconds) you want to advance the animation by (or zero).",
+			"type": "number"
+		},
+		{
+			"name": "sprite_node",
+			"desc": "The <%=sprite_node%> you want to advance the animation of.",
+			"type": "<%=sprite_node%>"
+		}
+	]
+}

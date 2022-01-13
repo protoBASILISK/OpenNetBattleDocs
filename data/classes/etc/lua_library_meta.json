@@ -1,0 +1,9 @@
+{
+	"class_name": "LuaLibraryMeta",
+	"variable_text": "lua_library_meta",
+	"subdirectory": "etc/lua_library_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" }
+	]
+}

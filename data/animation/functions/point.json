@@ -1,0 +1,22 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "point",
+	"example_code": [ 
+        "" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Gets the current offset for a specific named point." 
+    ],
+	"parameters": [
+		{
+			"name": "point_name",
+			"desc": "",
+			"type": "string"
+		}
+	],
+    "return_value_type": "Vector2",
+    "return_value_desc": ""
+}

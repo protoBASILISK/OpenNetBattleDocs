@@ -1,0 +1,32 @@
+{
+	"version": "2.0",
+	"name": "make_frame_data",
+	"example_code": [
+		""
+	],
+	"example_comment": "",
+	"description": [
+		""
+	],
+	"parameters": [
+		{
+			"name": "",
+			"desc": "",
+			"type": ""
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "",
+			"text": 
+			[
+				""
+			],
+            "code":
+            [
+                ""
+            ]
+		}
+	]
+}

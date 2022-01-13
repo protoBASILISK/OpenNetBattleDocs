@@ -1,0 +1,17 @@
+{
+	"class_name": "Component",
+	"variable_text": "component",
+	"subdirectory": "component",
+    "functions":
+    [
+        { "name": "eject" },
+        { "name": "get_id" },
+        { "name": "is_injected" },
+        { "name": "get_owner" }
+    ],
+    "callbacks":
+    [
+        { "name": "update_func" },
+        { "name": "scene_inject_func" }
+    ]
+}

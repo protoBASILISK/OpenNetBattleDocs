@@ -1,0 +1,21 @@
+{
+	"class_name": "SceneNode",
+	"variable_text": "scene_node",
+	"subdirectory": "scene_node",
+    "functions":
+    [
+        { "name": "show" },
+        { "name": "hide" },
+        { "name": "set_layer" },
+        { "name": "get_layer" },
+        { "name": "create_node" },
+        { "name": "remove_node" },
+        { "name": "add_tags" },
+        { "name": "remove_tags" },
+        { "name": "has_tag" },
+        { "name": "find_child_nodes_with_tags" },
+        { "name": "get_offset" },
+        { "name": "set_offset" },
+        { "name": "enable_parent_shader" }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+	"class_name": "SpriteNode",
+	"variable_text": "sprite_node",
+	"subdirectory": "sprite_node",
+    "functions":
+    [
+        { "name": "get_texture" },
+        { "name": "set_texture" },
+        { "name": "show" },
+        { "name": "hide" },
+        { "name": "set_layer" },
+        { "name": "get_layer" },
+        { "name": "create_node" },
+        { "name": "remove_node" },
+        { "name": "add_tags" },
+        { "name": "remove_tags" },
+        { "name": "has_tag" },
+        { "name": "find_child_nodes_with_tags" },
+        { "name": "get_offset" },
+        { "name": "set_offset" },
+        { "name": "get_origin" },
+        { "name": "set_origin" },
+        { "name": "get_width" },
+        { "name": "set_width" },
+        { "name": "get_height" },
+        { "name": "set_height" },
+        { "name": "get_color" },
+        { "name": "set_color" },
+        { "name": "get_color_mode" },
+        { "name": "set_color_mode" },
+        { "name": "unwrap" },
+        { "name": "enable_parent_shader" }
+    ]
+}

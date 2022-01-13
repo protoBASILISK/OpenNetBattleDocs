@@ -1,0 +1,9 @@
+{
+	"class_name": "Spawner",
+	"variable_text": "spawner",
+	"subdirectory": "etc/spawner",
+	"functions":
+	[
+		{ "name": "spawn_at" }
+	]
+}

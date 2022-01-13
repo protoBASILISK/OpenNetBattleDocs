@@ -1,0 +1,33 @@
+
+{
+	"version": "2.0",
+	"name": "requires_library",
+	"example_code": [
+		""
+	],
+	"example_comment": "",
+	"description": [
+		"Adds the provided `library package` as a dependency for this package."
+	],
+	"parameters": [
+		{
+			"name": "package_id",
+			"desc": "",
+			"type": "string"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "",
+			"text": 
+			[
+				""
+			],
+            "code":
+            [
+                ""
+            ]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "on_complete",
+	"example_code": [ 
+        "function complete_func()",
+		"\t-- code to execute",
+		"end" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Assigns a function to be executed when the animation completes." 
+    ],
+	"parameters": [
+		{
+			"name": "complete_func",
+			"desc": "",
+			"type": "function"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text":
+			[
+				"`complete_func` requires **no** parameters, and to return **nothing**."
+			],
+			"code": 
+			[
+				"local animation\t\t-- Example Animation Handler",
+				"function complete_func( )",
+				"\tprint( \"animation interrupted!\" )",
+				"end",
+				"",
+				"animation.on_complete = complete_func"
+			]
+		}
+	]
+}

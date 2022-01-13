@@ -1,0 +1,38 @@
+
+{
+	"version": "2.0",
+	"name": "play_audio",
+	"example_code": [
+		""
+	],
+	"example_comment": "",
+	"description": [
+		""
+	],
+	"parameters": [
+		{
+			"name": "audio_file",
+			"desc": "",
+			"type": "audio"
+		},
+		{
+			"name": "priority",
+			"desc": "",
+			"type": "<%=audio_priority%>"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "",
+			"text": 
+			[
+				""
+			],
+            "code":
+            [
+                ""
+            ]
+		}
+	]
+}

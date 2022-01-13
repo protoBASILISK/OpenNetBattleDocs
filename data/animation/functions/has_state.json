@@ -1,0 +1,23 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "has_state",
+	"example_code": [ 
+        ""
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Queries whether or not the <%=animation%> has a specific animation defined.",
+		"&emsp;e.g. To check to see whether an entity is able to play a specific animation."
+    ],
+	"parameters": [
+		{
+			"name": "state_name",
+			"desc": "The animation state's name.",
+			"type": "string"
+		}
+	],
+    "return_value_type": "boolean",
+    "return_value_desc": "`true` if this <%=animation%> has a definition for the provided animation state. Otherwise `false`."
+}

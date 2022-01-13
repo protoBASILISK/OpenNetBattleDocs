@@ -1,0 +1,28 @@
+{
+	"class_name": "CardAction",
+	"variable_text": "card_action",
+	"subdirectory": "card_action",
+    "functions":
+    [
+        { "name": "from_card" },
+        { "name": "set_lockout" },
+        { "name": "set_lockout_group" },
+        { "name": "override_animation_frames" },
+        { "name": "add_attachment" },
+        { "name": "add_anim_action" },
+        { "name": "add_step" },
+        { "name": "end_action" },
+        { "name": "get_actor" },
+        { "name": "set_metadata" },
+        { "name": "copy_metadata" },
+        { "name": "set_offset" }
+    ],
+    "callbacks":
+    [
+        { "name": "update_func" },
+        { "name": "animation_end_func" },
+        { "name": "action_end_func" },
+        { "name": "execute_func" },
+        { "name": "can_move_to_func" }
+    ]
+}

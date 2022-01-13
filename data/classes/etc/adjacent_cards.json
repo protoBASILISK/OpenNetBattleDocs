@@ -1,0 +1,15 @@
+{
+	"class_name": "AdjacentCards",
+	"variable_text": "adjacent_cards",
+	"subdirectory": "etc/adjacent_cards",
+	"functions":
+	[
+		{ "name": "has_card_to_left" },
+		{ "name": "has_card_to_right" },
+		{ "name": "discard_left" },
+		{ "name": "discard_right" },
+		{ "name": "left_card" },
+		{ "name": "right_card" },
+		{ "name": "discard_incoming" }
+	]
+}

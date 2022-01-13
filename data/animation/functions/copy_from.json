@@ -1,0 +1,23 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "copy_from",
+	"example_code": [ 
+        "local empty_animator\t\t\t-- Example Animation Handler",
+		"local animator_to_copy_from\t\t-- Example Animation Handler",
+		"",
+		"empty_animator:copy_from( animator_to_copy_from )" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Creates a separate, deep copy of another <%=animation%> object." 
+    ],
+	"parameters": [
+		{
+			"name": "other_animation",
+			"desc": "",
+			"type": "<%=animation%>"
+		}
+	]
+}

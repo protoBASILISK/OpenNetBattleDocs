@@ -1,0 +1,20 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "set_playback_speed",
+	"example_code": [ 
+        "" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Sets the playback speed for any animations controlled by this <%=animation%> object." 
+    ],
+	"parameters": [
+		{
+			"name": "speed",
+			"desc": "",
+			"type": "number"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+
+{
+	"version": "2.0",
+	"name": "load_shader",
+	"example_code": [
+		""
+	],
+	"example_comment": "",
+	"description": [
+		""
+	],
+	"parameters": [
+		{
+			"name": "file_path",
+			"desc": "",
+			"type": "string"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "",
+			"text": 
+			[
+				""
+			],
+            "code":
+            [
+                ""
+            ]
+		}
+	],
+	"return_value_type": "shader",
+	"return_value_desc": ""
+}

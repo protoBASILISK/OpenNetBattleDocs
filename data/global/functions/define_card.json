@@ -1,0 +1,38 @@
+
+{
+	"version": "2.0",
+	"name": "define_card",
+	"example_code": [
+		""
+	],
+	"example_comment": "",
+	"description": [
+		""
+	],
+	"parameters": [
+		{
+			"name": "package_id",
+			"desc": "",
+			"type": "string"
+		},
+		{
+			"name": "file_path",
+			"desc": "",
+			"type": "string"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "",
+			"text": 
+			[
+				""
+			],
+            "code":
+            [
+                ""
+            ]
+		}
+	]
+}

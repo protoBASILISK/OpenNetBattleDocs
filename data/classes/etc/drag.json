@@ -1,0 +1,14 @@
+{
+	"class_name": "Drag",
+	"variable_text": "drag",
+	"subdirectory": "etc/drag",
+    "functions":
+    [
+        { "name": "None" }
+    ],
+	"properties":
+	[
+		{ "name": "direction" },
+		{ "name": "count" }
+	]
+}

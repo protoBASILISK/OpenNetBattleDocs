@@ -1,0 +1,9 @@
+{
+	"class_name": "SpawnMutator",
+	"variable_text": "spawn_mutator",
+	"subdirectory": "etc/spawn_mutator",
+	"functions":
+	[
+		{ "name": "mutate" }
+	]
+}

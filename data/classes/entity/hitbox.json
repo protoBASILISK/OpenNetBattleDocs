@@ -1,0 +1,11 @@
+{
+	"class_name": "Hitbox",
+	"lua_class_name": "Hitbox",
+	"variable_text": "hitbox",
+	"subdirectory": "entity",
+	"superclass": "Entity",
+	"conditionals":
+	[
+		"set_callbacks"
+	]
+}

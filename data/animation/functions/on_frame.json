@@ -1,0 +1,46 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "on_frame",
+	"example_code": [ 
+        "function on_frame_func()",
+		"\t-- code to execute",
+		"end" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Assigns a function to be executed at a specific point in the animation.",
+		"&emsp;`on_frame()` triggers _**don't**_ happen after a specific amount of game-time frames (1/60th of a second),",
+		"&emsp; instead they happen when the animation moves to the next entry in its list for an animation.",
+		"",
+		"e.g. If an animation named `EXAMPLE_ANIMATION` has 8 states that last 1/6th of a second each:",
+		"&emsp;`on_frame(1)` will trigger when starting the animation, `on_frame(2)` will trigger 1/6th of a second later, etc."
+    ],
+	"parameters": [
+		{
+			"name": "on_frame_func",
+			"desc": "",
+			"type": "function"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text":
+			[
+				"`on_frame_func` requires **no** parameters, and to return **nothing**."
+			],
+			"code": 
+			[
+				"local animation\t\t-- Example Animation Handler",
+				"function on_frame_func( )",
+				"\tprint( \"animation interrupted!\" )",
+				"end",
+				"",
+				"animation.on_frame = on_frame_func"
+			]
+		}
+	]
+}

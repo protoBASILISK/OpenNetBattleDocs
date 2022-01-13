@@ -1,7 +1,7 @@
 {
 	"class_name": "Animation",
 	"variable_text": "animation",
-	"subdirectory": "etc/animation",
+	"subdirectory": "animation",
 	"functions":
 	[
 		{ "name": "load" },
@@ -15,6 +15,7 @@
 		{ "name": "has_state" },
 		{ "name": "point" },
 		{ "name": "set_playback" },
+		{ "name": "on_complete" },
 		{ "name": "on_frame" },
 		{ "name": "on_interrupt" }
 	]

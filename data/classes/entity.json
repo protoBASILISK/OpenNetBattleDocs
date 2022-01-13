@@ -106,7 +106,8 @@
 		{ "name": "shake_camera" },
 		{ "name": "set_explosion_behavior", "conditional": true },
 
-		{ "name": "register_status_callback" }
+		{ "name": "register_status_callback" },
+		{ "name": "set_callbacks" }
 	],
 	"callbacks":
 	[

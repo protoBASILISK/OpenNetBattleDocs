@@ -1,0 +1,41 @@
+
+{
+	"version": "2.0",
+	"conditional": true,
+	"name": "on_interrupt",
+	"example_code": [ 
+        "function interrupt_func()",
+		"\t-- code to execute",
+		"end" 
+    ],
+	"example_comment": "",
+	"description": [ 
+        "Assigns a function to be executed if the animation is interrupted." 
+    ],
+	"parameters": [
+		{
+			"name": "interrupt_func",
+			"desc": "",
+			"type": "function"
+		}
+	],
+	"footnotes":
+	[
+		{
+			"type": "notice",
+			"text":
+			[
+				"`interrupt_func` requires **no** parameters, and to return **nothing**."
+			],
+			"code": 
+			[
+				"local animation\t\t-- Example Animation Handler",
+				"function interrupt_func( )",
+				"\tprint( \"animation interrupted!\" )",
+				"end",
+				"",
+				"animation.on_interrupt = interrupt_func"
+			]
+		}
+	]
+}

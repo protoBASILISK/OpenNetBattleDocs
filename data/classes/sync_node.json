@@ -1,0 +1,10 @@
+{
+	"class_name": "SpriteNode",
+	"variable_text": "sprite_node",
+	"subdirectory": "sprite_node",
+    "functions":
+    [
+        { "name": "sprite" },
+        { "name": "get_animation" }
+    ]
+}
