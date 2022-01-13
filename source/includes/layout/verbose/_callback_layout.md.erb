@@ -77,7 +77,7 @@
 <% end %>
 
     <%# FOOT NOTES %>
-<% if not is_empty( _call["footnotes"], true ) %>
+<% if not is_empty( _call["footnotes"] ) %>
     <% _call["footnotes"].each do |note| %>
         <% if note["code"].present? %>
 ``` lua
