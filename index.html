@@ -430,6 +430,14 @@ The engine supports custom user content through <strong>Lua</strong>, this is wh
 <h1 id='user-generated-content'>User-Generated Content</h1><div class="highlight"><pre class="highlight plaintext"><code>+ OpenNetBattle
 ├─ ...
 └─ resources
+   ├─ blocks            - character customizer doohickeys
+   │  └─ example_block
+   │     ├─ entry.lua          - [entry.lua] defines a block
+   │     └─ ...                - other files for the character
+   ├─ cards             - attacks
+   │  └─ example_enemy
+   │     ├─ entry.lua          - [entry.lua] defines a character
+   │     └─ ...                - other files for the character
    ├─ encounters        - specific battles against ai-controlled opponents
    │  └─ example_encounter
    │     ├─ mob.lua            - [mob.lua] defines an encounter
