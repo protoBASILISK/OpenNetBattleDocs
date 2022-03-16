@@ -6,7 +6,7 @@
         {
             "name":     "Local",
             "meaning":  [ 
-                "This <%=component%>'s `update()` loop happens immediately after the associated <%=entity%>'s `update()`." 
+                "This <%=component%>'s `update()` loop happens following the associated <%=entity%>'s `update()`." 
             ]
         },
         {

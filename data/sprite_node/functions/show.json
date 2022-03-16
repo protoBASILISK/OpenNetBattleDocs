@@ -1,22 +1,24 @@
 {
     "version": "2.0",
-    "callback_name": "action_end_func",
+    "name": "show",
     "static": false,
     "example_code": [
-        ""
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "sprite_node:show()"
     ],
     "example_comment":
         "",
     "description":
     [
-        "This function will execute when the <%=card_action%> completes."
+        "Forces this <%= doc_class_name %> and all its children to be rendered."
     ],
     "parameters":
     [
         {
-            "name": "action",
+            "name": "",
             "desc": "",
-            "type": "<%=card_action%>",
+            "type": "",
             "optional": false
         }
     ],

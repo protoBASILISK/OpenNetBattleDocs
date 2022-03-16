@@ -1,0 +1,42 @@
+{
+    "version": "2.0",
+    "name": "has_tag",
+    "static": false,
+    "example_code": [
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "return sprite_node:has_tag( \"arm\" )"
+    ],
+    "example_comment":
+        "The above snippet returns **`true`** if the <%= doc_class_name %> has the \"arm\" tag, otherwise returns **`false`**.",
+    "description":
+    [
+        "Returns **`true`** if this <%= doc_class_name %> has the provided tag in its tag list.",
+        "&emsp;Otherwise, returns **`false`**."
+    ],
+    "parameters":
+    [
+        {
+            "name": "tags_to_find",
+            "desc": "The tag to search this <%= doc_class_name %>'s tag list for.",
+            "type": "list< string >",
+            "optional": false
+        }
+    ],
+    "return_value_type": "boolean",
+    "return_value_desc": "**`true`** if the requested tag is in the tag list, otherwise **`false`**",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

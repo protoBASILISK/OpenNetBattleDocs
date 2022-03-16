@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "name": "get_color",
+    "static": false,
+    "example_code": [
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "local tint_color = sprite_node:get_color()",
+        "print( \"R:\", tint_color.r )",
+        "print( \"G:\", tint_color.g )",
+        "print( \"B:\", tint_color.b )",
+        "print( \"A:\", tint_color.a )"
+    ],
+    "example_comment":
+        "The above snippet prints the values of the different components of the tint affecting the <%= doc_class_name %>.",
+    "description":
+    [
+        "Returns the color of the tint currently applied to the <%= doc_class_name %>."
+    ],
+    "parameters":
+    [
+        {
+            "name": "",
+            "desc": "",
+            "type": "",
+            "optional": false
+        }
+    ],
+    "return_value_type": "<%= color %>",
+    "return_value_desc": "The color of the tint currently affecting the <%= doc_class_name %>.",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

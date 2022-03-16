@@ -13,5 +13,5 @@
 		"&emsp;**Positive** Y values move it *downwards*, **negative** Y values move it *upwards*."
 	],
 	"return_value_type": "Vector2",
-	"return_value_desc": "The offset of this <%=doc_class_name%>. `X` : horizontal offset, `Y` : vertical offset."
+	"return_value_desc": "The offset of this <%=doc_class_name%>. <br>&emsp;&emsp;`X` : horizontal offset <br>&emsp;&emsp;`Y` : vertical offset."
 }

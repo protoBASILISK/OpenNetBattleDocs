@@ -2,7 +2,7 @@
 <% _class = locals[:c] %>
 
 ### <%= _class["class_name"] %> . <%= _call["callback_name"] %>
-<h4 class="version">`callback` • `v<%= _call["version"] %>`</h4>
+<h4 class="version">callback • v<%= _call["version"] %></h4>
 
     <%# VERSION INFORMATION %>
 <% if _call["incomplete"].present? or is_empty( _call["description"] ) or is_empty( _call["example_code"] ) %>

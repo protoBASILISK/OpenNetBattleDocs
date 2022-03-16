@@ -1,0 +1,42 @@
+{
+    "version": "2.0",
+    "name": "add_tags",
+    "static": false,
+    "example_code": [
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "local offset = sprite_node:get_offset()",
+        "print( \"offset is\", offset.X, offset.Y )"
+    ],
+    "example_comment":
+        "The above snippet prints out the coordinates for the <%= doc_class_name %>'s offset.",
+    "description":
+    [
+        "Returns the **offset** for the <%= doc_class_name %> (default `[0, 0]`)."
+    ],
+    "parameters":
+    [
+        {
+            "name": "",
+            "desc": "",
+            "type": "",
+            "optional": false
+        }
+    ],
+	"return_value_type": "Vector2",
+	"return_value_desc": "The offset for this <%=doc_class_name%>. <br>&emsp;&emsp;`X` : horizontal offset <br>&emsp;&emsp;`Y` : vertical offset.",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

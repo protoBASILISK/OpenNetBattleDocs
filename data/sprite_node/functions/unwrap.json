@@ -1,27 +1,29 @@
 {
     "version": "2.0",
-    "callback_name": "action_end_func",
+    "name": "unwrap",
     "static": false,
     "example_code": [
-        ""
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "return sprite_node:unwrap()"
     ],
     "example_comment":
         "",
     "description":
     [
-        "This function will execute when the <%=card_action%> completes."
+        "Returns a handle to this <%= doc_class_name %>."
     ],
     "parameters":
     [
         {
-            "name": "action",
+            "name": "",
             "desc": "",
-            "type": "<%=card_action%>",
+            "type": "",
             "optional": false
         }
     ],
-    "return_value_type": "",
-    "return_value_desc": "",
+    "return_value_type": "<%= doc_class_name %>",
+    "return_value_desc": "The handle to this <%= doc_class_name %>.",
     "footnotes":
     [
         {

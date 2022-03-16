@@ -2,7 +2,7 @@
 <% _class = locals[:c] %>
 
 ### <%= _class["class_name"] %> . <%= _prop["name"] %>
-<h4 class="version">`property` • `v<%= _prop["version"] %>`</h4>
+<h4 class="version">property • v<%= _prop["version"] %></h4>
 
     <%# VERSION INFORMATION %>
 <% if _prop["incomplete"].present? or is_empty( _prop["description"] ) or is_empty( _prop["example_code"] ) %>

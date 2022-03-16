@@ -2,7 +2,7 @@
 <% _class = locals[:c] %>
 
 ### <%= _class["class_name"] %> : <%= _func["name"] %>()
-<h4 class="version">`function` • `v<%= _func["version"] %>`</h4>
+<h4 class="version">function • v<%= _func["version"] %></h4>
 
     <%# VERSION INFORMATION %>
 <% if _func["incomplete"].present? or is_empty( _func["description"] ) or is_empty( _func["example_code"] ) %>

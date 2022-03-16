@@ -1,0 +1,41 @@
+{
+    "version": "2.0",
+    "name": "enable_parent_shader",
+    "static": false,
+    "example_code": [
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "sprite_node:enable_parent_shader( false )"
+    ],
+    "example_comment":
+        "The above snippet forces the <%= doc_class_name %> to use its own shader when rendering.",
+    "description":
+    [
+        "This forces this <%= doc_class_name %> to use its parent's shader during rendering."
+    ],
+    "parameters":
+    [
+        {
+            "name": "use_parent_shader",
+            "desc": "`true` if you want this <%= doc_class_name %> to use its parent's shader instead of its own, otherwise `false`.",
+            "type": "boolean",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

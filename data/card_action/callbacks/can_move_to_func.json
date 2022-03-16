@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "This function is executed when the <%=character%> attempts to move to another <%=tile%>.",
+        "This function is executed when a <%=character%> attempts to move to another <%=tile%>.",
         "",
         "The `tile` parameter is the <%=tile%> it is attempting to move to, and the script can query it like normal.",
         "&emsp;Return `true` if the <%=character%> will be allowed to move to the <%=tile%>.",

@@ -1,22 +1,24 @@
 {
     "version": "2.0",
-    "callback_name": "action_end_func",
+    "name": "set_height",
     "static": false,
     "example_code": [
-        ""
+        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "",
+        "sprite_node:set_height( 50 )"
     ],
     "example_comment":
-        "",
+         "The above snippet will make the <%= doc_class_name %> become 50 pixels tall.",
     "description":
     [
-        "This function will execute when the <%=card_action%> completes."
+        "Scales the <%= doc_class_name %> vertically so it matches the desired height."
     ],
     "parameters":
     [
         {
-            "name": "action",
-            "desc": "",
-            "type": "<%=card_action%>",
+            "name": "height",
+            "desc": "The new height for the <%= doc_class_name %>.",
+            "type": "number",
             "optional": false
         }
     ],

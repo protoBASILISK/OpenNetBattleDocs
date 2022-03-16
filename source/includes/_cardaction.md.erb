@@ -4,10 +4,15 @@
 ## CardActionAttachment
 <%= partial "includes/layout/print_class_info.md.erb", locals: { file: "/data/classes/etc/card_action_attachment.json" } %>
 
+
 ## CardActionStep
 <%= partial "includes/layout/print_class_info.md.erb", locals: { file: "/data/classes/etc/card_action_step.json" } %>
 
 ## Lockout
+
+Each <%= $link_list[:card_action] %> is assigned to one `Lockout` group (and only one).<br>
+This allows scripts to control what actions are available to a player.<br>
+
 <%= partial "includes/layout/print_enum_info.md.erb", locals: { file: "/data/enums/lockout.json" } %>
 
 ## Locktype

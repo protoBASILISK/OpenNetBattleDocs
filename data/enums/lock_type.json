@@ -6,13 +6,13 @@
         {
             "name":     "Animation",
             "meaning":  [ 
-                "You cannot use this action again until the animation completes." 
+                "You cannot use actions with this <%= lockout_group %> group again until the animation completes." 
             ]
         },
         {
             "name":     "Async",
             "meaning":  [ 
-                "You cannot use this action again for a period of time after the animation completes."
+                "You cannot use actions with this <%= lockout_group %> group again for a period of time after the animation completes."
             ]
         },
         {
