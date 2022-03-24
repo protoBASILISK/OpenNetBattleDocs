@@ -723,3 +723,41 @@ html, body {
 .data.incomplete {
   background:#C4726C;
 }
+
+.variable_list {
+  margin: 0px;
+}
+
+.function_call {
+  @extend %code-font;
+  background-color: rgba(0,0,0,0.05);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.variable_name
+{
+  @extend %code-font;
+}
+.variable_name::after
+{
+  content: ":"
+}
+
+.variable_type {
+  @extend %code-font;
+  font-weight: bold;
+  font-style: italic;
+}
+.variable_type::before {
+  content: "(";
+}
+.variable_type::after {
+  content: ")";
+}
+
+a.class_link {
+  @extend %code-font;
+  font-weight: bold;
+  text-decoration-style: dotted;
+}

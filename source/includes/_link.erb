@@ -1,8 +1,0 @@
-<%# eRB is FAR too literal with interpreting whitespace outside of angle brackets.
-    This is an ugly hack but it works.
-%><%= "<a href=\"" + config[:path_prefix] + locals[:target] + "\">"
-  %><% if locals[:bold].nil? %><b><% end
-  %><% if locals[:code].nil? %><code><% end
-  %><%= locals[:text] %><% if locals[:code].nil? %></code><% end
-  %><% if locals[:bold].nil? %></b><% end
-%><%= "</a>" %>

@@ -1,3 +1,5 @@
+<%= partial "./includes/link_list.erb" %>
+
 ## Entity
 **`Entities`** are objects that are *present* on the battlefield.<br>
 There are a number of different types, each intended for different usages.<br>
@@ -8,21 +10,21 @@ Outside of their *source* scripts, any **`Entity`** object should be treated as 
 
 Entity Type | Scripted Type | Intended Usage
 ----------- | ------------- | --------------
-<%= @link_character %> / <%= @link_scripted_character %><br>
-&emsp;<%= @link_character %> type objects are objects **with a health value**, some have *AI scripting*.
+<%= $link_list[:character] %> / <%= $link_list[:scripted_character] %><br>
+&emsp;<%= $link_list[:character] %> type objects are objects **with a health value**, some have *AI scripting*.
 
-<%= @link_player %> / <%= @link_scripted_player %><br>
-&emsp;<%= @link_player %> type objects are <%= @link_character %> type objects **controllable by a player**._
+<%= $link_list[:player] %> / <%= $link_list[:scripted_player] %><br>
+&emsp;<%= $link_list[:player] %> type objects are <%= $link_list[:character] %>-type objects **controlled by a player**.
 
-<%= @link_obstacle %> / <%= @link_scripted_obstacle %><br>
-&emsp;<%= @link_obstacle %> type objects are <%= @link_character %> type objects that are **spawned** by another <%= @link_character %> type object.<br>
+<%= $link_list[:obstacle] %> / <%= $link_list[:scripted_obstacle] %><br>
+&emsp;<%= $link_list[:obstacle] %> type objects are <%= $link_list[:character] %>-type objects that are **spawned** by another <%= $link_list[:entity] %>.<br>
 &emsp;They are mostly static objects.
 
-<%= @link_artifact %> / <%= @link_scripted_artifact %><br>
-&emsp;<%= @link_artifact %> type objects are **purely visual** objects. They **do not** interact with other **`Entity`** objects.
+<%= $link_list[:artifact] %><br>
+&emsp;<%= $link_list[:artifact] %> type objects are **purely visual** objects. They **do not** interact with other **`Entity`** objects.
 
-<%= @link_spell %>  / <%= @link_scripted_spell %><br>
-&emsp;<%= @link_spell %> type objects are **attacks and other effects** that can influence **Entity** objects.
+<%= $link_list[:spell] %>  / <%= $link_list[:scripted_spell] %><br>
+&emsp;<%= $link_list[:spell] %> type objects are **attacks and other effects** that can influence <%= $link_list[:entity] %> objects.
 
 ## Character
 <%= partial "includes/layout/print_class_info.md.erb",

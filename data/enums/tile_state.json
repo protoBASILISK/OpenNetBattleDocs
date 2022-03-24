@@ -12,51 +12,51 @@
         {
             "name":     "Cracked",
             "meaning":  [ 
-                "This <%=tile%> will break, turning to a `Broken` tile when an <%=entity%> moves off of it."
+                "Turns into a `Broken` tile when an <%=entity%> moves off of it."
             ]
         },
         {
             "name":     "Broken",
             "meaning":  [ 
-                "This <%=tile%> is currently empty space and cannot be stood on normally.",
+                "Empty space, cannot be stood on normally.",
                 "&emsp;_It will automatically revert to a `Normal` <%=tile%> after a period of time._"
             ]
         },
         {
             "name":     "Empty",
             "meaning":  [ 
-                "The middle of this <%=tile%> is entirely gone, and cannot be stood on normally.",
+                "Entirely removed, and cannot be stood on normally.",
                 "&emsp;_It will **not** automatically revert to a `Normal` <%=tile%>._"
             ]
         },
         {
             "name":     "Grass",
             "meaning":  [ 
-                "This tile has grass growing on it."
+                "This <%=tile%> has grass growing on it."
             ]
         },
         {
             "name":     "Holy",
             "meaning":  [ 
-                "This <%=tile%> reduces the damage that any <%=entity%> takes while standing on it."
+                "Reduces the damage that any <%=entity%> takes while standing on it."
             ]
         },
         {
             "name":     "Ice",
             "meaning":  [ 
-                "This <%=tile%> causes any <%=entity%> that walks onto it to slip, and try to move again in the same direction."
+                "Causes any <%=entity%> that walks onto it to slip, and try to move again in the same direction."
             ]
         },
         {
             "name":     "Lava",
             "meaning":  [ 
-                "This <%=tile%> damages any <%=entity%> that stands on it, then reverts to a `Normal` <%=tile%>."
+                "Damages any <%=entity%> that stands on it, then reverts to a `Normal` <%=tile%>."
             ]
         },
         {
             "name":     "Poison",
             "meaning":  [ 
-                "This <%=tile%> gradually damages any <%=entity%> that stands on it."
+                "Gradually damages any <%=entity%> that stands on it."
             ]
         },
         {
@@ -68,31 +68,31 @@
         {
             "name":     "DirectionDown",
             "meaning":  [ 
-                "This <%=tile%> is a conveyor belt that will try to move any <%=entity%> that stands on it downwards."
+                "Aconveyor belt that will try to move any <%=entity%> that stands on it downwards."
             ]
         },
         {
             "name":     "DirectionUp",
             "meaning":  [ 
-                "This <%=tile%> is a conveyor belt that will try to move any <%=entity%> that stands on it upwards."
+                "A conveyor belt that will try to move any <%=entity%> that stands on it upwards."
             ]
         },
         {
             "name":     "DirectionLeft",
             "meaning":  [ 
-                "This <%=tile%> is a conveyor belt that will try to move any <%=entity%> that stands on it to the left."
+                "A conveyor belt that will try to move any <%=entity%> that stands on it to the left."
             ]
         },
         {
             "name":     "DirectionRight",
             "meaning":  [ 
-                "This <%=tile%> is a conveyor belt that will try to move any <%=entity%> that stands on it to the right."
+                "A conveyor belt that will try to move any <%=entity%> that stands on it to the right."
             ]
         },
         {
             "name":     "Hidden",
             "meaning":  [ 
-                "This <%=tile%> is entirely gone, and cannot be stood on normally.",
+                "Entirely removed, and cannot be stood on normally.",
                 "&emsp;_It will **not** automatically revert to a `Normal` <%=tile%>._"
             ]
         }

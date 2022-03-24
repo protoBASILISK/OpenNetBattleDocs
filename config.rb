@@ -10,6 +10,7 @@ set :markdown,
     prettify: true,
     strikethrough: true,
     tables: true,
+    lax_spacing: true,
     with_toc_data: true,
     no_intra_emphasis: true,
     renderer: UniqueHeadCounter

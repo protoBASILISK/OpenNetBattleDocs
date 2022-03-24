@@ -8,8 +8,8 @@
 	],
 	"example_comment": "",
 	"description": [
-		"This returns the **width** of the current battlefield in <%=tile%> (including *hidden* tiles)."
+		"This returns the **width** of the current battlefield in <%=tile%>s (including *hidden* tiles)."
 	],
 	"return_value_type": "number",
-	"return_value_desc": ""
+	"return_value_desc": "The width of the battlefield in <%=tile%>s. _(Default: 8)_"
 }

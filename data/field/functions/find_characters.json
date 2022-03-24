@@ -12,7 +12,7 @@
 		"",
 		"local all_blue_characters = field:find_characters( blue_team_filter )",
 		"local all_red_characters",
-		"\t\t= field:find_characters( function( character ) return character:get_team() == Team.Red end )"
+		"\t= field:find_characters( function( character ) return character:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_characters()`.",
 	"description": [

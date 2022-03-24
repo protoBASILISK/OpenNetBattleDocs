@@ -1,0 +1,37 @@
+## File Paths
+
+### _modpath
+
+```lua
++ OpenNetBattle
+├─ ...
+└─ resources
+   └─ cards
+      └─ example_card
+         ├─ entry.lua
+         └─ sub_folder
+            └─ script.lua
+```
+This is a **`string`** containing the path to _the_ `entry.lua` _file for this package_.<br>
+&emsp;i.e. For _all_ scripts in a mod, using `_modpath` _will_ give the same value.
+
+_In the example on the right,_ `_modpath` _will always return `resources/cards/example_card/`.
+
+### _folderpath
+
+```lua
++ OpenNetBattle
+├─ ...
+└─ resources
+   └─ cards
+      └─ example_card
+         ├─ entry.lua
+         └─ sub_folder
+            └─ script.lua
+```
+This is a **`string`** containing the path to _the current script file_.<br>
+&emsp;i.e. For _all_ scripts in a mod, using `_modpath` _might not_ give the same value.
+
+_In the example on the right,_ `_folderpath` _will return:_<br>
+&emsp;In **`entry.lua`**: `resources/cards/example_card/`<br>
+&emsp;In **`script.lua`**: `resources/cards/example_card/sub_folder/`.

@@ -3,17 +3,17 @@
 	"name": "find_nearest_characters",
 	"example_code": 
 	[
-		"local field\t-- example field",
+		"\t-- first method",
+		"local field\t\t\t\t\t-- example field",
 		"local starting_character\t-- example character",
-		"",
 		"local blue_team_filter = function( character )",
 		"\treturn character:get_team() == Team.Blue",
 		"end",
-		"",
+		"\t-- second method",
 		"local nearest_blue_characters = field:find_nearest_characters( starting_character, blue_team_filter )",
 		"local nearest_red_characters",
-		"\t\t= field:find_nearest_characters( starting_character,",
-		"\t\t\t\t\tfunction( character ) return character:get_team() == Team.Red end )"
+		"\t= field:find_nearest_characters( starting_character,",
+		"\t\tfunction( character ) return character:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_nearest_characters()`.",
 	"description": [

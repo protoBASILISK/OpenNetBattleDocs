@@ -1,0 +1,8 @@
+<%- if not is_empty( locals[:parameters] ) %>
+    <% locals[:parameters][0...-1].each do |param| %>
+    <%# For all but the last in the parameter list, write the name + a comma after. %>
+        <%= param["name"] %>,
+    <% end %>
+    <%# For the last in the parameter list, just write the name, no comma. %>
+    <%= locals[:parameters].last["name"] %>
+<% end -%>
