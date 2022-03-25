@@ -4,15 +4,18 @@
 	"name": "find_entities",
 	"example_code": 
 	[
-		"local tile\t-- example field",
+		"local <%= variable_text %>\t-- example <%= doc_class_name %>",
+		"",
 		"\t-- first method",
 		"local blue_team_filter = function( entity )",
 		"\treturn entity:get_team() == Team.Blue",
 		"end",
 		"\t-- second method",
-		"local all_blue_entitys = tile:find_entities( blue_team_filter )",
-		"local all_red_entitys =",
-		"\ttile:find_entities( function( entity ) return entity:get_team() == Team.Red end )"
+		"local all_blue_entities = <%= variable_text %>:find_entities( blue_team_filter )",
+		"",
+		"\t-- second method",
+		"local all_red_entities",
+		"\t= <%= variable_text %>:find_entities( function( entity ) return entity:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_entities()`.",
     "summary": "",

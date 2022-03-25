@@ -3,17 +3,18 @@
 	"name": "find_nearest_characters",
 	"example_code": 
 	[
+		"local <%= variable_text %>\t-- example <%= doc_class_name %>",
+		"",
 		"\t-- first method",
-		"local field\t\t\t\t\t-- example field",
-		"local starting_character\t-- example character",
 		"local blue_team_filter = function( character )",
 		"\treturn character:get_team() == Team.Blue",
 		"end",
 		"\t-- second method",
-		"local nearest_blue_characters = field:find_nearest_characters( starting_character, blue_team_filter )",
-		"local nearest_red_characters",
-		"\t= field:find_nearest_characters( starting_character,",
-		"\t\tfunction( character ) return character:get_team() == Team.Red end )"
+		"local all_blue_characters = <%= variable_text %>:find_nearest_characters( blue_team_filter )",
+		"",
+		"\t-- second method",
+		"local all_red_characters",
+		"\t= <%= variable_text %>:find_nearest_characters( function( character ) return character:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_nearest_characters()`.",
     "summary": "",

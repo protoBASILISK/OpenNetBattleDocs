@@ -9,8 +9,8 @@
 		"local blue_team_filter = function( obstacle )",
 		"\treturn obstacle:get_team() == Team.Blue",
 		"end",
-		"\t-- second method",
 		"local all_blue_obstacles = field:find_obstacles( blue_team_filter )",
+		"\t-- second method",
 		"local all_red_obstacles = field:find_obstacles( function( obstacle ) return obstacle:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_obstacles()`.",

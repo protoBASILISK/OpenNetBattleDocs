@@ -4,15 +4,18 @@
 	"name": "find_characters",
 	"example_code": 
 	[
-		"local field\t-- example field",
+		"local <%= variable_text %>\t-- example <%= doc_class_name %>",
+		"",
 		"\t-- first method",
 		"local blue_team_filter = function( character )",
 		"\treturn character:get_team() == Team.Blue",
 		"end",
 		"\t-- second method",
-		"local all_blue_characters = field:find_characters( blue_team_filter )",
+		"local all_blue_characters = <%= variable_text %>:find_characters( blue_team_filter )",
+		"",
+		"\t-- second method",
 		"local all_red_characters",
-		"\t= field:find_characters( function( character ) return character:get_team() == Team.Red end )"
+		"\t= <%= variable_text %>:find_characters( function( character ) return character:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_characters()`.",
     "summary": "",
