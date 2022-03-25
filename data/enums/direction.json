@@ -6,39 +6,21 @@
     "subdirectory": "direction",
     "items":
     [
-        {
-            "name": "None"
-        },
-        {
-            "name": "Up"
-        },
-        {
-            "name": "Down"
-        },
-        {
-            "name": "Left"
-        },
-        {
-            "name": "Right"
-        },
-        {
-            "name": "UpLeft"
-        },
-        {
-            "name": "UpRight"
-        },
-        {
-            "name": "DownLeft"
-        },
-        {
-            "name": "DownRight"
-        }
+        { "name": "None" },
+        { "name": "Up" },
+        { "name": "Down" },
+        { "name": "Left" },
+        { "name": "Right" },
+        { "name": "UpLeft" },
+        { "name": "UpRight" },
+        { "name": "DownLeft" },
+        { "name": "DownRight" }
     ],
     "functions":
     [
-        "flip_x",
-        "flip_y",
-        "reverse",
-        "join"
+        { "name": "flip_x" },
+        { "name": "flip_y" },
+        { "name": "reverse" },
+        { "name": "join" }
     ]
 }
