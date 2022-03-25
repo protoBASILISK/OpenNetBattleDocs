@@ -13,8 +13,7 @@ meta:
     content: Documentation for the OpenNetBattle Engine
 ---
 
-<% _class_layout = "includes/layout/print_type_info.md.erb" %>
-<% _enum_layout = "includes/layout/print_type_info.md.erb" %>
+<% _type_layout = "includes/layout/print_type_info.md.erb" %>
 
 # Overview
 
@@ -28,7 +27,7 @@ meta:
 <p><%= partial "includes/entity.md.erb" %></p>
 
 ## Lifetimes
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/lifetimes.json" } %>
 
 # CardAction Objects
@@ -37,55 +36,55 @@ meta:
 # Utility Objects
 
 ## Animation
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/animation.json" } %></p>
 
 ## Color
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/color.json" } %></p>
 
 ## DefenseRule
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/defense_rule.json" } %></p>
 
 ## DefenseOrder
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/enums/defense_order.json" } %></p>
 
 ## DefenseFrameStateJudge
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/defense_frame_state_judge.json" } %></p>
 
 ## MoveEvent
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/move_event.json" } %></p>
 
 ## HitProps
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/hit_props.json" } %></p>
 
 ## Drag
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/drag.json" } %></p>
 
 ## Mob
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/mob.json" } %></p>
 
 ## Spawner
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/spawner.json" } %></p>
 
 ## SpawnMutator
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/spawn_mutator.json" } %></p>
 
 ## MoveEvent
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/move_event.json" } %></p>
 
 ## Vector2
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/vector2.json" } %></p>
 
 # Metadata Files

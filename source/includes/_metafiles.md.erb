@@ -1,38 +1,38 @@
-<% _class_layout = "includes/layout/print_type_info.md.erb" %>
-<% _enum_layout = "includes/layout/print_type_info.md.erb" %>
+<% _type_layout = "includes/layout/print_type_info.md.erb" %>
+<% _type_layout = "includes/layout/print_type_info.md.erb" %>
 
 ## PlayerMeta
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/player_meta.json" } %></p>
 
 ## BlockMeta
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/block_meta.json" } %></p>
 
 ## BlockColor
-<p><%= partial _enum_layout, locals: 
+<p><%= partial _type_layout, locals: 
     { file: "/data/enums/blocks.json" } %></p>
 
 ## CardMeta
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/card_meta.json" } %></p>
 
 ## CardProperties
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/card_properties.json" } %></p>
 
 ## CardClass
-<p><%= partial _enum_layout, locals: 
+<p><%= partial _type_layout, locals: 
     { file: "/data/enums/card_class.json" } %></p>
 
 ## AdjacentCards
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/adjacent_cards.json" } %></p>
 
 ## LuaLibraryMeta
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/lua_library_meta.json" } %></p>
 
 ## MobMeta
-<p><%= partial _class_layout, locals:
+<p><%= partial _type_layout, locals:
   { file: "/data/classes/etc/mob_meta.json" } %></p>

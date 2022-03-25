@@ -1,0 +1,10 @@
+<tr>
+    <td><%= locals[ :name ] %></td>
+    <% if locals[ :desc ].present? %>
+        <td>
+            <% locals[ :desc ].each do |line| %>
+                <%= line %><br>
+            <% end %>
+        </td>
+    <% end %>
+</tr>

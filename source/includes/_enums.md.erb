@@ -1,44 +1,44 @@
-<% _enum_layout = "includes/layout/print_type_info.md.erb" %>
+<% _type_layout = "includes/layout/print_type_info.md.erb" %>
 
 ## ActionOrder
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/action_order.json" } %>
 
 ## AudioPriority
 
-<%= partial _enum_layout, locals:
+<%= partial _type_layout, locals:
     { file: "/data/enums/audio_priority.json" } %>
 
 ## ColorMode
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/color_mode.json" } %>
 
 ## Direction
 
-<p><%= partial _enum_layout, locals: 
+<p><%= partial _type_layout, locals: 
     { file: "/data/enums/direction.json" } %></p>
 
 
 ## Element
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/element.json" } %>
 
 ## EntityStatus
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/entity_status.json" } %>
 
 ## Highlight
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/highlight.json" } %>
 
 ## Hit
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/hit.json" } %>
 
 ## Input
@@ -49,18 +49,18 @@ The `Input` table is divided up into two portions:<br>
 
 i.e. `Input.Pressed.Up` checks for if the `Up` key is `Pressed`.
 
-<p><%= partial _enum_layout, locals:
+<p><%= partial _type_layout, locals:
     { file: "/data/enums/input_keys.json" } %></p>
 
-<p><%= partial _enum_layout, locals:
+<p><%= partial _type_layout, locals:
     { file: "/data/enums/input_states.json" } %></p>
 
 ## Rank
 
-<%= partial _enum_layout, locals: 
+<%= partial _type_layout, locals: 
     { file: "/data/enums/rank.json" } %>
 
 ## Team
 
-<%= partial _enum_layout, locals:
+<%= partial _type_layout, locals:
     { file: "/data/enums/team.json" } %>

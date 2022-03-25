@@ -27,13 +27,23 @@
 <% _layout_root = "includes/layout/" + _type + "/" %>
 
 <%# ENUM MEMBERS %>
-<% if not is_empty( _current_class["items" ] ) %>
-NAME | MEANING 
----- | -------
-    <% _current_class["items"].each do |item| %>
-        <%= item["name"] %> | <% if item["meaning"].present? %> <% item["meaning"].each do |line| %><%= line %><br><% end %><% end %>
-    <% end %>
-<% end %>
+<% if not is_empty( _current_class[ "items" ] ) %>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% _current_class["items"].each do |item| %>
+            <% _item_name = preprocess_json_data( item["name"], _substitute_text ) %>
+            <% _lines = preprocess_json_data( item["meaning"], _substitute_text ) %>
+
+            <%= partial "/includes/layout/fragment/table_line.md.erb", locals: { name: _item_name, desc: _lines } %>
+        <% end %>
+    </tbody>
+</table>
 
 <%# PROPERTIES %>
 <% if not is_empty( _current_class["properties"] ) %>
