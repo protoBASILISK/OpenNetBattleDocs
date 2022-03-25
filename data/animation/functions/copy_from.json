@@ -9,7 +9,8 @@
 		"empty_animator:copy_from( animator_to_copy_from )" 
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Creates a separate, deep copy of another <%= type 'Animation' %> object." 
     ],
 	"parameters": [

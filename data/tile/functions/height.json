@@ -7,7 +7,8 @@
 		"local tile\t\t-- example Tile",
 		"local tile_height\t = tile:height()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns the <b>height</b> of the <%= type 'Tile' %> (in pixels)."
 	],

@@ -7,7 +7,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"<%= variable_text %>:share_tile( true ) "
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"If `true`, allows other objects to inhabit the same <%= type 'Tile' %> as this <%= doc_class_name %>.",
 		"&emsp;(default : `false`)"

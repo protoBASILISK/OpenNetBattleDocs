@@ -10,6 +10,7 @@
     ],
     "example_comment":
         "The above snippet prints the layer number the <%= doc_class_name  %> is on.",
+    "summary": "",
     "description":
     [
         "Returns the (integer) layer number that this <%= doc_class_name  %> is on.",

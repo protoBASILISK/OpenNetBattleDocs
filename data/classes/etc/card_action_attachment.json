@@ -1,6 +1,8 @@
 {
 	"class_name": "CardActionAttachment",
     "lua_class_name": "Attachment",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "attachment",
 	"subdirectory": "etc/card_action_attachment",
 	"functions":

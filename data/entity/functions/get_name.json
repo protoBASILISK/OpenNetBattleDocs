@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local <%= variable_text %>_name = <%= variable_text %>:get_name()"
 	],
-	"description":
+    "summary": "",
+    "description":
 	[
 		"Returns the name of this <%= doc_class_name %>."
 	],

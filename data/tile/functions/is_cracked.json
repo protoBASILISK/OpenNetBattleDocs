@@ -7,7 +7,8 @@
 		"local is_cracked_tile = tile:is_cracked()"
 	],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns `true` if this <%= type 'Tile' %>'s state is currently `Cracked`.",
 		"&emsp;Otherwise, returns `false`."
 	 ],

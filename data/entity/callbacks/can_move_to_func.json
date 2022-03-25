@@ -11,7 +11,8 @@
 		"\tprint( \"update executed.\" )",
 		"end"
 	],
-	"description":
+    "summary": "",
+    "description":
 	[ 
 		"The function that will be called every frame while the <%= doc_class_name %> is alive.",					
 		"&emsp;*`update_func` does not get called during <b>time freeze</b> or while the <b>card menu</b> is open.*"

@@ -1,5 +1,7 @@
 {
 	"class_name": "SpriteNode",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "sprite_node",
 	"subdirectory": "sprite_node",
     "functions":

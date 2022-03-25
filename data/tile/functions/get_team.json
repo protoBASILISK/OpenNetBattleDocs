@@ -7,7 +7,8 @@
 		"local tile_team\t= tile:get_team()"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns the <%= type 'Team'%> that currently owns this <%= type 'Tile' %>"
 	 ],
 	"return_value_type": "<%= type 'Team'%>",

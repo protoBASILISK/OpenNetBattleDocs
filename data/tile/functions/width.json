@@ -7,7 +7,8 @@
 		"local tile\t-- example Tile",
 		"local width = tile:width()"
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Returns the <b>width</b> of the <%= type 'Tile' %> (in pixels)."
 	],
 	"return_value_type": "number",

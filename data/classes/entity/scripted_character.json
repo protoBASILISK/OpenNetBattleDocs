@@ -1,6 +1,8 @@
 {
 	"class_name": "ScriptedCharacter",
 	"lua_class_name": "Character",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "scripted_character",
 	"subdirectory": "entity",
 	"superclass": "Entity",

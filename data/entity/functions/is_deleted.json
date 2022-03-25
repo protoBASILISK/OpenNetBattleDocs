@@ -4,7 +4,8 @@
 	"name": "is_deleted",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"return_value_type": "boolean",
 	"return_value_desc": ""
 }

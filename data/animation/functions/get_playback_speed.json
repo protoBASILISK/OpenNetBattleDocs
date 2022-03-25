@@ -6,7 +6,8 @@
         "" 
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Returns the playback speed multiplier for this <%= type 'Animation' %>." 
     ],
     "return_value_type": "number",

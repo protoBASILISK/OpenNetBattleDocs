@@ -11,7 +11,8 @@
 		"\tprint( \"I LIVED!\" )",
 		"end"
 	],
-	"description":
+    "summary": "",
+    "description":
 	[ 
 		"The function that will be called if the <%= doc_class_name %> is alive when the battle ends."
 	],

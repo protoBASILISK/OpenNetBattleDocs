@@ -11,6 +11,7 @@
     ],
     "example_comment":
         "The above snippet prints a list of `ColorMode`s, and whether or not it matches the <%= doc_class_name  %>'s `ColorMode`.",
+    "summary": "",
     "description":
     [
         "Returns the <%= type 'ColorMode' %> of this <%= doc_class_name  %>."

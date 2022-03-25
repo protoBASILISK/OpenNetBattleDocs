@@ -4,7 +4,8 @@
 	"name": "get_context",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"parameters": [
 		{
 			"name": "",

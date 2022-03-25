@@ -10,7 +10,8 @@
         "local also_flipped = facing.reverse()"
 	],
 	"example_comment": "The above snippet will return `Direction.DownRight`.",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"This returns a <%= type 'Direction' %> with the opposite _vertical_ and _horizontal components_ of the input <%= type 'Direction' %>."
 	],

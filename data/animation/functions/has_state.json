@@ -6,7 +6,8 @@
         ""
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Queries whether or not the <%= type 'Animation' %> has a specific animation defined.",
 		"&emsp;e.g. To check to see whether an entity is able to play a specific animation."
     ],

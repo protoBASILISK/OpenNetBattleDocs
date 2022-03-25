@@ -10,7 +10,8 @@
 		"tile:attack_entities( spell )"
 	],
 	"example_comment": "",
-	"description":
+    "summary": "",
+    "description":
 	[
 		"Queues up a <%= type 'Spell' %> to affect any <%= type 'Entity' %> present on this <%= type 'Tile' %>."
 	],

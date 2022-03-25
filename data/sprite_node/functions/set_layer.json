@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Sets the (integer) layer number setting the order the <%= doc_class_name  %> is drawn in relative to parent/all objects? on the tile.",

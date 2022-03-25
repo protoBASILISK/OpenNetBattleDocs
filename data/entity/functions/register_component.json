@@ -7,7 +7,8 @@
 		"local example_component\t-- example ScriptedComponent",
 		"<%= variable_text %>:register_component( example_component ) "
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Registers a <%= type 'Component' %> to this <%= doc_class_name %>."
 	],
 	"parameters": [

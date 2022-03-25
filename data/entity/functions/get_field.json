@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local current_field = <%= variable_text %>:get_field()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns a handle to the <%= type 'Field' %> the battle is taking place on."
 	],

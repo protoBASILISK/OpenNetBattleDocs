@@ -4,7 +4,8 @@
 	"name": "set_animation",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Makes the <%= doc_class_name %> play an animation from its associated animation file.",
 		"&emsp;If there is no animation in the file with an <b>exactly-matching name</b> exists, the <%= doc_class_name %> will be stuck in an undefined state until it is forced into another state from an external source (e.g. getting hit)."

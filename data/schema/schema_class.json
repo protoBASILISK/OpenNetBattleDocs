@@ -2,9 +2,11 @@
 	"type": "object",
 	"properties": 
 	{
-		"class_name" :	  { "type": "string" },
+		"class_name" :	  	{ "type": "string" },
 		"variable_text" :   { "type": "string" },
 		"subdirectory" :	{ "type": "string" },
+		"summary": 			{ "type": "string" },
+		"description": 		{ "type": "array", "items": { "type": "string" } },
 		"functions":		
 		{ 
 			"type": "array", 

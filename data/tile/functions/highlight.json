@@ -7,7 +7,8 @@
 		"tile:highlight( Highlight.Solid )"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Causes the <%= type 'Tile' %> to be highlighted in a specific manner."
 	],
 	"parameters": [

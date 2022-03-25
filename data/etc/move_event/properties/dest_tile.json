@@ -7,6 +7,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "The <%= type 'Tile' %> the <%= type 'Entity' %> is attempting to move to."

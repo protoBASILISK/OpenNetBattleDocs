@@ -11,7 +11,8 @@
         "local also_joined = comp1.join( comp2 )"
 	],
 	"example_comment": "The above snippet will return `Direction.UpLeft`.",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"This returns the closest normalized <%= type 'Direction' %> to the result of adding the two component <%= type 'Direction' %>s like vectors.",
 		"&emsp;e.g. Adding `Up` to `UpLeft`, would produce `UpLeft`."

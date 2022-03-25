@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local <%= variable_text %>_id = <%= variable_text %>:get_id()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns the **unique ID** assigned to this <%= doc_class_name %>."
 	],

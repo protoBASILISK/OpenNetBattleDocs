@@ -7,7 +7,8 @@
 		"local field_width = field:width()"
 	],
 	"example_comment": "",
-	"description": [
+    "summary": "",
+    "description": [
 		"This returns the **width** of the current battlefield in <%= type 'Tile' %>s (including *hidden* tiles)."
 	],
 	"return_value_type": "number",

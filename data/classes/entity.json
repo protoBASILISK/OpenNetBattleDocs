@@ -1,6 +1,8 @@
 {
 	"class_name": "Entity",
 	"lua_class_name": "Entity",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "entity",
 	"subdirectory": "entity",
 	"functions":

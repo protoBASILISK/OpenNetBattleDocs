@@ -1,6 +1,8 @@
 {
 	"class_name": "Obstacle",
 	"lua_class_name": "Obstacle",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "obstacle",
 	"subdirectory": "entity",
 	"superclass": "Entity",

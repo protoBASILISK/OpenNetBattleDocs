@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local <%= variable_text %>_team = <%= variable_text %>:get_team()"
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Returns the <%= type 'Team'%> this <%= doc_class_name %> is a member of."
 	],
 	"return_value_type": "<%= type 'Team'%>",

@@ -8,7 +8,8 @@
 		"end" 
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Assigns a function to be executed at a specific point in the animation.",
 		"&emsp;`on_frame()` triggers _**don't**_ happen after a specific amount of game-time frames (1/60th of a second),",
 		"&emsp; instead they happen when the animation moves to the next entry in its list for an animation.",

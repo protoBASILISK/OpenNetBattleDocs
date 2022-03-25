@@ -10,7 +10,8 @@
 		"local also_flipped = facing.flip_x()"
 	],
 	"example_comment": "The above snippet will return `Direction.UpRight`.",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"This returns a <%= type 'Direction' %> with the same _vertical component_, but opposite _horizontal component_ of the input <%= type 'Direction' %>."
 	],

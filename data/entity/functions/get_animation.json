@@ -4,7 +4,8 @@
 	"name": "get_animation",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns the <%= type 'Animation' %> component in charge of the <%= doc_class_name %>'s animations.",
 		"&emsp;<i>This does <b>not</b> return the animation the <%= doc_class_name %> currently is playing.</i>"

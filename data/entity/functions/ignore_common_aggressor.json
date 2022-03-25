@@ -5,7 +5,8 @@
 	"name": "ignore_common_aggressor",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"parameters": [
 		{
 			"name": "",

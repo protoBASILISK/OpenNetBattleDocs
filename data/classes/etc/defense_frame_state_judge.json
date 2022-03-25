@@ -1,5 +1,7 @@
 {
 	"class_name": "DefenseFrameStateJudge",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "defense_frame_state_judge",
 	"subdirectory": "etc/defense_frame_state_judge",
 	"functions":

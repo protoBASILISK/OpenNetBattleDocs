@@ -8,7 +8,8 @@
 		"local example_rule\t-- example DefenseRule",
 		"<%= variable_text %>:remove_defense_rule( example_rule ) "
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Removes a <%= type 'DefenseRule' %> from a(n) <%= doc_class_name %>."
 	],

@@ -7,6 +7,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Creates another <%= type 'CardActionAttachment' %> and adds it to this as a child node."

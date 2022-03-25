@@ -8,7 +8,8 @@
 		"local bottom_right = field:tile_at( 6, 3 )"
 	],
 	"example_comment": "The above commands return a pointer to the **top left** and **bottom right** _visible_ <%= type 'Tile' %>.",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"This function retrieves a `pointer` to a <%= type 'Tile' %> at a specific position in the grid.",
 		"&emsp;If there is a <%= type 'Tile' %> at the requested position, this function returns that <%= type 'Tile' %> otherwise `nil`",

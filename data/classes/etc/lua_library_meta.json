@@ -1,5 +1,7 @@
 {
 	"class_name": "LuaLibraryMeta",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "lua_library_meta",
 	"subdirectory": "etc/lua_library_meta",
 	"functions":

@@ -6,7 +6,8 @@
 		""
 	],
 	"example_comment": "",
-	"description": [
+    "summary": "",
+    "description": [
 		"Returns a <%= type 'Character' %> that has the ID `unique_id`.",
 		"If there are *no* <%= type 'Character' %>s with that ID, or the <%= type 'Entity' %> with that `unique_id` is *not* a <%= type 'Character' %>, `nil` is returned instead."
 	],

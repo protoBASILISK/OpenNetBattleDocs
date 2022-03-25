@@ -8,7 +8,8 @@
 		"local new_form = <%= variable_text %>:create_form()"
 	],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"return_value_type": "<%= type 'FormMeta'%>",
 	"return_value_desc": ""
 }

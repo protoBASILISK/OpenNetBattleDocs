@@ -1,5 +1,7 @@
 {
 	"class_name": "AdjacentCards",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "adjacent_cards",
 	"subdirectory": "etc/adjacent_cards",
 	"functions":

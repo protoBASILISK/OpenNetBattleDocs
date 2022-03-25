@@ -1,5 +1,7 @@
 {
 	"class_name": "SceneNode",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "scene_node",
 	"subdirectory": "scene_node",
     "functions":

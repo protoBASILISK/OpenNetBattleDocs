@@ -1,5 +1,7 @@
 {
 	"class_name": "Spawner",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "spawner",
 	"subdirectory": "etc/spawner",
 	"functions":

@@ -1,5 +1,7 @@
 {
 	"class_name": "BlockMeta",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "block_meta",
 	"subdirectory": "etc/block_meta",
 	"functions":

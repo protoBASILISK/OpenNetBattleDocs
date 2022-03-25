@@ -1,5 +1,7 @@
 {
 	"class_name": "Field",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "field",
 	"subdirectory": "field",
 	"functions":

@@ -8,7 +8,8 @@
 		"local example_rule  -- example DefenseRule",
 		"<%= variable_text %>:add_defense_rule( example_rule )"
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Adds a <%= type 'DefenseRule' %> to a(n) <%= doc_class_name %>.",
 		"<%= type 'DefenseRule' %>s allow the <%= doc_class_name %> to change/ignore certain properties of attacks that affect them.",
 		"**TODO** : Get an actually good explanation of what they do."

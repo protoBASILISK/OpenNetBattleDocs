@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet returns **`true`** if the <%= doc_class_name  %> has the \"arm\" tag, otherwise returns **`false`**.",
+    "summary": "",
     "description":
     [
         "Returns **`true`** if this <%= doc_class_name  %> has the provided tag in its tag list.",

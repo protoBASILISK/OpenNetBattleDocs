@@ -7,7 +7,8 @@
 		"local tile_to_left = tile:get_tile( Direction.Left, 1 )"
 	 ],
 	"example_comment": "The above snippet returns a the <%= type 'Tile' %> to the left of this one.",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns a <%= type 'Tile' %> offset in one direction from this <%= type 'Tile' %>.",
 		"&emsp;If this offset goes out of bounds, or is to an otherwise invalid <%= type 'Tile' %>, it returns `nil` instead."
 	 ],

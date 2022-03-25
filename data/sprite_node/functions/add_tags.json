@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet adds the `arm` tag to the <%= doc_class_name  %>, if it's not already present.",
+    "summary": "",
     "description":
     [
         "Adds one or more **`string`** tags to a <%= doc_class_name  %>.",

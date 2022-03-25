@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet removes the \"arm\" tag from the tag list, if it's present.",
+    "summary": "",
     "description":
     [
         "Removes the provided tags from the <%= doc_class_name  %>'s tag list, (if present)."

@@ -1,5 +1,7 @@
 {
 	"class_name": "MoveEvent",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "move_event",
 	"subdirectory": "etc/move_event",
 	"properties":

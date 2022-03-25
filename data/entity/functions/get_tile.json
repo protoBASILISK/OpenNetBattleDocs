@@ -8,7 +8,8 @@
 		"local tile_in_front = <%= variable_text %>:get_tile( facing_direction, 1 )"
 	],
 	"example_comment": "The above snippet returns a handle to the <%= type 'Tile' %> directly in front of the <%= doc_class_name %>.",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns a handle to the <%= type 'Tile' %> offset in one direction from this <%= doc_class_name %>.",
 		"If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid <%= type 'Tile' %>, it returns `nil` instead."

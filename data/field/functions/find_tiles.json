@@ -14,7 +14,8 @@
 		"local all_red_tiles = field:find_tiles( function( tile ) return tile:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_tiles()`.",
-	"description": [
+    "summary": "",
+    "description": [
 		"Iterates through all of the <%= type 'Tile' %>s on the battlefield, and returns a list of <%= type 'Tile' %>s that match a filter `function`.",
 		"&emsp;To *include* a <%= type 'Tile' %> in the final list, the filter `function` has to return `true`.",
 		"&emsp;If it returns `false` for a <%= type 'Tile' %>, it will *not* be included."

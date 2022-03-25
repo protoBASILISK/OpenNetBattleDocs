@@ -11,7 +11,8 @@
 		"\tprint( \"successful hit on another actor \" )",
 		"end"
 	],
-	"description":
+    "summary": "",
+    "description":
 	[ 
 		"The function that will be called when the <%= doc_class_name %> interacts with another <%= type 'Entity' %> and registers a successful hit."
 	],

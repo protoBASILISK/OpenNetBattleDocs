@@ -8,7 +8,8 @@
 		"<%= variable_text %>:set_charge_level( 5 )"
 	],
 	"example_comment": "The above snippet sets the <%= doc_class_name %>'s charge level to maximum.",
-	"description":
+    "summary": "",
+    "description":
 	[
 		"Returns the *charge level* of this <%= doc_class_name %>.",
 		"&emsp;Valid values are any value between 1 and 5 (inclusive).",

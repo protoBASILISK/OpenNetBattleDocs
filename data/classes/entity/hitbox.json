@@ -1,6 +1,8 @@
 {
 	"class_name": "Hitbox",
 	"lua_class_name": "Hitbox",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "hitbox",
 	"subdirectory": "entity",
 	"superclass": "Entity",

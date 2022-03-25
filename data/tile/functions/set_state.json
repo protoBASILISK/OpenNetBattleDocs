@@ -7,7 +7,8 @@
 		"tile:set_state( TileState.Broken )"
 	],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Attempts to set this <%= type 'Tile' %> to a specific <%= type 'TileState' %>.",
 		"&emsp;If the <%= type 'Tile' %> is `Hidden`, or one of the _invisible_ edge tiles around the battlefield, this will fail.",
 		"",

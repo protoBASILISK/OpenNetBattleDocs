@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Forces this <%= doc_class_name  %> and all its children to be rendered."

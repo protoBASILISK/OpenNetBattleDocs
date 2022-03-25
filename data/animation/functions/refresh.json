@@ -6,7 +6,8 @@
         "" 
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Refreshes the target <%= type 'SpriteNode' %>." 
     ],
 	"parameters": [

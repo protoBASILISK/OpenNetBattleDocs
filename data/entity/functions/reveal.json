@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"<%= variable_text %>:reveal()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Forces the graphics for this <%= doc_class_name %> and all of its child objects to be drawn again."
 	]

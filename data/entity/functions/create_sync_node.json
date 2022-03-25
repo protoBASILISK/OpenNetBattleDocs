@@ -5,7 +5,8 @@
 	"name": "create_sync_node",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"parameters": [
 		{
 			"name": "attachment_point",

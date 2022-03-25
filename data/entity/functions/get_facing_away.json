@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local <%= variable_text %>_facing = <%= variable_text %>:get_facing_away()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns the <%= type 'Direction' %> this <%= doc_class_name %> is facing away from."
 	],

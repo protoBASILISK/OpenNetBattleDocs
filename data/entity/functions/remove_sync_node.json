@@ -5,7 +5,8 @@
 	"name": "remove_sync_node",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"parameters": [
 		{
 			"name": "sync_node",

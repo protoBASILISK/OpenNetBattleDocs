@@ -11,7 +11,8 @@
 		"\treturn Battle.Buster.new( actor, true, 10 )",
 		"end"
 	],
-	"description":
+    "summary": "",
+    "description":
 	[ 
 		"The function that will be called when the <%= doc_class_name %> uses a **special** attack."
 	],

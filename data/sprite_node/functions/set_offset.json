@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet offsets the <%= doc_class_name  %> by 50 pixels horizontally and 100 pixels vertically from its original position.",
+    "summary": "",
     "description":
     [
         "Assigns a new **offset** for the <%= doc_class_name  %> (default `[0, 0]`).",

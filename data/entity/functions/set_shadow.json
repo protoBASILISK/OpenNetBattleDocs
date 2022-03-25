@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"<%= variable_text %>:set_shadow( Shadow.Small ) "
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Defines the shadow that will be drawn for this <%= doc_class_name %>.",
 		"This function can take **either** an enum <%= type 'ShadowType' %> value for pre-defined shadows,",

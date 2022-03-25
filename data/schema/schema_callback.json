@@ -2,11 +2,12 @@
 	"type": "object",
 	"properties":
 	{
-		"version":			  { "type": "string" },
-		"name":				 { "type": "string" },
-		"example_code":		 { "type": "array", "items": { "type": "string" } },
-		"example_comment":	  { "type": "string" },
-		"description":		  { "type": "array", "items": { "type": "string" } },
+		"version":			  	{ "type": "string" },
+		"name":				 	{ "type": "string" },
+		"example_code":		 	{ "type": "array", "items": { "type": "string" } },
+		"example_comment":	  	{ "type": "string" },
+		"summary": 				{ "type": "string" },
+		"description":		  	{ "type": "array", "items": { "type": "string" } },
 		"parameters":
 		{
 			"type": "array",

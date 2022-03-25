@@ -5,7 +5,8 @@
 		"version":			{ "type": "string" },
 		"name":				{ "type": "string" },
 		"subdirectory" :	{ "type": "string" },
-		"description":		{ "type": "array", "items": { "type": "string" } },
+		"summary": 			{ "type": "string" },
+    	"description":		{ "type": "array", "items": { "type": "string" } },
 		"functions": 		{ "type": "array", "items": { "type": "string" } }
 	},
 	"items":

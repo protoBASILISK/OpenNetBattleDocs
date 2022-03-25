@@ -13,7 +13,8 @@
 		"field:notify_on_delete( target, observer, onDelete )"
 	],
 	"example_comment": "",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"This sets up a `callback function` that will be executed when the **`target`** is deleted/destroyed.",
 		"If the **`observer`** is deleted, the `callback` will **not** be executed."

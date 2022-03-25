@@ -6,7 +6,8 @@
 		""
 	],
 	"example_comment": "",
-	"description": [
+    "summary": "",
+    "description": [
 		"Adds the provided `library package` as a dependency for this package."
 	],
 	"parameters": [

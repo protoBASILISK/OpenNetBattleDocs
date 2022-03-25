@@ -9,7 +9,8 @@
 		"local reserving_this_tile = tile:is_reserved( ignored_characters )"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Queries if the <%= type 'Tile' %> is _reserved_ by a <%= type 'Entity' %>.",
 		"&emsp;If a list of **unique IDs** is provided, any <%= type 'Entity' %> with a **unique ID** contained in the list will *not* be included in the calculation.",
 		"",

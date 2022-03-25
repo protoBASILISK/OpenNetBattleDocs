@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Creates a new <%= doc_class_name  %>, as a child of _this_ <%= doc_class_name  %>."

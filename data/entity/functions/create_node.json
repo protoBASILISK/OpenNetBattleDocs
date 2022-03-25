@@ -4,7 +4,8 @@
 	"name": "create_node",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [
+    "summary": "",
+    "description": [
 		"Creates a new <%= type 'SpriteNode' %>, parented to the <%= doc_class_name %>."
 	],
 	"return_value_type": "<%= type 'SpriteNode' %>",

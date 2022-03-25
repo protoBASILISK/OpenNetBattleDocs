@@ -7,7 +7,8 @@
 		"local is_hole_in_ground = tile:is_hole()"
 	 ],
 	"example_comment": "",
-	"description": [
+    "summary": "",
+    "description": [
 		"Returns `true` if this <%= type 'Tile' %> is a \"hole\" in some way: i.e. `Broken`, `Hidden`, or `Empty`.",
 		"&emsp;Otherwise, returns `false`."
 	 ],

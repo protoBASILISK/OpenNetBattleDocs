@@ -9,7 +9,8 @@
 		"tile:reserve_entity_by_id( entity_id )"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Causes the <%= type 'Tile' %> to become _reserved_ by a <%= type 'Entity' %> with a specific **unique ID**.",
 		"An <%= type 'Entity' %> reserving a <%= type 'Tile' %> will stop it from being set to certain <%= type 'TileState' %>s."
 	],

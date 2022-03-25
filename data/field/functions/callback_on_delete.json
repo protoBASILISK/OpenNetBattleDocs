@@ -13,7 +13,8 @@
 		"field:callback_on_delete( target, onDelete )"
 	],
 	"example_comment": "The above snippet shows two different ways to go about setting up a callback function.",
-	"description": [
+    "summary": "",
+    "description": [
 		"This sets up a `callback` that will be executed when an <%= type 'Entity' %> with a specific **unique ID** is deleted/destroyed."
 	],
 	"parameters": [

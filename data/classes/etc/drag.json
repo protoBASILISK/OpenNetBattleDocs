@@ -1,5 +1,7 @@
 {
 	"class_name": "Drag",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "drag",
 	"subdirectory": "etc/drag",
     "functions":

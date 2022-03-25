@@ -6,7 +6,8 @@
 		"local tile\t\t-- example Tile",
 		"local is_edge_tile = tile:is_edge()"
 	],
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns `true` if this <%= type 'Tile' %> is one of the invisible <%= type 'Tile' %>s surrounding the main battlefield.",
 		"&emsp;Otherwise, returns `false`."
 	 ],

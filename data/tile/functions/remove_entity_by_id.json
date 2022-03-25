@@ -9,7 +9,8 @@
 		"tile:remove_entity_by_id( entity_id )"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Causes the <%= type 'Tile' %> to remove any <%= type 'Entity' %> present on it with a specific **unique ID**.",
 		"",
 		"Returns `true` if an <%= type 'Entity' %> was removed.",

@@ -9,7 +9,8 @@
 		"tile:spawn( entity )"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Spawns an <%= type 'Entity' %> on this <%= type 'Tile' %>."
 	],
 	"parameters": [

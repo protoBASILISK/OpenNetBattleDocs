@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"<%= variable_text %>:never_flip( true ) "
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"If `true`, stops this <%= doc_class_name %> from flipping direction (graphically) based on its <%= type 'Team'%>."
 	],

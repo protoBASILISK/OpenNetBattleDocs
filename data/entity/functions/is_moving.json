@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local is_moving = <%= variable_text %>:is_moving()"
 	],
-	"description":
+    "summary": "",
+    "description":
 	[
 		"Returns `true` if this <%= doc_class_name %> is currently moving in any fashion.",
 		"&emsp;Otherwise, returns `false`."

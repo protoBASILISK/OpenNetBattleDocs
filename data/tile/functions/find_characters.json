@@ -14,7 +14,8 @@
 		"local all_red_characters = tile:find_characters( function( character ) return character:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_characters()`.",
-	"description": [
+    "summary": "",
+    "description": [
 		"Iterates through all of the <%= type 'Character' %>s on this <%= type 'Tile' %>, and returns a list of <%= type 'Character' %>s that match a filter `function`.",
 		"&emsp;To *include* a <%= type 'Character' %> in the final list, the filter `function` has to return `true`.",
 		"&emsp;If it returns `false` for a <%= type 'Character' %>, it will *not* be included."

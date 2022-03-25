@@ -5,7 +5,8 @@
 	"example_code": [ "" ],
 
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"return_value_type": "<%= type 'Texture' %>",
 	"return_value_desc": ""
 }

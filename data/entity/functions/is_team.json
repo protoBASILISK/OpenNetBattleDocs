@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local is_red = <%= variable_text %>:is_team( Team.Red )"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns `true` if this <%= doc_class_name %> is a member of the provided <%= type 'Team'%>.",
 		"&emsp;Otherwise, returns `false`."

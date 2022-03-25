@@ -1,5 +1,7 @@
 {
 	"class_name": "SyncNode",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "sync_node",
 	"subdirectory": "sync_node",
     "functions":

@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local <%= variable_text %>_element = <%= variable_text %>:get_element()"
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Returns the <%= type 'Element' %> of this <%= doc_class_name %>."
 	],
 	"return_value_type": "<%= type 'Element' %>",

@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet will make the <%= doc_class_name  %> become 50 pixels wide.",
+    "summary": "",
     "description":
     [
         "Scales the <%= doc_class_name  %> horizontally so it matches the desired width."

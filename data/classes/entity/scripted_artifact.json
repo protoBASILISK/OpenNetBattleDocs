@@ -1,6 +1,8 @@
 {
 	"class_name": "ScriptedArtifact",
 	"lua_class_name": "Artifact",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "scripted_artifact",
 	"subdirectory": "entity",
 	"superclass": "Entity",

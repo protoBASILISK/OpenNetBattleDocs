@@ -4,7 +4,8 @@
 	"example_code": [ 
 		"local <%= variable_text %> = Battle.<%= lua_class_name %>.new( Team.Red )"
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Creates a new <%= doc_class_name %> object."
 	],
 	"parameters": [

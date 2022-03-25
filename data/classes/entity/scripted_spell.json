@@ -1,6 +1,8 @@
 {
 	"class_name": "ScriptedSpell",
 	"lua_class_name": "Spell",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "scripted_spell",
 	"subdirectory": "entity",
 	"superclass": "Entity",

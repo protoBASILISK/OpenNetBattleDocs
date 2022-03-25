@@ -1,5 +1,7 @@
 {
 	"class_name": "SpawnMutator",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "spawn_mutator",
 	"subdirectory": "etc/spawn_mutator",
 	"callbacks":

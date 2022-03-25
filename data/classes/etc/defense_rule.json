@@ -1,5 +1,7 @@
 {
 	"class_name": "DefenseRule",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "defense_rule",
 	"subdirectory": "etc/defense_rule",
 	"functions":

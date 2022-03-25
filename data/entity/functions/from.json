@@ -4,7 +4,8 @@
 	"name": "from",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Casts an <%= type 'Entity' %>-based type to be a (non-scripted) <%= lua_class_name %> instead.",
 		"&emsp;_Exception: If it is already a <%= doc_class_name %>, it is returned as a <%= doc_class_name %> object instead._"
 	],

@@ -8,6 +8,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Returns a handle to the <%= type 'Texture' %> assigned to this <%= doc_class_name  %>."

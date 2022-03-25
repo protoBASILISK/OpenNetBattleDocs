@@ -6,7 +6,8 @@
 		"local field_height = field:height()"
 	],
 	"example_comment": "",
-	"description": [
+    "summary": "",
+    "description": [
 		"This returns the **height** of the current battlefield in <%= type 'Tile' %>s (including *hidden* tiles)."
 	],
 	"return_value_type": "number",

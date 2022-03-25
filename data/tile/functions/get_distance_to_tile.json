@@ -9,7 +9,8 @@
 		"local distance = tile:get_distance_to_tile( other_tile )"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) between this <%= type 'Tile' %> and another."
 	 ],
 	"parameters": [

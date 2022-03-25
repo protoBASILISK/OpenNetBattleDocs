@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"<%= variable_text %>:set_height( 100 )"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Changes the height of this <%= doc_class_name %>.",
 		"The height of a <%= doc_class_name %> determines where various objects will show up.",

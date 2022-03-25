@@ -8,7 +8,8 @@
 		"<%= variable_text %>:raw_move_event( target_tile, move_event, ActionOrder.Voluntary )"
 	],
 	"example_comment": "The above snippet causes the <%= doc_class_name %> to jump to a tile over 60 frames, and wait for 20 frames before being able to act again. They will reach a height of 50px at the apex of their jump.",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Attempts to queue up a movement comand for the <%= doc_class_name %>.",
 		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."

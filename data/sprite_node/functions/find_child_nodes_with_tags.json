@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet returns a list of all the children of **`sprite_node`** that have either the tag `arm` or `leg`.",
+    "summary": "",
     "description":
     [
         "Returns a list of all the child nodes attached to this <%= doc_class_name  %> that have _any_ of the provided tags."

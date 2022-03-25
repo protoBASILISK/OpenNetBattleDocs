@@ -1,5 +1,7 @@
 {
 	"class_name": "Tile",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "tile",
 	"subdirectory": "tile",
 	"functions":

@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet sets the origin of the <%= doc_class_name  %> to 50 pixels to the left, and 100 pixels down.",
+    "summary": "",
     "description":
     [
         "Assigns a new **origin** for the <%= doc_class_name  %> (default `[0, 0]`).",

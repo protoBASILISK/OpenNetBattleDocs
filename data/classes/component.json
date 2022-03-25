@@ -1,5 +1,7 @@
 {
 	"class_name": "ScriptedComponent",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "component",
 	"subdirectory": "component",
     "functions":

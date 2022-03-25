@@ -1,5 +1,7 @@
 {
 	"class_name": "CardMeta",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "card_meta",
 	"subdirectory": "etc/card_meta",
 	"functions":

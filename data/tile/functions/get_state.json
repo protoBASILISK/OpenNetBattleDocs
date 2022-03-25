@@ -7,7 +7,8 @@
 		"local tile_state = tile:get_state()"
 	 ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns the current <%= type 'TileState' %> of this <%= type 'Tile' %>."
 	],
 	"return_value_type": "<%= type 'TileState' %>",

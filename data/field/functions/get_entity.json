@@ -6,7 +6,8 @@
 		""
 	],
 	"example_comment": "",
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"This function returns an <%= type 'Entity' %> with a specific ID.",
 		"If there is no <%= type 'Entity' %> with the provided ID, `nil` is returned instead."

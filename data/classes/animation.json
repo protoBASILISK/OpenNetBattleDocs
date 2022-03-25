@@ -1,5 +1,7 @@
 {
 	"class_name": "Animation",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "animation",
 	"subdirectory": "animation",
 	"functions":

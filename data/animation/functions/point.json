@@ -6,7 +6,8 @@
         "" 
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Gets the current offset for a specific named point." 
     ],
 	"parameters": [

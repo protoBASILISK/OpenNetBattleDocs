@@ -7,7 +7,8 @@
 		"local hit_props\t-- example HitProps",
 		"<%= variable_text %>:set_hit_props( hit_props )"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Defines the basic properties used for when this <%= doc_class_name %> attacks other <%= type 'Entity' %> objects."
 	],

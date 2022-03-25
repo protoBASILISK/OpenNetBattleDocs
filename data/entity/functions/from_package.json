@@ -4,7 +4,8 @@
 	"name": "from_package",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Creates a <%= doc_class_name %> using data from a package."
 	],
 	"parameters":

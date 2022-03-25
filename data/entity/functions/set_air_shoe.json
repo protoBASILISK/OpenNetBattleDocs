@@ -7,7 +7,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"<%= variable_text %>:set_air_shoe( true ) "
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"If true, puts whether this <%= doc_class_name %> has the effects of `AirShoe`.",
 		"Otherwise, removes the effect of `AirShoe` if the <%= doc_class_name %> has it.",
 		"While under the effects of `AirShoe`, the <%= doc_class_name %> is able to move over `Broken` <%= type 'Tile' %>s."

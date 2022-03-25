@@ -7,7 +7,8 @@
 		"local is_hidden_tile = tile:is_hidden()"
 	],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
 		"Returns `true` if this <%= type 'Tile' %>'s state is currently `Hidden`.",
 		"&emsp;Otherwise, returns `false`."
 	 ],

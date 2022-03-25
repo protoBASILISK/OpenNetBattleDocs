@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Returns a handle to this <%= doc_class_name  %>."

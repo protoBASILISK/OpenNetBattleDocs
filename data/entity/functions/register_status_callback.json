@@ -9,7 +9,8 @@
 		"<%= variable_text %>:register_status_callback( Hit.Stun, example_callback )"
 	],
 	"example_comment": "The above snippet registers a callback to be called when the <%= doc_class_name %> is hit by an attack with the `Stun` flag.",
-	"description": [
+    "summary": "",
+    "description": [
 		"Registers a function to the <%= doc_class_name %> that will be called when it is hit by any attack that has a matching property."
 	],
 	"parameters": [

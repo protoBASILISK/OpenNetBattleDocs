@@ -6,7 +6,8 @@
         "" 
     ],
 	"example_comment": "",
-	"description": [ 
+    "summary": "",
+    "description": [ 
         "Loads a specified `.animation` file into the <%= type 'Animation' %> object." 
     ],
 	"parameters": [

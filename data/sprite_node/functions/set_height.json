@@ -9,6 +9,7 @@
     ],
     "example_comment":
          "The above snippet will make the <%= doc_class_name  %> become 50 pixels tall.",
+    "summary": "",
     "description":
     [
         "Scales the <%= doc_class_name  %> vertically so it matches the desired height."

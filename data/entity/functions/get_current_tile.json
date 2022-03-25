@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local tile_in_front = <%= variable_text %>:get_current_tile()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns a handle to the <%= type 'Tile' %> this <%= doc_class_name %> is currently standing on.",
 		"If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid <%= type 'Tile' %>, it returns `nil` instead."

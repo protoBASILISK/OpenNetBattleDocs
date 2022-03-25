@@ -1,5 +1,7 @@
 {
 	"class_name": "MobMeta",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "mob_meta",
 	"subdirectory": "etc/mob_meta",
 	"functions":

@@ -7,6 +7,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "The **unique ID** of the <%= type 'Entity' %> that spawned this."

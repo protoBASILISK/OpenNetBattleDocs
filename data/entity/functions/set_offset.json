@@ -7,7 +7,8 @@
 		"<%= variable_text %>:set_offset( 100, 50 )"
 	],
 	"example_comment": "The above snippet moves the <%= doc_class_name %>100 pixels to the right, and 50 pixels down, from the center of the <%= type 'Tile' %>.",
-	"description": [
+    "summary": "",
+    "description": [
 		"Changes the offset of this <%= doc_class_name %> from the center of the <%= type 'Tile' %> they're standing on.",
 		"&emsp;**Positive** X values move it to the *right*, **negative** X values move it to the *left*.",
 		"&emsp;**Positive** Y values move it *downwards*, **negative** Y values move it *upwards*."

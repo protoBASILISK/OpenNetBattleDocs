@@ -6,7 +6,8 @@
 		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local hit_props = <%= variable_text %>:copy_hit_props()"
 	],
-	"description": 
+    "summary": "",
+    "description": 
 	[
 		"Returns the <%= type 'HitProps'%> associated with this <%= doc_class_name %>."
 	],

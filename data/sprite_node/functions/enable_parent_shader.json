@@ -9,6 +9,7 @@
     ],
     "example_comment":
         "The above snippet forces the <%= doc_class_name  %> to use its own shader when rendering.",
+    "summary": "",
     "description":
     [
         "This forces this <%= doc_class_name  %> to use its parent's shader during rendering."

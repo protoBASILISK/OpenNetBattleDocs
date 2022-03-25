@@ -1,5 +1,7 @@
 {
 	"class_name": "Mob",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "mob",
 	"subdirectory": "etc/mob",
 	"functions":

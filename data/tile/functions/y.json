@@ -7,7 +7,8 @@
 		"local tile\t-- example Tile",
 		"local tile_y = tile:y()"
 	],
-	"description": [
+    "summary": "",
+    "description": [
 		"Returns the *row* the <%= type 'Tile' %> is located in, on the battlefield grid."
 	],
 	"return_value_type": "number",

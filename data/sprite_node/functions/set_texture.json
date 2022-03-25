@@ -11,6 +11,7 @@
     ],
     "example_comment":
         "",
+    "summary": "",
     "description":
     [
         "Assigns a new <%= type 'Texture' %> to the <%= doc_class_name  %>."

@@ -5,7 +5,8 @@
 	"name": "input_has",
 	"example_code": [ "" ],
 	"example_comment": "",
-	"description": [ "" ],
+    "summary": "",
+    "description": [ "" ],
 	"parameters": [
 		{
 			"name": "key_code",

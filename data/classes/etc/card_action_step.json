@@ -1,6 +1,8 @@
 {
 	"class_name": "CardActionStep",
     "lua_class_name": "Step",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "step",
 	"subdirectory": "etc/card_action_step",
 	"functions":

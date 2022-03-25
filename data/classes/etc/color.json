@@ -1,5 +1,7 @@
 {
 	"class_name": "Color",
+	"summary": "",
+	"description": [ "" ], 
 	"variable_text": "color",
 	"subdirectory": "etc/color",
 	"functions":
