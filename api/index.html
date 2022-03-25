@@ -4051,73 +4051,139 @@ An <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> cannot
         <span class="variable_name">entity_to_add</span>
         &emsp;<span class="variable_desc"></span><br></p>
 <h2 id='tilestate'>TileState</h2>
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Normal</td>
-<td>No special effects.<br></td>
-</tr>
-<tr>
-<td>Cracked</td>
-<td>Turns into a <code>Broken</code> tile when an &lt;%= type &#39;Entity&#39; %&gt; moves off of it.<br></td>
-</tr>
-<tr>
-<td>Broken</td>
-<td>Empty space, cannot be stood on normally.<br>&emsp;<em>It will automatically revert to a <code>Normal</code> &lt;%= type &#39;Tile&#39; %&gt; after a period of time.</em><br></td>
-</tr>
-<tr>
-<td>Empty</td>
-<td>Entirely removed, and cannot be stood on normally.<br>&emsp;<em>It will <strong>not</strong> automatically revert to a <code>Normal</code> &lt;%= type &#39;Tile&#39; %&gt;.</em><br></td>
-</tr>
-<tr>
-<td>Grass</td>
-<td>This &lt;%= type &#39;Tile&#39; %&gt; has grass growing on it.<br></td>
-</tr>
-<tr>
-<td>Holy</td>
-<td>Reduces the damage that any &lt;%= type &#39;Entity&#39; %&gt; takes while standing on it.<br></td>
-</tr>
-<tr>
-<td>Ice</td>
-<td>Causes any &lt;%= type &#39;Entity&#39; %&gt; that walks onto it to slip, and try to move again in the same direction.<br></td>
-</tr>
-<tr>
-<td>Lava</td>
-<td>Damages any &lt;%= type &#39;Entity&#39; %&gt; that stands on it, then reverts to a <code>Normal</code> &lt;%= type &#39;Tile&#39; %&gt;.<br></td>
-</tr>
-<tr>
-<td>Poison</td>
-<td>Gradually damages any &lt;%= type &#39;Entity&#39; %&gt; that stands on it.<br></td>
-</tr>
-<tr>
-<td>Volcano</td>
-<td><img src="https://i.imgur.com/6NfmQ.jpeg"><br></td>
-</tr>
-<tr>
-<td>DirectionDown</td>
-<td>Aconveyor belt that will try to move any &lt;%= type &#39;Entity&#39; %&gt; that stands on it downwards.<br></td>
-</tr>
-<tr>
-<td>DirectionUp</td>
-<td>A conveyor belt that will try to move any &lt;%= type &#39;Entity&#39; %&gt; that stands on it upwards.<br></td>
-</tr>
-<tr>
-<td>DirectionLeft</td>
-<td>A conveyor belt that will try to move any &lt;%= type &#39;Entity&#39; %&gt; that stands on it to the left.<br></td>
-</tr>
-<tr>
-<td>DirectionRight</td>
-<td>A conveyor belt that will try to move any &lt;%= type &#39;Entity&#39; %&gt; that stands on it to the right.<br></td>
-</tr>
-<tr>
-<td>Hidden</td>
-<td>Entirely removed, and cannot be stood on normally.<br>&emsp;<em>It will <strong>not</strong> automatically revert to a <code>Normal</code> &lt;%= type &#39;Tile&#39; %&gt;.</em><br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Normal</td>
+        <td>
+                No special effects.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Cracked</td>
+        <td>
+                Turns into a <code>Broken</code> tile when an <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> moves off of it.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Broken</td>
+        <td>
+                Empty space, cannot be stood on normally.<br>
+                &emsp;<em>It will automatically revert to a <code>Normal</code> <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a> after a period of time.</em><br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Empty</td>
+        <td>
+                Entirely removed, and cannot be stood on normally.<br>
+                &emsp;<em>It will <strong>not</strong> automatically revert to a <code>Normal</code> <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a>.</em><br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Grass</td>
+        <td>
+                This <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a> has grass growing on it.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Holy</td>
+        <td>
+                Reduces the damage that any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> takes while standing on it.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Ice</td>
+        <td>
+                Causes any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that walks onto it to slip, and try to move again in the same direction.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Lava</td>
+        <td>
+                Damages any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that stands on it, then reverts to a <code>Normal</code> <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a>.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Poison</td>
+        <td>
+                Gradually damages any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that stands on it.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Volcano</td>
+        <td>
+                <img src="https://i.imgur.com/6NfmQ.jpeg"><br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>DirectionDown</td>
+        <td>
+                Aconveyor belt that will try to move any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that stands on it downwards.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>DirectionUp</td>
+        <td>
+                A conveyor belt that will try to move any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that stands on it upwards.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>DirectionLeft</td>
+        <td>
+                A conveyor belt that will try to move any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that stands on it to the left.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>DirectionRight</td>
+        <td>
+                A conveyor belt that will try to move any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> that stands on it to the right.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Hidden</td>
+        <td>
+                Entirely removed, and cannot be stood on normally.<br>
+                &emsp;<em>It will <strong>not</strong> automatically revert to a <code>Normal</code> <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a>.</em><br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 <h1 id='entity-objects'>Entity Objects</h1>
 <p><h2 id='entity'>Entity</h2>
@@ -15360,25 +15426,40 @@ Outside of their <em>source</em> scripts, any <strong><code>Entity</code></stron
 <h4 id='description'>Description</h4>
 </p>
 <h2 id='lifetimes'>Lifetimes</h2>
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Local</td>
-<td>This &lt;%= type &#39;Component&#39; %&gt;&#39;s <code>update()</code> loop happens following the associated &lt;%= type &#39;Entity&#39; %&gt;&#39;s <code>update()</code>.<br></td>
-</tr>
-<tr>
-<td>Battlestep</td>
-<td>This &lt;%= type &#39;Component&#39; %&gt;&#39;s <code>update()</code> loop happens every <strong>battle scene</strong> <code>update()</code>.<br></td>
-</tr>
-<tr>
-<td>Scene</td>
-<td>This &lt;%= type &#39;Component&#39; %&gt;&#39;s <code>update()</code> loop happens every <strong>application</strong> <code>update()</code>.<br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Local</td>
+        <td>
+                This <a class="class_link" href="/OpenNetBattleDocs/api/#component">Component</a>&#39;s <code>update()</code> loop happens following the associated <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a>&#39;s <code>update()</code>.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Battlestep</td>
+        <td>
+                This <a class="class_link" href="/OpenNetBattleDocs/api/#component">Component</a>&#39;s <code>update()</code> loop happens every <strong>battle scene</strong> <code>update()</code>.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Scene</td>
+        <td>
+                This <a class="class_link" href="/OpenNetBattleDocs/api/#component">Component</a>&#39;s <code>update()</code> loop happens every <strong>application</strong> <code>update()</code>.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 <h1 id='cardaction-objects'>CardAction Objects</h1>
 <p><h2 id='cardaction'>CardAction</h2>
 <p><h3 id='cardaction-from_card'>CardAction:from_card()</h3><h4 id='function-call'>Function Call</h4></p>
@@ -15598,45 +15679,75 @@ Outside of their <em>source</em> scripts, any <strong><code>Entity</code></stron
 <p>Each <a class="class_link" href="/OpenNetBattleDocs/api/#cardaction">CardAction</a> is assigned to one <code>Lockout</code> group (and only one).<br>
 This allows scripts to control what actions are available to a player.<br></p>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Weapons</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Cards</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Abilities</td>
-<td><br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Weapons</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Cards</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Abilities</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 <h2 id='locktype'>Locktype</h2>
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Animation</td>
-<td>You cannot use actions with this &lt;%= type &#39;LockoutGroup&#39; %&gt; group again until the animation completes.<br></td>
-</tr>
-<tr>
-<td>Async</td>
-<td>You cannot use actions with this &lt;%= type &#39;LockoutGroup&#39; %&gt; group again for a period of time after the animation completes.<br></td>
-</tr>
-<tr>
-<td>Sequence</td>
-<td>This action has several &lt;%= type &#39;Step&#39; %&gt;s that happen in sequence, no action will be possible until the full sequence completes or is interrupted.<br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Animation</td>
+        <td>
+                You cannot use actions with this <a class="class_link" href="/OpenNetBattleDocs/api/#lockoutgroup">LockoutGroup</a> group again until the animation completes.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Async</td>
+        <td>
+                You cannot use actions with this <a class="class_link" href="/OpenNetBattleDocs/api/#lockoutgroup">LockoutGroup</a> group again for a period of time after the animation completes.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Sequence</td>
+        <td>
+                This action has several <a class="class_link" href="/OpenNetBattleDocs/api/#step">Step</a>s that happen in sequence, no action will be possible until the full sequence completes or is interrupted.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 <h1 id='utility-objects'>Utility Objects</h1><h2 id='animation'>Animation</h2>
 <p><p><h3 id='animation-load'>Animation:load()</h3></p>
@@ -16006,21 +16117,32 @@ This allows scripts to control what actions are available to a player.<br></p>
 <h4 id='description'>Description</h4>
 </p>
 <h2 id='defenseorder'>DefenseOrder</h2>
-<p><table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Always</td>
-<td><br></td>
-</tr>
-<tr>
-<td>CollisionOnly</td>
-<td><br></td>
-</tr>
-</tbody></table>
+<p><table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Always</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>CollisionOnly</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 <h2 id='defenseframestatejudge'>DefenseFrameStateJudge</h2>
 <p><p><h3 id='defenseframestatejudge-block_damage'>DefenseFrameStateJudge:block_damage()</h3><h4 id='function-call'>Function Call</h4></p>
@@ -16607,37 +16729,46 @@ This allows scripts to control what actions are available to a player.<br></p>
 
 <h2 id='blockcolor'>BlockColor</h2>
 
-<p><table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>White</td>
-<td></td>
-</tr>
-<tr>
-<td>Red</td>
-<td></td>
-</tr>
-<tr>
-<td>Green</td>
-<td></td>
-</tr>
-<tr>
-<td>Blue</td>
-<td></td>
-</tr>
-<tr>
-<td>Pink</td>
-<td></td>
-</tr>
-<tr>
-<td>Yellow</td>
-<td></td>
-</tr>
-</tbody></table>
+<p><table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>White</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Red</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Green</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Blue</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Pink</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Yellow</td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 
 <h2 id='cardmeta'>CardMeta</h2>
@@ -16835,29 +16966,49 @@ This allows scripts to control what actions are available to a player.<br></p>
 
 <h2 id='cardclass'>CardClass</h2>
 
-<p><table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Standard</td>
-<td>Most common type, able to use many copies in a folder.<br></td>
-</tr>
-<tr>
-<td>Mega</td>
-<td>Uncommon, stronger chips that have an additional limitation:<br>&emsp;Only <strong>five</strong> Mega Chips total are allowed in a folder.<br></td>
-</tr>
-<tr>
-<td>Giga</td>
-<td>Strongest class of chip. Only <strong>one</strong> Giga Chip is allowed in a folder.<br></td>
-</tr>
-<tr>
-<td>Dark</td>
-<td>These are the &quot;fun&quot; ones. Your friends will love them.<br></td>
-</tr>
-</tbody></table>
+<p><table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Standard</td>
+        <td>
+                Most common type, able to use many copies in a folder.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Mega</td>
+        <td>
+                Uncommon, stronger chips that have an additional limitation:<br>
+                &emsp;Only <strong>five</strong> Mega Chips total are allowed in a folder.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Giga</td>
+        <td>
+                Strongest class of chip. Only <strong>one</strong> Giga Chip is allowed in a folder.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Dark</td>
+        <td>
+                These are the &quot;fun&quot; ones. Your friends will love them.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 
 <h2 id='adjacentcards'>AdjacentCards</h2>
@@ -16997,109 +17148,154 @@ This allows scripts to control what actions are available to a player.<br></p>
 <p></p></p>
 <h1 id='enums'>Enums</h1>
 <p><h2 id='actionorder'>ActionOrder</h2>
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Immediate</td>
-<td>Highest priority, immediately move the affected &lt;%= type &#39;Entity&#39; %&gt;.<br></td>
-</tr>
-<tr>
-<td>Involuntary</td>
-<td>Medium priority.<br></td>
-</tr>
-<tr>
-<td>Voluntary</td>
-<td>Lowest priority. Move only when the &lt;%= type &#39;Entity&#39; %&gt; is able to move by itself.<br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Immediate</td>
+        <td>
+                Highest priority, immediately move the affected <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a>.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Involuntary</td>
+        <td>
+                Medium priority.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Voluntary</td>
+        <td>
+                Lowest priority. Move only when the <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> is able to move by itself.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 <h2 id='audiopriority'>AudioPriority</h2>
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Lowest</td>
-<td></td>
-</tr>
-<tr>
-<td>Low</td>
-<td></td>
-</tr>
-<tr>
-<td>High</td>
-<td></td>
-</tr>
-<tr>
-<td>Highest</td>
-<td></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Lowest</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Low</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>High</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Highest</td>
+</tr></p>
+
+    </tbody>
+</table>
 <h2 id='colormode'>ColorMode</h2>
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Multiply</td>
-<td>Any tint applied to this &lt;%= type &#39;SpriteNode&#39; %&gt; will <strong>darken</strong> it.<br></td>
-</tr>
-<tr>
-<td>Additive</td>
-<td>Any tint applied to this &lt;%= type &#39;SpriteNode&#39; %&gt; will <strong>brighten</strong> it.<br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Multiply</td>
+        <td>
+                Any tint applied to this <a class="class_link" href="/OpenNetBattleDocs/api/#spritenode">SpriteNode</a> will <strong>darken</strong> it.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Additive</td>
+        <td>
+                Any tint applied to this <a class="class_link" href="/OpenNetBattleDocs/api/#spritenode">SpriteNode</a> will <strong>brighten</strong> it.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 <h2 id='direction'>Direction</h2>
-<p><table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>Up</td>
-<td></td>
-</tr>
-<tr>
-<td>Down</td>
-<td></td>
-</tr>
-<tr>
-<td>Left</td>
-<td></td>
-</tr>
-<tr>
-<td>Right</td>
-<td></td>
-</tr>
-<tr>
-<td>UpLeft</td>
-<td></td>
-</tr>
-<tr>
-<td>UpRight</td>
-<td></td>
-</tr>
-<tr>
-<td>DownLeft</td>
-<td></td>
-</tr>
-<tr>
-<td>DownRight</td>
-<td></td>
-</tr>
-</tbody></table>
+<p><table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>None</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Up</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Down</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Left</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Right</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>UpLeft</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>UpRight</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>DownLeft</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>DownRight</td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <p><h3 id='direction-flip_x'>Direction:flip_x()</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">facing</span> <span class="o">=</span> <span class="n">Direction</span><span class="p">.</span><span class="n">UpLeft</span> </p>
 
@@ -17220,163 +17416,266 @@ This allows scripts to control what actions are available to a player.<br></p>
 
 <h2 id='element'>Element</h2>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Fire</td>
-<td></td>
-</tr>
-<tr>
-<td>Aqua</td>
-<td></td>
-</tr>
-<tr>
-<td>Elec</td>
-<td></td>
-</tr>
-<tr>
-<td>Wood</td>
-<td></td>
-</tr>
-<tr>
-<td>Sword</td>
-<td></td>
-</tr>
-<tr>
-<td>Wind</td>
-<td></td>
-</tr>
-<tr>
-<td>Cursor</td>
-<td></td>
-</tr>
-<tr>
-<td>Summon</td>
-<td></td>
-</tr>
-<tr>
-<td>Plus</td>
-<td></td>
-</tr>
-<tr>
-<td>Break</td>
-<td></td>
-</tr>
-<tr>
-<td>None</td>
-<td></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Fire</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Aqua</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Elec</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Wood</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Sword</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Wind</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Cursor</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Summon</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Plus</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Break</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>None</td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <h2 id='entitystatus'>EntityStatus</h2>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Queued</td>
-<td>The &lt;%= type &#39;Entity&#39; %&gt; was not spawned immediately, and is queued to spawn at the end of frame.<br></td>
-</tr>
-<tr>
-<td>Added</td>
-<td>The &lt;%= type &#39;Entity&#39; %&gt; was successfully spawned straight away.<br></td>
-</tr>
-<tr>
-<td>Failed</td>
-<td>The &lt;%= type &#39;Entity&#39; %&gt; could not be spawned.<br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Queued</td>
+        <td>
+                The <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> was not spawned immediately, and is queued to spawn at the end of frame.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Added</td>
+        <td>
+                The <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> was successfully spawned straight away.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Failed</td>
+        <td>
+                The <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> could not be spawned.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <h2 id='highlight'>Highlight</h2>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Solid</td>
-<td>The top of this &lt;%= type &#39;Tile&#39; %&gt; will have a yellow overlay.<br></td>
-</tr>
-<tr>
-<td>Flash</td>
-<td>The top of this &lt;%= type &#39;Tile&#39; %&gt; will alternate between having a yellow overlay, and having none.<br></td>
-</tr>
-<tr>
-<td>None</td>
-<td>The top of this &lt;%= type &#39;Tile&#39; %&gt; will not change.<br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Solid</td>
+        <td>
+                The top of this <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a> will have a yellow overlay.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Flash</td>
+        <td>
+                The top of this <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a> will alternate between having a yellow overlay, and having none.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>None</td>
+        <td>
+                The top of this <a class="class_link" href="/OpenNetBattleDocs/api/#tile">Tile</a> will not change.<br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <h2 id='hit'>Hit</h2>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>None</td>
-<td>No special properties.<br></td>
-</tr>
-<tr>
-<td>Flinch</td>
-<td>Forces any &lt;%= type &#39;Entity&#39; %&gt; hit to play a &quot;hurt&quot; animation TODO find which one<br></td>
-</tr>
-<tr>
-<td>Flash</td>
-<td>Any hit &lt;%= type &#39;Entity&#39; %&gt; will temporarily be unable to be hit by attacks that need to make physical contact.<br>&emsp;(i.e. the attack has <code>Hit.Impact</code>)<br></td>
-</tr>
-<tr>
-<td>Stun</td>
-<td>Any hit &lt;%= type &#39;Entity&#39; %&gt; will turn yellow and become unable to move for a period of time.<br>(Default duration is <strong>180 frames</strong>/<strong>3 seconds</strong>)<br></td>
-</tr>
-<tr>
-<td>Root</td>
-<td>Any hit &lt;%= type &#39;Entity&#39; %&gt; will be temporarily rooted in place and unable to move.<br></td>
-</tr>
-<tr>
-<td>Impact</td>
-<td>This attack requires physical contact to be able to hit an &lt;%= type &#39;Entity&#39; %&gt;.<br><em>&emsp;There may be some unintentional behaviour if you accidentally don&#39;t include this flag.</em><br></td>
-</tr>
-<tr>
-<td>Shake</td>
-<td>Any hit &lt;%= type &#39;Entity&#39; %&gt; will temporarily shake.<br></td>
-</tr>
-<tr>
-<td>Pierce</td>
-<td>This attack ignores any &#39;invisibilty&#39;/&#39;invulnerability&#39; effects on targets.<br></td>
-</tr>
-<tr>
-<td>Retangible</td>
-<td>This attack <em>removes</em> any &#39;invisibilty&#39;/&#39;invulnerability&#39; effects on targets.<br></td>
-</tr>
-<tr>
-<td>Breaking</td>
-<td>This attack ignores any &#39;blocking&#39; effects an on targets. (e.g. <code>Guard</code> chips)<br></td>
-</tr>
-<tr>
-<td>Bubble</td>
-<td>This attack traps any hit &lt;%= type &#39;Entity&#39; %&gt; in a bubble trap.<br></td>
-</tr>
-<tr>
-<td>Freeze</td>
-<td>This attack traps any hit &lt;%= type &#39;Entity&#39; %&gt; in an ice trap.<br></td>
-</tr>
-<tr>
-<td>Drag</td>
-<td>This attack will attempt to force any hit &lt;%= type &#39;Entity&#39; %&gt; to move.<br>&emsp;<em>If this flag is not included, the &lt;%= type &#39;Entity&#39; %&gt; will <strong>not</strong> be moved by this attack.</em><br></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>None</td>
+        <td>
+                No special properties.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Flinch</td>
+        <td>
+                Forces any <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> hit to play a &quot;hurt&quot; animation TODO find which one<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Flash</td>
+        <td>
+                Any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> will temporarily be unable to be hit by attacks that need to make physical contact.<br>
+                &emsp;(i.e. the attack has <code>Hit.Impact</code>)<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Stun</td>
+        <td>
+                Any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> will turn yellow and become unable to move for a period of time.<br>
+                (Default duration is <strong>180 frames</strong>/<strong>3 seconds</strong>)<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Root</td>
+        <td>
+                Any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> will be temporarily rooted in place and unable to move.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Impact</td>
+        <td>
+                This attack requires physical contact to be able to hit an <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a>.<br>
+                <em>&emsp;There may be some unintentional behaviour if you accidentally don&#39;t include this flag.</em><br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Shake</td>
+        <td>
+                Any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> will temporarily shake.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Pierce</td>
+        <td>
+                This attack ignores any &#39;invisibilty&#39;/&#39;invulnerability&#39; effects on targets.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Retangible</td>
+        <td>
+                This attack <em>removes</em> any &#39;invisibilty&#39;/&#39;invulnerability&#39; effects on targets.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Breaking</td>
+        <td>
+                This attack ignores any &#39;blocking&#39; effects an on targets. (e.g. <code>Guard</code> chips)<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Bubble</td>
+        <td>
+                This attack traps any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> in a bubble trap.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Freeze</td>
+        <td>
+                This attack traps any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> in an ice trap.<br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Drag</td>
+        <td>
+                This attack will attempt to force any hit <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> to move.<br>
+                &emsp;<em>If this flag is not included, the <a class="class_link" href="/OpenNetBattleDocs/api/#entity">Entity</a> will <strong>not</strong> be moved by this attack.</em><br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <h2 id='input'>Input</h2>
 
@@ -17386,127 +17685,190 @@ This allows scripts to control what actions are available to a player.<br></p>
 
 <p>i.e. <code>Input.Pressed.Up</code> checks for if the <code>Up</code> key is <code>Pressed</code>.</p>
 
-<p><table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Pressed</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Held</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Released</td>
-<td><br></td>
-</tr>
-</tbody></table>
+<p><table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Pressed</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Held</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Released</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 
-<p><table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Up</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Left</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Right</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Down</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Use</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Special</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Shoot</td>
-<td><br></td>
-</tr>
-</tbody></table>
+<p><table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Up</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Left</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Right</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Down</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Use</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Special</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Shoot</td>
+        <td>
+                <br>
+        </td>
+</tr></p>
+
+    </tbody>
+</table>
 </p>
 
 <h2 id='rank'>Rank</h2>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>V1</td>
-<td></td>
-</tr>
-<tr>
-<td>V2</td>
-<td></td>
-</tr>
-<tr>
-<td>V3</td>
-<td></td>
-</tr>
-<tr>
-<td>SP</td>
-<td></td>
-</tr>
-<tr>
-<td>EX</td>
-<td></td>
-</tr>
-<tr>
-<td>Rare1</td>
-<td></td>
-</tr>
-<tr>
-<td>Rare2</td>
-<td></td>
-</tr>
-<tr>
-<td>NM</td>
-<td></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>V1</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>V2</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>V3</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>SP</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>EX</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Rare1</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Rare2</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>NM</td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <h2 id='team'>Team</h2>
 
-<table><thead>
-<tr>
-<th>NAME</th>
-<th>MEANING</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Red</td>
-<td></td>
-</tr>
-<tr>
-<td>Blue</td>
-<td></td>
-</tr>
-<tr>
-<td>Other</td>
-<td></td>
-</tr>
-</tbody></table>
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MEANING</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <p><tr>
+    <td>Red</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Blue</td>
+</tr></p>
+
+
+            <p><tr>
+    <td>Other</td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <p></p></p>
 
