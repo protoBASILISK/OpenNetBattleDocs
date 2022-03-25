@@ -1,6 +1,6 @@
 {
     "version": "2.0",
-    "callback_name": "update_func",
+    "name": "update_func",
     "static": false,
     "example_code": [
         ""

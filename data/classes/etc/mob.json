@@ -1,5 +1,5 @@
 {
-	"class_name": "Mob",
+	"name": "Mob",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "mob",

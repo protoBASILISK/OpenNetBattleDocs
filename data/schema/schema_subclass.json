@@ -2,7 +2,7 @@
 	"type": "object",
 	"properties": 
 	{
-		"class_name" :	  	{ "type": "string" },
+		"name" :	  	{ "type": "string" },
 		"variable_text" :   { "type": "string" },
 		"subdirectory" :	{ "type": "string" },
 		"summary": 			{ "type": "string" },
@@ -10,7 +10,7 @@
 		"conditionals":	 	{ "type": "array", "items": { "type": "string" } },
 		"required":
 		[
-			"class_name",
+			"name",
 			"variable_text",
 			"subdirectory",
 			"superclass"

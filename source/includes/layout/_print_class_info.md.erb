@@ -19,58 +19,55 @@
     
 <% end %>
 
-<% $link_list[:doc_class_name] = _current_class["class_name"] %>
-<% $link_list[:lua_class_name] = _current_class["lua_class_name"] or _current_class["class_name"] %>
-<% $link_list[:variable_text] = _current_class["variable_text"] %>
+<% _substitute_text = {} %>
+<% _substitute_text[:doc_class_name] = _current_class["class_name"] %>
+<% _substitute_text[:lua_class_name] = _current_class["lua_class_name"] or _current_class["class_name"] %>
+<% _substitute_text[:variable_text] = _current_class["variable_text"] %>
 
 <% _layout_root = "includes/layout/" + _type + "/" %>
 
-<%# PROPERTIES %>
-<% if not is_empty( _current_class["properties"] ) %>
-    <% _property_root = "/data/" + _current_class["subdirectory"] + "/properties/" %>
+<span class="type_info">
+    <%# PROPERTIES %>
+    <% if not is_empty( _current_class["properties"] ) %>
+        <% _property_root = "/data/" + _current_class["subdirectory"] + "/properties/" %>
+        
+        <% _current_class["properties"].each do |property| %>        
+            <% if property["conditional"].nil? or (_current_class["conditionals"] || [] ).include? property["name"] %>
 
-    <% _current_class["properties"].each do |property| %>
-        <% if property["conditional"].nil? or
-            (_current_class["conditionals"] || [] ).include? property["name"] %>
+                <% _property_data = load_json_data( Dir.pwd + "" + _property_root + property["name"] + ".json" ) %>
+                <% _property_data = preprocess_json_data( _property_data, _substitute_text ) %>
 
-            <% _property_data = load_json_data( Dir.pwd + "" + _property_root + property["name"] + ".json" ) %>
-            <% _property_data = preprocess_json_data( _property_data, $link_list ) %>
-
-            <%= partial _layout_root + "property_layout.md.erb",
-                locals: { f: _property_data, c: _current_class } %>
-        <% end%>
-    <% end %>
-<% end %>
-
-<%# FUNCTIONS %>
-<% if not is_empty( _current_class["functions"] ) %>
-    <% _func_root = "/data/" + _current_class["subdirectory"] + "/functions/" %>
-
-        <% _current_class["functions"].each do |func| %>
-            <% if func["conditional"].nil? or (_current_class["conditionals"] || [ "" ]).include? func["name"] %>
-
-                <% _func_data = load_json_data( Dir.pwd + "" + _func_root + func["name"] + ".json" ) %>
-                <% _func_data = preprocess_json_data( _func_data, $link_list ) %>
-
-                <%= partial _layout_root + "function_layout.md.erb",
-                    locals: { f: _func_data, c: _current_class } %>
+                <%= partial _layout_root + "property_layout.md.erb", locals: { f: _property_data, c: _current_class } -%>                    
             <% end%>
         <% end %>
-<% end %>
-
-<%# CALLBACKS %>
-<% if not is_empty( _current_class["callbacks"] ) %>
-    <% _callback_root = "/data/" + _current_class["subdirectory"] + "/callbacks/" %>
-
-    <% _current_class["callbacks"].each do |callback| %>
-        <% if callback["conditional"].nil? or
-            (_current_class["conditionals"] || [] ).include? callback["name"] %>
-
-            <% _callback_data = load_json_data( Dir.pwd + "" + _callback_root + callback["name"] + ".json" ) %>
-            <% _callback_data = preprocess_json_data( _callback_data, $link_list ) %>
-
-            <%= partial _layout_root + "callback_layout.md.erb",
-                locals: { f: _callback_data, c: _current_class } %>
-        <% end%>
     <% end %>
-<% end %>
+
+    <%# FUNCTIONS %>
+    <% if not is_empty( _current_class["functions"] ) %>
+        <% _func_root = "/data/" + _current_class["subdirectory"] + "/functions/" %>
+        
+        <% _current_class["functions"].each do |func| %>
+            <% if func["conditional"].nil? or (_current_class["conditionals"] || [ "" ]).include? func["name"] %>
+                <% _func_data = load_json_data( Dir.pwd + "" + _func_root + func["name"] + ".json" ) %>
+                <% _func_data = preprocess_json_data( _func_data, _substitute_text ) %>
+
+                <%= partial _layout_root + "function_layout.md.erb", locals: { f: _func_data, c: _current_class } -%>
+            <% end%>
+        <% end %>
+    <% end %>
+
+    <%# CALLBACKS %>
+    <% if not is_empty( _current_class["callbacks"] ) %>
+        <% _callback_root = "/data/" + _current_class["subdirectory"] + "/callbacks/" %>
+        
+        <% _current_class["callbacks"].each do |callback| %>
+            <% if callback["conditional"].nil? or (_current_class["conditionals"] || [] ).include? callback["name"] %>
+
+                <% _callback_data = load_json_data( Dir.pwd + "" + _callback_root + callback["name"] + ".json" ) %>
+                <% _callback_data = preprocess_json_data( _callback_data, _substitute_text ) %>
+
+                <%= partial _layout_root + "callback_layout.md.erb", locals: { f: _callback_data, c: _current_class } -%>
+            <% end%>
+        <% end %>
+    <% end %>
+</span>

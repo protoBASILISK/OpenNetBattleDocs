@@ -1,7 +1,7 @@
 <% _func = locals[:f] %>
 <% _class = locals[:c] %>
 
-### <%= _class["class_name"] %> : <%= _func["name"] %>()
+### <%= _class["name"] %> : <%= _func["name"] %>()
 <h4 class="version">function • v<%= _func["version"] %></h4>
 
     <%# VERSION INFORMATION %>
@@ -13,7 +13,7 @@
 
     <%# FUNCTION CALL %>
 #### Function Call
-<code><%= _class["class_name"] %>.<%= _func["name"] %>(
+<code><%= _class["name"] %>.<%= _func["name"] %>(
     <%- if not is_empty( _func["parameters"] ) %>
         <%# For all but the last in the parameter list, write the name + a comma after. %>
         <% _func["parameters"][0...-1].each do |param| %>
@@ -69,7 +69,7 @@
     <% if _func["description"].respond_to? :each %>
 
         <% _func["description"].each do |line| %>
-            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
+            <%= line %><br>
         <% end %>
     <% elsif _func["description"].is_a? String %>
         <%= _func["description"] %>

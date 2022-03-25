@@ -1,6 +1,6 @@
 {
     "version": "2.0",
-    "callback_name": "on_begin_func",
+    "name": "on_begin_func",
     "static": false,
     "example_code": [
         ""

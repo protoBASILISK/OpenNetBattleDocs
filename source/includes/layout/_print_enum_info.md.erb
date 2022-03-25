@@ -2,7 +2,12 @@
 <% _type = locals[:type] unless locals[:type] == nil %>
 
 <% _current_enum = load_json_data( Dir.pwd + locals[:file] ) %>
-<% _current_enum = preprocess_json_data( _current_enum, $link_list ) %>
+
+<% _substitute_text = {} %>
+<% _substitute_text[:doc_class_name] = _current_enum["name"] %>
+<% _substitute_text[:lua_class_name] = _current_enum["lua_class_name"] or _current_enum["name"] %>
+
+<% _current_enum = preprocess_json_data( _current_enum, _substitute_text ) %>
 
 NAME | MEANING 
 ---- | -------
@@ -17,7 +22,7 @@ NAME | MEANING
 
     <% _current_enum["functions"].each do |func| %>
         <% _func_data = load_json_data( Dir.pwd + "" + _func_root + func + ".json" ) %>
-        <% _func_data = preprocess_json_data( _func_data, $link_list ) %>
+        <% _func_data = preprocess_json_data( _func_data, _substitute_text ) %>
 
         <%= partial _layout_root + "enum_function_layout.md.erb",
             locals: { f: _func_data, c: _current_enum } %>

@@ -1,5 +1,5 @@
 {
-	"class_name": "ScriptedComponent",
+	"name": "ScriptedComponent",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "component",

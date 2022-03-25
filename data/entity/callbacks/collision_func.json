@@ -2,7 +2,7 @@
 {
 	"version": "2.0",
 	
-	"callback_name": "collision_func",
+	"name": "collision_func",
 	"example_code":
 	[
 		"local <%= variable_text %> -- example <%= variable_text %>",

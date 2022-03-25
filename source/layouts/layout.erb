@@ -139,13 +139,16 @@ under the License.
           </li>
         <% end %>
       </ul>
-      <% if current_page.data.toc_footers %>
         <ul class="toc-footer">
-          <% current_page.data.toc_footers.each do |footer| %>
-            <li><%= footer %></li>
+          <li><a href='https://github.com/TheMaverickProgrammer/OpenNetBattle'>OpenNetBattle @ GitHub</a></li>
+          <li><a href='https://github.com/protoBASILISK/OpenNetBattleDocs'>OpenNetBattle Docs @ GitHub</a></li>
+          <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
+          <% if current_page.data.toc_footers %>
+            <% current_page.data.toc_footers.each do |footer| %>
+              <li><%= footer %></li>
+            <% end %>
           <% end %>
         </ul>
-      <% end %>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>

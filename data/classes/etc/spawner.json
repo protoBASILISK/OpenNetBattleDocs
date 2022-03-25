@@ -1,5 +1,5 @@
 {
-	"class_name": "Spawner",
+	"name": "Spawner",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "spawner",

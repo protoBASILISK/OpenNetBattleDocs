@@ -1,5 +1,5 @@
 {
-	"class_name": "DefenseRule",
+	"name": "DefenseRule",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "defense_rule",

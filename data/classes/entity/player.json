@@ -1,5 +1,5 @@
 {
-	"class_name": "Player",
+	"name": "Player",
 	"lua_class_name": "Player",
 	"summary": "",
 	"description": [ "" ], 

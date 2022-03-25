@@ -1,5 +1,5 @@
 {
-	"class_name": "CardActionAttachment",
+	"name": "CardActionAttachment",
     "lua_class_name": "Attachment",
 	"summary": "",
 	"description": [ "" ], 

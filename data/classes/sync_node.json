@@ -1,5 +1,5 @@
 {
-	"class_name": "SyncNode",
+	"name": "SyncNode",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "sync_node",

@@ -2,7 +2,7 @@
 {
 	"version": "2.0",
 	
-	"callback_name": "update_func",
+	"name": "update_func",
 	"example_code":
 	[
 		"local <%= variable_text %> -- example <%= variable_text %>",

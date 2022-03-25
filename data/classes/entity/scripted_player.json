@@ -1,5 +1,5 @@
 {
-	"class_name": "ScriptedPlayer",
+	"name": "ScriptedPlayer",
 	"lua_class_name": "Player",
 	"summary": "",
 	"description": [ "" ], 

@@ -1,5 +1,5 @@
 {
-	"class_name": "SpawnMutator",
+	"name": "SpawnMutator",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "spawn_mutator",

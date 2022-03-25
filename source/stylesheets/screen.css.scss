@@ -511,8 +511,8 @@ html, body {
   aside {
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     background: $aside-notice-bg;
     line-height: 1.6;
 
@@ -587,9 +587,7 @@ html, body {
 
   pre {
     @extend %code-font;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding: 2em $main-padding;
+    padding: 1.5em $main-padding;
   }
 
   blockquote {

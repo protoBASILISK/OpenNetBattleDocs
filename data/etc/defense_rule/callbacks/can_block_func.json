@@ -1,6 +1,6 @@
 {
     "version": "2.0",
-    "callback_name": "can_block_func",
+    "name": "can_block_func",
     "static": false,
     "example_code": [
         ""

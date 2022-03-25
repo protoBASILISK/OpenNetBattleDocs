@@ -1,5 +1,5 @@
 {
-	"class_name": "Entity",
+	"name": "Entity",
 	"lua_class_name": "Entity",
 	"summary": "",
 	"description": [ "" ], 

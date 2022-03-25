@@ -1,6 +1,6 @@
 {
     "version": "2.0",
-    "callback_name": "scene_inject_func",
+    "name": "scene_inject_func",
     "static": false,
     "example_code": [
         ""

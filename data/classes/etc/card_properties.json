@@ -1,5 +1,5 @@
 {
-	"class_name": "CardProperties",
+	"name": "CardProperties",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "card_props",

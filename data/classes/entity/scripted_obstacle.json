@@ -1,5 +1,5 @@
 {
-	"class_name": "ScriptedObstacle",
+	"name": "ScriptedObstacle",
 	"lua_class_name": "Obstacle",
 	"summary": "",
 	"description": [ "" ], 

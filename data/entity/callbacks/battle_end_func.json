@@ -2,7 +2,7 @@
 {
 	"version": "2.0",
 	
-	"callback_name": "battle_end_func",
+	"name": "battle_end_func",
 	"example_code":
 	[
 		"local <%= variable_text %>\t-- example <%= variable_text %>",

@@ -1,5 +1,5 @@
 {
-	"class_name": "SpriteNode",
+	"name": "SpriteNode",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "sprite_node",

@@ -2,7 +2,7 @@
 {
 	"version": "2.0",
 	
-	"callback_name": "attack_func",
+	"name": "attack_func",
 	"example_code":
 	[
 		"local <%= variable_text %>\t-- example <%= variable_text %>",

@@ -1,5 +1,5 @@
 {
-	"class_name": "Hitbox",
+	"name": "Hitbox",
 	"lua_class_name": "Hitbox",
 	"summary": "",
 	"description": [ "" ], 

@@ -1,5 +1,5 @@
 {
-	"class_name": "CardAction",
+	"name": "CardAction",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "card_action",

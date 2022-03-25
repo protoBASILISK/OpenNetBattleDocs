@@ -1,5 +1,5 @@
 {
-	"class_name": "DefenseFrameStateJudge",
+	"name": "DefenseFrameStateJudge",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "defense_frame_state_judge",

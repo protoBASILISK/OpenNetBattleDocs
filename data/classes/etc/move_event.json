@@ -1,5 +1,5 @@
 {
-	"class_name": "MoveEvent",
+	"name": "MoveEvent",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "move_event",

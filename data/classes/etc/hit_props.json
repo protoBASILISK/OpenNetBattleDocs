@@ -1,5 +1,5 @@
 {
-	"class_name": "HitProps",
+	"name": "HitProps",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "hit_props",

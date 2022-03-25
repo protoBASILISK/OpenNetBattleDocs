@@ -1,5 +1,5 @@
 {
-	"class_name": "ScriptedCharacter",
+	"name": "ScriptedCharacter",
 	"lua_class_name": "Character",
 	"summary": "",
 	"description": [ "" ], 

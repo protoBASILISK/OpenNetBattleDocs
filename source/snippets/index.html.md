@@ -4,14 +4,9 @@ title: OpenNetBattle Reference
 language_tabs: # must be one of https://git.io/vQNgJ
   - lua
 
-toc_footers:
-  - <a href='https://github.com/TheMaverickProgrammer/OpenNetBattle'>OpenNetBattle @ GitHub</a>
-  - <a href='https://github.com/protoBASILISK/OpenNetBattleDocs'>OpenNetBattle Docs @ GitHub</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
-
 includes:
 
-search: true
+search: false
 
 code_clipboard: true
 

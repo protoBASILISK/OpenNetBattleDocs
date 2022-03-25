@@ -1,6 +1,6 @@
 {
     "version": "2.0",
-    "callback_name": "mutate",
+    "name": "mutate",
     "static": false,
     "example_code": [
         ""

@@ -1,5 +1,5 @@
 {
-	"class_name": "Tile",
+	"name": "Tile",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "tile",

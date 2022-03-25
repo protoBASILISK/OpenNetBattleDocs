@@ -1,5 +1,5 @@
 {
-	"class_name": "ScriptedArtifact",
+	"name": "ScriptedArtifact",
 	"lua_class_name": "Artifact",
 	"summary": "",
 	"description": [ "" ], 

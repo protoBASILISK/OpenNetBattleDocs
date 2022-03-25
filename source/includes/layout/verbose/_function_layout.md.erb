@@ -1,39 +1,36 @@
-<% _func = locals[:f] %>
 <% _class = locals[:c] %>
+<% _function = locals[:f] %>
 
-### <%= _class["class_name"] %>:<%= _func["name"] %>()
-
+### <%= _class["name"] %>:<%= _function["name"] %>()
+<% if not is_empty( _function["example_code"] ) %>
     <%# LUA CODE %>
     <%# Unfortunately, these all HAVE to be at the start of the line or it'll cause problems for the parser. %>
-<% if not is_empty( _func["example_code"] ) %>
 ``` lua
-<% _func["example_code"].each do |line| %>
+<% _function["example_code"].each do |line| %>
 <%= line %> 
 <% end %>
 ```
-<% if _func["example_comment"].present? %>
-> <%= _func["example_comment"] %>
+<% if _function["example_comment"].present? %>
+> <%= _function["example_comment"] %>
 <% end %>
 <% end %>
 
     <%# DESCRIPTION %>
-<% if not is_empty( _func["description"] ) %>
+<% if not is_empty( _function["description"] ) %>
 <span class="description">
-    <% _func["description"].each do |line| %><%= line %><br><% end %>
+    <% _function["description"].each do |line| %><%= line %><br><% end %>
 </span>
 <% end %>
 
     <%# FUNCTION CALL %>
 #### Function Call
-<span class="function_call"><%= _class["variable_text"] %>:<%= _func["name"] %>(<% 
-    partial "includes/partial/parameter_list.md.erb", locals: { parameters: _func["parameters"] } %>)</span>
+<span class="function_call"><%= _class["variable_text"] %>:<%= _function["name"] %>(<% partial "includes/partial/parameter_list.md.erb", locals: { parameters: _function["parameters"] } %>)</span>
 
     <%# PARAMETERS %>
-<% if not is_empty( _func["parameters"] ) %>
+<% if not is_empty( _function["parameters"] ) %>
 #### Parameters
-
 <%# Print out the information on each of the parameters: Type, name, then description. %>
-<% _func["parameters"].each do |param| %>
+<% _function["parameters"].each do |param| %>
         <span class="variable_type"><%= param["type"] %></span>
         <span class="variable_name"><%= param["name"] %></span>
         &emsp;<span class="variable_desc"><%= param["desc"] %></span><br>
@@ -41,18 +38,16 @@
 <% end %>
 
     <%# RETURN VALUE %>
-<% if not is_empty( _func["return_value_type"] ) %>
+<% if not is_empty( _function["return_value_type"] ) %>
 #### Returns
-
 <ul class="variable_list">
-    <span class="variable_type"><%= _func["return_value_type"] %></span>
-    <% if _func["return_value_desc"].present? %><span class="return_value_desc"><%= _func["return_value_desc"] %><% end %>
+    <span class="variable_type"><%= _function["return_value_type"] %></span>
+    <% if _function["return_value_desc"].present? %><span class="return_value_desc"><%= _function["return_value_desc"] %><% end %>
 </ul>
 <% end %>
-
     <%# FOOT NOTES %>
-<% if not is_empty( _func["footnotes"] ) %>
-    <% _func["footnotes"].each do |note| %>
+<% if not is_empty( _function["footnotes"] ) %>
+    <% _function["footnotes"].each do |note| %>
         <% if note["code"].present? %>
 ``` lua
             <% note["code"].each do |line| %>

@@ -1,5 +1,5 @@
 {
-	"class_name": "CardActionStep",
+	"name": "CardActionStep",
     "lua_class_name": "Step",
 	"summary": "",
 	"description": [ "" ], 

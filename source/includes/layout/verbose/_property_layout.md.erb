@@ -1,7 +1,7 @@
 <% _prop = locals[:f] %>
 <% _class = locals[:c] %>
 
-### <%= _class["class_name"] %> . <%= _prop["name"] %>
+### <%= _class["name"] %> . <%= _prop["name"] %>
 <h4 class="version">property • v<%= _prop["version"] %></h4>
 
     <%# VERSION INFORMATION %>
@@ -20,7 +20,7 @@
     <% if _prop["description"].respond_to? :each %>
 
         <% _prop["description"].each do |line| %>
-            <%= ERB.new( line ).result_with_hash( $link_list ) %><br>
+            <%= line %><br>
         <% end %>
     <% elsif _prop["description"].is_a? String %>
         <%= _prop["description"] %>

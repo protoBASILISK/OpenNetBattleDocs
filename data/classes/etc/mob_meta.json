@@ -1,5 +1,5 @@
 {
-	"class_name": "MobMeta",
+	"name": "MobMeta",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "mob_meta",

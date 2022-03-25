@@ -1,5 +1,5 @@
 {
-	"class_name": "LuaLibraryMeta",
+	"name": "LuaLibraryMeta",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "lua_library_meta",

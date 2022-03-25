@@ -1,5 +1,5 @@
 {
-	"class_name": "CardMeta",
+	"name": "CardMeta",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "card_meta",

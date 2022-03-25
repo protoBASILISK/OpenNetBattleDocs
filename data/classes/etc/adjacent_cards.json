@@ -1,5 +1,5 @@
 {
-	"class_name": "AdjacentCards",
+	"name": "AdjacentCards",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "adjacent_cards",

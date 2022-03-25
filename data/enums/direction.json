@@ -1,6 +1,6 @@
 {
     "version": "2.0",
-    "class_name": "Direction",
+    "name": "Direction",
     "summary": "",
     "description": [ "" ],
     "subdirectory": "direction",

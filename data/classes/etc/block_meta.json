@@ -1,5 +1,5 @@
 {
-	"class_name": "BlockMeta",
+	"name": "BlockMeta",
 	"summary": "",
 	"description": [ "" ], 
 	"variable_text": "block_meta",
