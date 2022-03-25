@@ -47,6 +47,8 @@ configure :development do
 
   set :is_development, true
   config[:is_development]
+  
+  LinkParser.instance.set_path_prefix( config[:path_prefix] )
 end
 
 # Build Configuration
@@ -70,6 +72,8 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   # activate :gzip
+
+  LinkParser.instance.set_path_prefix( config[:path_prefix] )
 end
 
 # Deploy Configuration
@@ -77,7 +81,7 @@ end
 set :port, 4567
 
 helpers do
-  require './lib/toc_data.rb'
   require './lib/link_parser.rb'
+  require './lib/toc_data.rb'
   require './lib/helpers.rb'
 end
