@@ -12,21 +12,21 @@
 	"parameters": [
 		{
 			"name": "entity",
-			"desc": "The <%=entity%> to spawn.",
-			"type": "<%=entity%>"
+			"desc": "The <%= type 'Entity' %> to spawn.",
+			"type": "<%= type 'Entity' %>"
 		},
 		{
 			"name": "spawn_x",
-			"desc": "The **column** to spawn the <%=entity%> in.",
+			"desc": "The **column** to spawn the <%= type 'Entity' %> in.",
 			"type": "number"
 		},
 		{
 			"name": "spawn_y",
-			"desc": "The **row** to spawn the <%=entity%> in.",
+			"desc": "The **row** to spawn the <%= type 'Entity' %> in.",
 			"type": "number"
 		}
 	],
-	"return_value_type": "<%=add_entity_status%>",
+	"return_value_type": "<%= type 'AddEntityStatus' %>",
 	"return_value_desc": ""
 }
 

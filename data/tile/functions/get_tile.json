@@ -6,23 +6,23 @@
 		"local tile\t-- example Tile",
 		"local tile_to_left = tile:get_tile( Direction.Left, 1 )"
 	 ],
-	"example_comment": "The above snippet returns a the <%=tile%> to the left of this one.",
+	"example_comment": "The above snippet returns a the <%= type 'Tile' %> to the left of this one.",
 	"description": [ 
-		"Returns a <%=tile%> offset in one direction from this <%=tile%>.",
-		"&emsp;If this offset goes out of bounds, or is to an otherwise invalid <%=tile%>, it returns `nil` instead."
+		"Returns a <%= type 'Tile' %> offset in one direction from this <%= type 'Tile' %>.",
+		"&emsp;If this offset goes out of bounds, or is to an otherwise invalid <%= type 'Tile' %>, it returns `nil` instead."
 	 ],
 	"parameters": [
 		{
 			"name": "direction",
-			"desc": "The direction you want to retrieve the <%=tile%> from.",
-			"type": "<%=direction%>"
+			"desc": "The direction you want to retrieve the <%= type 'Tile' %> from.",
+			"type": "<%= type 'Direction' %>"
 		},
 		{
 			"name": "distance",
-			"desc": "The number of spaces <b>(min: 0)</b> in that direction you want to retrieve the <%=tile%> from.",
+			"desc": "The number of spaces <b>(min: 0)</b> in that direction you want to retrieve the <%= type 'Tile' %> from.",
 			"type": "number"
 		}
 	],
-	"return_value_type": "<%=tile%>",
+	"return_value_type": "<%= type 'Tile' %>",
 	"return_value_desc": ""
 }

@@ -18,7 +18,7 @@
 		{
 			"name": "priority",
 			"desc": "",
-			"type": "<%=audio_priority%>"
+			"type": "<%= type 'AudioPriority' %>"
 		}
 	],
 	"footnotes":

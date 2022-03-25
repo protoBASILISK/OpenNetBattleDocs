@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "Creates another <%=card_action_attachment%> and adds it to this as a child node."
+        "Creates another <%= type 'CardActionAttachment' %> and adds it to this as a child node."
     ],
     "parameters":
     [
@@ -20,8 +20,8 @@
             "optional": false
         }
     ],
-    "return_value_type": "<%=card_action_attachment%>",
-    "return_value_desc": "The newly-created <%=card_action_attachment%>.",
+    "return_value_type": "<%= type 'CardActionAttachment' %>",
+    "return_value_desc": "The newly-created <%= type 'CardActionAttachment' %>.",
     "footnotes":
     [
         {

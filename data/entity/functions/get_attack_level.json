@@ -3,12 +3,12 @@
 	"version": "2.0",
 	"name": "get_attack_level",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"local <%=variable_text%>_attack = <%=variable_text%>:get_attack_level()"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"local <%= variable_text %>_attack = <%= variable_text %>:get_attack_level()"
 	],
 	"description": [
-		"Returns the *attack level* of this <%=doc_class_name%>."
+		"Returns the *attack level* of this <%= doc_class_name %>."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The **attack level** of this <%=doc_class_name%>."
+	"return_value_desc": "The **attack level** of this <%= doc_class_name %>."
 }

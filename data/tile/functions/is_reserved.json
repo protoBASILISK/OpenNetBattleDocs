@@ -10,16 +10,16 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Queries if the <%=tile%> is _reserved_ by a <%=entity%>.",
-		"&emsp;If a list of **unique IDs** is provided, any <%=entity%> with a **unique ID** contained in the list will *not* be included in the calculation.",
+		"Queries if the <%= type 'Tile' %> is _reserved_ by a <%= type 'Entity' %>.",
+		"&emsp;If a list of **unique IDs** is provided, any <%= type 'Entity' %> with a **unique ID** contained in the list will *not* be included in the calculation.",
 		"",
-		"Returns `true` if the <%=tile%> is marked as _reserved_ by any <%=entity%> not on the provided list.",
+		"Returns `true` if the <%= type 'Tile' %> is marked as _reserved_ by any <%= type 'Entity' %> not on the provided list.",
 		"&emsp;Otherwise, returns `false`."
 	 ],
 	"parameters": [
 		{
 			"name": "excluded_characters",
-			"desc": "A list of <%=character%> objects to ignore.",
+			"desc": "A list of <%= type 'Character' %> objects to ignore.",
 			"type": "list&lt;Character&gt;"
 		}
 	],

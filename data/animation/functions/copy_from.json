@@ -10,13 +10,13 @@
     ],
 	"example_comment": "",
 	"description": [ 
-        "Creates a separate, deep copy of another <%=animation%> object." 
+        "Creates a separate, deep copy of another <%= type 'Animation' %> object." 
     ],
 	"parameters": [
 		{
 			"name": "other_animation",
 			"desc": "",
-			"type": "<%=animation%>"
+			"type": "<%= type 'Animation' %>"
 		}
 	]
 }

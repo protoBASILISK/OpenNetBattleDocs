@@ -5,6 +5,6 @@
 	"example_code": [ "" ],
 	"example_comment": "",
 	"description": [ "" ],
-	"return_value_type": "<%=color%>",
+	"return_value_type": "<%= type 'Color' %>",
 	"return_value_desc": ""	
 }

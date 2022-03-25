@@ -10,14 +10,14 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Queries whether or not this <%=tile%> has a specific <%=entity%> present on it.",
-		"&emsp;Returns `true` if the <%=entity%> is present. Otherwise, returns `false`."
+		"Queries whether or not this <%= type 'Tile' %> has a specific <%= type 'Entity' %> present on it.",
+		"&emsp;Returns `true` if the <%= type 'Entity' %> is present. Otherwise, returns `false`."
 	 ],
 	"parameters": [
 		{
 			"name": "entity",
 			"desc": "",
-			"type": "<%=entity%>"
+			"type": "<%= type 'Entity' %>"
 		}
 	],
 	"return_value_type": "boolean",

@@ -6,19 +6,19 @@
         {
             "name":     "Queued",
             "meaning":  [ 
-                "The <%=entity%> was not spawned immediately, and is queued to spawn at the end of frame." 
+                "The <%= type 'Entity' %> was not spawned immediately, and is queued to spawn at the end of frame." 
             ]
         },
         {
             "name":     "Added",
             "meaning":  [ 
-                "The <%=entity%> was successfully spawned straight away."
+                "The <%= type 'Entity' %> was successfully spawned straight away."
             ]
         },
         {
             "name":     "Failed",
             "meaning":  [
-                "The <%=entity%> could not be spawned."    
+                "The <%= type 'Entity' %> could not be spawned."    
             ]
         }
     ] 

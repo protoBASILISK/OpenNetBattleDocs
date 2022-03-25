@@ -16,7 +16,7 @@
         {
             "name": "block_color",
             "desc": "",
-            "type": "<%=block_color%>",
+            "type": "<%= type 'BlockColor' %>",
             "optional": false
         }
     ],

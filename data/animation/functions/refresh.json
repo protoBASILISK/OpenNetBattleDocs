@@ -7,13 +7,13 @@
     ],
 	"example_comment": "",
 	"description": [ 
-        "Refreshes the target <%=sprite_node%>." 
+        "Refreshes the target <%= type 'SpriteNode' %>." 
     ],
 	"parameters": [
 		{
 			"name": "sprite_node",
-			"desc": "The <%=sprite_node%> you want to refresh.",
-			"type": "<%=sprite_node%>"
+			"desc": "The <%= type 'SpriteNode' %> you want to refresh.",
+			"type": "<%= type 'SpriteNode' %>"
 		}
 	]
 }

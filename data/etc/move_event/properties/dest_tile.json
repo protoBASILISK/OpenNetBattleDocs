@@ -9,9 +9,9 @@
         "",
     "description":
     [
-        "The <%=tile%> the <%=entity%> is attempting to move to."
+        "The <%= type 'Tile' %> the <%= type 'Entity' %> is attempting to move to."
     ],
-    "object_type": "<%=tile%>",
+    "object_type": "<%= type 'Tile' %>",
     "footnotes":
     [
         {

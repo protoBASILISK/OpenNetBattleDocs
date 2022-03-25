@@ -3,19 +3,19 @@
 	"version": "2.0",
 	"name": "set_hit_props",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local hit_props\t-- example HitProps",
-		"<%=variable_text%>:set_hit_props( hit_props )"
+		"<%= variable_text %>:set_hit_props( hit_props )"
 	],
 	"description": 
 	[
-		"Defines the basic properties used for when this <%=doc_class_name%> attacks other <%=entity%> objects."
+		"Defines the basic properties used for when this <%= doc_class_name %> attacks other <%= type 'Entity' %> objects."
 	],
 	"parameters": [
 		{
 			"name": "hit_props",
-			"desc": "The basic properties used for this <%=doc_class_name%>'s attacks.",
-			"type": "<%=hit_props%>"
+			"desc": "The basic properties used for this <%= doc_class_name %>'s attacks.",
+			"type": "<%= type 'HitProps'%>"
 		}
 	]
 }

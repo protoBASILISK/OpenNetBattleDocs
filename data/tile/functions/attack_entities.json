@@ -12,13 +12,13 @@
 	"example_comment": "",
 	"description":
 	[
-		"Queues up a <%=spell%> to affect any <%=entity%> present on this <%=tile%>."
+		"Queues up a <%= type 'Spell' %> to affect any <%= type 'Entity' %> present on this <%= type 'Tile' %>."
 	],
 	"parameters": [
 		{
 			"name": "aggressor",
 			"desc": "",
-			"type": "<%=entity%>"
+			"type": "<%= type 'Entity' %>"
 		}
 	]
 }

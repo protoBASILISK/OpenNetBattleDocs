@@ -20,7 +20,7 @@
             "optional": false
         }
     ],
-    "return_value_type": "<%=card_action_attachment%>",
+    "return_value_type": "<%= type 'CardActionAttachment' %>",
     "return_value_desc": "",
     "footnotes":
     [

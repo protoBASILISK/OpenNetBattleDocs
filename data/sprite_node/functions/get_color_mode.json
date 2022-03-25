@@ -3,17 +3,17 @@
     "name": "get_color_mode",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "local color_mode = sprite_node:get_color_mode()",
         "print( \"Additive\", color_mode == ColorMode.Additive )",
         "print( \"Multiply\", color_mode == ColorMode.Multiply )"
     ],
     "example_comment":
-        "The above snippet prints a list of `ColorMode`s, and whether or not it matches the <%= doc_class_name %>'s `ColorMode`.",
+        "The above snippet prints a list of `ColorMode`s, and whether or not it matches the <%= doc_class_name  %>'s `ColorMode`.",
     "description":
     [
-        "Returns the <%= color_mode %> of this <%= doc_class_name %>."
+        "Returns the <%= type 'ColorMode' %> of this <%= doc_class_name  %>."
     ],
     "parameters":
     [
@@ -24,8 +24,8 @@
             "optional": false
         }
     ],
-    "return_value_type": "<%= color_mode %>",
-    "return_value_desc": "The <%= color_mode %> describing how tinting this <%= doc_class_name %> affects its color.",
+    "return_value_type": "<%= type 'ColorMode' %>",
+    "return_value_desc": "The <%= type 'ColorMode' %> describing how tinting this <%= doc_class_name  %> affects its color.",
     "footnotes":
     [
         {

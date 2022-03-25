@@ -15,13 +15,5 @@
         { "name": "get_actor" },
         { "name": "set_metadata" },
         { "name": "copy_metadata" }
-    ],
-    "callbacks":
-    [
-        { "name": "update_func" },
-        { "name": "animation_end_func" },
-        { "name": "action_end_func" },
-        { "name": "execute_func" },
-        { "name": "can_move_to_func" }
     ]
 }

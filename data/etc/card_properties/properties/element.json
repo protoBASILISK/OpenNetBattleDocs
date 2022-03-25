@@ -13,7 +13,7 @@
     [
         ""
     ],
-    "object_type": "<%=element%>",
+    "object_type": "<%= type 'Element' %>",
     "footnotes":
     [
         {

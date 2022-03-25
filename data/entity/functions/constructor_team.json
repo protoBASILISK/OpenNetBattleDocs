@@ -2,16 +2,16 @@
 	"version": "2.0",
 	"name": "new",
 	"example_code": [ 
-		"local <%=variable_text%> = Battle.<%=lua_class_name%>.new( Team.Red )"
+		"local <%= variable_text %> = Battle.<%= lua_class_name %>.new( Team.Red )"
 	],
 	"description": [
-		"Creates a new <%=doc_class_name%> object."
+		"Creates a new <%= doc_class_name %> object."
 	],
 	"parameters": [
 		{
 			"name": "team",
 			"desc": "",
-			"type": "<%=team%>"
+			"type": "<%= type 'Team'%>"
 		}
 	]
 }

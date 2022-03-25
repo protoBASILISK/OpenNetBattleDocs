@@ -12,15 +12,15 @@
 	"example_comment": "The above snippet will return `Direction.DownRight`.",
 	"description": 
 	[
-		"This returns a <%=direction%> with the opposite _vertical_ and _horizontal components_ of the input <%=direction%>."
+		"This returns a <%= type 'Direction' %> with the opposite _vertical_ and _horizontal components_ of the input <%= type 'Direction' %>."
 	],
 	"parameters": [
 		{
 			"name": "input_direction",
-			"desc": "The <%=direction%> you want to flip.",
-			"type": "<%=direction%>"
+			"desc": "The <%= type 'Direction' %> you want to flip.",
+			"type": "<%= type 'Direction' %>"
 		}
 	],
-	"return_value_type": "<%=direction%>",
+	"return_value_type": "<%= type 'Direction' %>",
 	"return_value_desc": ""
 }

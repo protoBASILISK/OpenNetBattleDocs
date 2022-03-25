@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "The number of frames before the <%=entity%> actually moves."
+        "The number of frames before the <%= type 'Entity' %> actually moves."
     ],
     "object_type": "number",
     "footnotes":

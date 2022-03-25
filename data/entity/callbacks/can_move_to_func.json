@@ -5,23 +5,23 @@
 	"callback_name": "update_func",
 	"example_code":
 	[
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"",
-		"<%=variable_text%>.update_func = function( actor, elapsed )",
+		"<%= variable_text %>.update_func = function( actor, elapsed )",
 		"\tprint( \"update executed.\" )",
 		"end"
 	],
 	"description":
 	[ 
-		"The function that will be called every frame while the <%=doc_class_name%> is alive.",					
+		"The function that will be called every frame while the <%= doc_class_name %> is alive.",					
 		"&emsp;*`update_func` does not get called during <b>time freeze</b> or while the <b>card menu</b> is open.*"
 	],
 	"parameters": 
 	[
 		{
 			"name": "actor",
-			"desc": "The <%=doc_class_name%> being updated.",
-			"type": "<%=doc_class_name%>"
+			"desc": "The <%= doc_class_name %> being updated.",
+			"type": "<%= doc_class_name %>"
 		},
 		{
 			"name": "elapsed",

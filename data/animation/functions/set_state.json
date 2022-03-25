@@ -7,7 +7,7 @@
     ],
 	"example_comment": "",
 	"description": [ 
-        "Makes the <%=animation%> object play a specific animation." 
+        "Makes the <%= type 'Animation' %> object play a specific animation." 
     ],
 	"parameters": [
 		{

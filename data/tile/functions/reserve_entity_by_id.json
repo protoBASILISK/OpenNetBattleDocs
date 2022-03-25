@@ -10,13 +10,13 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Causes the <%=tile%> to become _reserved_ by a <%=entity%> with a specific **unique ID**.",
-		"An <%=entity%> reserving a <%=tile%> will stop it from being set to certain <%=tile_state%>s."
+		"Causes the <%= type 'Tile' %> to become _reserved_ by a <%= type 'Entity' %> with a specific **unique ID**.",
+		"An <%= type 'Entity' %> reserving a <%= type 'Tile' %> will stop it from being set to certain <%= type 'TileState' %>s."
 	],
 	"parameters": [
 		{
 			"name": "entity_id",
-			"desc": "The **unique ID** of the <%=entity%> that you want to mark as reserving this <%=tile%>.",
+			"desc": "The **unique ID** of the <%= type 'Entity' %> that you want to mark as reserving this <%= type 'Tile' %>.",
 			"type": "number"
 		}
 	]

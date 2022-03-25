@@ -16,7 +16,7 @@
         {
             "name": "action",
             "desc": "",
-            "type": "<%=card_action%>",
+            "type": "<%= type 'CardAction' %>",
             "optional": false
         }
     ],

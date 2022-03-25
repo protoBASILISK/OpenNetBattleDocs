@@ -3,12 +3,12 @@
 	"version": "2.0",
 	"name": "get_facing",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"local <%=variable_text%>_facing = <%=variable_text%>:get_facing()"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"local <%= variable_text %>_facing = <%= variable_text %>:get_facing()"
 	],
 	"description": [
-		"Returns the <%=direction%> this <%=doc_class_name%> is facing towards."
+		"Returns the <%= type 'Direction' %> this <%= doc_class_name %> is facing towards."
 	],
-	"return_value_type": "<%=direction%>",
-	"return_value_desc": "The <%=direction%> of this <%=doc_class_name%> is facing towards."
+	"return_value_type": "<%= type 'Direction' %>",
+	"return_value_desc": "The <%= type 'Direction' %> of this <%= doc_class_name %> is facing towards."
 }

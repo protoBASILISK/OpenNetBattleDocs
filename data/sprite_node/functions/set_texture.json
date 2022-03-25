@@ -3,7 +3,7 @@
     "name": "set_texture",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "local example_texture\t\t-- example Texture",
         "",
         "sprite_node:set_texture( example_texture )",
@@ -13,14 +13,14 @@
         "",
     "description":
     [
-        "Assigns a new <%= texture %> to the <%= doc_class_name %>."
+        "Assigns a new <%= type 'Texture' %> to the <%= doc_class_name  %>."
     ],
     "parameters":
     [
         {
             "name": "texture",
-            "desc": "The new texture for the <%= doc_class_name %>",
-            "type": "<%= texture %>",
+            "desc": "The new texture for the <%= doc_class_name  %>",
+            "type": "<%= type 'Texture' %>",
             "optional": false
         }
     ],

@@ -12,8 +12,8 @@
         ""
     ],
     "parameters": [],
-    "return_value_type": "<%=entity%>",
-    "return_value_desc": "The <%=entity%> this <%=component%> is attached to (if any).",
+    "return_value_type": "<%= type 'Entity' %>",
+    "return_value_desc": "The <%= type 'Entity' %> this <%= type 'Component' %> is attached to (if any).",
     "footnotes":
     [
         {

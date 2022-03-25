@@ -3,14 +3,14 @@
 	"version": "2.0",
 	"name": "slide",
 	"example_code": [ 
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local target_tile\t-- The tile you want to move to",
-		"<%=variable_text%>:slide( target_tile, frames(60), frames(20), ActionOrder.Voluntary, nil ) "
+		"<%= variable_text %>:slide( target_tile, frames(60), frames(20), ActionOrder.Voluntary, nil ) "
 	],
-	"example_comment": "The above snippet causes the <%=doc_class_name%> to slide to a tile over 60 frames, and wait for 20 frames before being able to act again.",
+	"example_comment": "The above snippet causes the <%= doc_class_name %> to slide to a tile over 60 frames, and wait for 20 frames before being able to act again.",
 	"description": 
 	[
-		"Attempts to queue up a movement comand for the <%=doc_class_name%> to slide to a specified tile.",
+		"Attempts to queue up a movement comand for the <%= doc_class_name %> to slide to a specified tile.",
 		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."
 	],
 	"return_value_type": "boolean",
@@ -18,8 +18,8 @@
 	"parameters": [
 		{
 			"name": "target_tile",
-			"desc": "The <%=tile%> the <%=doc_class_name%> will be trying to move towards.",
-			"type": "<%=tile%>"
+			"desc": "The <%= type 'Tile' %> the <%= doc_class_name %> will be trying to move towards.",
+			"type": "<%= type 'Tile' %>"
 		},
 		{
 			"name": "movement_time",
@@ -34,7 +34,7 @@
 		{
 			"name": "action_order",
 			"desc": "The priority this action will have vs other movement actions.",
-			"type": "<%=action_order%>"
+			"type": "<%= type 'ActionOrder' %>"
 		},
 		{
 			"name": "on_begin",

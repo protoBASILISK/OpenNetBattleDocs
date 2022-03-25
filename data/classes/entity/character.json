@@ -6,6 +6,8 @@
 	"superclass": "Entity",
 	"conditionals":
 	[
+		"get_rank",
+		"card_action_event",
 		"battle_start_func",
 		"on_spawn_func",
 		"battle_end_func",

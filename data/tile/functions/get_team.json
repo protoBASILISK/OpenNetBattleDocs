@@ -8,8 +8,8 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Returns the <%=team%> that currently owns this <%=tile%>"
+		"Returns the <%= type 'Team'%> that currently owns this <%= type 'Tile' %>"
 	 ],
-	"return_value_type": "<%=team%>",
+	"return_value_type": "<%= type 'Team'%>",
 	"return_value_desc": ""
 }

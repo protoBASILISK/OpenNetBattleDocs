@@ -3,15 +3,15 @@
     "name": "set_offset",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "sprite_node:set_offset( 50, 100 )"
     ],
     "example_comment":
-        "The above snippet offsets the <%= doc_class_name %> by 50 pixels horizontally and 100 pixels vertically from its original position.",
+        "The above snippet offsets the <%= doc_class_name  %> by 50 pixels horizontally and 100 pixels vertically from its original position.",
     "description":
     [
-        "Assigns a new **offset** for the <%= doc_class_name %> (default `[0, 0]`).",
+        "Assigns a new **offset** for the <%= doc_class_name  %> (default `[0, 0]`).",
         "&emsp;This *does not* move it relative to its current position, it resets it to its *original* position, then moves it relative to that."
     ],
     "parameters":

@@ -5,28 +5,28 @@
 	"example_code": 
 	[
 		"local field\t-- example field",
-		"",
+		"\t-- first method",
 		"local blue_team_filter = function( obstacle )",
 		"\treturn obstacle:get_team() == Team.Blue",
 		"end",
-		"",
+		"\t-- second method",
 		"local all_blue_obstacles = field:find_obstacles( blue_team_filter )",
 		"local all_red_obstacles = field:find_obstacles( function( obstacle ) return obstacle:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_obstacles()`.",
 	"description": [
-		"Iterates through all of the <%=obstacle%>s on the battlefield, and returns a list of <%=obstacle%>s that match a filter `function`.",
-		"&emsp;To *include* a <%=obstacle%> in the final list, the filter `function` has to return `true`.",
-		"&emsp;If it returns `false` for a <%=obstacle%>, it will *not* be included."
+		"Iterates through all of the <%= type 'Obstacle' %>s on the battlefield, and returns a list of <%= type 'Obstacle' %>s that match a filter `function`.",
+		"&emsp;To *include* a <%= type 'Obstacle' %> in the final list, the filter `function` has to return `true`.",
+		"&emsp;If it returns `false` for a <%= type 'Obstacle' %>, it will *not* be included."
 	],
 	"parameters": [
 		{
 			"name": "search_function",
-			"desc": "A filter function that determines if the <%=obstacle%> gets added to the list.",
+			"desc": "A filter function that determines if the <%= type 'Obstacle' %> gets added to the list.",
 			"type": "function"
 		}
 	],
-	"return_value_type": "list&lt;<%=obstacle%>&gt;",
+	"return_value_type": "list&lt;<%= type 'Obstacle' %>&gt;",
 	"return_value_desc": "",
 	"footnotes":
 	[
@@ -34,9 +34,9 @@
 			"type": "notice",
 			"text":
 			[
-				"`search_function` requires **one** <%=obstacle%> parameter, and to return a `boolean`.",
-				"Return `true` for any <%=obstacle%> that you *do* want to include.",
-				"Return `false` for any <%=obstacle%> that you *do not* want to include.",
+				"`search_function` requires **one** <%= type 'Obstacle' %> parameter, and to return a `boolean`.",
+				"Return `true` for any <%= type 'Obstacle' %> that you *do* want to include.",
+				"Return `false` for any <%= type 'Obstacle' %> that you *do not* want to include.",
 				"_The function does **not** have to be named `search_function`, it is just for illustrative purposes._"
 			],
 			"code": 
@@ -45,7 +45,7 @@
 				"\treturn obstacle:get_team() == Team.Red",
 				"end"
 			],
-			"comment": "When used with the above snippet, `find_obstacles()` returns all <%=obstacle%>s that are currently on the Red team."
+			"comment": "When used with the above snippet, `find_obstacles()` returns all <%= type 'Obstacle' %>s that are currently on the Red team."
 		}
 	]
 }

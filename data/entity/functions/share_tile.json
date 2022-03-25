@@ -4,18 +4,18 @@
 	"conditional": true,
 	"name": "share_tile",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:share_tile( true ) "
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:share_tile( true ) "
 	],
 	"description": 
 	[
-		"If `true`, allows other objects to inhabit the same <%=tile%> as this <%=doc_class_name%>.",
+		"If `true`, allows other objects to inhabit the same <%= type 'Tile' %> as this <%= doc_class_name %>.",
 		"&emsp;(default : `false`)"
 	],
 	"parameters": [
 		{
 			"name": "share",
-			"desc": "`true`, if other objects should be allowed to inhabit the same tile as this <%=doc_class_name%>.",
+			"desc": "`true`, if other objects should be allowed to inhabit the same tile as this <%= doc_class_name %>.",
 			"type": "boolean"
 		}
 	]

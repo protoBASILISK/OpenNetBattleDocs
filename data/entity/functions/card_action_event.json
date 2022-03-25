@@ -10,12 +10,12 @@
 		{
 			"name": "card_action",
 			"desc": "",
-			"type": "<%=card_action%>"
+			"type": "<%= type 'CardAction' %>"
 		},
 		{
 			"name": "action_order",
 			"desc": "",
-			"type": "<%=action_order%>"
+			"type": "<%= type 'ActionOrder' %>"
 		}
 	]
 }

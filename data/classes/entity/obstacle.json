@@ -1,0 +1,10 @@
+{
+	"class_name": "Obstacle",
+	"lua_class_name": "Obstacle",
+	"variable_text": "obstacle",
+	"subdirectory": "entity",
+	"superclass": "Entity",
+	"conditionals":
+	[
+	]
+}

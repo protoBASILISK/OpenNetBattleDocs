@@ -3,18 +3,18 @@
 	"version": "2.0",
 	"name": "set_elevation",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:set_elevation( 100 ) "
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:set_elevation( 100 ) "
 	],
 	"description": 
 	[
-		"Changes how high above the battlefield this <%=doc_class_name%> will be drawn.",
+		"Changes how high above the battlefield this <%= doc_class_name %> will be drawn.",
 		"**Positive** values move it *upwards*, **negative** values move it *downasidewards*"
 	],
 	"parameters": [
 		{
 			"name": "height",
-			"desc": "The height of this <%=doc_class_name%>.",
+			"desc": "The height of this <%= doc_class_name %>.",
 			"type": "number"
 		}
 	],
@@ -24,7 +24,7 @@
 			"type": "notice",
 			"text": 
 			[
-				"Changing the elevation of a <%=doc_class_name%> does not affect the location of any graphics associated with it."
+				"Changing the elevation of a <%= doc_class_name %> does not affect the location of any graphics associated with it."
 			]
 		}
 	]

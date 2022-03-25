@@ -10,7 +10,7 @@
 		{
 			"name": "sync_node",
 			"desc": "",
-			"type": "<%=sync_node%>"
+			"type": "<%= type 'SyncNode' %>"
 		}
 	]
 }

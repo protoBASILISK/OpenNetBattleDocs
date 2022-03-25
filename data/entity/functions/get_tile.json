@@ -3,27 +3,27 @@
 	"version": "2.0",
 	"name": "get_tile",
 	"example_code": [
-		"local <%=variable_text%>\t\t-- example <%=variable_text%>",
-		"local facing_direction = <%=variable_text%>:get_facing()",
-		"local tile_in_front = <%=variable_text%>:get_tile( facing_direction, 1 )"
+		"local <%= variable_text %>\t\t-- example <%= variable_text %>",
+		"local facing_direction = <%= variable_text %>:get_facing()",
+		"local tile_in_front = <%= variable_text %>:get_tile( facing_direction, 1 )"
 	],
-	"example_comment": "The above snippet returns a handle to the <%=tile%> directly in front of the <%=doc_class_name%>.",
+	"example_comment": "The above snippet returns a handle to the <%= type 'Tile' %> directly in front of the <%= doc_class_name %>.",
 	"description": 
 	[
-		"Returns a handle to the <%=tile%> offset in one direction from this <%=doc_class_name%>.",
-		"If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid <%=tile%>, it returns `nil` instead."
+		"Returns a handle to the <%= type 'Tile' %> offset in one direction from this <%= doc_class_name %>.",
+		"If this offset goes out of the bounds of the battlefield, or is to an otherwise invalid <%= type 'Tile' %>, it returns `nil` instead."
 	],
-	"return_value_type": "<%=tile%>",
-	"return_value_desc": "A handle to the <%=tile%>, or `nil`.",
+	"return_value_type": "<%= type 'Tile' %>",
+	"return_value_desc": "A handle to the <%= type 'Tile' %>, or `nil`.",
 	"parameters": [
 		{
 			"name": "direction",
-			"desc": "The <%=direction%> you want to get select from.",
-			"type": "<%=direction%>"
+			"desc": "The <%= type 'Direction' %> you want to get select from.",
+			"type": "<%= type 'Direction' %>"
 		},
 		{
 			"name": "offset",
-			"desc": "The number of spaces in that direction you want to select a <%=tile%> at.",
+			"desc": "The number of spaces in that direction you want to select a <%= type 'Tile' %> at.",
 			"type": "number"
 		}
 	]

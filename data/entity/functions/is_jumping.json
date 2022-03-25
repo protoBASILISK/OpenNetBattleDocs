@@ -3,14 +3,14 @@
 	"version": "2.0",
 	"name": "is_jumping",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"local is_jumping = <%=variable_text%>:is_jumping()"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"local is_jumping = <%= variable_text %>:is_jumping()"
 	],
 	"description": 
 	[
-		"Returns `true` if this <%=doc_class_name%> is currently jumping.",
+		"Returns `true` if this <%= doc_class_name %> is currently jumping.",
 		"&emsp;Otherwise, returns `false`."
 	],
 	"return_value_type": "boolean",
-	"return_value_desc": "Whether this <%=doc_class_name%> is jumping or not."
+	"return_value_desc": "Whether this <%= doc_class_name %> is jumping or not."
 }

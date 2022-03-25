@@ -3,26 +3,26 @@
 	"version": "2.0",
 	"name": "teleport",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local target_tile\t-- The tile you want to move to",
-		"<%=variable_text%>:tile( target_tile, ActionOrder.Voluntary, nil )"
+		"<%= variable_text %>:tile( target_tile, ActionOrder.Voluntary, nil )"
 	],
-	"example_comment": "The above snippet causes the <%=doc_class_name%> to teleport to.",
+	"example_comment": "The above snippet causes the <%= doc_class_name %> to teleport to.",
 	"description": 
 	[
-		"Attempts to queue up a movement comand for the <%=doc_class_name%> to teleport to a specified tile.",
+		"Attempts to queue up a movement comand for the <%= doc_class_name %> to teleport to a specified tile.",
 		"&nbsp;Returns `true` if the movement was possible *at the time it was called*, otherwise returns `false`."
 	],
 	"parameters": [
 		{
 			"name": "target_tile",
-			"desc": "The <%=tile%> the <%=doc_class_name%> will be trying to move towards.",
-			"type": "<%=tile%>"
+			"desc": "The <%= type 'Tile' %> the <%= doc_class_name %> will be trying to move towards.",
+			"type": "<%= type 'Tile' %>"
 		},
 		{
 			"name": "action_order",
 			"desc": "The priority this action will have vs other movement actions.",
-			"type": "<%=action_order%>"
+			"type": "<%= type 'ActionOrder' %>"
 		},
 		{
 			"name": "on_begin",

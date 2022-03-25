@@ -5,28 +5,28 @@
 	"example_code": 
 	[
 		"local tile\t-- example field",
-		"",
+		"\t-- first method",
 		"local blue_team_filter = function( character )",
 		"\treturn character:get_team() == Team.Blue",
 		"end",
-		"",
+		"\t-- second method",
 		"local all_blue_characters = tile:find_characters( blue_team_filter )",
 		"local all_red_characters = tile:find_characters( function( character ) return character:get_team() == Team.Red end )"
 	],
 	"example_comment": "The above snippet shows two ways of passing a function to `find_characters()`.",
 	"description": [
-		"Iterates through all of the <%=character%>s on this <%=tile%>, and returns a list of <%=character%>s that match a filter `function`.",
-		"&emsp;To *include* a <%=character%> in the final list, the filter `function` has to return `true`.",
-		"&emsp;If it returns `false` for a <%=character%>, it will *not* be included."
+		"Iterates through all of the <%= type 'Character' %>s on this <%= type 'Tile' %>, and returns a list of <%= type 'Character' %>s that match a filter `function`.",
+		"&emsp;To *include* a <%= type 'Character' %> in the final list, the filter `function` has to return `true`.",
+		"&emsp;If it returns `false` for a <%= type 'Character' %>, it will *not* be included."
 	],
 	"parameters": [
 		{
 			"name": "search_function",
-			"desc": "A filter function that determines if the <%=character%> gets added to the list.",
+			"desc": "A filter function that determines if the <%= type 'Character' %> gets added to the list.",
 			"type": "function"
 		}
 	],
-	"return_value_type": "list&lt;<%=character%>&gt;",
+	"return_value_type": "list&lt;<%= type 'Character' %>&gt;",
 	"return_value_desc": "",
 	"footnotes":
 	[
@@ -34,9 +34,9 @@
 			"type": "notice",
 			"text":
 			[
-				"`search_function` requires **one** <%=character%> parameter, and to return a `boolean`.",
-				"Return `true` for any <%=character%> that you *do* want to include.",
-				"Return `false` for any <%=character%> that you *do not* want to include.",
+				"`search_function` requires **one** <%= type 'Character' %> parameter, and to return a `boolean`.",
+				"Return `true` for any <%= type 'Character' %> that you *do* want to include.",
+				"Return `false` for any <%= type 'Character' %> that you *do not* want to include.",
 				"_The function does **not** have to be named `search_function`, it is just for illustrative purposes._"
 			],
 			"code": 
@@ -45,7 +45,7 @@
 				"\treturn character:get_team() == Team.Red",
 				"end"
 			],
-			"comment": "When used with the above snippet, `find_characters()` returns all <%=character%>s on this <%=tile%> that are currently on the Red team."
+			"comment": "When used with the above snippet, `find_characters()` returns all <%= type 'Character' %>s on this <%= type 'Tile' %> that are currently on the Red team."
 		}
 	]
 }

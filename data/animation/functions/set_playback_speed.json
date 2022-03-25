@@ -7,7 +7,7 @@
     ],
 	"example_comment": "",
 	"description": [ 
-        "Sets the playback speed for any animations controlled by this <%=animation%> object." 
+        "Sets the playback speed for any animations controlled by this <%= type 'Animation' %> object." 
     ],
 	"parameters": [
 		{

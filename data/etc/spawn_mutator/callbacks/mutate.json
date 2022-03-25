@@ -16,7 +16,7 @@
         {
             "name": "character",
             "desc": "",
-            "type": "<%=character%>",
+            "type": "<%= type 'Character' %>",
             "optional": false
         }
     ],

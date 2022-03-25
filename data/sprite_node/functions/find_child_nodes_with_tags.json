@@ -3,7 +3,7 @@
     "name": "find_child_nodes_with_tags",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "local list_of_nodes = sprite_node:find_child_nodes_with_tags( \"arm\", \"leg\" )"
     ],
@@ -11,7 +11,7 @@
         "The above snippet returns a list of all the children of **`sprite_node`** that have either the tag `arm` or `leg`.",
     "description":
     [
-        "Returns a list of all the child nodes attached to this <%= doc_class_name %> that have _any_ of the provided tags."
+        "Returns a list of all the child nodes attached to this <%= doc_class_name  %> that have _any_ of the provided tags."
     ],
     "parameters":
     [
@@ -22,7 +22,7 @@
             "optional": false
         }
     ],
-    "return_value_type": "list< <%= doc_class_name %> >",
+    "return_value_type": "list< <%= doc_class_name  %> >",
     "return_value_desc": "The list of all child nodes that have any of the provided tags.",
     "footnotes":
     [

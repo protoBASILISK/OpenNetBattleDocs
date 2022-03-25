@@ -16,7 +16,7 @@
         {
             "name": "back_buffer",
             "desc": "",
-            "type": "<%=texture%>",
+            "type": "<%= type 'Texture' %>",
             "optional": false
         }
     ],

@@ -20,7 +20,7 @@
             "optional": false
         }
     ],
-    "return_value_type": "<%=card_props%>",
+    "return_value_type": "<%= type 'CardProps' %>",
     "return_value_desc": "",
     "footnotes":
     [

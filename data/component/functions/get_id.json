@@ -13,7 +13,7 @@
     ],
     "parameters": [],
     "return_value_type": "number",
-    "return_value_desc": "The **unique ID** of this <%=component%>.",
+    "return_value_desc": "The **unique ID** of this <%= type 'Component' %>.",
     "footnotes":
     [
         {

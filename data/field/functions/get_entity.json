@@ -8,16 +8,16 @@
 	"example_comment": "",
 	"description": 
 	[
-		"This function returns an <%=entity%> with a specific ID.",
-		"If there is no <%=entity%> with the provided ID, `nil` is returned instead."
+		"This function returns an <%= type 'Entity' %> with a specific ID.",
+		"If there is no <%= type 'Entity' %> with the provided ID, `nil` is returned instead."
 	],
 	"parameters": [
 		{
 			"name": "unique_id",
-			"desc": "The ID of the <%=entity%> you want to retrieve.",
+			"desc": "The ID of the <%= type 'Entity' %> you want to retrieve.",
 			"type": "number"
 		}
 	],
-	"return_value_type": "<%=entity%>",
+	"return_value_type": "<%= type 'Entity' %>",
 	"return_value_desc": ""
 }

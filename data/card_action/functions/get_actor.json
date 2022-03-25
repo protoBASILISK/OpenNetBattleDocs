@@ -12,8 +12,8 @@
         ""
     ],
     "parameters": [],
-    "return_value_type": "<%=character%>",
-    "return_value_desc": "The <%=character%> (or 'stunt double') that's executing the current <%=card_action%>.",
+    "return_value_type": "<%= type 'Character' %>",
+    "return_value_desc": "The <%= type 'Character' %> (or 'stunt double') that's executing the current <%= type 'CardAction' %>.",
     "footnotes":
     [
         {

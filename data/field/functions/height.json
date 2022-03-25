@@ -7,7 +7,7 @@
 	],
 	"example_comment": "",
 	"description": [
-		"This returns the **height** of the current battlefield in <%=tile%>s (including *hidden* tiles)."
+		"This returns the **height** of the current battlefield in <%= type 'Tile' %>s (including *hidden* tiles)."
 	],
 	"return_value_type": "number",
 	"return_value_desc": ""

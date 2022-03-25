@@ -3,18 +3,18 @@
 	"version": "2.0",
 	"name": "register_component",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local example_component\t-- example ScriptedComponent",
-		"<%=variable_text%>:register_component( example_component ) "
+		"<%= variable_text %>:register_component( example_component ) "
 	],
 	"description": [
-		"Registers a <%=component%> to this <%=doc_class_name%>."
+		"Registers a <%= type 'Component' %> to this <%= doc_class_name %>."
 	],
 	"parameters": [
 		{
 			"name": "component",
-			"desc": "The <%=component%> you want to register to this <%=doc_class_name%>.",
-			"type": "<%=component%>"
+			"desc": "The <%= type 'Component' %> you want to register to this <%= doc_class_name %>.",
+			"type": "<%= type 'Component' %>"
 		}
 	]
 }

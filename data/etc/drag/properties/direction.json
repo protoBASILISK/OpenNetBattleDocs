@@ -9,9 +9,9 @@
         "",
     "description":
     [
-        "The `Direction` an <%=entity%> will be moved."
+        "The `Direction` an <%= type 'Entity' %> will be moved."
     ],
-    "object_type": "<%=direction%>",
+    "object_type": "<%= type 'Direction' %>",
     "footnotes":
     [
         {

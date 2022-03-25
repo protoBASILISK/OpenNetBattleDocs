@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "Ends the execution of this <%=card_action_step%> and moves onto the next (if any)."
+        "Ends the execution of this <%= type 'CardActionStep' %> and moves onto the next (if any)."
     ],
     "parameters": [],
     "return_value_type": "",

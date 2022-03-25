@@ -6,7 +6,7 @@
         {
             "name":     "Immediate",
             "meaning":  [ 
-                "Highest priority, immediately move the affected <%=entity%>." 
+                "Highest priority, immediately move the affected <%= type 'Entity' %>." 
             ]
         },
         {
@@ -18,7 +18,7 @@
         {
             "name":     "Voluntary",
             "meaning":  [
-                "Lowest priority. Move only when the <%=entity%> is able to move by itself."
+                "Lowest priority. Move only when the <%= type 'Entity' %> is able to move by itself."
             ]
         }
     ] 

@@ -11,7 +11,7 @@
     [
         ""
     ],
-    "object_type": "<%=drag%>",
+    "object_type": "<%= type 'Drag' %>",
     "footnotes":
     [
         {

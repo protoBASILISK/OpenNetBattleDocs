@@ -8,12 +8,6 @@
 	[
 		"constructor_team",
 		"from",
-		"set_name",
-		"share_tile",
-		"add_defense_rule",
-		"remove_defense_rule",
-		"ignore_common_aggressor",
-		"shake_camera",
 		"can_move_to_func",
 		"collision_func",
 		"update_func",

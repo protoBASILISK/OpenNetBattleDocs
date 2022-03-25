@@ -8,13 +8,13 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Causes the <%=tile%> to be highlighted in a specific manner."
+		"Causes the <%= type 'Tile' %> to be highlighted in a specific manner."
 	],
 	"parameters": [
 		{
 			"name": "highlight_mode",
 			"desc": "",
-			"type": "<%=highlight%>"
+			"type": "<%= type 'Highlight' %>"
 		}
 	]
 }

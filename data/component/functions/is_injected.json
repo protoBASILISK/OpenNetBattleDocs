@@ -13,7 +13,7 @@
     ],
     "parameters": [],
     "return_value_type": "boolean",
-    "return_value_desc": "Whether or not this <%=component%> is attached to something.",
+    "return_value_desc": "Whether or not this <%= type 'Component' %> is attached to something.",
     "footnotes":
     [
         {

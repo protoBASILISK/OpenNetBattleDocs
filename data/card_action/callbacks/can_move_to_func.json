@@ -9,10 +9,10 @@
         "",
     "description":
     [
-        "This function is executed when a <%=character%> attempts to move to another <%=tile%>.",
+        "This function is executed when a <%= type 'Character' %> attempts to move to another <%= type 'Tile' %>.",
         "",
-        "The `tile` parameter is the <%=tile%> it is attempting to move to, and the script can query it like normal.",
-        "&emsp;Return `true` if the <%=character%> will be allowed to move to the <%=tile%>.",
+        "The `tile` parameter is the <%= type 'Tile' %> it is attempting to move to, and the script can query it like normal.",
+        "&emsp;Return `true` if the <%= type 'Character' %> will be allowed to move to the <%= type 'Tile' %>.",
         "&emsp;Otherwise, return `false`."
     ],
     "parameters":
@@ -20,18 +20,18 @@
         {
             "name": "action",
             "desc": "",
-            "type": "<%=card_action%>",
+            "type": "<%= type 'CardAction' %>",
             "optional": false
         },
         {
             "name": "tile",
-            "desc": "The <%=tile%> that the executing <%=character%> is trying to move to.",
-            "type": "<%=tile%>",
+            "desc": "The <%= type 'Tile' %> that the executing <%= type 'Character' %> is trying to move to.",
+            "type": "<%= type 'Tile' %>",
             "optional": false
         }
     ],
     "return_value_type": "boolean",
-    "return_value_desc": "`true` if the executing <%=character%> can move onto the <%=tile%>, otherwise `false`.",
+    "return_value_desc": "`true` if the executing <%= type 'Character' %> can move onto the <%= type 'Tile' %>, otherwise `false`.",
     "footnotes":
     [
         {

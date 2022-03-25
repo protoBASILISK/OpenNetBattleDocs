@@ -12,15 +12,15 @@
 	"parameters": [
 		{
 			"name": "entity",
-			"desc": "The <%=entity%> to spawn.",
-			"type": "<%=entity%>"
+			"desc": "The <%= type 'Entity' %> to spawn.",
+			"type": "<%= type 'Entity' %>"
 		},
 		{
 			"name": "spawn_tile",
-			"desc": "The <%=tile%> to spawn the <%=entity%> on.",
-			"type": "<%=tile%>"
+			"desc": "The <%= type 'Tile' %> to spawn the <%= type 'Entity' %> on.",
+			"type": "<%= type 'Tile' %>"
 		}
 	],
-	"return_value_type": "<%=add_entity_status%>",
+	"return_value_type": "<%= type 'AddEntityStatus' %>",
 	"return_value_desc": ""
 }

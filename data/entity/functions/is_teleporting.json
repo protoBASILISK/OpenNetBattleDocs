@@ -3,14 +3,14 @@
 	"version": "2.0",
 	"name": "is_teleporting",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"local is_teleporting = <%=variable_text%>:is_teleporting()"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"local is_teleporting = <%= variable_text %>:is_teleporting()"
 	],
 	"description": 
 	[
-		"Returns `true` if this <%=doc_class_name%> is currently teleporting.",
+		"Returns `true` if this <%= doc_class_name %> is currently teleporting.",
 		"&emsp;Otherwise, returns `false`."
 	],
 	"return_value_type": "boolean",
-	"return_value_desc": "Whether this <%=doc_class_name%> is teleporting or not."
+	"return_value_desc": "Whether this <%= doc_class_name %> is teleporting or not."
 }

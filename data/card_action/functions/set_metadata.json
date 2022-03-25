@@ -16,7 +16,7 @@
         {
             "name": "card_properties",
             "desc": "",
-            "type": "<%=card_props%>",
+            "type": "<%= type 'CardProps' %>",
             "optional": false
         }
     ],

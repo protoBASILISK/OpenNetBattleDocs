@@ -3,24 +3,24 @@
     "name": "set_color",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "local full_dark = Color.new( 0, 0, 0, 255 )",
         "",
         "sprite_node:set_color( full_dark )"
     ],
     "example_comment":
-        "The above snippet sets the tint for this <%= doc_class_name %> to pure black.",
+        "The above snippet sets the tint for this <%= doc_class_name  %> to pure black.",
     "description":
     [
-        "This tints the <%= doc_class_name %> with a specific color (default `(255, 255, 255, 255)`).",
-        "&emsp;How this affects the _actual_ color of the object depends on its <%= color_mode %>."
+        "This tints the <%= doc_class_name  %> with a specific color (default `(255, 255, 255, 255)`).",
+        "&emsp;How this affects the _actual_ color of the object depends on its <%= type 'ColorMode' %>."
     ],
     "parameters":
     [
         {
             "name": "color_tint",
-            "desc": "The color you want to tint this <%= doc_class_name %> with.",
-            "type": "<%= color %>",
+            "desc": "The color you want to tint this <%= doc_class_name  %> with.",
+            "type": "<%= type 'Color' %>",
             "optional": false
         }
     ],

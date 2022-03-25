@@ -3,7 +3,7 @@
     "name": "set_layer",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "sprite_node:set_layer( 1 )"
     ],
@@ -11,7 +11,7 @@
         "",
     "description":
     [
-        "Sets the (integer) layer number setting the order the <%= doc_class_name %> is drawn in relative to parent/all objects? on the tile.",
+        "Sets the (integer) layer number setting the order the <%= doc_class_name  %> is drawn in relative to parent/all objects? on the tile.",
         "The layers are ordered in ascending/descending? order (default `0`).",
         "TODO: Test how layer sorting works."
     ],

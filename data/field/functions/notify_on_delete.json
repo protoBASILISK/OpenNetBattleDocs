@@ -21,17 +21,17 @@
 	"parameters": [
 		{
 			"name": "target_id",
-			"desc": "The **unique ID** of the <%=entity%> that will trigger the callback on deletion.",
+			"desc": "The **unique ID** of the <%= type 'Entity' %> that will trigger the callback on deletion.",
 			"type": "number"
 		},
 		{
 			"name": "observer_id",
-			"desc": "The **unique ID** of the <%=entity%> that will be passed to the `callback function`.",
+			"desc": "The **unique ID** of the <%= type 'Entity' %> that will be passed to the `callback function`.",
 			"type": "number"
 		},
 		{
 			"name": "callback_function",
-			"desc": "The **`function`** that will be called when the <%=entity%> with the ID `targetID` is deleted.",
+			"desc": "The **`function`** that will be called when the <%= type 'Entity' %> with the ID `targetID` is deleted.",
 			"type": "function"
 		}
 	],
@@ -43,7 +43,7 @@
 			"type": "notice",
 			"text": 
 			[
-				"`callback_function` requires **one** <%=entity%> parameter, and to return **no value**."
+				"`callback_function` requires **one** <%= type 'Entity' %> parameter, and to return **no value**."
 			],
 			"code":
 			[

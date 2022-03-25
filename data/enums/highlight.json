@@ -6,19 +6,19 @@
         {
             "name":     "Solid",
             "meaning":  [ 
-                "The top of this <%=tile%> will have a yellow overlay."
+                "The top of this <%= type 'Tile' %> will have a yellow overlay."
             ]
         },
         {
             "name":     "Flash",
             "meaning":  [ 
-                "The top of this <%=tile%> will alternate between having a yellow overlay, and having none."
+                "The top of this <%= type 'Tile' %> will alternate between having a yellow overlay, and having none."
             ]
         },
         {
             "name":     "None",
             "meaning":  [ 
-                "The top of this <%=tile%> will not change."
+                "The top of this <%= type 'Tile' %> will not change."
             ]
         }
     ] 

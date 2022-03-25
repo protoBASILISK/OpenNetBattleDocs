@@ -3,7 +3,7 @@
     "name": "create_node",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "local child_node = sprite_node:create_node()"
     ],
@@ -11,7 +11,7 @@
         "",
     "description":
     [
-        "Creates a new <%= doc_class_name %>, as a child of _this_ <%= doc_class_name %>."
+        "Creates a new <%= doc_class_name  %>, as a child of _this_ <%= doc_class_name  %>."
     ],
     "parameters":
     [
@@ -22,7 +22,7 @@
             "optional": false
         }
     ],
-    "return_value_type": "<%= doc_class_name %>",
+    "return_value_type": "<%= doc_class_name  %>",
     "return_value_desc": "The newly-created child node.",
     "footnotes":
     [

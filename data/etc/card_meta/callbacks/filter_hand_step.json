@@ -16,13 +16,13 @@
         {
             "name": "card_props",
             "desc": "",
-            "type": "<%=card_props%>",
+            "type": "<%= type 'CardProps' %>",
             "optional": false
         },
         {
             "name": "adjacent_cards",
             "desc": "",
-            "type": "<%=adjacent_cards%>",
+            "type": "<%= type 'AdjacentCards' %>",
             "optional": false
         }
     ],

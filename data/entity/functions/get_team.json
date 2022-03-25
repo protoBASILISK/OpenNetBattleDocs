@@ -3,12 +3,12 @@
 	"version": "2.0",
 	"name": "get_team",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"local <%=variable_text%>_team = <%=variable_text%>:get_team()"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"local <%= variable_text %>_team = <%= variable_text %>:get_team()"
 	],
 	"description": [
-		"Returns the <%=team%> this <%=doc_class_name%> is a member of."
+		"Returns the <%= type 'Team'%> this <%= doc_class_name %> is a member of."
 	],
-	"return_value_type": "<%=team%>",
-	"return_value_desc": "The <%=team%> of this <%=doc_class_name%>."
+	"return_value_type": "<%= type 'Team'%>",
+	"return_value_desc": "The <%= type 'Team'%> of this <%= doc_class_name %>."
 }

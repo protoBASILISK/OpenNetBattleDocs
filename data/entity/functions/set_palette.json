@@ -10,7 +10,7 @@
 		{
 			"name": "palette",
 			"desc": "",
-			"type": "<%=texture%>"
+			"type": "<%= type 'Texture' %>"
 		}
 	]
 }

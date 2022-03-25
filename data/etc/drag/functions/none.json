@@ -9,10 +9,10 @@
         "",
     "description":
     [
-        "Returns a pre-built <%=direction%>, with `Direction.None` and `0`."
+        "Returns a pre-built <%= type 'Direction' %>, with `Direction.None` and `0`."
     ],
     "parameters": [],
-    "return_value_type": "<%=direction%>",
+    "return_value_type": "<%= type 'Direction' %>",
     "return_value_desc": "",
     "footnotes":
     [

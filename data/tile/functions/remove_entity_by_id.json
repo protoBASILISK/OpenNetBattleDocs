@@ -10,9 +10,9 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Causes the <%=tile%> to remove any <%=entity%> present on it with a specific **unique ID**.",
+		"Causes the <%= type 'Tile' %> to remove any <%= type 'Entity' %> present on it with a specific **unique ID**.",
 		"",
-		"Returns `true` if an <%=entity%> was removed.",
+		"Returns `true` if an <%= type 'Entity' %> was removed.",
 		"Otherwise, returns `false`."
 	 ],
 	"parameters": [
@@ -23,5 +23,5 @@
 		}
 	],
 	"return_value_type": "boolean",
-	"return_value_desc": "`true` if something was removed from this <%=tile%>, otherwise `false`."
+	"return_value_desc": "`true` if something was removed from this <%= type 'Tile' %>, otherwise `false`."
 }

@@ -16,7 +16,7 @@
         {
             "name": "hit_props",
             "desc": "",
-            "type": "<%=hit_props%>",
+            "type": "<%= type 'HitProps'%>",
             "optional": false
         }
     ],

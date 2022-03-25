@@ -11,7 +11,7 @@
     [
         ""
     ],
-    "object_type": "<%=card_props%>",
+    "object_type": "<%= type 'CardProps' %>",
     "footnotes":
     [
         {

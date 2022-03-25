@@ -26,7 +26,7 @@
 		{
 			"type": "notice",
 			"text": [
-				"`attack_callback` has to take _one_ <%=entity%> argument, and to return _no_ value."
+				"`attack_callback` has to take _one_ <%= type 'Entity' %> argument, and to return _no_ value."
 			],
 			"code": [
 				"attack_callback = function( other ) end"
@@ -35,7 +35,7 @@
 		{
 			"type": "notice",
 			"text": [
-				"`collision_callback` has to take _one_ <%=entity%> argument, and to return _no_ value."
+				"`collision_callback` has to take _one_ <%= type 'Entity' %> argument, and to return _no_ value."
 			],
 			"code": [
 				"collision_callback = function( other ) end"

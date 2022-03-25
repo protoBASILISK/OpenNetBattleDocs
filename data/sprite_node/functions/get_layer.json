@@ -3,16 +3,16 @@
     "name": "get_layer",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "local layer_num = sprite_node:get_layer()",
         "print( layer_num )"
     ],
     "example_comment":
-        "The above snippet prints the layer number the <%= doc_class_name %> is on.",
+        "The above snippet prints the layer number the <%= doc_class_name  %> is on.",
     "description":
     [
-        "Returns the (integer) layer number that this <%= doc_class_name %> is on.",
+        "Returns the (integer) layer number that this <%= doc_class_name  %> is on.",
         "Layers are sorted in ascending/descending? order.",
         "TODO: Test how layers are sorted."
     ],

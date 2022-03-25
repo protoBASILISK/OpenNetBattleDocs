@@ -9,18 +9,9 @@
 		"constructor_team_rank",
 		"from",
 		"from_package",
-		"input_has",
 		"get_target",
 		"card_action_event",
-		"set_shadow",
-		"set_name",
 		"get_rank",
-		"toggle_hitbox",
-		"share_tile",
-		"add_defense_rule",
-		"remove_defense_rule",
-		"toggle_counter",		
-		"register_status_callback",
 		"set_explosion_behavior",
 		"update_func",
 		"delete_func",
@@ -28,7 +19,6 @@
 		"battle_start_func",
 		"battle_end_func",
 		"can_move_to_func",
-		"on_countered",
-		"shake_camera"
+		"on_countered"
 	]
 }

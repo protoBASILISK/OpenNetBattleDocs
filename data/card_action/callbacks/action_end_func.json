@@ -9,14 +9,14 @@
         "",
     "description":
     [
-        "This function will execute when the <%=card_action%> completes."
+        "This function will execute when the <%= type 'CardAction' %> completes."
     ],
     "parameters":
     [
         {
             "name": "action",
             "desc": "",
-            "type": "<%=card_action%>",
+            "type": "<%= type 'CardAction' %>",
             "optional": false
         }
     ],

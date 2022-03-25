@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "The number of spaces an <%=entity%> will be moved."
+        "The number of spaces an <%= type 'Entity' %> will be moved."
     ],
     "object_type": "number",
     "footnotes":

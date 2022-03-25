@@ -7,7 +7,7 @@
     ],
 	"example_comment": "",
 	"description": [ 
-        "Loads a specified `.animation` file into the <%=animation%> object." 
+        "Loads a specified `.animation` file into the <%= type 'Animation' %> object." 
     ],
 	"parameters": [
 		{

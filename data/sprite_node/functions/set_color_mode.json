@@ -3,15 +3,15 @@
     "name": "set_color_mode",
     "static": false,
     "example_code": [
-        "local sprite_node\t\t-- example <%= doc_class_name %>",
+        "local sprite_node\t\t-- example <%= doc_class_name  %>",
         "",
         "sprite_node:set_color_mode( ColorMode.Additive )"
     ],
     "example_comment":
-        "The above snippet sets the <%= doc_class_name %>'s `ColorMode` to `Additive`, causing any tint to make it become lighter.",
+        "The above snippet sets the <%= doc_class_name  %>'s `ColorMode` to `Additive`, causing any tint to make it become lighter.",
     "description":
     [
-        "Sets the <%= doc_class_name %>'s <%= color_mode %> to a specified mode (default `Multiply`)."
+        "Sets the <%= doc_class_name  %>'s <%= type 'ColorMode' %> to a specified mode (default `Multiply`)."
     ],
     "parameters":
     [

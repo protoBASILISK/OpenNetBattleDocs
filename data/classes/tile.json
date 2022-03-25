@@ -21,6 +21,8 @@
 		{ "name": "attack_entities" },
 		{ "name": "get_distance_to_tile" },
 		{ "name": "find_characters" },
+		{ "name": "find_entities" },
+		{ "name": "find_obstacles" },
 		{ "name": "highlight" },
 		{ "name": "get_tile" },
 		{ "name": "contains_entity" },

@@ -16,7 +16,7 @@
         {
             "name": "texture",
             "desc": "",
-            "type": "<%=texture%>",
+            "type": "<%= type 'Texture' %>",
             "optional": false
         }
     ],

@@ -10,13 +10,13 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Spawns an <%=entity%> on this <%=tile%>."
+		"Spawns an <%= type 'Entity' %> on this <%= type 'Tile' %>."
 	],
 	"parameters": [
 		{
 			"name": "entity_to_add",
 			"desc": "",
-			"type": "<%=entity%>"
+			"type": "<%= type 'Entity' %>"
 		}
 	]
 }

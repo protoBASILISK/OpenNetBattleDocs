@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "Sets the spawn point for <%=player%> #`player_id` to the specified <%=tile%>."
+        "Sets the spawn point for <%= type 'Player' %> #`player_id` to the specified <%= type 'Tile' %>."
     ],
     "parameters":
     [

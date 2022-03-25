@@ -16,19 +16,19 @@
         {
             "name": "defense_judge",
             "desc": "",
-            "type": "<%=defense_frame_state_judge%>",
+            "type": "<%= type 'DefenseFrameStateJudge' %>",
             "optional": false
         },
         {
             "name": "attacker",
             "desc": "",
-            "type": "<%=entity%>",
+            "type": "<%= type 'Entity' %>",
             "optional": false
         },
         {
             "name": "owner",
             "desc": "",
-            "type": "<%=entity%>",
+            "type": "<%= type 'Entity' %>",
             "optional": false
         }
     ],

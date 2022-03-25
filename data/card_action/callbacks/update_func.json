@@ -9,14 +9,14 @@
         "",
     "description":
     [
-        "This function is executed every frame the <%=card_action%> is active."
+        "This function is executed every frame the <%= type 'CardAction' %> is active."
     ],
     "parameters":
     [
         {
             "name": "action",
             "desc": "",
-            "type": "<%=card_action%>",
+            "type": "<%= type 'CardAction' %>",
             "optional": false
         },
         {

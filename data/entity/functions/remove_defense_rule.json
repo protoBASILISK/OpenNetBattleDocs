@@ -4,19 +4,19 @@
 	"conditional": true,
 	"name": "remove_defense_rule",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
 		"local example_rule\t-- example DefenseRule",
-		"<%=variable_text%>:remove_defense_rule( example_rule ) "
+		"<%= variable_text %>:remove_defense_rule( example_rule ) "
 	],
 	"description": 
 	[
-		"Removes a <%=defense_rule%> from a(n) <%=doc_class_name%>."
+		"Removes a <%= type 'DefenseRule' %> from a(n) <%= doc_class_name %>."
 	],
 	"parameters": [
 		{
 			"name": "defense_rule",
 			"desc": "**TODO**",
-			"type": "<%=defense_rule%>"
+			"type": "<%= type 'DefenseRule' %>"
 		}
 	]
 }

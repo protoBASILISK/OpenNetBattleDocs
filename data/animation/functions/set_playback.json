@@ -13,7 +13,7 @@
 		{
 			"name": "playback_mode",
 			"desc": "",
-			"type": "<%=playback%>"
+			"type": "<%= type 'Playback' %>"
 		}
 	]
 }

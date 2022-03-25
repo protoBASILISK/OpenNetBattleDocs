@@ -8,8 +8,8 @@
 		"local width = tile:width()"
 	],
 	"description": [
-		"Returns the <b>width</b> of the <%=tile%> (in pixels)."
+		"Returns the <b>width</b> of the <%= type 'Tile' %> (in pixels)."
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The <b>width</b> of the <%=tile%>, in pixels."
+	"return_value_desc": "The <b>width</b> of the <%= type 'Tile' %>, in pixels."
 }

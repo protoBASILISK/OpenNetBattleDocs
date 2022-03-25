@@ -4,6 +4,7 @@ require './lib/unique_head.rb'
 # Markdown
 set :markdown_engine, :redcarpet
 set :markdown,
+    trim_mode: '>',
     fenced_code_blocks: true,
     smartypants: true,
     disable_indented_code_blocks: true,
@@ -77,5 +78,6 @@ set :port, 4567
 
 helpers do
   require './lib/toc_data.rb'
+  require './lib/link_parser.rb'
   require './lib/helpers.rb'
 end

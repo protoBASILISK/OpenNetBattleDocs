@@ -6,13 +6,13 @@
         {
             "name":     "Multiply",
             "meaning":  [ 
-                "Any tint applied to this <%=sprite_node%> will **darken** it."
+                "Any tint applied to this <%= type 'SpriteNode' %> will **darken** it."
             ]
         },
         {
             "name":     "Additive",
             "meaning":  [ 
-                "Any tint applied to this <%=sprite_node%> will **brighten** it."
+                "Any tint applied to this <%= type 'SpriteNode' %> will **brighten** it."
             ]
         }
     ] 

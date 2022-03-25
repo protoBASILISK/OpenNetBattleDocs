@@ -13,21 +13,21 @@
 	"example_comment": "The above snippet will return `Direction.UpLeft`.",
 	"description": 
 	[
-		"This returns the closest normalized <%=direction%> to the result of adding the two component <%=direction%>s like vectors.",
+		"This returns the closest normalized <%= type 'Direction' %> to the result of adding the two component <%= type 'Direction' %>s like vectors.",
 		"&emsp;e.g. Adding `Up` to `UpLeft`, would produce `UpLeft`."
 	],
 	"parameters": [
 		{
 			"name": "input_a",
 			"desc": "",
-			"type": "<%=direction%>"
+			"type": "<%= type 'Direction' %>"
 		},
 		{
 			"name": "input_b",
 			"desc": "",
-			"type": "<%=direction%>"
+			"type": "<%= type 'Direction' %>"
 		}
 	],
-	"return_value_type": "<%=direction%>",
+	"return_value_type": "<%= type 'Direction' %>",
 	"return_value_desc": ""
 }

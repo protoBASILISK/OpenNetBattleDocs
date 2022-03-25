@@ -7,7 +7,7 @@
 		"local is_edge_tile = tile:is_edge()"
 	],
 	"description": [ 
-		"Returns `true` if this <%=tile%> is one of the invisible <%=tile%>s surrounding the main battlefield.",
+		"Returns `true` if this <%= type 'Tile' %> is one of the invisible <%= type 'Tile' %>s surrounding the main battlefield.",
 		"&emsp;Otherwise, returns `false`."
 	 ],
 	"return_value_type": "boolean",

@@ -16,7 +16,7 @@
         {
             "name": "component",
             "desc": "",
-            "type": "<%=component%>",
+            "type": "<%= type 'Component' %>",
             "optional": false
         }
     ],

@@ -4,8 +4,8 @@
 	"conditional": true,
 	"name": "shake_camera",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:shake_camera( power, duration )"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:shake_camera( power, duration )"
 	],
 	"description": 
 	[

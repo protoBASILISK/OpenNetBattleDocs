@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "Ends the execution of the current <%=card_action%> sequence."
+        "Ends the execution of the current <%= type 'CardAction' %> sequence."
     ],
     "parameters": [ ],
     "return_value_type": "",

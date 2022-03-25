@@ -7,7 +7,6 @@
 	"conditionals":
 	[
 		"constructor_team",
-		"shake_camera",
 		"set_shadow",
 		"can_move_to_func",
 		"update_func",

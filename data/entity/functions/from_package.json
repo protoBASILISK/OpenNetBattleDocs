@@ -5,24 +5,24 @@
 	"example_code": [ "" ],
 	"example_comment": "",
 	"description": [ 
-		"Creates a <%=doc_class_name%> using data from a package."
+		"Creates a <%= doc_class_name %> using data from a package."
 	],
 	"parameters":
 	[
 		{
 			"name": "package_name",
-			"desc": "The **package name** of the <%=doc_class_name%> you want to load.",
+			"desc": "The **package name** of the <%= doc_class_name %> you want to load.",
 			"type": "string"
 		},
 		{
 			"name": "team",
-			"desc": "The <%=team%> you want this <%=doc_class_name%> to belong to.",
-			"type": "<%=team%>"
+			"desc": "The <%= type 'Team'%> you want this <%= doc_class_name %> to belong to.",
+			"type": "<%= type 'Team'%>"
 		},
 		{
 			"name": "rank",
-			"desc": "The <%=rank%> you want this <%=doc_class_name%>.",
-			"type": "<%=rank%>"
+			"desc": "The <%= type 'Rank' %> you want this <%= doc_class_name %>.",
+			"type": "<%= type 'Rank' %>"
 		}
 	]
 }

@@ -4,17 +4,17 @@
 	"conditional": true,
 	"name": "set_team",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:set_team( Team.Red )"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:set_team( Team.Red )"
 	],
 	"description": [
-		"Changes the <%=team%> of this <%=doc_class_name%>."
+		"Changes the <%= type 'Team'%> of this <%= doc_class_name %>."
 	],
 	"parameters": [
 		{
 			"name": "name",
-			"desc": "The <%=team%> you want to assign this <%=doc_class_name%> to.",
-			"type": "<%=team%>"
+			"desc": "The <%= type 'Team'%> you want to assign this <%= doc_class_name %> to.",
+			"type": "<%= type 'Team'%>"
 		}
 	]
 }

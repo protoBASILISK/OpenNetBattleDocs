@@ -16,7 +16,7 @@
         {
             "name": "lockout_group",
             "desc": "",
-            "type": "<%=lockout_group%>",
+            "type": "<%= type 'LockoutGroup' %>",
             "optional": false
         }
     ],

@@ -22,11 +22,11 @@
         {
             "name": "enemy_rank",
             "desc": "",
-            "type": "<%=rank%>",
+            "type": "<%= type 'Rank' %>",
             "optional": false
         }
     ],
-    "return_value_type": "<%=scripted_spawner%>",
+    "return_value_type": "<%= type 'ScriptedSpawner' %>",
     "return_value_desc": "",
     "footnotes":
     [

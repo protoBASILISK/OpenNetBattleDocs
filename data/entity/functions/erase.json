@@ -5,7 +5,7 @@
 	"example_code": [ "" ],
 	"example_comment": "",
 	"description": [ 
-		"Immediately removes this <%=doc_class_name%> from the battle.",
-		"&emsp;This *does not* cause the <%=doc_class_name%> to call its `delete_func()`."
+		"Immediately removes this <%= doc_class_name %> from the battle.",
+		"&emsp;This *does not* cause the <%= doc_class_name %> to call its `delete_func()`."
 	]
 }

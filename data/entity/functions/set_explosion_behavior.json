@@ -4,12 +4,12 @@
 	"conditional": true,
 	"name": "set_explosion_behavior",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:set_explosion_behavior( number, speed, is_boss )"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:set_explosion_behavior( number, speed, is_boss )"
 	],
 	"description": 
 	[
-		"Defines the behavior of the explosions that happen when this <%=doc_class_name%> is destroyed."
+		"Defines the behavior of the explosions that happen when this <%= doc_class_name %> is destroyed."
 	],
 	"parameters": [
 		{
@@ -24,7 +24,7 @@
 		},
 		{
 			"name": "is_boss",
-			"desc": "Whether this is considered a \"boss-type\" <%=doc_class_name%>.",
+			"desc": "Whether this is considered a \"boss-type\" <%= doc_class_name %>.",
 			"type": "boolean"
 		}
 	]

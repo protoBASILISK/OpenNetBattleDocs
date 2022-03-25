@@ -6,9 +6,9 @@
 	"example_comment": "",
 	"description": 
 	[
-		"Returns the <%=animation%> component in charge of the <%=doc_class_name%>'s animations.",
-		"&emsp;<i>This does <b>not</b> return the animation the <%=doc_class_name%> currently is playing.</i>"
+		"Returns the <%= type 'Animation' %> component in charge of the <%= doc_class_name %>'s animations.",
+		"&emsp;<i>This does <b>not</b> return the animation the <%= doc_class_name %> currently is playing.</i>"
 	],
-	"return_value_type": "<%=animation%>",
-	"return_value_desc": "The <%=animation%> component for the <%=doc_class_name%>."
+	"return_value_type": "<%= type 'Animation' %>",
+	"return_value_desc": "The <%= type 'Animation' %> component for the <%= doc_class_name %>."
 }

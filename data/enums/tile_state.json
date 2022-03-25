@@ -12,51 +12,51 @@
         {
             "name":     "Cracked",
             "meaning":  [ 
-                "Turns into a `Broken` tile when an <%=entity%> moves off of it."
+                "Turns into a `Broken` tile when an <%= type 'Entity' %> moves off of it."
             ]
         },
         {
             "name":     "Broken",
             "meaning":  [ 
                 "Empty space, cannot be stood on normally.",
-                "&emsp;_It will automatically revert to a `Normal` <%=tile%> after a period of time._"
+                "&emsp;_It will automatically revert to a `Normal` <%= type 'Tile' %> after a period of time._"
             ]
         },
         {
             "name":     "Empty",
             "meaning":  [ 
                 "Entirely removed, and cannot be stood on normally.",
-                "&emsp;_It will **not** automatically revert to a `Normal` <%=tile%>._"
+                "&emsp;_It will **not** automatically revert to a `Normal` <%= type 'Tile' %>._"
             ]
         },
         {
             "name":     "Grass",
             "meaning":  [ 
-                "This <%=tile%> has grass growing on it."
+                "This <%= type 'Tile' %> has grass growing on it."
             ]
         },
         {
             "name":     "Holy",
             "meaning":  [ 
-                "Reduces the damage that any <%=entity%> takes while standing on it."
+                "Reduces the damage that any <%= type 'Entity' %> takes while standing on it."
             ]
         },
         {
             "name":     "Ice",
             "meaning":  [ 
-                "Causes any <%=entity%> that walks onto it to slip, and try to move again in the same direction."
+                "Causes any <%= type 'Entity' %> that walks onto it to slip, and try to move again in the same direction."
             ]
         },
         {
             "name":     "Lava",
             "meaning":  [ 
-                "Damages any <%=entity%> that stands on it, then reverts to a `Normal` <%=tile%>."
+                "Damages any <%= type 'Entity' %> that stands on it, then reverts to a `Normal` <%= type 'Tile' %>."
             ]
         },
         {
             "name":     "Poison",
             "meaning":  [ 
-                "Gradually damages any <%=entity%> that stands on it."
+                "Gradually damages any <%= type 'Entity' %> that stands on it."
             ]
         },
         {
@@ -68,32 +68,32 @@
         {
             "name":     "DirectionDown",
             "meaning":  [ 
-                "Aconveyor belt that will try to move any <%=entity%> that stands on it downwards."
+                "Aconveyor belt that will try to move any <%= type 'Entity' %> that stands on it downwards."
             ]
         },
         {
             "name":     "DirectionUp",
             "meaning":  [ 
-                "A conveyor belt that will try to move any <%=entity%> that stands on it upwards."
+                "A conveyor belt that will try to move any <%= type 'Entity' %> that stands on it upwards."
             ]
         },
         {
             "name":     "DirectionLeft",
             "meaning":  [ 
-                "A conveyor belt that will try to move any <%=entity%> that stands on it to the left."
+                "A conveyor belt that will try to move any <%= type 'Entity' %> that stands on it to the left."
             ]
         },
         {
             "name":     "DirectionRight",
             "meaning":  [ 
-                "A conveyor belt that will try to move any <%=entity%> that stands on it to the right."
+                "A conveyor belt that will try to move any <%= type 'Entity' %> that stands on it to the right."
             ]
         },
         {
             "name":     "Hidden",
             "meaning":  [ 
                 "Entirely removed, and cannot be stood on normally.",
-                "&emsp;_It will **not** automatically revert to a `Normal` <%=tile%>._"
+                "&emsp;_It will **not** automatically revert to a `Normal` <%= type 'Tile' %>._"
             ]
         }
     ] 

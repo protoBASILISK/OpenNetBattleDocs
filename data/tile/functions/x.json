@@ -8,7 +8,7 @@
 		"local tile_x = tile:x()"
 	],
 	"description": [
-		"Returns the *column* the <%=tile%> is located in, on the battlefield grid."
+		"Returns the *column* the <%= type 'Tile' %> is located in, on the battlefield grid."
 	],
 	"return_value_type": "number",
 	"return_value_desc": ""

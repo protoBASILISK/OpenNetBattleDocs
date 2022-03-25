@@ -9,8 +9,8 @@
 	"parameters": [
 		{
 			"name": "texture",
-			"desc": "The texture you want to assign to the <%=doc_class_name%>.",
-			"type": "<%=texture%>"
+			"desc": "The texture you want to assign to the <%= doc_class_name %>.",
+			"type": "<%= type 'Texture' %>"
 		}
 	]
 }

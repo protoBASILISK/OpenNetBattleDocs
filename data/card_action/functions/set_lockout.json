@@ -16,7 +16,7 @@
         {
             "name": "lockout_properties",
             "desc": "",
-            "type": "<%=lockout_props%>",
+            "type": "<%= type 'LockoutProps' %>",
             "optional": false
         }
     ],

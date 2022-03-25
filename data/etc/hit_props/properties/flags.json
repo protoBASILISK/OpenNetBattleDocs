@@ -11,7 +11,7 @@
     [
         ""
     ],
-    "object_type": "<%=hit_flags%>",
+    "object_type": "<%= type 'HitFlags' %>",
     "footnotes":
     [
         {

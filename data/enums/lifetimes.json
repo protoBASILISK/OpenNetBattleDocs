@@ -6,19 +6,19 @@
         {
             "name":     "Local",
             "meaning":  [ 
-                "This <%=component%>'s `update()` loop happens following the associated <%=entity%>'s `update()`." 
+                "This <%= type 'Component' %>'s `update()` loop happens following the associated <%= type 'Entity' %>'s `update()`." 
             ]
         },
         {
             "name":     "Battlestep",
             "meaning":  [ 
-                "This <%=component%>'s `update()` loop happens every **battle scene** `update()`."
+                "This <%= type 'Component' %>'s `update()` loop happens every **battle scene** `update()`."
             ]
         },
         {
             "name":     "Scene",
             "meaning":  [
-                "This <%=component%>'s `update()` loop happens every **application** `update()`."
+                "This <%= type 'Component' %>'s `update()` loop happens every **application** `update()`."
             ]
         }
     ] 

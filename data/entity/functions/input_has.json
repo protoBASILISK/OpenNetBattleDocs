@@ -10,7 +10,7 @@
 		{
 			"name": "key_code",
 			"desc": "",
-			"type": "<%=input_event%>"
+			"type": "<%= type 'InputEvent' %>"
 		}
 	],
 	"return_value_type": "boolean",

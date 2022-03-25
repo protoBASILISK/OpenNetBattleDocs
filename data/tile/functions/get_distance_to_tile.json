@@ -10,15 +10,15 @@
 	 ],
 	"example_comment": "",
 	"description": [ 
-		"Returns the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) between this <%=tile%> and another."
+		"Returns the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) between this <%= type 'Tile' %> and another."
 	 ],
 	"parameters": [
 		{
 			"name": "other_tile",
 			"desc": "",
-			"type": "<%=tile%>"
+			"type": "<%= type 'Tile' %>"
 		}
 	],
 	"return_value_type": "number",
-	"return_value_desc": "The <%=tile%> you want to measure the distance to."
+	"return_value_desc": "The <%= type 'Tile' %> you want to measure the distance to."
 }

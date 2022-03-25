@@ -6,19 +6,19 @@
         {
             "name":     "Animation",
             "meaning":  [ 
-                "You cannot use actions with this <%= lockout_group %> group again until the animation completes." 
+                "You cannot use actions with this <%= type 'LockoutGroup' %> group again until the animation completes." 
             ]
         },
         {
             "name":     "Async",
             "meaning":  [ 
-                "You cannot use actions with this <%= lockout_group %> group again for a period of time after the animation completes."
+                "You cannot use actions with this <%= type 'LockoutGroup' %> group again for a period of time after the animation completes."
             ]
         },
         {
             "name":     "Sequence",
             "meaning":  [
-                "This action has several <%=step%>s that happen in sequence, no action will be possible until the full sequence completes or is interrupted."
+                "This action has several <%= type 'Step' %>s that happen in sequence, no action will be possible until the full sequence completes or is interrupted."
             ]
         }
     ] 

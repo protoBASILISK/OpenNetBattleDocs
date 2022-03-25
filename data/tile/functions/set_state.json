@@ -8,19 +8,19 @@
 	],
 	"example_comment": "",
 	"description": [ 
-		"Attempts to set this <%=tile%> to a specific <%=tile_state%>.",
-		"&emsp;If the <%=tile%> is `Hidden`, or one of the _invisible_ edge tiles around the battlefield, this will fail.",
+		"Attempts to set this <%= type 'Tile' %> to a specific <%= type 'TileState' %>.",
+		"&emsp;If the <%= type 'Tile' %> is `Hidden`, or one of the _invisible_ edge tiles around the battlefield, this will fail.",
 		"",
-		"Attempting to set a <%=tile%> to `Broken` will fail if the <%=tile%> has a <%=character%> present on it _or_ reserving it.",
+		"Attempting to set a <%= type 'Tile' %> to `Broken` will fail if the <%= type 'Tile' %> has a <%= type 'Character' %> present on it _or_ reserving it.",
 		"",
-		"Attempting to set a <%=tile%> to `Cracked` will fail if the <%=tile%> is currently `Broken` or `Empty`.",
-		"&emsp;Successfully setting a <%=tile%> to `Broken` will cause it to start its _regeneration timer_."
+		"Attempting to set a <%= type 'Tile' %> to `Cracked` will fail if the <%= type 'Tile' %> is currently `Broken` or `Empty`.",
+		"&emsp;Successfully setting a <%= type 'Tile' %> to `Broken` will cause it to start its _regeneration timer_."
 	],
 	"parameters": [
 		{
 			"name": "state",
 			"desc": "",
-			"type": "<%=tile_state%>"
+			"type": "<%= type 'TileState' %>"
 		}
 	]
 }

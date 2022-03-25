@@ -13,6 +13,6 @@
 			"type": "string"
 		}
 	],
-	"return_value_type": "<%=sync_node%>",
+	"return_value_type": "<%= type 'SyncNode' %>",
 	"return_value_desc": ""
 }

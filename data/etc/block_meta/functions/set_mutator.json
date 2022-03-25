@@ -27,7 +27,7 @@
         {
             "type": "notice",
             "text": [
-                "`mutator_function` has to take **one** <%=player%> parameter, and return **no** value."
+                "`mutator_function` has to take **one** <%= type 'Player' %> parameter, and return **no** value."
             ],
             "code": [
 

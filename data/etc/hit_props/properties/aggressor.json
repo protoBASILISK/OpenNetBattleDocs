@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "The **unique ID** of the <%=entity%> that spawned this."
+        "The **unique ID** of the <%= type 'Entity' %> that spawned this."
     ],
     "object_type": "number",
     "footnotes":

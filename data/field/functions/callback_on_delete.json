@@ -14,17 +14,17 @@
 	],
 	"example_comment": "The above snippet shows two different ways to go about setting up a callback function.",
 	"description": [
-		"This sets up a `callback` that will be executed when an <%=entity%> with a specific **unique ID** is deleted/destroyed."
+		"This sets up a `callback` that will be executed when an <%= type 'Entity' %> with a specific **unique ID** is deleted/destroyed."
 	],
 	"parameters": [
 		{
 			"name": "target_id",
-			"desc": "The **unique ID** of the <%=entity%> that will trigger the callback on deletion.",
+			"desc": "The **unique ID** of the <%= type 'Entity' %> that will trigger the callback on deletion.",
 			"type": "number"
 		},
 		{
 			"name": "callback_function",
-			"desc": "The **`function`** that will be called when the <%=entity%> with the ID `targetID` is deleted.",
+			"desc": "The **`function`** that will be called when the <%= type 'Entity' %> with the ID `targetID` is deleted.",
 			"type": "function"
 		}
 	],
@@ -36,9 +36,9 @@
 			"type": "notice",
 			"text": 
 			[
-				"`callback_function` requires **two** <%=entity%> parameters, and to return **nothing**.",
-				"The `target` parameter is the <%=entity%> that was deleted.",
-				"The `observer` parameter is the <%=entity%> that will be notified the other was deleted."
+				"`callback_function` requires **two** <%= type 'Entity' %> parameters, and to return **nothing**.",
+				"The `target` parameter is the <%= type 'Entity' %> that was deleted.",
+				"The `observer` parameter is the <%= type 'Entity' %> that will be notified the other was deleted."
 			],
 			"code":
 			[

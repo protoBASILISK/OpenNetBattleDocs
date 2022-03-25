@@ -17,8 +17,8 @@
 		},
 		{
 			"name": "sprite_node",
-			"desc": "The <%=sprite_node%> you want to advance the animation of.",
-			"type": "<%=sprite_node%>"
+			"desc": "The <%= type 'SpriteNode' %> you want to advance the animation of.",
+			"type": "<%= type 'SpriteNode' %>"
 		}
 	]
 }

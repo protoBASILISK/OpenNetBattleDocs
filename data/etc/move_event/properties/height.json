@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "The maximum height the <%=entity%> will reach during the movement."
+        "The maximum height the <%= type 'Entity' %> will reach during the movement."
     ],
     "object_type": "number",
     "footnotes":

@@ -9,7 +9,7 @@
         "",
     "description":
     [
-        "The number of frames the <%=entity%> has to wait after the movement completes."
+        "The number of frames the <%= type 'Entity' %> has to wait after the movement completes."
     ],
     "object_type": "number",
     "footnotes":

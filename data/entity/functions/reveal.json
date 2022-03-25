@@ -3,11 +3,11 @@
 	"version": "2.0",
 	"name": "reveal",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:reveal()"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:reveal()"
 	],
 	"description": 
 	[
-		"Forces the graphics for this <%=doc_class_name%> and all of its child objects to be drawn again."
+		"Forces the graphics for this <%= doc_class_name %> and all of its child objects to be drawn again."
 	]
 }

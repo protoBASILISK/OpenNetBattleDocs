@@ -9,15 +9,15 @@
         "",
     "description":
     [
-        "Adds another <%=card_action_step%> in the sequence that this <%=card_action%> will play.",
-        "The individual <%=card_action_step%>s are executed in the order they were added."
+        "Adds another <%= type 'CardActionStep' %> in the sequence that this <%= type 'CardAction' %> will play.",
+        "The individual <%= type 'CardActionStep' %>s are executed in the order they were added."
     ],
     "parameters":
     [
         {
             "name": "next_step",
             "desc": "",
-            "type": "<%=card_action_step%>",
+            "type": "<%= type 'CardActionStep' %>",
             "optional": false
         }
     ],

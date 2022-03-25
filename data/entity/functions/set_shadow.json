@@ -3,20 +3,20 @@
 	"version": "2.0",
 	"name": "set_shadow",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:set_shadow( Shadow.Small ) "
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:set_shadow( Shadow.Small ) "
 	],
 	"description": 
 	[
-		"Defines the shadow that will be drawn for this <%=doc_class_name%>.",
-		"This function can take **either** an enum <%=shadow_type%> value for pre-defined shadows,",
-		"&nbsp;or it can take a previously-loaded <%=texture%> for a custom shadow."
+		"Defines the shadow that will be drawn for this <%= doc_class_name %>.",
+		"This function can take **either** an enum <%= type 'ShadowType' %> value for pre-defined shadows,",
+		"&nbsp;or it can take a previously-loaded <%= type 'Texture' %> for a custom shadow."
 	],
 	"parameters": [
 		{
 			"name": "shadow",
-			"desc": "The shadow you want to be drawn under this <%=doc_class_name%>.",
-			"type": "<%=shadow_type%> **or** <%=texture%>"
+			"desc": "The shadow you want to be drawn under this <%= doc_class_name %>.",
+			"type": "<%= type 'ShadowType' %> **or** <%= type 'Texture' %>"
 		}
 	]
 }

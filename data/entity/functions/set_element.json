@@ -3,18 +3,18 @@
 	"version": "2.0",
 	"name": "set_element",
 	"example_code": [
-		"local <%=variable_text%>\t-- example <%=variable_text%>",
-		"<%=variable_text%>:set_element( Element.None )"
+		"local <%= variable_text %>\t-- example <%= variable_text %>",
+		"<%= variable_text %>:set_element( Element.None )"
 	],
 	"description": 
 	[
-		"Changes the <%=element%> of this <%=doc_class_name%>."
+		"Changes the <%= type 'Element' %> of this <%= doc_class_name %>."
 	],
 	"parameters": [
 		{
 			"name": "element",
-			"desc": "The <%=element%> you want to assign to this <%=doc_class_name%>.",
-			"type": "<%=element%>"
+			"desc": "The <%= type 'Element' %> you want to assign to this <%= doc_class_name %>.",
+			"type": "<%= type 'Element' %>"
 		}
 	]
 }
