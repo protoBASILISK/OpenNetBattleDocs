@@ -18,7 +18,8 @@
 				{
 					"name":	 { "type": "string" },
 					"type":	 { "type": "string" },
-					"desc":	 { "type": "string" }
+					"desc":	 { "type": "string" },
+					"optional":	{ "type": "boolean" }
 				},
 				"required":
 				[
@@ -39,8 +40,8 @@
 				"properties":
 				{
 					"type":	 { "type": "string" },
-					"text":	 { "type": "string" },
-					"code":	 { "type": "array", "items": { "type": "string" } },
+					"text":		{ "type": "array", "items": { "type": "string" } },
+					"code":		{ "type": "array", "items": { "type": "string" } },
 					"comment":  { "type": "string" }
 				},
 				"required":
@@ -56,5 +57,11 @@
 		"version",
 		"name",
 		"description"
-	]
+	],
+	"dependentRequired":
+	{
+		"return_value_type": "return_value_desc",
+		"return_value_desc": "return_value_type"
+	},
+	"additionalProperties": false
 }

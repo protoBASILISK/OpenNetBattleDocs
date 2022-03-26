@@ -1,0 +1,19 @@
+{
+	"name": "MoveEvent",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "move_event",
+	"subdirectory": "move_event",
+	"properties":
+	[
+		{ "name": "delta_frames" },
+		{ "name": "delay_frames" },
+		{ "name": "endlag_frames" },
+		{ "name": "height" },
+		{ "name": "dest_tile" }
+	],
+	"callbacks":
+	[
+		{ "name": "on_begin_func" }
+	]
+}

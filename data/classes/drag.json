@@ -1,0 +1,16 @@
+{
+	"name": "Drag",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "drag",
+	"subdirectory": "drag",
+    "functions":
+    [
+        { "name": "none" }
+    ],
+	"properties":
+	[
+		{ "name": "direction" },
+		{ "name": "count" }
+	]
+}

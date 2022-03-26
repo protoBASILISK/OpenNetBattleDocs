@@ -1,0 +1,16 @@
+{
+	"name": "DefenseRule",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "defense_rule",
+	"subdirectory": "defense_rule",
+	"functions":
+	[
+		{ "name": "is_replaced" }
+	],
+	"callbacks":
+	[
+		{ "name": "filter_statuses_func" },
+		{ "name": "can_block_func" }
+	]
+}

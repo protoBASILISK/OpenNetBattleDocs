@@ -4,8 +4,10 @@
 	{
 		"name" :	  	{ "type": "string" },
 		"variable_text" :   { "type": "string" },
+		"lua_class_name" :	{ "type": "string" },
 		"subdirectory" :	{ "type": "string" },
 		"summary": 			{ "type": "string" },
+		"description": 		{ "type": "array", "items": { "type": "string" } },
 		"superclass" :	  	{ "type": "string" },
 		"conditionals":	 	{ "type": "array", "items": { "type": "string" } },
 		"required":
@@ -15,5 +17,6 @@
 			"subdirectory",
 			"superclass"
 		]
-	}
+	},
+	"additionalProperties": false
 }

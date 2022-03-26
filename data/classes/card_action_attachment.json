@@ -1,0 +1,14 @@
+{
+	"name": "CardActionAttachment",
+    "lua_class_name": "Attachment",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "attachment",
+	"subdirectory": "card_action_attachment",
+	"functions":
+	[
+		{ "name": "add_attachment" },
+		{ "name": "sprite" },
+		{ "name": "get_animation" }
+	]
+}

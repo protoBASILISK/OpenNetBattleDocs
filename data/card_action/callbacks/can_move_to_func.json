@@ -1,7 +1,6 @@
 {
     "version": "2.0",
     "name": "can_move_to_func",
-    "static": false,
     "example_code": [
         ""
     ],

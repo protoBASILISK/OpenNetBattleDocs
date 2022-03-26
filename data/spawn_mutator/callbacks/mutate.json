@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "name": "mutate",
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "summary": "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "character",
+            "desc": "",
+            "type": "<%= type 'Character' %>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

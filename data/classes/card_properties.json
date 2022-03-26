@@ -1,0 +1,27 @@
+{
+	"name": "CardProperties",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "card_props",
+	"subdirectory": "card_properties",
+    "functions":
+    [
+        { "name": "from_card" }
+    ],
+	"properties":
+	[
+		{ "name": "action" },
+		{ "name": "can_boost" },
+		{ "name": "card_class" },
+		{ "name": "damage" },
+		{ "name": "description" },
+		{ "name": "element" },
+		{ "name": "limit" },
+		{ "name": "meta_classes" },
+		{ "name": "secondary_element" },
+		{ "name": "shortname" },
+		{ "name": "time_freeze" },
+		{ "name": "skip_time_freeze_intro" },
+		{ "name": "long_description" }
+	]
+}

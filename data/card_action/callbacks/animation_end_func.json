@@ -1,7 +1,6 @@
 {
     "version": "2.0",
     "name": "animation_end_func",
-    "static": false,
     "example_code": [
         ""
     ],

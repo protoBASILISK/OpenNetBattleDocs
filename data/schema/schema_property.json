@@ -1,0 +1,48 @@
+{
+	"type": "object",
+	"properties":
+	{
+		"version":			  	{ "type": "string" },
+		"name":				 	{ "type": "string" },
+		"static":				{ "type": "boolean" },
+		"can_read":				{ "type": "boolean" },
+		"can_write":			{ "type": "boolean" },
+		"example_code":		 	{ "type": "array", "items": { "type": "string" } },
+		"example_comment":	  	{ "type": "string" },
+		"summary": 				{ "type": "string" },
+		"description":		  	{ "type": "array", "items": { "type": "string" } },
+		"object_type":			{ "type": "string" },
+		"footnotes":
+		{
+			"type": "array",
+			"items":
+			{ 
+				"type": "object",
+				"properties":
+				{
+					"type":	 { "type": "string" },
+					"text":		{ "type": "array", "items": { "type": "string" } },
+					"code":		{ "type": "array", "items": { "type": "string" } },
+					"comment":  { "type": "string" }
+				},
+				"required":
+				[
+					"type",
+					"text"
+				]
+			}
+		}
+	},
+	"required":
+	[
+		"version",
+		"name",
+		"description"
+	],
+	"dependentRequired":
+	{
+		"return_value_type": "return_value_desc",
+		"return_value_desc": "return_value_type"
+	},
+	"additionalProperties": false
+}

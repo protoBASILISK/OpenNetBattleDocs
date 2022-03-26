@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "name": "filter_hand_step",
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "summary": "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "card_props",
+            "desc": "",
+            "type": "<%= type 'CardProps' %>",
+            "optional": false
+        },
+        {
+            "name": "adjacent_cards",
+            "desc": "",
+            "type": "<%= type 'AdjacentCards' %>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

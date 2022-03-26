@@ -1,7 +1,6 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
 	"name": "toggle_hitbox",
 	"example_code": [
 		"local <%= variable_text %>\t-- example <%= variable_text %>",

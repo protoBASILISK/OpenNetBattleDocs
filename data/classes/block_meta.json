@@ -1,0 +1,16 @@
+{
+	"name": "BlockMeta",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "block_meta",
+	"subdirectory": "block_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" },
+		{ "name": "set_description" },
+		{ "name": "set_name" },
+		{ "name": "set_color" },
+		{ "name": "as_program" },
+		{ "name": "set_mutator" }
+	]
+}

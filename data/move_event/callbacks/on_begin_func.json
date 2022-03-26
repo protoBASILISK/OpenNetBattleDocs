@@ -1,0 +1,31 @@
+{
+    "version": "2.0",
+    "name": "on_begin_func",
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "summary": "",
+    "description":
+    [
+        ""
+    ],
+    "parameters": [],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

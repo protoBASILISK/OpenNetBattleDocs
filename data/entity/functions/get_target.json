@@ -1,7 +1,6 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
 	"name": "get_target",
 	"example_code": [ "" ],
 	"example_comment": "",

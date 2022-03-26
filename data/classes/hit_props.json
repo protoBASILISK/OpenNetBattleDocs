@@ -1,0 +1,15 @@
+{
+	"name": "HitProps",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "hit_props",
+	"subdirectory": "hit_props",
+	"properties":
+	[
+		{ "name": "aggressor" },
+		{ "name": "damage" },
+		{ "name": "drag" },
+		{ "name": "element" },
+		{ "name": "flags" }
+	]
+}

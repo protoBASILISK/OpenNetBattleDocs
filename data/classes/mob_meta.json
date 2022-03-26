@@ -1,0 +1,17 @@
+{
+	"name": "MobMeta",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "mob_meta",
+	"subdirectory": "mob_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" },
+		{ "name": "set_description" },
+		{ "name": "set_name" },
+		{ "name": "set_preview_texture_path" },
+		{ "name": "set_speed" },
+		{ "name": "set_attack" },
+		{ "name": "set_health" }
+	]
+}

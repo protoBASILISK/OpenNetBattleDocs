@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "name": "filter_statuses_func",
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "summary": "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "hit_props",
+            "desc": "",
+            "type": "<%= type 'HitProps'%>",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

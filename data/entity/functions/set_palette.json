@@ -1,7 +1,6 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
 	"name": "set_palette",
 	"example_code": [ "" ],
 	"example_comment": "",

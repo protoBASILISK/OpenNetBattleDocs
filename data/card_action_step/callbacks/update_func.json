@@ -1,0 +1,39 @@
+{
+    "version": "2.0",
+    "name": "update_func",
+    "example_code": [
+        ""
+    ],
+    "example_comment":
+        "",
+    "summary": "",
+    "description":
+    [
+        ""
+    ],
+    "parameters":
+    [
+        {
+            "name": "elapsed_time",
+            "desc": "The amount of time elapsed (in seconds) since the last `update()` step.",
+            "type": "number",
+            "optional": false
+        }
+    ],
+    "return_value_type": "",
+    "return_value_desc": "",
+    "footnotes":
+    [
+        {
+            "type": "",
+            "text": [
+                ""
+            ],
+            "code": [
+
+            ],
+            "comment":
+                ""
+        }
+    ]
+}

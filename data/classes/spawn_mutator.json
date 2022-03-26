@@ -1,0 +1,11 @@
+{
+	"name": "SpawnMutator",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "spawn_mutator",
+	"subdirectory": "spawn_mutator",
+	"callbacks":
+	[
+		{ "name": "mutate" }
+	]
+}

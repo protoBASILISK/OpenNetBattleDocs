@@ -1,7 +1,6 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
 	"name": "ignore_common_aggressor",
 	"example_code": [ "" ],
 	"example_comment": "",

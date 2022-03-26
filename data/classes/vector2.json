@@ -1,0 +1,12 @@
+{
+	"name": "Vector2",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "vector2",
+	"subdirectory": "vector2",
+	"properties":
+	[
+		{ "name": "x" },
+		{ "name": "y" }
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "AdjacentCards",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "adjacent_cards",
+	"subdirectory": "adjacent_cards",
+	"functions":
+	[
+		{ "name": "has_card_to_left" },
+		{ "name": "has_card_to_right" },
+		{ "name": "discard_left" },
+		{ "name": "discard_right" },
+		{ "name": "discard_incoming" }
+	],
+	"properties":
+	[
+		{ "name": "left_card" },
+		{ "name": "right_card" }
+	]
+}

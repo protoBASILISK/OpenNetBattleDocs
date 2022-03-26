@@ -1,0 +1,24 @@
+{
+	"name": "PlayerMeta",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "player_meta",
+	"subdirectory": "player_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" },
+		{ "name": "set_special_description" },
+		{ "name": "set_attack" },
+		{ "name": "set_charged_attack" },
+		{ "name": "set_speed" },
+		{ "name": "set_health" },
+		{ "name": "set_uses_sword" },
+		{ "name": "set_overworld_animation_path" },
+		{ "name": "set_overworld_texture_path" },
+		{ "name": "set_mugshot_animation_path" },
+		{ "name": "set_mugshot_texture_path" },
+		{ "name": "set_emotions_texture_path" },
+		{ "name": "set_preview_texture" },
+		{ "name": "set_icon_texture" }
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Mob",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "mob",
+	"subdirectory": "mob",
+	"functions":
+	[
+		{ "name": "create_spawner" },
+		{ "name": "set_background" },
+		{ "name": "stream_music" },
+		{ "name": "get_field" },
+		{ "name": "enable_freedom_mission" },
+		{ "name": "spawn_player" }
+	]
+}

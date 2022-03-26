@@ -1,0 +1,11 @@
+{
+	"name": "Spawner",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "spawner",
+	"subdirectory": "spawner",
+	"functions":
+	[
+		{ "name": "spawn_at" }
+	]
+}

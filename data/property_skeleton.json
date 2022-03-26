@@ -2,6 +2,8 @@
     "version": "2.0",
     "name": "",
     "static": false,
+    "can_read":	true,
+    "can_write": true,
     "example_code": [
         ""
     ],

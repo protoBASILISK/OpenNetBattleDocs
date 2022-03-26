@@ -1,7 +1,6 @@
 
 {
 	"version": "2.0",
-	"conditional": true,
 	"name": "card_action_event",
 	"example_code": [ "" ],
 	"example_comment": "",

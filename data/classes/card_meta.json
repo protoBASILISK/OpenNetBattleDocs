@@ -1,0 +1,19 @@
+{
+	"name": "CardMeta",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "card_meta",
+	"subdirectory": "card_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" },
+		{ "name": "get_card_props" },
+		{ "name": "set_preview_texture" },
+		{ "name": "set_icon_texture" },
+		{ "name": "set_codes" }
+	],
+	"callbacks":
+	[
+		{ "name": "filter_hand_step" }
+	]
+}

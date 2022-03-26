@@ -1,0 +1,11 @@
+{
+	"name": "LuaLibraryMeta",
+	"summary": "",
+	"description": [ "" ], 
+	"variable_text": "lua_library_meta",
+	"subdirectory": "lua_library_meta",
+	"functions":
+	[
+		{ "name": "declare_package_id" }
+	]
+}
