@@ -7,10 +7,11 @@
     ],
     "example_comment":
         "",
-    "summary": "",
+    "summary": "Stops a `DefenseRule` from triggering any extra effects this frame.",
     "description":
     [
-        ""
+        "This function is used for special cases where any triggered effects of a <%= type 'DefenseRule' %> will be turned off for a frame.",
+        "e.g. Breaking through a \"Guard\"-style effect will disable its counterattack for this frame."
     ],
     "parameters": [],
     "return_value_type": "",

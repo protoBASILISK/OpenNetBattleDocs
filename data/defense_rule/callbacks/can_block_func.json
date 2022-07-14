@@ -2,32 +2,44 @@
     "version": "2.0",
     "name": "can_block_func",
     "example_code": [
-        ""
+        "local invisibility_rule\t\t-- Example DefenseRule",
+        "",
+        "invisibility_rule.can_block_func = function( defense_judge, attacker, target )",
+        "\tattack_props = attacker:copy_hit_props()",
+        "\tif( attack_props.flags & Hit.Pierce ~= Hit.Pierce )",
+        "\t\tdefense_judge:block_damage()",
+        "\t\tdefense_judge:block_impact()",
+        "\tend",
+        "end"
     ],
     "example_comment":
-        "",
+        "The above snippet shows code for a `DefenseRule` that will block all effects from anything that doesn't have the `Hit.Pierce` flag.",
     "summary": "",
     "description":
     [
-        ""
+        "This function is called when **something** _attempts to affect_ an <%= type 'Entity' %>.",
+        "&nbsp;&nbsp;<i>e.g. a <%= type 'ScriptedSpell' %> hitting a target, contact damage when running into an enemy <%= type 'Entity' %>, etc.</i>",
+        "",
+        "If this `DefenseRule` blocks _damage_, it will stop the `attacker` from _damaging_ the target <%= type 'Entity' %>.",
+        "If this `DefenseRule` blocks _impact_, it will stop the `attacker` from _making physical contact with_ the target <%= type 'Entity' %>."
     ],
     "parameters":
     [
         {
             "name": "defense_judge",
-            "desc": "",
+            "desc": "The <%= type 'DefenseFrameStateJudge' %> processing the current hit on the target <%= type 'Entity' %>",
             "type": "<%= type 'DefenseFrameStateJudge' %>",
             "optional": false
         },
         {
             "name": "attacker",
-            "desc": "",
+            "desc": "The <%= type 'Entity' %> attempting to affect another.",
             "type": "<%= type 'Entity' %>",
             "optional": false
         },
         {
-            "name": "owner",
-            "desc": "",
+            "name": "target",
+            "desc": "The _target_ <%= type 'Entity' %> that's being affected.",
             "type": "<%= type 'Entity' %>",
             "optional": false
         }

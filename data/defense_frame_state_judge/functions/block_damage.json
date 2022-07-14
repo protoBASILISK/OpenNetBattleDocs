@@ -7,10 +7,11 @@
     ],
     "example_comment":
         "",
-    "summary": "",
+    "summary": "Prevents any damage from the hit, and stops any lower-priority on-damage effects.",
     "description":
     [
-        ""
+        "If this function is called, then the attack will not damage a target <%= type 'Entity' %>.",
+        "&nbsp;<i>Lower-priority <%= type 'DefenseRule' %>s can also attempt to block damage, but **cannot** force a move to do damage after it's blocked.</i>"
     ],
     "parameters": [],
     "return_value_type": "",

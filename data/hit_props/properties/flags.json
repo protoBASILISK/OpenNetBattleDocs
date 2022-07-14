@@ -12,7 +12,7 @@
     [
         ""
     ],
-    "object_type": "<%= type 'HitFlags' %>",
+    "object_type": "<%= type 'Hit' %>",
     "footnotes":
     [
         {

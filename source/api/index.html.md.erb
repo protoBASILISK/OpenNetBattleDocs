@@ -33,6 +33,26 @@ meta:
 # CardAction Objects
 <p><%= partial "includes/cardaction.md.erb" %></p>
 
+# Defense Rules
+
+Every <%= type 'Character' %> has an list of <%= type 'DefenseRule' %>s attached, ordered by priority *(starting at 0, and increasing)*.
+
+When a <%= type 'ScriptedSpell' %> attempts to affect a <%= type 'Character' %>, it checks each <%= type 'DefenseRule' %> attached to that <%= type 'Character' %> in order.<br>
+Each attached <%= type 'DefenseRule' %> will then try to modify the effects of the <%= type 'ScriptedSpell' %>.<br>
+&nbsp;<i>(You can block the damage from the <%= type 'ScriptedSpell' %>, remove status flags, **or even add** them.)</i>
+
+## DefenseRule
+<p><%= partial _type_layout, locals:
+  { file: "/data/classes/defense_rule.json" } %></p>
+
+## DefenseOrder
+<p><%= partial _type_layout, locals:
+  { file: "/data/enums/defense_order.json" } %></p>
+
+## DefenseFrameStateJudge
+<p><%= partial _type_layout, locals:
+  { file: "/data/classes/defense_frame_state_judge.json" } %></p>
+
 # Utility Objects
 
 ## Animation
@@ -41,51 +61,39 @@ meta:
 
 ## Color
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/color.json" } %></p>
-
-## DefenseRule
-<p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/defense_rule.json" } %></p>
-
-## DefenseOrder
-<p><%= partial _type_layout, locals:
-  { file: "/data/enums/defense_order.json" } %></p>
-
-## DefenseFrameStateJudge
-<p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/defense_frame_state_judge.json" } %></p>
+  { file: "/data/classes/color.json" } %></p>
 
 ## MoveEvent
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/move_event.json" } %></p>
+  { file: "/data/classes/move_event.json" } %></p>
 
 ## HitProps
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/hit_props.json" } %></p>
+  { file: "/data/classes/hit_props.json" } %></p>
 
 ## Drag
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/drag.json" } %></p>
+  { file: "/data/classes/drag.json" } %></p>
 
 ## Mob
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/mob.json" } %></p>
+  { file: "/data/classes/mob.json" } %></p>
 
 ## Spawner
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/spawner.json" } %></p>
+  { file: "/data/classes/spawner.json" } %></p>
 
 ## SpawnMutator
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/spawn_mutator.json" } %></p>
+  { file: "/data/classes/spawn_mutator.json" } %></p>
 
 ## MoveEvent
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/move_event.json" } %></p>
+  { file: "/data/classes/move_event.json" } %></p>
 
 ## Vector2
 <p><%= partial _type_layout, locals:
-  { file: "/data/classes/etc/vector2.json" } %></p>
+  { file: "/data/classes/vector2.json" } %></p>
 
 # Metadata Files
 <p><%= partial "includes/metafiles.md.erb" %></p>

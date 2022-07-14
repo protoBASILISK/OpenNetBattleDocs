@@ -84,5 +84,5 @@ helpers do
   require './lib/link_parser.rb'
   require './lib/toc_data.rb'
   require './lib/helpers.rb'
-  require './lib/ruby_helpers.rb'
+  require './lib/json_helpers.rb'
 end

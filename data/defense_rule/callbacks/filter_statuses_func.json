@@ -2,38 +2,37 @@
     "version": "2.0",
     "name": "filter_statuses_func",
     "example_code": [
-        ""
+        "local cannot_drag_rule\t\t-- Example DefenseRule",
+        "",
+        "cannot_drag_rule.filter_statuses_func = function( hit_props )",
+        "\thit_props.flags = hit_props.flags & (~Hit.Drag)",
+        "",
+        "\tif( hit_props.element == Element.Fire )",
+        "\t\thit_props.damage = hit_props.damage * 2",
+        "\tend",
+        "",
+        "\treturn hit_props",
+        "end"
     ],
     "example_comment":
-        "",
+        "The above snippet shows code for a `DefenseRule` that stops an `Entity` from being affected by `Drag` effects, but doubles damage from `Fire` attacks.",
     "summary": "",
     "description":
     [
-        ""
+        "This function is called when something _successfully affects_ an <%= type 'Entity' %>.",
+        "&nbsp;You can alter the **properties** for attacks affecting *this* <%= type 'Entity' %>.",
+        "",
+        "<i>You do not have to define this function if this `DefenseRule` won't alter incoming attacks.</i>"
     ],
     "parameters":
     [
         {
             "name": "hit_props",
-            "desc": "",
+            "desc": "The **properties** of the incoming attack.",
             "type": "<%= type 'HitProps'%>",
             "optional": false
         }
     ],
-    "return_value_type": "",
-    "return_value_desc": "",
-    "footnotes":
-    [
-        {
-            "type": "",
-            "text": [
-                ""
-            ],
-            "code": [
-
-            ],
-            "comment":
-                ""
-        }
-    ]
+    "return_value_type": "<%= type 'HitProps'%>",
+    "return_value_desc": "The <%= type 'HitProps'%> after being changed by the `DefenseRule`."
 }

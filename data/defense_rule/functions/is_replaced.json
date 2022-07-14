@@ -10,11 +10,12 @@
     "summary": "",
     "description":
     [
-        ""
+        "A `DefenseRule` being added to a <%= type 'Character' %> will replace any existing `DefenseRule` that has an equal priority level.",
+        "This function lets you know if it has been replaced by another."
     ],
     "parameters": [],
     "return_value_type": "boolean",
-    "return_value_desc": "",
+    "return_value_desc": "`true` if this <%= type 'DefenseRule' %> has been replaced, otherwise `false`.",
     "footnotes":
     [
         {

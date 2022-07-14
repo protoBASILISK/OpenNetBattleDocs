@@ -10,7 +10,8 @@
     "summary": "",
     "description":
     [
-        ""
+        "Returns `true` if contact was blocked by this <%= type 'DefenseRule' %>, or by one of higher priority.",
+        "&nbsp;&nbsp;<i>Otherwise, returns `false`.</i>"
     ],
     "parameters": [],
     "return_value_type": "boolean",
