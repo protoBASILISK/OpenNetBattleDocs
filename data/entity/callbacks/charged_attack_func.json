@@ -14,7 +14,7 @@
     "summary": "",
     "description":
 	[ 
-		"The function that will be called when the <%= doc_class_name %> uses a **charged** normal attack."
+		"This function will be called when the <%= doc_class_name %> uses a **charged** normal attack."
 	],
 	"parameters": [
 		{

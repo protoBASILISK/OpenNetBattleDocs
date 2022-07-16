@@ -14,7 +14,9 @@
     "summary": "",
     "description":
 	[ 
-		"The function that will be called when the <%= doc_class_name %> interacts with another <%= type 'Entity' %> and registers a successful hit."
+		"This function will be called when the <%= doc_class_name %> interacts with another <%= type 'Entity' %> and registers a successful hit.",
+		"&emsp;<i>Note that this is only for <b>direct interaction</b>.",
+		"&emsp;i.e. If an <%= type 'Entity' %> hits another with a <%= type 'Spell' %>, the <%= type 'Spell' %> will call its `attack_func`.</i>"
 	],
 	"parameters": [
 		{
@@ -27,5 +29,6 @@
 			"desc": "The <%= type 'Entity' %> that was hit by this <%= doc_class_name %>.",
 			"type": "<%= type 'Entity' %>"
 		}
-	]
+	],
+	"return_value_type": "nil"
 }

@@ -14,7 +14,7 @@
     "summary": "",
     "description":
 	[ 
-		"The function that will be called when the <%= doc_class_name %> collides with another <%= type 'Entity' %>."
+		"This function will be called when the <%= doc_class_name %> collides with another <%= type 'Entity' %>."
 	],
 	"parameters": [
 		{

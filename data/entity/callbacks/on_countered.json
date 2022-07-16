@@ -14,7 +14,7 @@
     "summary": "",
     "description":
 	[ 
-		""
+		"This function will be called when the <%= doc_class_name %> is **counter-hit** while using an attack."
 	],
 	"parameters": [
 		{
@@ -23,5 +23,5 @@
 			"type": "<%= doc_class_name %>"
 		}
 	],
-	"return_value_type": ""
+	"return_value_type": "nil"
 }
