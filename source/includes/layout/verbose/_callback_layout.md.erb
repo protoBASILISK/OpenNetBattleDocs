@@ -1,7 +1,7 @@
 <% _class = locals[:c] %>
 <% _callback = locals[:f] %>
 
-### <%= _class["name"] %> . <%= _callback["name"] %>
+### <%= _class["lua_class_name"] or _class["name"] %> . <%= _callback["name"] %>
 <h4 class="version">callback • v<%= _callback["version"] %></h4>
 
     <%# VERSION INFORMATION %>

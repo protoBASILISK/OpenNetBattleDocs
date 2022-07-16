@@ -2,7 +2,7 @@
 <% _function = locals[:f] %>
 
     <%# HEADER %>
-### <%= _class["name"] %>:<%= _function["name"] %>()
+### <%= _class["lua_class_name"] or _class["name"] %>:<%= _function["name"] %>()
 <h4 class="version">function • v<%= _function["version"] %></h4>
 
     <%# LUA CODE %>

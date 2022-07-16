@@ -1,7 +1,7 @@
 <% _prop = locals[:f] %>
 <% _class = locals[:c] %>
 
-### <%= _class["name"] %> . <%= _prop["name"] %>
+### <%= _class["lua_class_name"] or _class["name"] %> . <%= _prop["name"] %>
 <h4 class="version">property • v<%= _prop["version"] %></h4>
 
     <%# VERSION INFORMATION %>
